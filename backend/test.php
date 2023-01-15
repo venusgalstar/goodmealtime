@@ -74,14 +74,20 @@
                 }
             } 
 
-            echo json_encode($response_data);
+            $response_final = array($response_data);
+
+            echo json_encode($response_final);
 
         } else{
-            $sql = "select t1.*, t2.* from
-            (select ID, post_author,post_title as name from wp_posts where ID = 4191) as t1
+            $sql = "select t3.*, t4.guid as image from
+            (select t1.*, t2.* from
+            (select ID, post_author,post_title as name from wp_posts where ID = ".$meal_id.") as t1
             left join
             wp_postmeta as t2
-            on t1.ID = t2.post_id        
+            on t1.ID = t2.post_id) as t3
+            left join
+            (select guid,post_parent from wp_posts where post_type = 'attachment') as t4
+            on t3.ID = t4.post_parent     
             ";
 
             $response_data = array();
@@ -91,6 +97,7 @@
             $new_item["uploadedBy"] = "";
             $new_item["location"] = "";
             $new_item["ingredients"] = "";
+            $new_item["possibleAllergen"] = "";
 
             if ($result_posts->num_rows > 0) {
                 // output data of each row
@@ -102,6 +109,7 @@
                     $new_item["post_author"] = $row["post_author"];
                     $new_item["name"] = $row["name"];
                     $new_item["available"] = true;
+                    $new_item["image"] = $row["image"];
                     
                     if($row["meta_key"] == "_price")
                         $new_item["price"] = $row["meta_value"];
@@ -134,6 +142,27 @@
                         $new_item["location"] = $row["meta_value"];
                 }        
             } 
+
+            if( $new_item["image"] == '' ){
+                $sql = "select t1.*,t2.guid as image from
+                (select * from wp_postmeta where meta_key='_wxr_import_parent' and meta_value=".$meal_id.") as t1
+                left join
+                wp_posts as t2
+                on t1.post_id = t2.ID                
+                ";
+
+                $result_user = $conn->query($sql);
+
+                if ($result_user->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result_user->fetch_assoc() ) {
+                        // echo json_encode($row)."<br>";
+                        if($row["image"] != '')
+                            $new_item["image"] = $row["image"];
+                    }        
+                } 
+
+            }
 
             echo json_encode($new_item);
         }
