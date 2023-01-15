@@ -1,0 +1,193 @@
+
+---Downloaded files---
+The import files for: Foodotashop were successfully downloaded!
+Initial max execution time = 3000
+Files info:
+Site URL = https://dev.foodotawp.com
+Data file = /var/www/vhosts/foodotawp.com/dev.foodotawp.com/wp-content/plugins/foodota-framework/demo-data/Foodotashop/content.xml
+Widget file = /var/www/vhosts/foodotawp.com/dev.foodotawp.com/wp-content/plugins/foodota-framework/demo-data/Foodotashop/widgets.json
+Customizer file = /var/www/vhosts/foodotawp.com/dev.foodotawp.com/wp-content/plugins/foodota-framework/demo-data/Foodotashop/customizer.dat
+Redux files:
+foodota_options -> /var/www/vhosts/foodotawp.com/dev.foodotawp.com/wp-content/plugins/foodota-framework/demo-data/Foodotashop/theme-options.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+sonu_blog_sidebar_realestate : Sidebar does not exist in theme (moving widget to Inactive)
+
+Search - No Title - Imported to Inactive
+Categories - Food Categories - Imported to Inactive
+Image - Advertisement - Imported to Inactive
+Recent Posts - No Title - Imported to Inactive
+
+Restaurant Search : 
+
+Restaurant:Food Filter - Filters - Imported
+Restaurant:Food Categories Filter - Food Categories - Imported
+Image - Advertisement - Imported
+
+Restaurant Search Detail Right : 
+
+Restaurant:Sale Products - Sale Products - Imported
+Restaurant:Top Rated Products - Best Selling Products - Imported
+
+Restaurant Search Detail Left : 
+
+Image - Advertisement - Imported
+
+Vendor Store Sidebar : 
+
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+Restaurant:Sale Products - Sale Products - Imported
+Restaurant:Sale Products - Products On Sale - Imported
+Restaurant:Top Rated Products - Best Selling Products - Imported
+Restaurant:Top Rated Products - Best Selling Products - Imported
+Restaurant:Sale Products - Sale Products - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: foodota_options finished successfully!
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

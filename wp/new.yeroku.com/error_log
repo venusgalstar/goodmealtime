@@ -1,0 +1,32 @@
+[09-Jan-2023 07:57:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wppqc5an.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wppqc5an.php on line 21
+[09-Jan-2023 07:57:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpkxcli5.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpkxcli5.php on line 21
+[09-Jan-2023 07:57:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wps0zhod.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wps0zhod.php on line 21
+[09-Jan-2023 07:57:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpwetctn.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpwetctn.php on line 21
+[10-Jan-2023 07:58:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpzk5poo.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpzk5poo.php on line 21
+[10-Jan-2023 07:58:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpepjce8.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpepjce8.php on line 21
+[10-Jan-2023 07:58:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpzt0qjq.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wpzt0qjq.php on line 21
+[10-Jan-2023 07:58:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wp6hghgf.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/qhoxo1zue6nw/public_html/new.yeroku.com/deleteme.wp6hghgf.php on line 21

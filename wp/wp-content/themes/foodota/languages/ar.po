@@ -1,0 +1,2200 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Project-Id-Version: Foodota\n"
+"POT-Creation-Date: 2022-02-24 11:38+0500\n"
+"PO-Revision-Date: 2022-02-24 11:38+0500\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: ar\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: 404.php:5 inc/options.php:894
+msgid "Go To Home"
+msgstr "الذهاب إلى الرئيسة"
+
+#: 404.php:22 inc/options.php:875
+msgid "OOPS!!!"
+msgstr "عفواً!!!"
+
+#: 404.php:33 inc/options.php:881
+msgid "Page Not Found"
+msgstr "الصفحة غير موجودة"
+
+#: 404.php:44 inc/options.php:888
+msgid "We're sorry, but the page you were looking for doesn't exist."
+msgstr "عذرا، ولكن الصفحة التي تبحث عنها غير موجودة."
+
+#: comments.php:42
+msgid "Your Name"
+msgstr "اسمك"
+
+#: comments.php:50
+msgid "Your Email"
+msgstr "ضع ايميلك"
+
+#: comments.php:57
+msgid "Your Number"
+msgstr "رقم هاتفك"
+
+#: comments.php:71
+msgid "Your Comment"
+msgstr "تعليقك"
+
+#: comments.php:81
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\">%4$s</a>"
+msgstr "تسجيل الدخول ك <a href=\"%1$s\">%2$s</a> . <a href=\"%3$s\">%4$s</a>"
+
+#: comments.php:81
+msgid "Log out"
+msgstr "تسجيل الخروج"
+
+#: comments.php:84
+msgid "Post Comment"
+msgstr "أضف تعليقا"
+
+#: comments.php:94
+msgid "Leave Your Comment"
+msgstr "اترك تعليق"
+
+#: footer.php:35
+msgid "Your Order"
+msgstr "طلبك"
+
+#: functions.php:39
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr "في"
+
+#: inc/localization.php:9
+msgid "Page"
+msgstr "صفحة"
+
+#: inc/localization.php:10
+msgid "of"
+msgstr "من"
+
+#: inc/localization.php:11
+msgid "Operation completed!"
+msgstr "اكتملت العملية!"
+
+#: inc/localization.php:12
+msgid "Invalid email or password."
+msgstr "الايميل أو كلمة السر خاطئة."
+
+#: inc/localization.php:24
+msgid "Name field is required."
+msgstr "حقل الاسم مطلوب"
+
+#: inc/nav.php:174 inc/nav.php:177
+msgid "Home"
+msgstr "الرئيسية"
+
+#: inc/nav.php:269 inc/nav.php:287
+msgid "Select Option"
+msgstr "‫الرجاء الاختيار"
+
+#: inc/nav.php:269
+msgid "Simple Menu"
+msgstr "القائمة البسيطة"
+
+#: inc/nav.php:269
+msgid "Mega Menu"
+msgstr "القائمة الضخمة"
+
+#: inc/nav.php:281
+msgid "Column size "
+msgstr "حجم العمود"
+
+#: inc/nav.php:287
+msgid "Left to Right"
+msgstr "من اليسار إلى اليمين"
+
+#: inc/nav.php:287
+msgid "Right to Left"
+msgstr "اليمين الى اليسار"
+
+#: inc/nav.php:298 inc/nav.php:308
+msgid "Select Option - (No Offset)"
+msgstr "حدد خياراً - (بدون إزاحة)"
+
+#: inc/nav.php:301
+msgid "Column Offset "
+msgstr "أزاحه العمود"
+
+#: inc/nav.php:311
+msgid "Vertical Offset"
+msgstr "أزاحه عموديه"
+
+#: inc/nav.php:375
+msgid ""
+"If you want to hide column name in mega menu just write {HideMe} in  "
+"Navigation Label"
+msgstr ""
+"إذا كنت ترغب في إخفاء اسم العمود في القائمة الضخمة فقط اكتب {HideMe} في تسمية"
+
+#: inc/nav.php:380
+msgid "Lebel Color"
+msgstr "لون الخانة"
+
+#: inc/nav.php:386
+msgid "Lebel Text"
+msgstr "نص الخانة"
+
+#: inc/nav.php:388
+msgid "Enter some text"
+msgstr "أدخل نصا"
+
+#: inc/nav.php:393
+msgid "This select option is only for 1st level menu"
+msgstr "هذا الخيار هو اختيار فقط للمستوي الأول من القائمة"
+
+#: inc/nav.php:399
+msgid "In parent add bigger value and in 2nd level add small value"
+msgstr "في الأصل أضافه قيمه أكبر وفي المستوي الثاني أضافه قيمه صغيره"
+
+#: inc/nav.php:405
+msgid "Menu Icons (Font Awesome Icons). "
+msgstr "أيقونات القائمة (الخط أيقونات رهيبه)."
+
+#: inc/nav.php:412
+msgid "Select Options - For simple menu only"
+msgstr "اختر الخيارات-للقائمة البسيطة فقط"
+
+#: inc/options.php:20 inc/options.php:21
+msgid "Foodota Options"
+msgstr "خيارات فودوتا"
+
+#: inc/options.php:78
+msgid "General"
+msgstr "عام"
+
+#: inc/options.php:86 inc/options.php:100
+msgid "Show Site Preloader"
+msgstr "إظهار التحميل المسبق للموقع"
+
+#: inc/options.php:88 inc/options.php:102
+msgid "Turn on or off site loader."
+msgstr "تشغيل محمل الموقع أو إيقاف تشغيله."
+
+#: inc/options.php:93
+msgid "Demo Mode"
+msgstr "الوضع التجريبي"
+
+#: inc/options.php:95
+msgid "Only for demo purpose don't enable on your site."
+msgstr "فقط لغرض تجريبي لا تمكين على موقعك."
+
+#: inc/options.php:109
+msgid "upload your site spinner GIF"
+msgstr "تحميل موقع الويب الخاص بك الدوار GIF"
+
+#: inc/options.php:111
+msgid "Upload your site spinner image size 150px X 150px"
+msgstr "تحميل حجم الصورة الدوار موقعك 150px X 150px"
+
+#: inc/options.php:122
+msgid "Typography"
+msgstr "تايبوغرافي"
+
+#: inc/options.php:129
+msgid "Theme Button Color"
+msgstr "لون زر السمة"
+
+#: inc/options.php:130
+msgid "Please provide main theme button color"
+msgstr "يرجى توفير لون زر النسق الرئيسي"
+
+#: inc/options.php:141 inc/options.php:178
+msgid "Theme button shoadow color"
+msgstr "لون زر النسق shoadow"
+
+#: inc/options.php:142 inc/options.php:155 inc/options.php:179
+msgid "Pick a show color for the theme buttons"
+msgstr "اختيار لون عرض لأزرار النسق"
+
+#: inc/options.php:154
+msgid "Theme button Text color"
+msgstr "لون نص زر السمة"
+
+#: inc/options.php:166
+msgid "Secondary Theme Button Color"
+msgstr "لون زر السمة الثانوي"
+
+#: inc/options.php:167
+msgid "Please provide secondary theme button color"
+msgstr "يرجى توفير لون زر النسق الثانوي"
+
+#: inc/options.php:190
+msgid "Secondary button Text color"
+msgstr "لون نص الزر الثانوي"
+
+#: inc/options.php:191
+msgid "Pick a show color for the secondary theme buttons"
+msgstr "اختيار لون عرض لأزرار النسق الثانوية"
+
+#: inc/options.php:203
+msgid "The Sticky Header Menu color"
+msgstr "لون قائمة الرأس الملصقة"
+
+#: inc/options.php:204
+msgid "Pickup Sticky Menu color"
+msgstr "بيك آب لزجة لون القائمة"
+
+#: inc/options.php:213
+msgid "Section Background White  Heading Scheme"
+msgstr "مخطط العنوان الأبيض الخلفي للمقطع"
+
+#: inc/options.php:214
+msgid "Pickup the Color Scheme for White Section"
+msgstr "التقاط نظام الألوان للقسم الأبيض"
+
+#: inc/options.php:223
+msgid "Section Background Dark  Heading Scheme"
+msgstr "مخطط العنوان الداكن الخلفية للمقطع"
+
+#: inc/options.php:224
+msgid "Pickup the Color Scheme for Dark Section"
+msgstr "التقاط نظام الألوان للمقطع المظلم"
+
+#: inc/options.php:236
+msgid "Body Font and details"
+msgstr "خط الجسم والتفاصيل"
+
+#: inc/options.php:237 inc/options.php:256
+msgid "Specify the body font properties."
+msgstr "حدد خصائص خط الجسم."
+
+#: inc/options.php:255
+msgid "Common Font Heading Settings"
+msgstr "إعدادات عنوان الخط الشائعة"
+
+#: inc/options.php:272
+msgid "Common Tag Settings"
+msgstr "إعدادات العلامة الشائعة"
+
+#: inc/options.php:273
+msgid "Specify All Common Tags font properties."
+msgstr "تحديد كافة خصائص الخط العلامات الشائعة."
+
+#: inc/options.php:291
+msgid "Profile Settings"
+msgstr "إعدادات الملف الشخصي"
+
+#: inc/options.php:293
+msgid "These are really basic fields to setup theme!"
+msgstr "هذه هي المجالات الاساسيه حقا لموضوع الاعداد!"
+
+#: inc/options.php:297
+msgid "Header Profile Pages Settings"
+msgstr "إعدادات صفحات ملف تعريف الرأس"
+
+#: inc/options.php:306
+msgid "Restaurant Button Text"
+msgstr "نص زر المطعم"
+
+#: inc/options.php:307
+msgid "Please give Register Button Text Here"
+msgstr "يرجى إعطاء تسجيل زر النص هنا"
+
+#: inc/options.php:308
+msgid "Restaurant Register"
+msgstr "سجل المطعم"
+
+#: inc/options.php:314
+msgid "Choose Register page"
+msgstr "اختر صفحة التسجيل"
+
+#: inc/options.php:316
+msgid "Only Choose Registerr  Page."
+msgstr "اختر صفحة المسجل فقط."
+
+#: inc/options.php:321
+msgid "Dashboard Button Text"
+msgstr "نص زر لوحة المعلومات"
+
+#: inc/options.php:322
+msgid "Please give Dashboard Button Text Here"
+msgstr "الرجاء إعطاء لوحة المعلومات زر النص هنا"
+
+#: inc/options.php:323
+msgid "User Dashboard"
+msgstr "لوحة المستخدم"
+
+#: inc/options.php:329
+msgid "Choose vendor Dashboard page"
+msgstr "اختيار صفحة لوحة معلومات المورد"
+
+#: inc/options.php:331
+msgid "Only Choose Dashboard vendor  Page."
+msgstr "اختر صفحة مورد لوحة المعلومات فقط."
+
+#: inc/options.php:337
+msgid "Single Product Pages Settings"
+msgstr "إعدادات صفحات منتج واحد"
+
+#: inc/options.php:346
+msgid "Call an Order Text"
+msgstr "استدعاء نص أمر"
+
+#: inc/options.php:347
+msgid "Please give Call  an order Text Here"
+msgstr "يرجى إعطاء دعوة نص النظام هنا"
+
+#: inc/options.php:348
+msgid "call and Order in"
+msgstr "استدعاء و طلب في"
+
+#: inc/options.php:353
+msgid "Call an Order Number"
+msgstr "استدعاء رقم طلب"
+
+#: inc/options.php:354
+msgid "Please give Call  an order Number Here"
+msgstr "يرجى إعطاء استدعاء رقم الطلب هنا"
+
+#: inc/options.php:355
+msgid "+92-1243-4567"
+msgstr "+92-1243-4567"
+
+#: inc/options.php:360
+msgid "Total Cart Text"
+msgstr "نص سلة التسوق الإجمالي"
+
+#: inc/options.php:361
+msgid "Please give Total Cart Text Here"
+msgstr "يرجى إعطاء مجموع نص العربة هنا"
+
+#: inc/options.php:362
+msgid "Shopping Cart"
+msgstr "سلة التسوق"
+
+#: inc/options.php:368
+msgid "Choose Single Product Cart  Page "
+msgstr "اختيار صفحة سلة منتجات واحدة "
+
+#: inc/options.php:370 inc/options.php:385
+msgid "Only Choose Shop Single Product Page."
+msgstr "اختر صفحة منتج واحد فقط."
+
+#: inc/options.php:375
+msgid "Single Product Header Button Text"
+msgstr "نص زر رأس المنتج الواحد"
+
+#: inc/options.php:376
+msgid "Please give Button Text Here"
+msgstr "الرجاء إعطاء زر النص هنا"
+
+#: inc/options.php:377
+msgid "Search Products"
+msgstr "البحث في المنتجات"
+
+#: inc/options.php:383
+msgid "Choose Single Product  Page "
+msgstr "اختر صفحة منتج واحدة "
+
+#: inc/options.php:392
+msgid "Main Header Setting"
+msgstr "إعداد الرأس الرئيسي"
+
+#: inc/options.php:399
+msgid "Header Settings"
+msgstr "لا ترويسة"
+
+#: inc/options.php:409
+msgid "Header Layout"
+msgstr "مخطط الرأس"
+
+#: inc/options.php:410
+msgid "Select Header Layout you want to show."
+msgstr "حدد تخطيط الراس الذي تريد إظهاره."
+
+#: inc/options.php:413
+msgid "Header Layout 1"
+msgstr "تصميم رأس الصفحة 1"
+
+#: inc/options.php:417
+msgid "Header Layout 2"
+msgstr "تصميم رأس الصفحة 2"
+
+#: inc/options.php:426
+msgid "Topbar Show/Hide"
+msgstr "عرض/إخفاء الشريط العلوي"
+
+#: inc/options.php:427
+msgid "Hide and Show Top bar"
+msgstr "إخفاء شريط الأعلى وإظهاره"
+
+#: inc/options.php:437
+msgid "Topbar Select Pages"
+msgstr "الصفحات المحددة للشريط العلوي"
+
+#: inc/options.php:438 inc/options.php:712 inc/options.php:746
+msgid "Select the number of pages"
+msgstr "تحديد عدد الصفحات"
+
+#: inc/options.php:439
+msgid "Topbar Select Page"
+msgstr "الصفحة تحديد الشريط العلوي"
+
+#: inc/options.php:450 inc/options.php:451
+msgid "Top bar Location Field"
+msgstr "حقل موقع الشريط العلوي"
+
+#: inc/options.php:452
+msgid "Please input the Location"
+msgstr "الرجاء إدخال الموقع"
+
+#: inc/options.php:464
+msgid "Top bar Phone Number Field"
+msgstr "حقل رقم الهاتف العلوي شريط"
+
+#: inc/options.php:465
+msgid "Phone Number Here!"
+msgstr "رقم الهاتف هنا!"
+
+#: inc/options.php:466
+msgid "Please input the Phone Number"
+msgstr "الرجاء إدخال رقم الهاتف"
+
+#: inc/options.php:479
+msgid "Logo Main"
+msgstr "الشعار الرئيسي"
+
+#: inc/options.php:481 inc/options.php:672
+msgid "Upload main logo of your website size should be 180x40 PX."
+msgstr "يجب أن يكون الشعار الرئيسي لتحميل حجم موقعك 180x40 PX."
+
+#: inc/options.php:488
+msgid "Logo Sticky"
+msgstr "الشعار الثابت"
+
+#: inc/options.php:490
+msgid "Upload Sticky logo of your website size should be 180x40 PX."
+msgstr "تحميل شعار لزجة من حجم موقع الويب الخاص بك يجب أن يكون 180x40 PX."
+
+#: inc/options.php:496 inc/options.php:776
+msgid "Social Media"
+msgstr "الشبكات الإجتماعية"
+
+#: inc/options.php:497 inc/options.php:777
+msgid "You can sort it out as you want."
+msgstr "يمكنك ترتيب ذلك كما تريد."
+
+#: inc/options.php:522
+msgid "Breadcrumbs"
+msgstr "شريط التسلسل"
+
+#: inc/options.php:531
+msgid "Breadcrumb Type"
+msgstr "نوع الشريط التفصيلي"
+
+#: inc/options.php:532
+msgid "Select breadcrumb Layout you want to show."
+msgstr "حدد تخطيط فتات الخبز الذي تريد إظهاره."
+
+#: inc/options.php:535
+msgid "Classic"
+msgstr "كلاسيك"
+
+#: inc/options.php:545
+msgid "Breadcrumb Background Image"
+msgstr "Breadcrumb Background Image"
+
+#: inc/options.php:547
+msgid "Please give the image size 1583X330 px."
+msgstr "يرجى إعطاء حجم الصورة 1583X330 بكسل."
+
+#: inc/options.php:553
+msgid "Restaurants Settings"
+msgstr "إعدادات المطاعم"
+
+#: inc/options.php:559
+msgid "Restaurants Pagination Settings"
+msgstr "إعدادات ترقيم المطاعم"
+
+#: inc/options.php:567
+msgid "Please Give the Restaurants Show in Pagination"
+msgstr "يرجى إعطاء عرض المطاعم في الصفحات"
+
+#: inc/options.php:568
+msgid "Give the Pagination Indexing."
+msgstr "إعطاء فهرسة الصفحات."
+
+#: inc/options.php:569
+msgid " Min: 1, max: 500, step: 1, default value: 9"
+msgstr " الحد الأدنى: 1، الحد الأقصى: 500، الخطوة: 1، القيمة الافتراضية: 9"
+
+#: inc/options.php:580
+msgid "Choose Search Page"
+msgstr "اختر صفحة البحث"
+
+#: inc/options.php:582
+msgid "Only Choose Search Page."
+msgstr "اختر صفحة البحث فقط."
+
+#: inc/options.php:588
+msgid "Please Select the  page Banner"
+msgstr "الرجاء تحديد شعار الصفحة"
+
+#: inc/options.php:591
+msgid "Please give the image size 770X100 px."
+msgstr "يرجى إعطاء حجم الصورة 770X100 بكسل."
+
+#: inc/options.php:598
+msgid "Blog Page Settings"
+msgstr "إعدادات صفحة المدونة"
+
+#: inc/options.php:605
+msgid "Social Media buttons  Show/Hide on Blog Detail page"
+msgstr "أزرار وسائل الاعلام الاجتماعية إظهار / إخفاء على صفحة تفاصيل المدونة"
+
+#: inc/options.php:606
+msgid "Social Media Button"
+msgstr "زر وسائل الاعلام الاجتماعية"
+
+#: inc/options.php:612
+msgid "Set Social Media buttons Position"
+msgstr "تعيين موضع أزرار وسائل التواصل الاجتماعي"
+
+#: inc/options.php:613
+msgid "You Can choose the Social Media button position"
+msgstr "يمكنك اختيار موضع زر وسائل التواصل الاجتماعي"
+
+#: inc/options.php:627
+msgid "Footer Settings"
+msgstr "الإعدادات"
+
+#: inc/options.php:661
+msgid "Footer Links Settings"
+msgstr "إعدادات ارتباطات تذييل"
+
+#: inc/options.php:670
+msgid "Footer Logo"
+msgstr "شعار تذييل"
+
+#: inc/options.php:679
+msgid "Give short description about Restaurants"
+msgstr "إعطاء وصف موجز عن المطاعم"
+
+#: inc/options.php:680
+msgid ""
+"One is to focus on the quality of your meat. If you can call out organic "
+"beef, sustainable farming."
+msgstr ""
+"واحد هو التركيز على نوعية اللحوم الخاصة بك. إذا كنت تستطيع استدعاء لحوم "
+"البقر العضوية، والزراعة المستدامة."
+
+#: inc/options.php:686
+msgid "Restaurant Phone Number"
+msgstr "رقم هاتف المطعم"
+
+#: inc/options.php:687
+msgid "Please give Phone number Detail Here"
+msgstr "يرجى إعطاء رقم الهاتف التفاصيل هنا"
+
+#: inc/options.php:688
+msgid "+92300-400-2333"
+msgstr "+92300-400-2333"
+
+#: inc/options.php:694
+msgid "Restaurant Email Address"
+msgstr "عنوان البريد الإلكتروني للمطاعم"
+
+#: inc/options.php:695
+msgid "Please give Email Address Here"
+msgstr "يرجى إعطاء عنوان البريد الإلكتروني هنا"
+
+#: inc/options.php:696
+msgid "restaurant@gmail.com"
+msgstr "restaurant@gmail.com"
+
+#: inc/options.php:702
+msgid "Our Services Headings"
+msgstr "عناوين خدماتنا"
+
+#: inc/options.php:703
+msgid "Please give our Services headings"
+msgstr "يرجى إعطاء عناوين خدماتنا"
+
+#: inc/options.php:704
+msgid "Our Service"
+msgstr "خدماتنا"
+
+#: inc/options.php:711
+msgid "Footer Our Services Pages"
+msgstr "تذييل صفحات خدماتنا"
+
+#: inc/options.php:713 inc/options.php:745 inc/options.php:747
+msgid "Footer Select Pages"
+msgstr "تذييل حدد صفحات"
+
+#: inc/options.php:720
+msgid "Latest News Headings"
+msgstr "آخر عناوين الأخبار"
+
+#: inc/options.php:721
+msgid "Please give our Latest News headings"
+msgstr "يرجى إعطاء أحدث عناوين الأخبار لدينا"
+
+#: inc/options.php:722
+msgid "Latest News"
+msgstr "آخر الاخبار"
+
+#: inc/options.php:728
+msgid "Footer Latest news Post"
+msgstr "تذييل آخر الأخبار بوست"
+
+#: inc/options.php:729
+msgid "Select the number of post"
+msgstr "تحديد عدد الوظيفة"
+
+#: inc/options.php:730
+msgid "Footer Select Latest Post"
+msgstr "تذييل حدد آخر مشاركة"
+
+#: inc/options.php:737
+msgid "Footer Menu Use Full Pages Title"
+msgstr "قائمة تذييل الصفحة استخدام عنوان الصفحات الكاملة"
+
+#: inc/options.php:738
+msgid "Please give the Title of the Pages"
+msgstr "يرجى إعطاء عنوان الصفحات"
+
+#: inc/options.php:739
+msgid "Useful Links"
+msgstr "روابط مفيدة"
+
+#: inc/options.php:755
+msgid "Enter the Copy Rigt Text"
+msgstr "أدخل نص نسخ Rigt"
+
+#: inc/options.php:756
+msgid "Copyright By Scriptsbundle"
+msgstr "حقوق الطبع والنشر من قبل Scriptsbundle"
+
+#: inc/options.php:762
+msgid "Social Fields"
+msgstr "المجالات الاجتماعية"
+
+#: inc/options.php:770
+msgid "Enter Social Icon Title "
+msgstr "أدخل عنوان الرمز الاجتماعي "
+
+#: inc/options.php:771
+msgid "Social Links"
+msgstr "روابط وسائل التواصل"
+
+#: inc/options.php:809
+msgid "API Settings"
+msgstr "الرجاء التحقق من إعدادات api"
+
+#: inc/options.php:814
+msgid "Google Map Api Setting"
+msgstr "إعداد واجهة برمجة التطبيقات لخريطة Google"
+
+#: inc/options.php:822
+msgid "Map Api Show/Hide"
+msgstr "خريطة Api إظهار / إخفاء"
+
+#: inc/options.php:823
+msgid "Map Api"
+msgstr "خريطة Api"
+
+#: inc/options.php:829
+msgid "Google Map Api Key"
+msgstr "مفتاح جوجل API"
+
+#: inc/options.php:830
+msgid "Map Key Api"
+msgstr "خريطة مفتاح Api"
+
+#: inc/options.php:831
+msgid "Please Enter Google Map Api Key"
+msgstr "الرجاء إدخال مفتاح واجهة برمجة التطبيقات خريطة جوجل"
+
+#: inc/options.php:838
+msgid "Given Distance In KM Search Restaurants"
+msgstr "نظرا لمسافة في مطاعم البحث KM"
+
+#: inc/options.php:839
+msgid "Distance KM Search"
+msgstr "البحث عن مسافة KM"
+
+#: inc/options.php:840
+msgid "Given Distance in Radius Search"
+msgstr "المسافة المعطى في بحث نصف القطر"
+
+#: inc/options.php:848 inc/options.php:849
+msgid "Default Latitude"
+msgstr "خط العرض الافتراضي"
+
+#: inc/options.php:850
+msgid "Set your default map Latitude"
+msgstr "تعيين خط عرض الخريطة الافتراضي"
+
+#: inc/options.php:857 inc/options.php:858
+msgid "Default Longitude"
+msgstr "طول جغرافیایی پیش فرض"
+
+#: inc/options.php:859
+msgid "Set your default map Longitude"
+msgstr "تعيين خط طول الخريطة الافتراضي"
+
+#: inc/options.php:867
+msgid "404 Pages Setting"
+msgstr "إعداد 404 صفحات"
+
+#: inc/options.php:874
+msgid "Given Page 404 Sub Heading"
+msgstr "عنوان فرعي للصفحة 404 المعطى"
+
+#: inc/options.php:880
+msgid "Given page 404 Main Heading"
+msgstr "الصفحة المعطى 404 العنوان الرئيسي"
+
+#: inc/options.php:887
+msgid "Given the detail the 404 page"
+msgstr "نظرا للتفاصيل صفحة 404"
+
+#: inc/options.php:893
+msgid "Given page 404 button Text"
+msgstr "نص زر الصفحة 404 المعطى"
+
+#: inc/options.php:899
+msgid "Given button Text Link"
+msgstr "ارتباط نصي للزر المعطا"
+
+#: inc/options.php:906
+msgid "Given page 404 Image"
+msgstr "صورة الصفحة 404 المعطى"
+
+#: inc/options.php:909
+msgid "Please give the image size 750X450 px."
+msgstr "يرجى إعطاء حجم الصورة 750X450 بكسل."
+
+#: inc/theme_functions.php:138
+msgid "Copyright"
+msgstr "حقوق النشر"
+
+#: inc/theme_functions.php:138
+msgid "All Rights Reserved"
+msgstr "جميع الحقوق محفوظة"
+
+#: inc/theme_settings.php:43
+msgid "Foodota Menu"
+msgstr "قائمة فودوتا"
+
+#: inc/theme_settings.php:58
+msgid "Blog Sidebar"
+msgstr "الشريط الجانبي للمدونة"
+
+#: inc/theme_settings.php:83
+msgid "Disabled for demo"
+msgstr "معطل"
+
+#: inc/theme_settings.php:100
+msgid "Restaurant Search"
+msgstr "بحث مطعم"
+
+#: inc/theme_settings.php:102
+msgid "Widgets in this area will be shown on all Food Categories."
+msgstr "سيتم عرض الحاجيات في هذا المجال على جميع فئات الطعام."
+
+#: inc/theme_settings.php:109
+msgid "Restaurant Search Detail Right"
+msgstr "مطعم البحث عن التفاصيل الحق"
+
+#: inc/theme_settings.php:111
+msgid ""
+"Widgets in this area will be shown on all Food Categories on Search Detail."
+msgstr "سيتم عرض الحاجيات في هذا المجال على جميع فئات الطعام على تفاصيل البحث."
+
+#: inc/theme_settings.php:118
+msgid "Restaurant Search Detail Left"
+msgstr "تفاصيل البحث في المطعم لليسار"
+
+#: inc/theme_settings.php:120
+msgid "Widgets of Banner Image will be shown in this Area."
+msgstr "سيتم عرض أدوات صورة البانر في هذه المنطقة."
+
+#: inc/theme_utilities.php:50
+msgid "Category"
+msgstr "التصنيف"
+
+#: inc/theme_utilities.php:52
+msgid "Listing Details"
+msgstr "تفاصيل القائمة"
+
+#: inc/theme_utilities.php:54
+msgid "Blog Details"
+msgstr "تفاصيل المدونة"
+
+#: inc/theme_utilities.php:62
+msgid "404"
+msgstr "404"
+
+#: inc/theme_utilities.php:64
+msgid "Author"
+msgstr "الكاتب"
+
+#: inc/theme_utilities.php:68
+msgid "Archive"
+msgstr "الأرشيف"
+
+#: inc/theme_utilities.php:70
+msgid "Latest News & Trends"
+msgstr "آخر الاخبار والاتجاهات"
+
+#: inc/theme_utilities.php:74
+msgid "Product Details"
+msgstr "تفاصيل المنتج"
+
+#: inc/theme_utilities.php:76
+msgid "Cart"
+msgstr "سلة التسوق"
+
+#: inc/theme_utilities.php:79
+msgid "Thank You"
+msgstr "شكرا لك"
+
+#: inc/theme_utilities.php:82
+msgid "Checkout"
+msgstr "الدفع"
+
+#: inc/theme_utilities.php:89
+msgid "Shop"
+msgstr "المتجر"
+
+#: inc/theme_utilities.php:207
+msgid "No Comments"
+msgstr "لا يوجد تعليقات"
+
+#: inc/theme_utilities.php:209
+msgid " Comments"
+msgstr " تعليقات"
+
+#: inc/theme_utilities.php:211
+msgid "1 Comment"
+msgstr "تعليق واحد"
+
+#: inc/theme_utilities.php:224
+msgid "Search for:"
+msgstr "البحث عن:"
+
+#: inc/theme_utilities.php:239
+#, php-format
+msgctxt "Human-readable time"
+msgid "%s ago"
+msgstr "منذ %s"
+
+#: inc/theme_utilities.php:250
+#, php-format
+msgctxt "Human-readable time"
+msgid "%s"
+msgstr "%s"
+
+#: inc/theme_utilities.php:297 inc/theme_utilities.php:300
+msgid "Previous"
+msgstr "السابق"
+
+#: inc/theme_utilities.php:353 inc/theme_utilities.php:355
+msgid "Next"
+msgstr "التالي >>"
+
+#: inc/theme_utilities.php:380
+msgid "Pingback:"
+msgstr "تنبيه :"
+
+#: inc/theme_utilities.php:380
+msgid "(Edit)"
+msgstr "(تعديل)"
+
+#: inc/theme_utilities.php:414
+msgid "on "
+msgstr "على"
+
+#: inc/theme_utilities.php:450
+msgid "Direct access not allowed"
+msgstr "الوصول المباشر غير مسموح به"
+
+#: inc/theme_utilities.php:700
+msgid "Posted on "
+msgstr "تاريخ النشر "
+
+#: inc/theme_utilities.php:970
+msgid "Restaurant Open 24/7"
+msgstr "مطعم مفتوح 24/7"
+
+#: inc/theme_utilities.php:976
+msgid "Monday"
+msgstr "الإثنين"
+
+#: inc/theme_utilities.php:976
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#: inc/theme_utilities.php:976
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+#: inc/theme_utilities.php:976
+msgid "Thursday"
+msgstr "الخميس"
+
+#: inc/theme_utilities.php:976
+msgid "Friday"
+msgstr "الجمعة"
+
+#: inc/theme_utilities.php:976
+msgid "Saturday"
+msgstr "السبت"
+
+#: inc/theme_utilities.php:976
+msgid "Sunday"
+msgstr "الأحد"
+
+#: inc/theme_utilities.php:986
+msgid "Today "
+msgstr "اليوم "
+
+#: inc/theme_utilities.php:1007
+msgid "Restaurant Closed Today "
+msgstr "مطعم مغلق اليوم "
+
+#: inc/theme_utilities.php:1030 inc/theme_utilities.php:1215
+#: wcfm/store/wcfmmp-view-store.php:283
+msgid "Order Now"
+msgstr "اطلب الان"
+
+#: inc/theme_utilities.php:1123 inc/theme_utilities.php:1186
+msgid "Placeholder"
+msgstr "العنصر النائب"
+
+#: inc/theme_utilities.php:1393 inc/theme_utilities.php:1404
+#: inc/theme_utilities.php:1451 inc/theme_utilities.php:1462
+msgid "Choose an option"
+msgstr "اختر أحد الخيارات"
+
+#: page-vendors.php:181
+msgid "No Record Found"
+msgstr "لا يوجد سجلات "
+
+#: page-vendors.php:241
+msgid "  + Restaurants"
+msgstr "  + مطاعم"
+
+#: single.php:18
+msgid "SHARE"
+msgstr "مشاركة"
+
+#: template-parts/blog/blog-detial/content-area.php:29
+msgid "Post date"
+msgstr "تاريخ النشر"
+
+#: template-parts/blog/content-none.php:12
+msgid "Nothing Found"
+msgstr "لم يتم العثور على شيء"
+
+#: template-parts/blog/content-none.php:13
+msgid ""
+"Nothing matched your search term. Please try again with some different "
+"keywords."
+msgstr ""
+"لا شيء مطابق لعبارة البحث. الرجاء المحاولة مرة أخرى باستخدام بعض الكلمات "
+"الرئيسية المختلفة."
+
+#: template-parts/blog/content-none.php:18
+msgid "Your search term"
+msgstr "مصطلح البحث"
+
+#: template-parts/blog/content-none.php:20
+msgid "Search"
+msgstr "بحث"
+
+#: template-parts/blog/content-none.php:23
+msgid "Back to home"
+msgstr "العودة للرئيسية"
+
+#: template-parts/blog/get-blog-posts.php:45
+msgid "Read More..."
+msgstr "اقرأ المزيد..."
+
+#: template-parts/footer/footer-1.php:2 template-parts/footer/footer-2.php:4
+#: template-parts/footer/footer-3.php:4
+msgid "Scriptsbundle"
+msgstr "خالد اللي"
+
+#: template-parts/footer/footer-1.php:7 template-parts/footer/footer-2.php:10
+#: template-parts/footer/footer-3.php:19
+msgid "Subscribe"
+msgstr "الاشتراك"
+
+#: template-parts/footer/footer-3.php:45
+msgid "Phone:"
+msgstr "الهاتف:"
+
+#: template-parts/footer/footer-3.php:48 woocommerce/checkout/thankyou.php:69
+msgid "Email:"
+msgstr "البريد الإلكتروني:"
+
+#: template-parts/header/header-1.php:58
+msgid "Select From Location"
+msgstr "اختر الموقع الجغرافى"
+
+#: template-parts/header/header-1.php:59
+msgid "Select an Location"
+msgstr "الموقع"
+
+#: tgm/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr "تثبيت الإضافات المطلوبة"
+
+#: tgm/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "تثبيت الإضافات"
+
+#. translators: %s: plugin name.
+#: tgm/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "تثبيت الإضافة : %s"
+
+#. translators: %s: plugin name.
+#: tgm/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "تحديث الاضافة  %s"
+
+#: tgm/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr "حدث خطأ مع API المساعد."
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "هذا القالب يوصى بتركيب الإضافة التالية: %1$s."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "هذا القالب يوصي بتركيب الإضافة التالية: %1$s."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+"يحتاج البرنامج المساعد التالي إلى تحديث إلى أحدث إصدار لضمان أقصى قدر من "
+"التوافق مع هذا الموضوع: %1$s."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "هناك تحديث متوفر لل: %1$s."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "الإضافة المطلوبة التالية غير نشطة حاليا:%1$s."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "البرنامج المساعد الموصى بها التالية غير نشط حاليا:%1$s."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: tgm/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "بدأ تنصيب الاضافة"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: tgm/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "البدء بتحديث الإضافة"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: tgm/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "البدء بتفعيل الإضافة"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: tgm/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr "البدء بتفعيل الإضافة"
+
+#: tgm/class-tgm-plugin-activation.php:393
+#: tgm/class-tgm-plugin-activation.php:912
+#: tgm/class-tgm-plugin-activation.php:2618
+#: tgm/class-tgm-plugin-activation.php:3648
+msgid "Return to the Dashboard"
+msgstr "العودة إلى لوحة التحكم الرئيسية"
+
+#: tgm/class-tgm-plugin-activation.php:394
+#: tgm/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr "تم تفعيل الإضافة بنجاح."
+
+#: tgm/class-tgm-plugin-activation.php:395
+#: tgm/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "الإضافة التالية تم تنشيطها بنجاح:"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "لم يتم اتخاذ أي إجراء. الاضافات نشطه %1$s بالفعل نشط."
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"لم يتم تفعيل الإضافة. إصدار أعلى من %s مطلوب لهذا القالب. يرجى تحديث الإضافة."
+
+#. translators: 1: dashboard link.
+#: tgm/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "جميع الاضافات تم تفعيلها بنجاح . %1$s"
+
+#: tgm/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr "تجاهل هذا الاشعار"
+
+#: tgm/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"هناك واحدة او اكثر من الاضافات المطلوبة او الموصى بها لتثبيتها, تحديثها او "
+"تفعيلها."
+
+#: tgm/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr "الرجاء الاتصال بمسؤول هذا الموقع للحصول على المساعدة."
+
+#: tgm/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "يحتاج هذا البرنامج المساعد لتحديث لتكون متوافقة مع الموضوع الخاص بك."
+
+#: tgm/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr "التحديث مطلوب"
+
+#: tgm/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"تتكون مجموعة الاضافات النائية في أكثر من ملف و احد، ولكن لم يتم تعبئتها في "
+"لملفات المجلد ."
+
+#: tgm/class-tgm-plugin-activation.php:1019
+#: tgm/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"يرجى الاتصال بمبرمج السكربت | عبدالله محمد الحميضي | ‪+‬966505514171 |  ونطلب "
+"منهم الحزم المساعدة وفقا للمبادئ التوجيهية للووردبريس ."
+
+#: tgm/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"تتكون حزمة الإضافات على أكثر من ملف, لاكن لم يتم جمع الملفات في مجلد واحد."
+
+#: tgm/class-tgm-plugin-activation.php:1206
+#: tgm/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "و"
+
+#. translators: %s: version number
+#: tgm/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: tgm/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr "مطلوب"
+
+#: tgm/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr "موصى به"
+
+#: tgm/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr "مستودع ووردبريس"
+
+#: tgm/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr "مصدر خارجي"
+
+#: tgm/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr "المجموعة مجهزة مسبقا"
+
+#: tgm/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr "غير مثبت"
+
+#: tgm/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr "تم التثبيت ولكن لم يفعل"
+
+#: tgm/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr "نشط"
+
+#: tgm/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr "التحديث المطلوب غير متوفر"
+
+#: tgm/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr "يتطلب تحديث"
+
+#: tgm/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr "تحديث موصى به"
+
+#. translators: 1: install status, 2: update status
+#: tgm/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#. translators: 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "الكل <span class=\"count\">(%s)</span>"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. translators: 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "تنزيل حزمة التثبيت من <span class=“count”>(%s)</span>"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. translators: 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "تحديث متوفر <span class=“count”>(%s)</span>"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. translators: 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "تفعيل <span class=“count”>(%s)</span>"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: tgm/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "غير معروف"
+
+#: tgm/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr "الإصدار المثبت:"
+
+#: tgm/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr "الإصدار المثبت:"
+
+#: tgm/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr "الإصدار المتوفر:"
+
+#: tgm/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr "لا توجد إضافات للتثبيت أو التحديث أو التفعيل."
+
+#: tgm/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr "إضافة"
+
+#: tgm/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr "إضافة"
+
+#: tgm/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr "النوع"
+
+#: tgm/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr "الإصدار"
+
+#: tgm/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr "الحالة"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: tgm/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr "تثبيت %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: tgm/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr "تحديث %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: tgm/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr "تحديث %2$s"
+
+#: tgm/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr "رسالة تحديث من مبرمج  الإضافة:"
+
+#: tgm/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr "تثبيت"
+
+#: tgm/class-tgm-plugin-activation.php:2808
+#: woocommerce/cart/shipping-calculator.php:84
+msgid "Update"
+msgstr "تحديث"
+
+#: tgm/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr "تفعيل"
+
+#: tgm/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "لم يتم تحديد أي إضافات للتثبيت. بناءاً على ذلك لم يتم إتخاذ أي إجراء."
+
+#: tgm/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "لم يتم تحديد إضافات للتحديث ، لن يتم اتخاذ أى إجراء."
+
+#: tgm/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr "لا يوجد اي اضافات للتثبيت في الوقت الحالي."
+
+#: tgm/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr "لا اضافات متاحة ليتم تحديتها في هذاالوقت"
+
+#: tgm/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "لم يتم تحديد أي إضافات للتفعيل. لم يتم إتخاذ أي إجراء."
+
+#: tgm/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr "لا يوجد اي اضافات للتفعيل في الوقت الحالي"
+
+#: tgm/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr "فشل تفعيل الاضافة"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: tgm/class-tgm-plugin-activation.php:3566
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "تحديث الإضافة %1$s (%2$d/%3$d)"
+
+#. translators: 1: plugin name, 2: error message.
+#: tgm/class-tgm-plugin-activation.php:3569
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "حدث خطأ أثناء عملية التثبيت %1$s: <strong>%2$s</strong>."
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:3571
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "فشل تثبيت %1$s."
+
+#: tgm/class-tgm-plugin-activation.php:3575
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"عملية التثبيت والتفعيل بدأت. قد تستغرق هذه العملية بعض الوقت، لذا يرجى "
+"التحلي بالصبر."
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:3577
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s تم التثبيت و التفعيل بنجاح ."
+
+#: tgm/class-tgm-plugin-activation.php:3577
+#: tgm/class-tgm-plugin-activation.php:3585
+msgid "Show Details"
+msgstr "إظهار التفاصيل"
+
+#: tgm/class-tgm-plugin-activation.php:3577
+#: tgm/class-tgm-plugin-activation.php:3585
+msgid "Hide Details"
+msgstr "إخفاء التفاصيل"
+
+#: tgm/class-tgm-plugin-activation.php:3578
+msgid "All installations and activations have been completed."
+msgstr "جميع التنزيلات والتفعيل اكتملت"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: tgm/class-tgm-plugin-activation.php:3580
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "تثبيت وتفعيل الإضافة %1$s (%2$d/%3$d)"
+
+#: tgm/class-tgm-plugin-activation.php:3583
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"عملية التثبيت بدأت. قد تستغرق هذه العملية بعض الوقت، لذا يرجى الانتظار ."
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:3585
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s تم التثبيت بنجاح."
+
+#: tgm/class-tgm-plugin-activation.php:3586
+msgid "All installations have been completed."
+msgstr "تم اكتمال جميع عمليات تثبيت سكربت الرمز العبقري | Genius Icon ."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: tgm/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "تثبيت الإضافة %1$s (%2$d/%3$d)"
+
+#: tgm/tgm-init.php:40
+msgid "Gutenberg Template Library & Redux Framework"
+msgstr "مكتبة قوالب غوتنبرغ وإطار عمل Redux"
+
+#: tgm/tgm-init.php:52
+msgid "WCFM - WooCommerce Multivendor Membership"
+msgstr "‫WCFM عضويات البائعين المتعددين لووكومرس"
+
+#: tgm/tgm-init.php:63
+msgid "Woocommerce"
+msgstr "Woocommerce"
+
+#: tgm/tgm-init.php:74
+msgid "Foodota Framework"
+msgstr "إطار عمل فودوتا"
+
+#: tgm/tgm-init.php:85
+msgid "WCFM - WooCommerce Multivendor Marketplace"
+msgstr "WCFM - سوق WooCommerce متعدد البائعين"
+
+#: tgm/tgm-init.php:96
+msgid "WCFM - WooCommerce Frontend Manager"
+msgstr "‫WCFM ووكومرس ادارة الواجهة الامامية"
+
+#: tgm/tgm-init.php:107
+msgid "Elementor"
+msgstr "مصمم الصفحات"
+
+#: tgm/tgm-init.php:118
+msgid "Post Views Counter"
+msgstr "مشاهدات"
+
+#: tgm/tgm-init.php:129
+msgid "One Click Demo Import"
+msgstr "ضغطه واحدة لاستيراد المثال التجريبي"
+
+#: wcfm/membership/vendor_membership.php:23
+msgid "Subscribe Now"
+msgstr "الاشتراك الأن"
+
+#: wcfm/membership/vendor_membership.php:131
+msgid "Day(s)"
+msgstr "يوم/ايام"
+
+#: wcfm/membership/vendor_membership.php:131
+msgid "Month(s)"
+msgstr "شهر / شهور"
+
+#: wcfm/membership/vendor_membership.php:131
+msgid "Year(s)"
+msgstr "السنة/السنوات"
+
+#: wcfm/membership/vendor_membership.php:139
+#: wcfm/membership/vendor_membership.php:206
+msgid "Most Popular"
+msgstr "الأكثر شعبية"
+
+#: wcfm/membership/vendor_membership.php:151
+#: wcfm/membership/vendor_membership.php:218
+msgid "No payment required"
+msgstr "لا يلزم الدفع"
+
+#: wcfm/membership/vendor_membership.php:155
+#: wcfm/membership/vendor_membership.php:222
+msgid "One time payment"
+msgstr "دفعة لمرة واحدة"
+
+#: wcfm/membership/vendor_membership.php:158
+#: wcfm/membership/vendor_membership.php:225
+#, php-format
+msgid "for each %s %s"
+msgstr "لكل%s %s"
+
+#: wcfm/membership/vendor_membership.php:160
+#: wcfm/membership/vendor_membership.php:227
+#, php-format
+msgid "with %s for first %s %s"
+msgstr "مع%s لأول%s %s"
+
+#: wcfm/membership/vendor_membership.php:162
+#: wcfm/membership/vendor_membership.php:229
+#, php-format
+msgid "with %s %s free trial"
+msgstr "مع%s %s نسخة تجريبية مجانية"
+
+#: wcfm/membership/vendor_membership.php:269
+#: wcfm/membership/vendor_membership.php:289
+msgid "Extend Subscription"
+msgstr "تمديد الاشتراك"
+
+#: wcfm/membership/vendor_membership.php:272
+#: wcfm/membership/vendor_membership.php:292
+msgid "Your Plan"
+msgstr "خطتك"
+
+#: wcfm/membership/vendor_membership.php:279
+#: wcfm/membership/vendor_membership.php:299
+msgid "Kindly logout from Admin account to have \"Subscribe Now\" button."
+msgstr "يرجى تسجيل الخروج من حساب المسؤول للحصول على زر \"اشترك الآن\"."
+
+#: wcfm/membership/vendor_membership_block.php:18
+#, php-format
+msgid ""
+"Restricted: You are not allowed to access this page. May be you already have "
+"a %sMembership Plan%s or your %sUser Role%s does not allow for this action. "
+"%sPlease contact %sStore Admin%s for more details."
+msgstr ""
+"مقيد: لا يُسمح لك بالوصول إلى هذه الصفحة. قد يكون لديك بالفعل %sMembership "
+"Plan%s أو %sUser Role%s الخاص بك لا يسمح بهذا الإجراء. %sيرجى الاتصال بـ "
+"%sStore Admin%s لمزيد من التفاصيل."
+
+#: wcfm/membership/vendor_registration.php:69
+#: wcfm/membership/vendor_registration.php:75
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: wcfm/membership/vendor_registration.php:70
+#: wcfm/membership/vendor_registration.php:76
+#: woocommerce/single-product-reviews.php:84
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: wcfm/membership/vendor_registration.php:98
+msgid "Email already verified"
+msgstr "البريد الإلكروني تم التحقق منه سابقا"
+
+#: wcfm/membership/vendor_registration.php:107
+msgid "Email Verification Code: "
+msgstr "رمز التحقق من البريد الإلكتروني: "
+
+#: wcfm/membership/vendor_registration.php:107
+#: wcfm/membership/vendor_registration.php:148
+#: wcfm/membership/vendor_registration.php:391
+msgid "This field is required."
+msgstr "هذا الحقل مطلوب."
+
+#: wcfm/membership/vendor_registration.php:107
+msgid "Verification Code"
+msgstr "رمز التحقق"
+
+#: wcfm/membership/vendor_registration.php:108
+#: wcfm/membership/vendor_registration.php:149
+msgid "Re-send Code"
+msgstr "إعادة إرسال التعليمات البرمجية"
+
+#: wcfm/membership/vendor_registration.php:132
+#: wcfm/membership/vendor_registration.php:262
+msgid "Store Phone"
+msgstr "رقم هاتف المتجر"
+
+#: wcfm/membership/vendor_registration.php:139
+msgid "Phone already verified"
+msgstr "تم تأكيد رقم الهاتف بالفعل"
+
+#: wcfm/membership/vendor_registration.php:148
+msgid "Phone Verification Code: "
+msgstr "رمز التحقق من الهاتف:"
+
+#: wcfm/membership/vendor_registration.php:148
+msgid "OTP"
+msgstr "رمز التحقق"
+
+#: wcfm/membership/vendor_registration.php:163
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#: wcfm/membership/vendor_registration.php:164
+msgid "Last Name"
+msgstr "الاسم الاخير"
+
+#: wcfm/membership/vendor_registration.php:165
+msgid "Store Name"
+msgstr "اسم المتجر"
+
+#: wcfm/membership/vendor_registration.php:184
+msgid "your_store"
+msgstr "انقر هنا إضافة إلى متجرك"
+
+#: wcfm/membership/vendor_registration.php:186
+msgid "Available"
+msgstr "متاح"
+
+#: wcfm/membership/vendor_registration.php:186
+msgid "Un-available"
+msgstr "غير متوفر"
+
+#: wcfm/membership/vendor_registration.php:246
+msgid "Address 1"
+msgstr "العنوان 1"
+
+#: wcfm/membership/vendor_registration.php:247
+msgid "Address 2"
+msgstr "العنوان 2"
+
+#: wcfm/membership/vendor_registration.php:248
+msgid "Country"
+msgstr "الدولة"
+
+#: wcfm/membership/vendor_registration.php:249
+msgid "City/Town"
+msgstr "المدينة / البلدة"
+
+#: wcfm/membership/vendor_registration.php:250
+msgid "State/County"
+msgstr "الدولة / المحافظة"
+
+#: wcfm/membership/vendor_registration.php:251
+msgid "Postcode/Zip"
+msgstr "الرمز البريدي"
+
+#: wcfm/membership/vendor_registration.php:359
+msgid "-Select-"
+msgstr "-تحديد-"
+
+#: wcfm/membership/vendor_registration.php:380
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: wcfm/membership/vendor_registration.php:380
+msgid "Password and Confirm-password are not same."
+msgstr "كلمة المرور وكلمة المرور تأكيد ليست هي نفسها."
+
+#: wcfm/membership/vendor_registration.php:382
+msgid "Confirm Password"
+msgstr "كلمه السر تاكيد كلمه السر غير متطابقة"
+
+#: wcfm/membership/vendor_registration.php:391
+#: wcfm/membership/vendor_registration.php:396
+msgid "Agree"
+msgstr "اوافق"
+
+#: wcfm/membership/vendor_registration.php:391
+#: wcfm/membership/vendor_registration.php:399
+#: wcfm/membership/vendor_registration.php:401
+msgid "Terms & Conditions"
+msgstr "الشروط والاحكام"
+
+#: wcfm/membership/vendor_registration.php:442
+msgid "Confirm"
+msgstr "تأكيد"
+
+#: wcfm/membership/vendor_registration.php:442
+msgid "Register"
+msgstr "تسجيل"
+
+#: wcfm/membership/vendor_registration.php:444
+msgid "Plans"
+msgstr "خطط"
+
+#: wcfm/membership/vendor_registration.php:447
+msgid "Your user role not allowed to subscription!"
+msgstr "رتبة اسم المستخدم الخاص بك ليس مسموح لها بالاشتراك"
+
+#: wcfm/store/wcfmmp-view-store-reviews.php:47
+msgid "reviews"
+msgstr "التقييمات"
+
+#: wcfm/store/wcfmmp-view-store.php:58
+msgid "N/A"
+msgstr "غير مطابق"
+
+#: wcfm/store/wcfmmp-view-store.php:130
+#, fuzzy
+msgid "Restaurant Time Not Set Yet"
+msgstr "لم يتم تعيين وقت المطعم بعد"
+
+#: wcfm/store/wcfmmp-view-store.php:132
+msgid "Working Hours"
+msgstr "ساعات"
+
+#: wcfm/store/wcfmmp-view-store.php:151
+msgid "All Details"
+msgstr "كل التفاصيل"
+
+#: wcfm/store/wcfmmp-view-store.php:166
+msgid "Menu"
+msgstr "القائمة"
+
+#: wcfm/store/wcfmmp-view-store.php:171
+#: woocommerce/single-product-reviews.php:32
+msgid "Reviews"
+msgstr "التقييمات"
+
+#: wcfm/store/wcfmmp-view-store.php:179 wcfm/store/wcfmmp-view-store.php:312
+#, fuzzy
+msgid "Restaurant Info"
+msgstr "معلومات المطعم"
+
+#: wcfm/store/wcfmmp-view-store.php:200
+msgid "Categories"
+msgstr "التصنيفات"
+
+#: wcfm/store/wcfmmp-view-store.php:266
+#, fuzzy
+msgid "  ...Read more"
+msgstr "اقرأ المزيد..."
+
+#: wcfm/store/wcfmmp-view-store.php:267
+#, fuzzy
+msgid "  ...Read less"
+msgstr "  ... قراءة أقل"
+
+#: wcfm/store/wcfmmp-view-store.php:282
+msgid "Add Product to your cart"
+msgstr "إضافة منتج إلى سلة التسوق"
+
+#: wcfm/store/wcfmmp-view-store.php:330
+msgid "Current Location"
+msgstr "الموقع الحالي"
+
+#: woocommerce/cart/cart-shipping.php:51
+#, php-format
+msgid "Shipping to %s."
+msgstr "يشحن إلى %s."
+
+#: woocommerce/cart/cart-shipping.php:52
+msgid "Change address"
+msgstr "تغيير العنوان"
+
+#: woocommerce/cart/cart-shipping.php:54
+msgid "Shipping options will be updated during checkout."
+msgstr "سيتم تحديث خيارات الشحن أثناء إتمام الطلب."
+
+#: woocommerce/cart/cart-shipping.php:62
+msgid "Shipping costs are calculated during checkout."
+msgstr "يتم حساب تكاليف الشحن أثناء إنهاء الطلب."
+
+#: woocommerce/cart/cart-shipping.php:64
+msgid "Enter your address to view shipping options."
+msgstr "ادخل عنوانك لعرض خيارات الشحن."
+
+#: woocommerce/cart/cart-shipping.php:67
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+"لا توجد خيارات شحن متاحة. يرجى التأكد أن عنوانك قد تم إدخاله بشكل صحيح، أو "
+"التواصل معنا للمساعدة."
+
+#: woocommerce/cart/cart-shipping.php:70
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr "لم يتم العثور علي خيارات الشحن ل %s."
+
+#: woocommerce/cart/cart-shipping.php:71
+msgid "Enter a different address"
+msgstr "ادخل عنوانا مختلفا"
+
+#: woocommerce/cart/cart-totals.php:27
+msgid "Cart totals"
+msgstr "اجمالي سلة التسوق"
+
+#: woocommerce/cart/cart-totals.php:30 woocommerce/cart/cart-totals.php:31
+#: woocommerce/checkout/review-order.php:24
+#: woocommerce/checkout/review-order.php:55
+msgid "Subtotal"
+msgstr "المجموع الفرعي"
+
+#. translators: %s location.
+#: woocommerce/cart/cart-totals.php:56
+#, php-format
+msgid "(estimated for %s)"
+msgstr "(متوقع لـ %s)"
+
+#: woocommerce/cart/cart-totals.php:90 woocommerce/cart/cart-totals.php:91
+msgid "Shipping"
+msgstr "الشحن"
+
+#: woocommerce/cart/cart-totals.php:98
+#: woocommerce/checkout/review-order.php:102
+#: woocommerce/order/order-details.php:44
+msgid "Total"
+msgstr "المجموع"
+
+#: woocommerce/cart/cart.php:56 woocommerce/cart/cart.php:213
+msgid "Price"
+msgstr "السعر"
+
+#: woocommerce/cart/cart.php:67 woocommerce/cart/cart.php:268
+msgid "Remove this item"
+msgstr "إزالة هذا العنصر"
+
+#: woocommerce/cart/cart.php:70 woocommerce/cart/cart.php:271
+msgid "Remove"
+msgstr "حذف"
+
+#: woocommerce/cart/cart.php:78 woocommerce/cart/cart.php:227
+#: woocommerce/global/quantity-input.php:28
+msgid "Quantity"
+msgstr "الكمية"
+
+#: woocommerce/cart/cart.php:102 woocommerce/cart/cart.php:221
+msgid "Available on backorder"
+msgstr "متوفر على لائحة الرد"
+
+#: woocommerce/cart/cart.php:119 woocommerce/cart/cart.php:287
+#: woocommerce/checkout/form-coupon.php:31
+msgid "Coupon code"
+msgstr "كود الكوبون"
+
+#: woocommerce/cart/cart.php:121 woocommerce/cart/cart.php:289
+#: woocommerce/checkout/form-coupon.php:37
+msgid "Apply coupon"
+msgstr "استخدام الكوبون"
+
+#: woocommerce/cart/cart.php:128 woocommerce/cart/cart.php:129
+#: woocommerce/cart/cart.php:296 woocommerce/cart/cart.php:297
+msgid "Update cart"
+msgstr "تحديث سلة المشتريات"
+
+#: woocommerce/cart/cart.php:231 woocommerce/cart/cart.php:240
+msgctxt "front-end"
+msgid "Quantity"
+msgstr "الكمية"
+
+#: woocommerce/cart/proceed-to-checkout-button.php:25
+msgid "Proceed to checkout"
+msgstr "إتمام عملية الدفع"
+
+#: woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate shipping"
+msgstr "حساب الشحن"
+
+#: woocommerce/cart/shipping-calculator.php:31
+msgid "Select a country&hellip;"
+msgstr "اختر الدولة&hellip;"
+
+#: woocommerce/cart/shipping-calculator.php:50
+#: woocommerce/cart/shipping-calculator.php:54
+#: woocommerce/cart/shipping-calculator.php:65
+msgid "State / County"
+msgstr "ولاية / مقاطعة"
+
+#: woocommerce/cart/shipping-calculator.php:55
+msgid "Select an option&hellip;"
+msgstr "حدد اختيار&hellip;"
+
+#: woocommerce/cart/shipping-calculator.php:74
+msgid "City"
+msgstr "المدينة"
+
+#: woocommerce/cart/shipping-calculator.php:80
+msgid "Postcode / ZIP"
+msgstr "الرمز البريدي"
+
+#: woocommerce/checkout/form-checkout.php:22
+msgid "You must be logged in to checkout."
+msgstr "يجب تسجيل الدخول لتتمكن من الدفع."
+
+#: woocommerce/checkout/form-checkout.php:44
+msgid "Your order"
+msgstr "طلبك"
+
+#: woocommerce/checkout/form-coupon.php:26
+msgid "If you have a coupon code, please apply it below."
+msgstr "إذا كان لديك رمز خصم، من فضلك أدخله هنا."
+
+#: woocommerce/checkout/review-order.php:23
+#: woocommerce/order/order-details.php:43
+msgid "Product"
+msgstr "المنتج"
+
+#: woocommerce/checkout/thankyou.php:29
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+"للأسف، لا يمكن معالجة طلبك نظرا لأن المصرف / التاجر الأصلي قد رفض معاملتك. "
+"الرجاء محاولة الشراء مرة أخرى."
+
+#: woocommerce/checkout/thankyou.php:32
+msgid "Pay"
+msgstr "دفع"
+
+#: woocommerce/checkout/thankyou.php:35
+msgid "My account"
+msgstr "حسابي"
+
+#: woocommerce/checkout/thankyou.php:47
+msgid "Order number:"
+msgstr "رقم الطلب:"
+
+#: woocommerce/checkout/thankyou.php:58
+msgid "Date:"
+msgstr "التاريخ:"
+
+#: woocommerce/checkout/thankyou.php:80
+msgid "Payment method:"
+msgstr "طريقة الدفع:"
+
+#: woocommerce/content-product.php:84
+msgid "Sale"
+msgstr "تخفيض"
+
+#. translators: %s: Quantity.
+#: woocommerce/global/quantity-input.php:28
+#, php-format
+msgid "%s quantity"
+msgstr "%s الكمية"
+
+#: woocommerce/global/quantity-input.php:42
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr "الكمية"
+
+#: woocommerce/order/order-details.php:39
+msgid "Order details"
+msgstr "تفاصيل الطلب"
+
+#: woocommerce/order/order-details.php:80
+msgid "Note:"
+msgstr "ملاحظة:"
+
+#: woocommerce/single-product-reviews.php:29
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] "%1$s تقييم لـ %2$s"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: woocommerce/single-product-reviews.php:57
+msgid "There are no reviews yet."
+msgstr "التقييمات."
+
+#: woocommerce/single-product-reviews.php:66
+msgid "Add a review"
+msgstr "اضف مراجعة"
+
+#: woocommerce/single-product-reviews.php:66
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "كن أول من يقوم بتقييم &ldquo; %s &rdquo;"
+
+#: woocommerce/single-product-reviews.php:67
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "اترك تعليق لـ %s"
+
+#: woocommerce/single-product-reviews.php:71
+msgid "Submit"
+msgstr "إرسال"
+
+#: woocommerce/single-product-reviews.php:78
+msgid "Name"
+msgstr "الاسم"
+
+#: woocommerce/single-product-reviews.php:106
+msgid "Rate&hellip;"
+msgstr "تقييم&hellip;"
+
+#: woocommerce/single-product-reviews.php:107
+msgid "Perfect"
+msgstr "ممتاز"
+
+#: woocommerce/single-product-reviews.php:108
+msgid "Good"
+msgstr "جيد"
+
+#: woocommerce/single-product-reviews.php:109
+msgid "Average"
+msgstr "متوسط"
+
+#: woocommerce/single-product-reviews.php:110
+msgid "Not that bad"
+msgstr "ليس سئ"
+
+#: woocommerce/single-product-reviews.php:111
+msgid "Very poor"
+msgstr "سيء جداً"
+
+#: woocommerce/single-product-reviews.php:120
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr "يسمح فقط للزبائن الذين إشتروا هذا المنتج وسجلوا دخولهم بكتابة رأيهم."
+
+#: woocommerce/single-product/add-to-cart/variable.php:35
+msgid "This product is currently out of stock and unavailable."
+msgstr "هذا المنتج هو حاليا من المخزون وغير متوفرة."
+
+#. Theme Name of the plugin/theme
+#, fuzzy
+msgid "Foodota"
+msgstr "فودوتا"
+
+#. Theme URI of the plugin/theme
+msgid "https://marketplace.foodotawp.com/"
+msgstr "https://marketplace.foodotawp.com/"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Foodota is a premium & responsive WordPress theme designed for Food Related "
+"Restaurants. Foodota theme provides a complete food order your door step "
+"system where users can complete online order the food."
+msgstr ""
+"Foodota هو موضوع وورد قسط واستجابة مصممة للمطاعم ذات الصلة الغذاء. Foodota "
+"موضوع يوفر النظام الغذائي الكامل الخاص بك نظام خطوة الباب حيث يمكن "
+"للمستخدمين إكمال النظام على الانترنت الطعام."
+
+#. Author of the plugin/theme
+msgid "Scripts Bundle"
+msgstr "حزمه مخطوطات"
+
+#. Author URI of the plugin/theme
+msgid "http://scriptsbundle.com/"
+msgstr "https://www.i3lan.shop"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Home template"
+msgstr "الصفحة الرئيسية */"
+
+#. Template Name of the plugin/theme
+msgid "All Vendors"
+msgstr "جميع البائعين"

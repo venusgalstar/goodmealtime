@@ -1,0 +1,2557 @@
+/*foodota menu devices responsive css start*/
+@media (min-width: 320px) and (max-width: 1199px) {
+	.related.products .food-shop-1 {
+    margin-bottom: 30px;
+}
+    .sb-header .logo {
+        text-align: left;
+        width: 250px;
+        padding:0px;
+        padding-bottom: 10px;
+    }
+
+    .sb-header .logo img {
+        max-width: 100%;
+    }
+
+    .res-header-3.res-header-3.sb-header.header-dark .line-menu {
+        background-color: #000 !important;
+    }
+
+    .res-header-2 .burger-menu {
+        top: 55px;
+    }
+
+    .res-header-2 .sb-menu ul li a {
+        display: block;
+        color: #656565;
+        padding: 14px 15px !important;
+        text-decoration: none;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    .res-header-3.food-header-transparent .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #231900;
+    }
+    .res-header-3.food-header-transparent .sb-menu.separate-line > ul > li > a{
+        color: #231900 !important;
+    }
+    .single-product.food-header-transparent .sb-menu .for-order .sub-txt p {
+        color: #231900;
+    }
+    .single-product.food-header-transparent .sb-menu .for-order .sub-txt h5 {
+        color: #231900;
+    }
+    .single-product.food-header-transparent .sb-menu .for-order .sub-txt h5 {
+        color: #231900;
+    }
+    .single-product .sb-menu .favourite {
+        border: none;
+    }
+    .single-product .sb-menu .favourite a {
+        padding: 0px !important;
+    }
+    .single-product.food-header-transparent .sb-menu .favourite span,.single-product.food-header-transparent .sb-menu .for-shopping span {
+        background-color: #f4f4f4;
+        color: #231900;
+    }
+    .single-product.food-header-transparent .sb-menu .for-shopping h5 .woocommerce-Price-amount {
+        color: #231900;
+    }
+    .single-product .sb-menu .for-shopping .icon-meta a {
+        padding: 0 !important;
+    }
+    .single-product.food-header-transparent .sb-menu .for-shopping .txt-meta p {
+        color: #231900;
+    }
+
+    .res-header-2 .right-space {
+        padding: 14px 15px;
+        padding-top: 14px;
+		display: none;
+    }
+
+    .res-header-2 .sb-menu ul li.current-menu > a, .res-header-2 .sb-menu ul li:hover > a {
+        color: #FFCC00;
+    }
+
+    .header-dark.food-header-transparent .sb-menu ul li.current-menu > a, .header-dark.food-header-transparent .sb-menu ul li:hover > a {
+        color: #FFCC00 !important;
+    }
+
+    .res-header-2 ul li.current-menu > a, .res-header-2 .sb-menu ul li:hover > a {
+        color: #fff;
+        background-color: #f6f6f6;
+    }
+
+    .res-header-2 .dropdown-plus::before, .dropdown-plus::after {
+        background-color: #231900 !important;
+    }
+
+    .res-header-2 .dropdown-plus::before, .dropdown-plus::after {
+        background-color: #231900 !important;
+    }
+
+    .res-header-2 .sb-menu ul ul li:hover > a {
+        background-color: #efefef;
+    }
+
+    .res-header-2 .sb-menu ul ul li > a {
+        font-size: 14px;
+        text-transform: inherit;
+        background-color: #efefef;
+    }
+
+    .header-dark .sb-menu ul ul li > a {
+        color: #656565;
+    }
+
+    /*header style css start*/
+    .food-header-transparent{
+        background-color: #fff !important;
+        position: relative !important;
+    }
+
+    .res-header-3.food-header-transparent .sb-menu.separate-line > ul > li > a {
+        color: #071c1f;
+    }
+
+    /*single-product css start here*/
+    .single-product.sb-header .logo {
+        text-align: left;
+    }
+    .single-product .burger-menu{
+        top: 46px;
+        right: 15px;
+    }
+    .single-product .sb-menu ul{
+        list-style-type: none;
+    }
+    .single-product .sb-menu ul li:first-child a {
+        padding-left: 20px;
+    }
+    .single-product .sb-menu ul li a ul{
+        padding-left: 0px;
+    }
+    .single-product .sb-menu li > ul{
+        padding-left: 0px;
+    }
+    .single-product .sb-menu ul ul li > a{
+        padding: 14px 15px 14px 15px;
+    }
+    .single-product .sb-menu ul li:nth-child(5) {
+        padding-left: unset;
+    }
+    .single-product .sb-menu .favourite{
+        margin-left: 0;
+        padding: 14px 15px 14px 15px;
+    }
+    .single-product .sb-menu .for-order{
+        padding: 14px 15px 14px 15px;
+    }
+    .single-product .sb-menu .for-order .sub-txt p,
+    .single-product .sb-menu .for-order .sub-txt h5{
+        color: #000;
+    }
+    .single-product .sb-menu .for-shopping{
+        margin-left: 0px;
+        padding: 14px 15px 14px 15px;
+    }
+    .single-product .sb-menu .shopping-btn{
+        padding: 14px 15px 14px 15px;
+    }
+    .single-product .sb-menu .shopping-btn a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .single-product .sb-menu .favourite span,
+    .single-product .sb-menu .for-shopping span{
+        background-color: #000;
+        color: #ffff;
+        top: 10px;
+        left: 36px;
+        padding: 3px;
+    }
+    /*single-product css close here*/
+
+}
+
+/*foodota xs devices responsive css start*/
+@media (min-width: 320px) and (max-width: 575px) {
+
+    .sb-header .logo {
+        width: 215px;
+    }
+    .real-comms ul.children {
+        padding-left: 0 !important;
+    }
+    /*foodota Main home css*/
+    .cf-order-details .cart-count .cart-collaterals .cart_totals .shop_table_responsive .cart-subtotal woocommerce-Price-amount{
+        float: right;
+    }
+    .cf-order-details .cart-count .cart-collaterals .cart_totals .shop_table_responsive .cart-subtotal::before{
+        float: left;
+    }
+    .cf-canvas-content {
+        padding: 20px;
+    }
+    .cf-order-details .product-quantity{
+        position: absolute;
+        right: 0;
+        left:auto;
+        top:20px;
+    }
+    #restaurant-container .res-2-img {
+        min-height: 192px;
+    }
+
+    .heading-minimal .head-title {
+        font-size: 28px;
+    }
+    .res-hero-3.new-search .bottom-img{
+        display: none;
+    }
+    .res-3-box .food_cats .cat_names a {
+        padding: 0.7em .5em;
+        font-size: 14px;
+    }
+    .res-2-map-product span {
+        font-size: 14px;
+    }
+    .about-us2 h2 {
+        font-size: 28px;
+    }
+    .services-grid {
+        text-align: center;
+    }
+    .s-call-action .s-call-action-content h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .s-call-action {
+        padding: 50px 0;
+    }
+    .hiw-count {
+        display: none;
+    }
+    .hiw-main-box .hiw-single-box {
+        padding: 15px 20px;
+    }
+    .experience-section .scotor-img {
+        margin-top: 30px;
+    }
+    .res-hero-srch {
+        width: 100%;
+    }
+    .res-video {
+        display: none;
+    }
+    .res-blog2-main-content .res-blog2-text-area ul li {
+        border-right: 0px;
+    }
+    .blog-sidebar {
+        margin-top: 50px;
+    }
+    .sec-bg {
+        padding-top: 80px;
+    }
+
+    .experience-section .buttton-exp li.bg-black a {
+        margin-left: 0px;
+    }
+    .footer-area .footer-content {
+        padding: 50px 0 30px;
+    }
+    .social-links-two {
+        margin-bottom: 30px;
+    }
+    .res-2-featured .res-3-box .res-2-img {
+        min-height: 200px;
+    }
+    .res-header-2 .right-space {
+        width: 100%;
+		display: none;
+    }
+    .res-hero-3.new-search .res-hero-content {
+        padding-top: 30px;
+    }
+
+    .res-hero-3.new-search .res-hero-main .res-hero-tite h1 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .res-hero-3 .res-hero-main .res-hero-tite p {
+        width: 100%;
+    }
+    .res-hero-3 .res-hero-srch {
+        width: 100%;
+    }
+    .res-hero-3.new-search {
+        height: 500px;
+    }
+    .res-hero-3-srch ul li.recipes .foodota-search-spinner {
+        right: 30%;
+    }
+    .cols-padding {
+        padding: 50px 0px 30px 0px;
+    }
+    .counter-3 .res-exp-detail {
+        padding-top: 90px;
+    }
+    .counter-3 .res-exp-assets ul li {
+        width: 100%;
+    }
+
+    .how-it-work2 .testi-img1 {
+        display: none;
+    }
+    .how-it-work2 .testi-img2 {
+        display: none;
+    }
+    .experience-section .buttton-exp li {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .experience-section .buttton-exp li a{
+        width: 100%;
+        text-align: center;
+    }
+    .counter-3.section-padding {
+        padding: 30px 0;
+    }
+    .how-it-work2 .carousel-item blockquote {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .experience2{
+        padding-top: 30px;
+    }
+    .experience-section .scotor-img img {
+        margin-top: 0px;
+    }
+    .res-f-main.section-padding{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .res-f-content2.section-padding{
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+    .res-f-content2 .form-group .btn-theme {
+        padding: 13px 10px;
+    }
+    .res-f-container .res-f-container-inner {
+        padding: 0px 15px;
+    }
+
+    .testimonial-3 .slide{
+        text-align: center;
+    }
+    .testimonial-3 .testi-author {
+        text-align: center;
+        display: block;
+    }
+    /*foodota Home 1 css*/
+    .res-hero-3 {
+        padding: 30px 0px;
+    }
+
+    .res-hero-3-content span {
+        font-size: 18px;
+    }
+
+    .res-hero-3-content h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .res-hero-3-content p {
+        width: 100%;
+    }
+
+    .inner-form {
+        display: block;
+    }
+
+    .inner-form .left {
+        display: block;
+    }
+
+    .inner-form .btn-search {
+        margin-left: 0px;
+        width: 100% !important;
+        height: 60px;
+        margin-top: 15px;
+    }
+
+    .inner-form .input-wrap.second {
+        border-left: 0px;
+    }
+
+    .heading-panel h2 {
+        font-size: 32px;
+    }
+
+    .inner-form .input-wrap {
+        padding: 10px 10px;
+    }
+
+    .inner-form .input-wrap.first {
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .heading-panel {
+        margin-bottom: 20px;
+    }
+
+    .left-align.heading-panel {
+        padding-top: 0px;
+    }
+
+    .how-it-work .how-it-works.step-1::after {
+        background: none;
+    }
+
+    .how-it-work .how-it-works.step-2::after {
+        background: none;
+    }
+
+    .how-it-works.step-2 {
+        padding-top: 5%;
+    }
+
+    .elementor-696 .elementor-element.elementor-element-eacedd5 {
+        padding: 30px 0px 30px 0px !important;
+    }
+
+    .res-city-products {
+        height: auto;
+    }
+
+    .res-ct-content {
+        width: 100%;
+    }
+
+    .res-ct-count {
+        margin-top: 30px;
+    }
+
+    .res-ct-content h2 {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .res-ct-content p {
+        margin-bottom: 0px;
+    }
+
+    .res-ct-count ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .res-ct-count ul li .res-ct-img {
+        float: none;
+        margin-right: 0px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .res-ct-count ul li::before {
+        border-right: none;
+    }
+
+    .res-ct-count {
+        padding: 30px;
+    }
+
+    .res-ct-count ul li:last-child {
+        margin-right: auto;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .res-ct-main span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .elementor-696 .elementor-element.elementor-element-62555db {
+        padding: 30px 0px 0px 0px !important;
+    }
+
+    .res-2-client-details {
+        padding-right: 0px;
+    }
+
+    .res-2-client-details h3 {
+        font-size: 22px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .no-content {
+        padding: 30px 15px;
+    }
+
+    .res-swiper-profile {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .res-swiper-profile img {
+        margin: 0 auto;
+    }
+
+    .res-swiper-text p {
+        text-align: center;
+    }
+
+    .res-swiper-text h3 {
+        text-align: center;
+    }
+
+    .res-swiper-text span {
+        text-align: center;
+        display: block;
+    }
+
+    .res-2-client.section-padding-bottom {
+        padding-bottom: 0px;
+    }
+
+    .res-app-text h3 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .res-app-content {
+        padding-right: 0px;
+    }
+
+    .res-app-text p {
+        text-align: center;
+        display: block;
+    }
+
+    .res-app-details ul li {
+        float: none;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .res-app-logo ul li {
+        float: none;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .res-f-container {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .res-f-items:last-child {
+        margin-bottom: 0px;
+    }
+
+    .res-f-content2 p {
+        width: 100%;
+    }
+
+    .res-f-social {
+        padding-bottom: 30px;
+    }
+
+    .res-f-content2 {
+        padding-bottom: 0px;
+    }
+
+    .res-f-main:last-child {
+        padding-top: 0px;
+    }
+
+    .res-f-icon {
+        float: left;
+        margin: 16px 7px 16px 0px;
+    }
+
+    /*foodota Home 2 css*/
+    .res-hero {
+        height: 540px;
+    }
+
+    .res-hero-content {
+        margin-top: 30px;
+    }
+
+    .res-hero-main .res-hero-tite span {
+        font-size: 18px;
+    }
+
+    .res-hero-main .res-hero-tite h1 {
+        font-size: 38px;
+    }
+
+    .res-hero-main .res-hero-tite p {
+        width: 100%;
+    }
+
+    .res-hero-content .res-hero-srch ul li.location-search .random-search #loc-icon {
+        right: 23%;
+    }
+
+    .res-video i {
+        font-size: 24px;
+        height: 73px;
+        width: 73px;
+        line-height: 63px;
+    }
+
+
+    .res-hero-product .fr-hero-logo {
+        display: none;
+    }
+
+    .res-hero-product h3 {
+        display: none;
+    }
+
+    .res-cat.section-padding {
+        padding-top: 30px;
+    }
+
+    .cat.owl-theme .owl-nav {
+        display: none;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-e4faf54 {
+        display: none !important;
+    }
+
+    .no-border-style.left-align.heading-panel::before {
+        content: none;
+    }
+
+    .res-exp-assets {
+        box-shadow: none;
+    }
+
+    .res-featured-box .res-featured-img {
+        width: 100%;
+    }
+
+    .res-featured-box .res-featured-img img {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .res-featured-box .res-featured-details {
+        width: 108%;
+    }
+
+    .list-view .logo-res {
+        bottom: 5%;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-d7c55e6 {
+        display: none;
+    }
+
+    .res-exp-assets {
+        width: 100%;
+    }
+
+    .res-exp-assets ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .res-exp-assets ul li .res-logo-d-box {
+        float: none;
+        margin-right: 0px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .res-exp-assets {
+        position: relative;
+        bottom: auto;
+        background-image: none !important;
+    }
+
+    .res-exp-detail {
+        padding-top: 40px;
+    }
+
+    .res-exp-text h2 {
+        font-size: 28px;
+    }
+
+    .res-exp-content ul li {
+        float: none;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .res-exp-content .btn-theme {
+        display: block;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-dcfbe38 {
+        display: none;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-f9319f7 {
+        margin-top: 0px !important;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-e4faf54 {
+        display: none !important;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-d7c55e6 {
+        display: none !important;
+    }
+
+    /*foodota Home 3 css*/
+    .res-pro-serv {
+        display: none;
+    }
+
+    .fc-slider.owl-theme .owl-nav {
+        display: none;
+    }
+
+    .res-sign-content .res-sign-box {
+        float: none;
+        overflow: hidden;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .res-sign-icon {
+        float: none;
+    }
+
+    .res-sign-details h4 {
+        margin-top: 15px;
+    }
+
+    .res-sign-form h2 {
+        font-size: 22px;
+    }
+
+    /*foodota Price Plan css*/
+    .res-theme-banner {
+        display: none;
+    }
+
+    .res-blog-grid {
+        width: 90%;
+    }
+
+    .res-pric-lg p span {
+        font-size: 16px;
+    }
+
+    .res-pric-main {
+        padding: 30px 18px;
+    }
+
+    .res-hd {
+        margin-bottom: 30px;
+    }
+
+    .res-pric-product h3 {
+        font-size: 22px;
+    }
+
+    /*foodota blog css*/
+    .res-blog-banner {
+        display: none;
+    }
+
+    .res-blog-box img {
+        width: 100%;
+    }
+
+    /*foodota search page css*/
+    .res-container-inline {
+        display: block;
+    }
+
+    .res-sidebar-container {
+        width: 100%;
+        display: block;
+    }
+
+    .res-sidebar-box3 .text-data-style {
+        font-size: 12px;
+    }
+
+    .res-main-panel {
+        width: calc(100% - 10%);
+    }
+
+    .res-main-panel .heading-panel h3 {
+        font-size: 20px;
+    }
+
+    .res-main-panel .heading-panel {
+        margin-bottom: 20px;
+    }
+
+    .res-sidebar-container .heading-panel h3 {
+        font-size: 16px;
+    }
+
+    .res-sidebar-box2 ul li a {
+        padding: 6px 26px;
+        font-size: 13px;
+    }
+
+    .res-sidebar-container .res-sb-categories span {
+        font-size: 12px;
+    }
+
+    .res-sidebar-container .res-sb-product p {
+        font-size: 12px;
+    }
+
+    .res-sidebar-box3 ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    /*foodota search-detail page css*/
+    .res-banner-height {
+        min-height: 270px;
+    }
+
+    .res-top3-product .res-top3-logo {
+        display: none;
+    }
+
+    .res-top3-product .res-top3-content {
+        padding-top: 0px;
+    }
+
+    .res-top3-main .btn-secondary.dropdown-toggle::after {
+        margin-left: 8.55em;
+    }
+
+    .res-fl-center-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .sale-product.owl-carousel .owl-item .res-2-img {
+        overflow: initial;
+        min-height: 178px;
+    }
+
+    .sale-product.owl-carousel .owl-item .res-3-logo-img img {
+        height: initial;
+    }
+
+    .top-sale-product.owl-carousel .owl-item .res-2-img {
+        overflow: initial;
+        min-height: 178px;
+    }
+
+    .top-sale-product.owl-carousel .owl-item .res-3-logo-img img {
+        height: initial;
+    }
+
+    /*foodota shop page css*/
+    .woocommerce ul.products[class*="columns-"] li.product, .woocommerce-page ul.products[class*="columns-"] li.product {
+        width: 100%;
+    }
+
+    /*foodota shop detail page css*/
+    .woocommerce .foodota-shop-detail #content div.product div.summary, .woocommerce .foodota-shop-detail div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+        width: 100%;
+    }
+
+    .woocommerce .foodota-shop-detail div.product .woocommerce-tabs ul.tabs li {
+        text-align: center;
+        width: 100%;
+    }
+
+    /*foodota cart page css*/
+    .inner-tab1 {
+        margin-bottom: 30px;
+    }
+
+    .woocommerce .foodota-cart .woocommerce-cart-form {
+        padding: 0px 15px;
+    }
+
+    .woocommerce .foodota-cart .woocommerce-cart-form__cart-item .product-thumbnail img {
+        width: 80px;
+        margin-right: 10px;
+    }
+	
+	 .woocommerce .foodota-cart .custom-cart-exertio .media .product-thumbnail ,  .woocommerce .foodota-cart .custom-cart-exertio .media .media-body{
+		float: left;
+	}
+	
+	.woocommerce .foodota-cart .woocommerce-cart-form .form-control {
+		margin-right: 0;
+	}
+	
+	.woocommerce .foodota-cart .woocommerce-cart-form .foodota-product-remove {
+		text-align: right;
+	}
+	
+	.woocommerce .foodota-cart .woocommerce-cart-form  .input-group{
+		margin-bottom: 15px;
+	}
+
+    .about-us2 .rounded-circle.pull-right {
+        float: none !important;
+        margin-top: 30px;
+    }
+    .res-main-panel {
+        width: 100%;
+        padding-left:15px;
+        padding-right: 15px;
+        margin: 0px;
+    }
+
+    /*foodota cart chekout page css*/
+    .woocommerce .foodota-checkout .blog-sidebar {
+        padding-left: 0px;
+        padding: 0px;
+    }
+    /*single product css start */
+    .fodo-top-banner{
+        padding: 40px 0;
+    }
+    .fodo-top-banner .banner-img img{
+        max-width: 100%;
+        margin-top: 45px;
+        margin-left: 10px;
+    }
+    .services-products {
+        padding-top: 40px;
+    }
+    .super-deals{
+        padding-top: 40px;
+    }
+    .special-offer-deal .special-offer-img .tomato{
+        display: none;
+    }
+    .product-menu{
+        padding-top: 20px;
+    }
+    .popular-deals-tabs .nav-pills{
+        width: 100%;
+    }
+    .popular-deals-tabs .owl-carousel.owl-loaded{
+        width: 100%;
+    }
+    .clients-response-testimonial .super-deals-heading .testimonial-txt {
+        width: auto;
+    }
+    .clients-response-testimonial .profile-img{
+        display: none;
+    }
+    .clients-response-testimonial {
+        padding: 30px 0 0px 0;
+    }
+    .clients-response-testimonial .super-deals-heading .testimonial-txt {
+        margin-top: 0px;
+    }
+    .fodo-top-banner .chicken-piece{
+        display: none;
+    }
+    .fodo-top-banner .mint-piece {
+        display: none;
+    }
+    /*single product css close */
+
+    .res-banner-height .vendor-detail img {
+        height: 300px;
+    }
+
+
+
+}
+@media (max-width: 425px) {
+    .fodo-top-banner .top-banner-meta h1{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .fodo-top-banner .top-banner-meta h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .fodo-top-banner .top-banner-meta p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .fodo-top-banner .top-banner-meta .botm-meta{
+        display: block;
+    }
+    .fodo-top-banner .top-banner-meta .botm-meta h3{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .fodo-top-banner .top-banner-meta .botm-meta{
+        margin-top: 30px;
+    }
+    .fodo-top-banner .banner-img img{
+        margin-top: 20px;
+    }
+    .super-deals .super-deals-heading h3{
+        font-size: 26px;
+    }
+    .super-deals .all-product-btn{
+        margin-top: 50px;
+    }
+}
+/*foodota SM devices responsive css start*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /*foodota Main home css*/
+
+    .blog-card-header .img-fluid {
+        width: 100% !important;
+    }
+    .blog-sidebar {
+        margin-top: 50px;
+    }
+    .sec-bg {
+        padding-top: 80px;
+    }
+    .res-hero-3.new-search .bottom-img{
+        display: none;
+    }
+    .services-grid {
+        text-align: center;
+    }
+    .s-call-action {
+        padding: 50px 0;
+    }
+    .hiw-count {
+        display: none;
+    }
+    .hiw-main-box .hiw-single-box {
+        padding: 15px 20px;
+    }
+    .res-video {
+        display: none;
+    }
+    .experience-section .buttton-exp li.bg-black a {
+        margin-left: 0px;
+    }
+    .footer-area .footer-content {
+        padding: 80px 0 50px;
+    }
+    .social-links-two {
+        margin-bottom: 30px;
+    }
+    .experience-section .scotor-img {
+        margin-top: 30px;
+    }
+
+    .res-header-2 .right-space {
+        width: 100%;
+		display: none;
+    }
+    .res-hero-3.new-search .res-hero-content {
+        padding-top: 30px;
+    }
+
+    .res-hero-3.new-search .res-hero-main .res-hero-tite h1 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .res-hero-3 .res-hero-main .res-hero-tite p {
+        width: 100%;
+    }
+    .res-hero-3 .res-hero-srch {
+        width: 100%;
+    }
+    .res-hero-3.new-search {
+        height: 500px;
+    }
+    .res-hero-3-srch ul li.recipes .foodota-search-spinner {
+        right: 30%;
+    }
+    
+    .counter-3 .res-exp-detail {
+        padding-top: 90px;
+    }
+    .counter-3 .res-exp-assets ul li {
+        width: 100%;
+    }
+
+    .how-it-work2 .testi-img1 {
+        display: none;
+    }
+    .how-it-work2 .testi-img2 {
+        display: none;
+    }
+    .experience-section .buttton-exp li {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .experience-section .buttton-exp li a{
+        width: 100%;
+        text-align: center;
+    }
+    .counter-3.section-padding {
+        padding: 30px 0;
+    }
+    .how-it-work2 .carousel-item blockquote {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .experience2{
+        padding-top: 30px;
+    }
+    .experience-section .scotor-img img {
+        margin-top: 0px;
+    }
+    .res-f-main.section-padding{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .res-f-content2.section-padding{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .res-f-content2 .form-group .btn-theme {
+        padding: 13px 4px;
+    }
+    .res-f-content2 .form-group input {
+        margin-right: 0px;
+    }
+    .res-f-container .res-f-container-inner {
+        padding: 0px 15px;
+    }
+    .res-f-social i {
+        margin-right: 5px;
+    }
+    /*Main Home css end*/
+
+    .res-hero-3 {
+        padding: 70px 0px;
+    }
+
+    .res-hero-3-content span {
+        font-size: 18px;
+    }
+
+    .res-hero-3-content h1 {
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .res-hero-3-content p {
+        width: 100%;
+    }
+
+    .inner-form {
+        display: block;
+    }
+
+    .inner-form .left {
+        display: block;
+    }
+
+    .inner-form .btn-search {
+        margin-left: 0px;
+        width: 100% !important;
+        height: 60px;
+        margin-top: 15px;
+    }
+
+    .inner-form .input-wrap.second {
+        border-left: 0px;
+    }
+
+    .heading-panel h2 {
+        font-size: 32px;
+    }
+
+    .res-2-img {
+        min-height: 270px;
+    }
+
+    .inner-form .input-wrap {
+        padding: 10px 10px;
+    }
+
+    .inner-form .input-wrap.first {
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .heading-panel {
+        margin-bottom: 20px;
+    }
+
+    .left-align.heading-panel {
+        padding-top: 0px;
+    }
+
+    .how-it-work .how-it-works.step-1::after {
+        background: none;
+    }
+
+    .how-it-work .how-it-works.step-2::after {
+        background: none;
+    }
+
+    .how-it-works.step-2 {
+        padding-top: 5%;
+    }
+
+    .res-city-products {
+        height: auto;
+    }
+
+    .res-ct-content {
+        width: 100%;
+    }
+
+    .res-ct-count {
+        margin-top: 30px;
+    }
+
+    .res-ct-content h2 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .res-ct-content p {
+        margin-bottom: 0px;
+    }
+
+    .res-ct-count ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .res-ct-count ul li .res-ct-img {
+        float: none;
+        margin-right: 0px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .res-ct-count ul li::before {
+        border-right: none;
+    }
+
+    .res-ct-count {
+        padding: 30px;
+    }
+
+    .res-ct-count ul li:last-child {
+        margin-right: auto;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .res-ct-main span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .elementor-696 .elementor-element.elementor-element-62555db {
+        padding: 30px 0px 0px 0px !important;
+    }
+
+    .res-2-client-details {
+        padding-right: 0px;
+    }
+
+    .res-2-client-details h3 {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .no-content {
+        padding: 30px 15px;
+    }
+
+    .res-swiper-profile {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .res-swiper-profile img {
+        margin: 0 auto;
+    }
+
+    .res-swiper-text p {
+        text-align: center;
+    }
+
+    .res-swiper-text h3 {
+        text-align: center;
+    }
+
+    .res-swiper-text span {
+        text-align: center;
+        display: block;
+    }
+
+    .res-2-client.section-padding-bottom {
+        padding-bottom: 0px;
+    }
+
+    .res-app-text h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 50px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .res-app-content {
+        padding-right: 0px;
+    }
+
+    .res-app-text p {
+        text-align: center;
+        display: block;
+    }
+
+    .res-app-details ul li {
+        float: none;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .res-app-logo ul li {
+        float: none;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .res-f-container {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .res-f-items:last-child {
+        margin-bottom: 0px;
+    }
+
+    .res-f-content2 p {
+        width: 100%;
+    }
+
+    .res-f-social {
+        padding-bottom: 30px;
+    }
+
+    .res-f-content2 {
+        padding-bottom: 0px;
+    }
+
+    .res-f-main:last-child {
+        padding-top: 0px;
+    }
+
+    .res-f-icon {
+        float: left;
+        margin: 16px 7px 16px 0px;
+    }
+
+    /*foodota Home 2 css*/
+    .res-hero {
+        height: 500px;
+    }
+
+    .res-hero-content {
+        margin-top: 30px;
+    }
+
+    .res-hero-main .res-hero-tite span {
+        font-size: 18px;
+    }
+
+    .res-hero-main .res-hero-tite h1 {
+        font-size: 38px;
+    }
+
+    .res-hero-main .res-hero-tite p {
+        width: 100%;
+    }
+
+    .res-video i {
+        font-size: 24px;
+        height: 73px;
+        width: 73px;
+        line-height: 63px;
+    }
+
+
+    .res-hero-product .fr-hero-logo {
+        display: none;
+    }
+
+    .res-hero-product h3 {
+        display: none;
+    }
+
+    .res-cat.section-padding {
+        padding-top: 0px;
+    }
+
+    .cat.owl-theme .owl-nav {
+        display: none;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-e4faf54 {
+        display: none !important;
+    }
+
+    .no-border-style.left-align.heading-panel::before {
+        content: none;
+    }
+
+    .res-featured-box .res-featured-img {
+        width: 100%;
+    }
+
+    .res-featured-box .res-featured-img img {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .res-featured-box .res-featured-details {
+        width: 108%;
+    }
+
+    .list-view .logo-res {
+        bottom: 5%;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-d7c55e6 {
+        display: none;
+    }
+
+    .res-exp-assets {
+        width: 100%;
+    }
+
+    .res-exp-assets ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .res-exp-assets ul li .res-logo-d-box {
+        float: none;
+        margin-right: 0px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .res-exp-assets {
+        position: relative;
+        bottom: auto;
+        background-image: none !important;
+    }
+
+    .res-exp-detail {
+        padding-top: 40px;
+    }
+
+    .res-exp-text h2 {
+        font-size: 32px;
+    }
+
+    .res-exp-content ul li {
+        float: none;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .res-exp-content .btn-theme {
+        display: block;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-dcfbe38 {
+        display: none;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-f9319f7 {
+        margin-top: 0px !important;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-e4faf54 {
+        display: none !important;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-d7c55e6 {
+        display: none !important;
+    }
+
+
+    /*foodota Home 3 css*/
+    .res-pro-serv {
+        display: none;
+    }
+
+    .fc-slider.owl-theme .owl-nav {
+        display: none;
+    }
+
+    .res-sign-content .res-sign-box {
+        float: none;
+        overflow: hidden;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .res-sign-icon {
+        float: none;
+    }
+
+    .res-sign-details h4 {
+        margin-top: 15px;
+    }
+
+    .res-sign-form h2 {
+        font-size: 22px;
+    }
+
+    /*foodota Price Plan css*/
+    .res-blog-grid {
+        width: 90%;
+    }
+
+    .res-hd {
+        margin-bottom: 30px;
+    }
+
+    .res-pric-product h3 {
+        font-size: 22px;
+    }
+
+    /*foodota blog css*/
+    .res-blog-banner {
+        display: none;
+    }
+
+    .res-blog-box img {
+        width: 100%;
+        height: 270px;
+    }
+
+    /*foodota search page css */
+    .res-theme-banner {
+        display: none;
+    }
+
+    .res-container-inline {
+        display: block;
+    }
+
+    .res-sidebar-container {
+        width: 100%;
+        display: block;
+    }
+
+    .res-sidebar-box3 .text-data-style {
+        font-size: 12px;
+    }
+
+    .res-main-panel {
+        width: 100%;
+        padding-left:15px;
+        padding-right: 15px;
+        margin: 0px;
+    }
+    .res-3-box .food_cats .cat_names a {
+        padding: 0.75em 1.6em;
+    }
+
+    .res-main-panel .heading-panel h3 {
+        font-size: 20px;
+    }
+
+    .res-main-panel .heading-panel {
+        margin-bottom: 20px;
+    }
+
+    .res-sidebar-container .heading-panel h3 {
+        font-size: 16px;
+    }
+
+    .res-sidebar-box2 ul li a {
+        padding: 6px 26px;
+        font-size: 13px;
+    }
+
+    .res-sidebar-container .res-sb-categories span {
+        font-size: 12px;
+    }
+
+    .res-sidebar-container .res-sb-product p {
+        font-size: 12px;
+    }
+
+    .res-sidebar-box3 ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    /*foodota search-detail page css */
+    .res-top3-product .res-top3-logo {
+        margin-top: 0px;
+        margin-right: 15px;
+        width: 96px;
+    }
+
+    .res-fl-center-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /*foodota shop detail page css*/
+    .woocommerce .foodota-shop-detail #content div.product div.summary, .woocommerce .foodota-shop-detail div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+        width: 100%;
+    }
+
+    .woocommerce .foodota-shop-detail div.product .woocommerce-tabs ul.tabs li {
+        text-align: center;
+        width: 100%;
+    }
+
+    /*foodota cart page css*/
+    .inner-tab1 {
+        margin-bottom: 30px;
+    }
+
+    .woocommerce .foodota-cart .woocommerce-cart-form {
+        padding: 0px 0px;
+    }
+
+    /*foodota cart chekout page css*/
+    .woocommerce .foodota-checkout .blog-sidebar {
+        padding-left: 0px;
+        padding: 0px;
+    }
+    .about-us2 .rounded-circle.pull-right {
+        float: none !important;
+        margin-top: 30px;
+    }
+
+    /*single product css start here*/
+    .fodo-top-banner{
+        padding: 100px 0;
+    }
+    .fodo-top-banner .banner-img img{
+        max-width: 100%;
+        margin-top: 45px;
+        margin-left: 10px;
+    }
+    .services-products .product-img{
+        margin-bottom: 20px;
+    }
+    .clients-response-testimonial .super-deals-heading .testimonial-txt {
+        width: auto;
+    }
+    .clients-response-testimonial {
+        padding: 30px 0 0px 0;
+    }
+    .clients-response-testimonial .super-deals-heading .testimonial-txt {
+        margin-top: 0px;
+    }
+
+    /*single product css close here*/
+
+
+}
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .popular-deals-tabs .align-items-start{
+        height: unset;
+    }
+    .popular-deals-tabs .super-deals-heading h3{
+        font-size: 20px;
+    }
+    .popular-deals-tabs .tab-pill-main{
+        display: block !important;
+    }
+    .popular-deals-tabs .nav-pills{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100px;
+    }
+    .popular-deals-tabs .tab-content .tab-pane {
+        margin-left: 0px;
+    }
+    .popular-deals-tabs .nav-pills .nav-link{
+        padding: 15px 15px 15px 15px;
+        border-radius: 5px;
+        margin-left: 13px;
+    }
+    .popular-deals-tabs .owl-carousel.owl-loaded{
+        width: 516px;
+    }
+    .woocommerce ul.order_details li {
+        float: none;
+        display: block;
+        margin-bottom: 15px;
+        padding-right: 0;
+        margin-right: 0px;
+    }
+    #paystack_form .button.cancel{
+        margin-top: 15px;
+    }
+    .tab-content{
+        z-index: 888888;
+        position: relative;
+    }
+
+
+}
+/*foodota MD devices responsive css start*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /*foodota Main home css*/
+	
+	.related.products .food-shop-1 {
+    margin-bottom: 30px;
+}
+
+    .res-hero-3.new-search .bottom-img{
+        display: none;
+    }
+    .services-grid {
+        text-align: center;
+    }
+    .blog-sidebar {
+        margin-top: 50px;
+    }
+    .sec-bg {
+        padding-top: 80px;
+    }
+
+    .s-call-action {
+        padding: 50px 0;
+    }
+    .hiw-count {
+        display: none;
+    }
+    .hiw-main-box .hiw-single-box {
+        padding: 15px 20px;
+    }
+    .res-2-featured .res-3-box .res-2-img {
+        min-height: 224px;
+    }
+    .res-3-box .food_cats .cat_names a {
+        font-size: 14px;
+    }
+    .res-video {
+        position: absolute;
+        left: 35%;
+        bottom: 60%;
+    }
+    .res-top-content {
+        padding: 16px 20px;
+    }
+
+    .experience-section .buttton-exp li.bg-black a {
+        margin-left: 0px;
+    }
+    .footer-area .footer-content {
+        padding: 80px 0 50px;
+    }
+    .social-links-two {
+        margin-bottom: 30px;
+    }
+    .experience-section .scotor-img {
+        margin-top: 30px;
+    }
+
+    .res-header-2 .right-space {
+        width: 100%;
+		display: none;
+    }
+    .res-hero-3.new-search .res-hero-content {
+        padding-top: 30px;
+    }
+
+    .res-hero-3.new-search .res-hero-main .res-hero-tite h1 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .res-hero-3 .res-hero-main .res-hero-tite p {
+        width: 100%;
+    }
+    .res-hero-3 .res-hero-srch {
+        width: 100%;
+    }
+    .res-hero-3.new-search {
+        height: 500px;
+    }
+    .res-hero-3-srch ul li.recipes .foodota-search-spinner {
+        right: 30%;
+    }
+    .counter-3 .res-exp-detail {
+        padding-top: 0px;
+        margin-top: 80px;
+    }
+
+    .how-it-work2 .testi-img1 {
+        display: none;
+    }
+    .how-it-work2 .testi-img2 {
+        display: none;
+    }
+    .counter-3.section-padding {
+        padding: 30px 0;
+    }
+    .how-it-work2 .carousel-item blockquote {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .experience2{
+        padding-top: 30px;
+    }
+    .experience-section .scotor-img img {
+        margin-top: 0px;
+    }
+    .res-f-main.section-padding{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .res-f-content2.section-padding{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .res-f-content2 .form-group .btn-theme {
+        padding: 13px 4px;
+    }
+    .res-f-content2 .form-group input {
+        margin-right: 0px;
+    }
+    .res-f-container .res-f-container-inner {
+        padding: 0px 15px;
+    }
+    .res-f-social i {
+        margin-right: 5px;
+    }
+
+    .col-md-4 .res-f-container {
+        padding-top: 50px ;
+    }
+    /*Main Home css end*/
+    .res-hero-3 {
+        padding: 70px 0px;
+    }
+
+    .res-hero-3-content span {
+        font-size: 18px;
+    }
+
+    .res-hero-3-content h1 {
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .how-it-work .how-it-works.step-1::after {
+        background: none;
+    }
+
+    .how-it-work .how-it-works.step-2::after {
+        background: none;
+    }
+
+    .how-it-works.step-2 {
+        margin-top: 30px;
+    }
+
+    .how-it-works.step-2 {
+        padding-top: 0%;
+    }
+
+    .res-ct-content {
+        width: 100%;
+    }
+
+    .res-ct-count ul li {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .res-ct-count ul li::before {
+        content: none;
+    }
+
+    .res-city-products {
+        height: auto;
+    }
+
+    .elementor-696 .elementor-element.elementor-element-62555db {
+        padding: 80px 0px 50px 0px !important;
+    }
+
+    .res-f-content2 {
+        padding-right: 0px;
+    }
+
+    .res-f-content2.section-padding {
+        padding-bottom: 0px;
+    }
+
+    .res-f-container {
+        padding-bottom: 0px;
+    }
+
+    .res-f-main.section-padding {
+        padding-top: 40px;
+    }
+
+    /*foodota Home 2 css*/
+    .res-hero {
+        height: 600px;
+    }
+
+    .res-hero-content {
+        margin-top: 30px;
+    }
+
+    .res-hero-main .res-hero-tite span {
+        font-size: 18px;
+    }
+
+    .res-hero-main .res-hero-tite h1 {
+        font-size: 38px;
+    }
+
+    .res-hero-main .res-hero-tite p {
+        width: 100%;
+    }
+
+    .res-video i {
+        font-size: 24px;
+        height: 73px;
+        width: 73px;
+        line-height: 63px;
+    }
+
+
+    .res-exp-detail {
+        margin-top: 160px;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-dcfbe38 {
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-e4faf54 {
+        display: none !important;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-d7c55e6 {
+        display: none !important;
+    }
+
+    /*foodota Home 3 css*/
+    .res-pro-serv {
+        display: none;
+    }
+
+    /*foodota Price Plan css*/
+    .res-blog-grid {
+        width: 60%;
+    }
+
+    .res-hd {
+        margin-bottom: 30px;
+    }
+
+    .res-pric-product h3 {
+        font-size: 22px;
+    }
+
+    .res-sign-content .res-sign-box {
+        margin-bottom: 15px;
+    }
+
+    /*foodota blog css*/
+    .res-blog-banner {
+        display: none;
+    }
+
+    .res-blog-box img {
+        width: 100%;
+        height: 270px;
+    }
+
+    /*foodota search page css */
+    #restaurant-container .res-2-img {
+        min-height: 225px;
+    }
+    .res-theme-banner {
+        display: none;
+    }
+
+    .res-container-inline {
+        display: block;
+    }
+
+    .res-sidebar-container {
+        width: 35%;
+        display: flex;
+        float: left;
+    }
+
+    .res-sidebar-box3 .text-data-style {
+        font-size: 12px;
+    }
+
+    .res-main-panel {
+        width: calc(100% - 40%);
+        display: initial;
+    }
+
+    .res-main-panel .heading-panel h3 {
+        font-size: 20px;
+    }
+
+    .res-main-panel .heading-panel {
+        margin-bottom: 20px;
+    }
+
+    .res-sidebar-container .heading-panel h3 {
+        font-size: 16px;
+    }
+
+    .res-sidebar-box2 ul li a {
+        padding: 6px 26px;
+        font-size: 13px;
+    }
+
+    .res-sidebar-container .res-sb-categories span {
+        font-size: 12px;
+    }
+
+    .res-sidebar-container .res-sb-product p {
+        font-size: 12px;
+    }
+
+    .res-sidebar-box3 ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    /*foodota search-detail page css */
+    .res-fl-center-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /*foodota shop detail page css*/
+    .res-top3-main {
+        margin-top: 0px;
+    }
+    .woocommerce .foodota-shop-detail #content div.product div.summary, .woocommerce .foodota-shop-detail div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+        width: 100%;
+    }
+
+    /*foodota cart page css*/
+    .inner-tab1 {
+        margin-bottom: 30px;
+    }
+
+    .woocommerce .foodota-cart .woocommerce-cart-form {
+        padding: 0px 0px;
+    }
+
+    /*foodota cart chekout page css*/
+    .woocommerce .foodota-checkout .blog-sidebar {
+        padding-left: 0px;
+        padding: 0px;
+    }
+
+    .res-2-text .text-s1,.delicious .main-box .bottom-box .uper-box p{
+        font-size: 20px;
+    }
+	
+	.res-3-box .food_cats .cat_names a:nth-child(4) {
+    display: none;
+}
+
+    .about-us2 .rounded-circle.pull-right{
+        float: none !important;
+        margin-top: 30px;
+
+    }
+
+    .woocommerce .foodota-shop-detail div.product div.images, .woocommerce .foodota-shop-detail #content div.product div.images {
+        float: none;
+        width: 100%;
+    }
+
+    /*foodota single product css start*/
+    .fodo-top-banner{
+        padding: 100px 0;
+    }
+    .fodo-top-banner .banner-img img{
+        margin-top: 45px;
+        margin-left: -30px;
+        width: 755px;
+    }
+    .popular-deals-tabs .owl-carousel.owl-loaded{
+        width: 430px;
+    }
+    .clients-response-testimonial .super-deals-heading .testimonial-txt {
+        width: auto;
+    }
+    .clients-response-testimonial {
+        padding: 30px 0 0px 0;
+    }
+    .clients-response-testimonial .super-deals-heading .testimonial-txt {
+        margin-top: 0px;
+    }
+    .tab-content{
+        z-index: 888888;
+        position: relative;
+    }
+
+
+
+
+    /*foodota single product css close */
+
+
+}
+@media (max-width: 992px){
+    .fodo-top-banner .top-banner-meta .chicken-piece,
+    .fodo-top-banner .top-banner-meta .mint-piece,
+    .fodo-top-banner .sub-imgs .leaf-1,
+    .fodo-top-banner .sub-imgs .half-tomato,
+    .fodo-top-banner .sub-imgs .leaf-2,
+    .fodo-top-banner .sub-imgs .chilli,
+    .fodo-top-banner .banner-img .cloud-img-position img{
+        display: none;
+    }
+    .special-offer-deal .special-offer-img img{
+        float: left;
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*foodota Main home css*/
+    .res-video {
+        position: absolute;
+        left: 54%;
+        bottom: -4%;
+    }
+    .res-header-2 .right-space {
+        width: 100%;
+    }
+    .blog-sidebar {
+        margin-top: 50px;
+    }
+    .sec-bg {
+        padding-top: 80px;
+    }
+    .res-hero-3.new-search .res-hero-content {
+        padding-top: 30px;
+    }
+
+    .res-hero-3.new-search .res-hero-main .res-hero-tite h1 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .res-hero-3 .res-hero-main .res-hero-tite p {
+        width: 100%;
+    }
+    .res-top-content {
+        padding: 48px 20px;
+    }
+    .list-view .logo-res {
+        bottom: 10%;
+        right: 6%;
+    }
+    .res-hero-3 .res-hero-srch {
+        width: 100%;
+    }
+    .res-hero-3.new-search {
+        height: 500px;
+    }
+    .res-hero-3-srch ul li.recipes .foodota-search-spinner {
+        right: 30%;
+    }
+   
+    .counter-3 .res-exp-detail {
+        padding-top: 0px;
+        margin-top: 80px;
+    }
+
+    .how-it-work2 .testi-img1 {
+        display: none;
+    }
+    .how-it-work2 .testi-img2 {
+        display: none;
+    }
+    .counter-3.section-padding {
+        padding: 30px 0;
+    }
+    .how-it-work2 .carousel-item blockquote {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .experience2{
+        padding-top: 30px;
+    }
+    .experience-section .scotor-img img {
+        margin-top: 0px;
+    }
+    .res-f-main.section-padding{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .res-f-content2.section-padding{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .res-f-content2 .form-group .btn-theme {
+        padding: 13px 4px;
+    }
+    .res-f-content2 .form-group input {
+        margin-right: 0px;
+    }
+    .res-f-container .res-f-container-inner {
+        padding: 0px 15px;
+    }
+    .res-f-social i {
+        margin-right: 5px;
+    }
+    .col-lg-4 .res-f-container {
+        padding-top: 50px ;
+    }
+    /*Main Home css end*/
+    .res-hero-3 {
+        padding: 70px 0px;
+    }
+
+    .res-2-img {
+        min-height: 269px;
+    }
+
+    .res-ct-count ul li::before {
+        content: none;
+    }
+
+    .res-f-content2 {
+        padding-right: 0px;
+    }
+
+    .res-f-content2.section-padding {
+        padding-bottom: 0px;
+    }
+
+    .res-f-container {
+        padding-bottom: 0px;
+    }
+
+    .res-f-main.section-padding {
+        padding-top: 40px;
+    }
+
+    /*foodota Home 2 css*/
+    .res-hero {
+        height: 600px;
+    }
+
+    .res-hero-content {
+        margin-top: 30px;
+    }
+
+    .res-exp-detail {
+        margin-top: 220px;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-dcfbe38 {
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-e4faf54 {
+        display: none !important;
+    }
+
+    .elementor-784 .elementor-element.elementor-element-d7c55e6 {
+        display: none !important;
+    }
+
+    /*foodota Home 3 css*/
+    .res-pro-serv {
+        display: none;
+    }
+
+    .res-sign-content .res-sign-box {
+        margin-bottom: 15px;
+    }
+
+    /*foodota Price Plan css*/
+    .res-blog-grid {
+        width: 90%;
+    }
+
+    .res-pric-lg p span {
+        font-size: 16px;
+    }
+
+    .res-pric-main {
+        padding: 30px 18px;
+    }
+
+    .res-hd {
+        margin-bottom: 30px;
+    }
+
+    /*foodota search Page css*/
+    .res-sidebar-container {
+        width: 45%;
+    }
+
+    /*foodota search-detail Page css*/
+    .res-fl-deals {
+        margin-top: 30px !important;
+    }
+    .about-us2 .rounded-circle.pull-right {
+        float: none !important;
+        margin-top: 30px;
+    }
+
+    .woocommerce .foodota-shop-detail div.product div.images, .woocommerce .foodota-shop-detail #content div.product div.images {
+        float: none;
+        width: 100%;
+    }
+
+    /*single product css start here*/
+    .fodo-top-banner .banner-img img{
+        margin-top: -20px;
+        margin-left: -50px;
+        max-width: 600px;
+    }
+    .fodo-top-banner .sub-imgs .leaf-1 {
+        top: -460px;
+        left: -5px;
+    }
+    .fodo-top-banner .sub-imgs .half-tomato {
+        top: -470px;
+        right: 160px;
+    }
+    .fodo-top-banner .sub-imgs .chilli {
+        bottom: -70px;
+        right: 13px;
+    }
+    .fodo-top-banner .sub-imgs .leaf-2 {
+        bottom: -43px;
+        left: 60px;
+    }
+    .fodo-top-banner .banner-img .cloud-img-position img{
+        top: -180px;
+        left: -180px;
+    }
+    .special-offer-deal .special-offer-img img {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    .special-offer-deal .special-offer-img .tomato{
+        top: -150px;
+    }
+    .popular-deals-tabs .owl-carousel.owl-loaded{
+        width: 630px;
+    }
+   /*single product css close here*/
+}
+@media (max-width: 1200px) {
+    .special-offer-deal .special-offer-img .save-upto{
+        display: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1157px) {
+
+    .res-sidebar-container {
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+    /*foodota Main home css*/
+    .sb-header.sticky .logo img {
+        max-height: 100px;
+    }
+    .res-video {
+        position: absolute;
+        left: 55%;
+        bottom: -4%;
+    }
+    .res-header-2 .right-space {
+        width: 200px;
+    }
+    .header-dark.sb-header.sticky .sb-menu ul li.right-space {
+        width: 230px;
+    }
+    .res-f-content2 .form-group .btn-theme {
+        padding: 13px 20px;
+    }
+    .res-exp-assets ul li {
+        margin-right: 3%;
+    }
+
+    /*foodota Main home css end*/
+.res-2-text .text-s1 , .delicious .main-box .bottom-box .uper-box p {
+    font-size: 22px;
+	}
+	.res-3-box .food_cats .cat_names a:nth-child(4) {
+    display: none;
+}
+    .res-sidebar-container {
+        width: 30%;
+    }
+    .sb-header .logo {
+        width: 250px;
+    }
+
+    .sb-header .logo img {
+        max-width: 100%;
+    }
+
+	.right-space {
+		display: none;
+	}
+
+    .res-hero-3 {
+        padding: 70px 0px;
+    }
+
+    .res-ct-count ul li::before {
+        content: none;
+    }
+
+    /*foodota Home 3 css*/
+    .res-pro-serv {
+        display: none;
+    }
+
+    .res-sign-content {
+        margin-top: 50px;
+    }
+
+    /*foodota blog css*/
+    .res-blog-box img {
+        width: 100%;
+    }
+    .res-header-2 .right-space {
+        padding: 30px 0px;
+		display: none;
+    }
+    .res-featured-box .res-featured-img img {
+        height: 172px;
+    }
+    /*single product css start here*/
+    .super-deals .super-deals-heading h3{
+        font-size: 26px;
+    }
+    .super-deals .all-product-btn{
+        margin-top: 50px;
+    }
+    .special-offer-deal .top-banner-meta .mashroom{
+        display: none;
+    }
+    .special-offer-deal .special-offer-img .save-upto{
+        top: 26px;
+        left: -26%;
+    }
+    .popular-deals-tabs .owl-carousel.owl-loaded{
+        width: 830px;
+    }
+    /*single product css close here*/
+
+}
+@media (min-width: 1200px) and (max-width: 1521.98px) {
+    .single-product .sb-menu{
+        float: right;
+    }
+    .single-product .sb-menu ul li:first-child a {
+        padding-left: 15px;
+    }
+    .single-product .sb-menu > ul > li > a{
+        padding: 0px 15px;
+    }
+    .single-product .sb-menu ul li:nth-child(5) {
+        padding-left: 14px;
+    }
+    .single-product .sb-menu .favourite{
+        margin-left: 15px;
+    }
+    .single-product .sb-menu .favourite::before,
+    .single-product .sb-menu .for-shopping::before{
+        border-left: none;
+    }
+    .single-product .sb-menu .for-shopping{
+        margin-left: 25px;
+    }
+    .single-product .sb-menu .shopping-btn a{
+        padding: 10px 15px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) and (orientation:portrait) {
+    .res-main-panel {
+        width: calc(100% - 40%);
+        margin: 0px 0px;
+        display: inline-flex;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+    .res-sidebar-container {
+        width: 40%;
+        display: inline-flex;
+        float: left;
+        padding: 20px;
+    }
+}
+
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .res-3-box .food_cats .cat_names a {
+        margin-right: 2px;
+        padding: 0.75em 1.2em;
+    }
+
+}
+
+
+

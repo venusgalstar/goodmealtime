@@ -1,0 +1,2407 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Foodota Framework\n"
+"POT-Creation-Date: 2022-02-24 11:39+0500\n"
+"PO-Revision-Date: 2022-02-24 11:39+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: foodota-framework.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: foodota-framework.php:41
+msgid "Page Settings"
+msgstr ""
+
+#: foodota-framework.php:59
+msgid "Breadcrumb"
+msgstr ""
+
+#: foodota-framework.php:62
+msgid "Hide breadcrumb?"
+msgstr ""
+
+#: foodota-framework.php:66
+msgid "Transparent Header"
+msgstr ""
+
+#: foodota-framework.php:69
+msgid "Mark Header As Transparent?"
+msgstr ""
+
+#: foodota-framework.php:70
+msgid "Transparent Header will only work on home pages only"
+msgstr ""
+
+#: foodota-framework.php:74
+msgid "Transparent Menu Color"
+msgstr ""
+
+#: foodota-framework.php:77
+msgid "Select primary color"
+msgstr ""
+
+#: foodota-framework.php:134
+msgid "Confirmation"
+msgstr ""
+
+#: foodota-framework.php:135
+msgid "Are you Sure You want to Delete"
+msgstr ""
+
+#: foodota-framework.php:136
+msgid "Yes"
+msgstr ""
+
+#: foodota-framework.php:137
+msgid "NO"
+msgstr ""
+
+#: foodota-framework.php:138
+msgid "Successfully Deleted"
+msgstr ""
+
+#: foodota-framework.php:139
+msgid "Successfully updated"
+msgstr ""
+
+#: foodota-framework.php:140
+msgid "Something went wrong"
+msgstr ""
+
+#: foodota-framework.php:141
+msgid "Opps"
+msgstr ""
+
+#: foodota-framework.php:142
+msgid "Registerad and login Successfully"
+msgstr ""
+
+#: foodota-framework.php:143
+msgid "Registerad Successfully"
+msgstr ""
+
+#: foodota-framework.php:144
+msgid "User already Exist"
+msgstr ""
+
+#: foodota-framework.php:145
+msgid "Permission for Current Location"
+msgstr ""
+
+#: foodota-framework.php:146
+msgid "No Restaurant Found Nearby your Location"
+msgstr ""
+
+#: foodota-framework.php:147
+msgid "No Restaurant Found"
+msgstr ""
+
+#: foodota-framework.php:148
+msgid "Login Successfully"
+msgstr ""
+
+#: foodota-framework.php:149
+msgid "Your account is not verified yet"
+msgstr ""
+
+#: foodota-framework.php:150
+msgid "Invalid email or password"
+msgstr ""
+
+#: foodota-framework.php:151
+msgid "Successfully Favorite"
+msgstr ""
+
+#: foodota-framework.php:152
+msgid "Remove From Favorite"
+msgstr ""
+
+#: foodota-framework.php:153
+msgid "First Login For Favorite"
+msgstr ""
+
+#: foodota-framework.php:154
+msgid "Code text field can not be empty."
+msgstr ""
+
+#: foodota-framework.php:155
+msgid "Invalid code entered. Please try again."
+msgstr ""
+
+#: foodota-framework.php:156
+msgid "Token Successfully Applied."
+msgstr ""
+
+#: foodota-framework.php:157
+msgid "Need To Login First."
+msgstr ""
+
+#: foodota-framework.php:158
+msgid "Sorry you are in demo mode!"
+msgstr ""
+
+#: foodota-framework.php:159
+msgid "You can add item only one restaurant!"
+msgstr ""
+
+#: foodota-framework.php:160
+msgid "Your cart has been updated"
+msgstr ""
+
+#: foodota-framework.php:161
+msgid "Permission denied "
+msgstr ""
+
+#: include/ajax/action.php:123
+msgid "Not Deleted"
+msgstr ""
+
+#: include/ajax/action.php:147
+msgid "Model Show"
+msgstr ""
+
+#: include/ajax/action.php:150
+msgid "Model not show "
+msgstr ""
+
+#: include/ajax/action.php:313
+msgid "Confirm Order"
+msgstr ""
+
+#: include/ajax/action.php:450
+msgid ""
+"Well, you already have some item in your cart. First checkout with those and "
+"then purchase other items!"
+msgstr ""
+
+#: include/ajax/action.php:495
+msgid "Please Checkout or Delete items This Restaurant First!"
+msgstr ""
+
+#: include/ajax/action.php:541
+msgid "Menu Level"
+msgstr ""
+
+#: include/ajax/action.php:566
+msgid "Add Product to your cart"
+msgstr ""
+
+#: include/ajax/action.php:566
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:121
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:165
+msgid "Order Now"
+msgstr ""
+
+#: include/ajax/action.php:570
+msgid "  ...Read more"
+msgstr ""
+
+#: include/ajax/action.php:575
+msgid "...Read less"
+msgstr ""
+
+#: include/foodota-demo-data.php:19
+msgid "Note: This demo data is already imported."
+msgstr ""
+
+#: include/foodota-demo-data.php:42
+msgid "Imported"
+msgstr ""
+
+#: include/foodota-demo-data.php:56 include/foodota-demo-data.php:70
+msgid ""
+"Please waiting for a few minutes, do not close the window or refresh the "
+"page until the data is imported."
+msgstr ""
+
+#: include/foodota-demo-data.php:211
+msgid ""
+"Best if used on new WordPress install & this theme requires PHP version 7.1+"
+msgstr ""
+
+#: include/foodota-demo-data.php:212
+msgid "Images are for demo purpose only."
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-shortcodes.php:99
+msgid "Foodota Widgets"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:17
+msgid "Blog-Grid"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:50
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:49
+msgid "Foodota simple Grid Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:57
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:57
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:58
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:58
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:56
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:57
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:62
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:56
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:56
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:57
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:56
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:57
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:56
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:57
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:56
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:56
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:56
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:57
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:56
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:56
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:56
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:56
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:56
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:56
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:57
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:56
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:56
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:56
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:57
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:56
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:56
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:56
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:56
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:56
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:56
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:56
+msgid "Foodota Color Heading Scheme"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:61
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:61
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:62
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:62
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:60
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:61
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:66
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:60
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:60
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:61
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:60
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:61
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:60
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:60
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:60
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:60
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:61
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:60
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:60
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:60
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:60
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:60
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:60
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:60
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:60
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:60
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:61
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:60
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:60
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:60
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:60
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:60
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:60
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:60
+msgid "White Section Heading Scheme"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:62
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:62
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:63
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:63
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:61
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:62
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:67
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:61
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:61
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:62
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:61
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:62
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:62
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:62
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:61
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:61
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:61
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:62
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:61
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:61
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:62
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:61
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:61
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:61
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:61
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:61
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:61
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:61
+msgid "Dark Section Heading Scheme"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:71
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:83
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:71
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:70
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:70
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:82
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:81
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:84
+msgid "Restaurants Header Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:73
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:85
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:73
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:106
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:139
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:172
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:71
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:84
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:84
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:83
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:86
+msgid "All Restaurant"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:74
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:86
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:74
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:107
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:140
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:173
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:73
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:106
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:139
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:172
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:87
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:120
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:153
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:186
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:73
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:72
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:85
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:85
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:84
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:87
+msgid "Type your Restaurants Title Here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:81
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:93
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:81
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:80
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:94
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:80
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:92
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:91
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:94
+msgid "Restaurant Header Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:84
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:96
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:84
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:116
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:149
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:182
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:83
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:82
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:95
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:83
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:95
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:94
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:97
+msgid "Lorem Ipsum is simply dummy text of the printing"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:85
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:97
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:85
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:117
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:150
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:183
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:84
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:116
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:149
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:182
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:98
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:130
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:163
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:196
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:85
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:85
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:84
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:83
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:96
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:121
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:84
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:84
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:92
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:96
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:95
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:98
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:84
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:83
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:117
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:99
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:130
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:162
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:82
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:127
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:83
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:142
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:83
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:130
+msgid "Type your description here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:91
+msgid "Blog Post Cols in row"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:95
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:106
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:143
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:106
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:61
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:106
+msgid "Two Cols in row"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:96
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:107
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:144
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:107
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:62
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:107
+msgid "Three Cols in row"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:97
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:108
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:145
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:108
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:63
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:108
+msgid "Four Cols in row"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:105
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:104
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:139
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:124
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:125
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:120
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:185
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:153
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:116
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:105
+msgid "Number of Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:16
+msgid "Restaurant-Experience"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:49
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:50
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:151
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:109
+msgid "Restaurant Experience Tab"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:71
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:81
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:160
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:118
+msgid "Experience Top Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:73
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:83
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:162
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:120
+msgid "Our Best About Us"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:74
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:84
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:163
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:121
+msgid "Type Your Top Heading!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:80
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:90
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:169
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:127
+msgid "Experience bottom Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:82
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:92
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:171
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:129
+msgid "An Experience For Your Senses"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:83
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:93
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:172
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:130
+msgid "Type Your bottom Heading!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:90
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:100
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:179
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:137
+msgid "Experience Heading Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:93
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:103
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:182
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:140
+msgid ""
+"Over 19 years of proving the very best vegan and plant based food to london"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:94
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:104
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:183
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:141
+msgid "Type your Heading Description here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:102
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:105
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:112
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:115
+msgid "Read More"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:104
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:129
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:114
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:139
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:202
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:105
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:131
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:120
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:120
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:129
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:164
+msgid "Button title here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:112
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:122
+msgid "Read More button link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:114
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:139
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:124
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:149
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:182
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:212
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:112
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:137
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:115
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:141
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:130
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:130
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:139
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:174
+msgid "https://your-link.com"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:127
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:130
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:137
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:140
+msgid "Search Now"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:137
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:147
+msgid "Search Now button link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:153
+msgid "Delivery image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:17
+msgid "Restaurant-Experience2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:71
+msgid "Sub Title For Main Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:73
+msgid "tasty Burger"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:74
+msgid "Type Your Sub Title Heree!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:163
+msgid "Background image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:17
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:50
+msgid "Food Category Slider"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:72
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:92
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:93
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:92
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:92
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:91
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:92
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:91
+msgid "Chose Categories"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:84
+msgid "Receip Logo Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:178
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:187
+msgid "category-image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:195
+msgid "recipe-icon"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:16
+msgid "Restaurant-Food-Types"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:49
+msgid "Foodota Food type Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:70
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:69
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:69
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:68
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:71
+msgid "Restaurants Header Design"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:74
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:73
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:73
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:72
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:75
+msgid "Classic Header"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:75
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:74
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:74
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:73
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:76
+msgid "Modern Header"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:17
+msgid "Hero Search one"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:50
+msgid "Hero Search One"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:70
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:76
+msgid "Search Heading Top"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:72
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:73
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:79
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:80
+msgid "Learn How to Make"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:81
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:86
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:82
+msgid "Search Heading bottom"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:83
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:84
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:106
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:115
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:89
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:85
+msgid "Your Favorite Restaurant Wishes"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:92
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:97
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:93
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:98
+msgid "Search Hero Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:95
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:96
+msgid ""
+"Lorem Ipsum has been the industry standard dummy text ever since the 1500s, "
+"when an unknown"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:103
+msgid "Label Recipe"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:105
+msgid "Recipe"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:112
+msgid "Label Location"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:114
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:124
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:131
+msgid "Location"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:122
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:113
+msgid "Placeholder Recipe Search"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:125
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:132
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:116
+msgid "What are you looking for"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:132
+msgid "Search Button Text"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:134
+msgid "Search"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:140
+msgid "Search Fields"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:144
+msgid "Search By Recipes"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:145
+msgid "Search by Location"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:146
+msgid "Both"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:238
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:257
+msgid "Select an Location"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:18
+msgid "Hero Search Two"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:55
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:49
+msgid "Hero Search two"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:88
+msgid "Favourite Restaurants & Takeaways, Delivered To Your Door"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:100
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:96
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula dolor."
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:101
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:97
+msgid "Write Description Here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:108
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:104
+msgid "Search Heading Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:110
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:106
+msgid "Popular Restaurant"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:111
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:107
+msgid "Write Your Restaurant Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:118
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:70
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:94
+msgid "Video Link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:120
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:72
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:96
+msgid "https://www.youtube.com/watch?v=KP69YPqHquY"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:121
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:73
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:97
+msgid "https://www.youtube.com"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:129
+msgid "Placeholder location Search"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:16
+msgid "Hero Search three"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:70
+msgid "Bike Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:84
+msgid "Order Healthy and Fresh Food Any Time"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:115
+msgid "Recipe Name Here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:228
+msgid "Search Keywords"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:16
+msgid "Hero Slider 1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:49
+msgid "Hero Slider One"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:71
+msgid "Hero Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:83
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:115
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:114
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:114
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:138
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:133
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:198
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:114
+msgid "Repeater Images"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:161
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:259
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:266
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:273
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:260
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:272
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:283
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:238
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:256
+msgid "slider-image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:17
+msgid "Foodota-how-work"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:50
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:49
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:50
+msgid "Foodota How It Work"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:92
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:91
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:105
+msgid "Its work image-1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:104
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:103
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:117
+msgid "Its work title-1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:113
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:112
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:126
+msgid "Its work description-1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:125
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:124
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:138
+msgid "Its work image-2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:137
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:136
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:150
+msgid "Its work title-2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:146
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:145
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:159
+msgid "Its work description-2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:158
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:157
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:171
+msgid "Its work image-3"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:170
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:169
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:183
+msgid "Its work title-3"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:179
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:178
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:192
+msgid "Its work description-3"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:16
+msgid "Foodota-how-work2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:72
+msgid "How It Work"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:105
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:119
+msgid "Your Order"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:115
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:148
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:181
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:129
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:162
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:195
+msgid "Quis ipsum suspeisse ultrices gravida. Risus comabore et dolore ma"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:138
+msgid "Cash Delivery / Onlice Transfer"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:171
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:185
+msgid "Receive Order"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:17
+msgid "Foodota-how-work3"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:71
+msgid "How its work section Background"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:86
+msgid "Simple Process"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:97
+msgid "How It Works"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:152
+msgid "Cash Delivery / Online Transfer"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:287
+msgid "01"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:298
+msgid "02"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:309
+msgid "03"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:16
+msgid "foodota-newsletter"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:49
+msgid "Foodota Newsletters"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:70
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:102
+msgid "Address Icone"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:72
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:73
+msgid "fa fa-home"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:74
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:106
+msgid "Use only Font-Awesome Classes"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:81
+msgid "Location Address Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:83
+msgid "Location Adress"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:84
+msgid "Type your Location Address Title Here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:91
+msgid "Location Address"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:94
+msgid "Jones Street 126, Edgbaston"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:95
+msgid "Type your Location Address Here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:104
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:105
+msgid "fa fa-phone"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:113
+msgid "Phone Number Heading Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:115
+msgid "Phone Number"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:116
+msgid "Type your Phone Number Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:123
+msgid "Phone Number Detail"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:126
+msgid "00-22-55-77-88"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:127
+msgid "Type your Phone Number Here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:135
+msgid "Newletter Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:137
+msgid "Signup For Newsletter"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:138
+msgid "Type your Newsletter Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:145
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:153
+msgid "Newsletter input Placeholder Field"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:147
+msgid "Enter Your Email Address"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:155
+msgid "Subscribe"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:156
+msgid "Enter Text For Newsletter button"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:17
+msgid "Foodota-item-Categories"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:50
+msgid "Foodota Restaurant Categories"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:71
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:71
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:70
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:70
+msgid "Footota Categories"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:73
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:73
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:72
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:72
+msgid "Our Categories"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:74
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:74
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:73
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:73
+msgid "Type your Restaurants Categories!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:81
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:81
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:80
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:80
+msgid "Footota Categories Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:83
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:83
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:83
+msgid "Content here content here making it look like readable English "
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:16
+msgid "Foodota-item-Categories2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:49
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:49
+msgid "Foodota Restaurant Categories 2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:103
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:102
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:102
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:102
+msgid "Category Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:230
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:224
+msgid "Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:234
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:228
+msgid "View Detials"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:16
+msgid "Foodota-item-Categories3"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:16
+msgid "Foodota-item-Categories4"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:49
+msgid "Foodota Restaurant Categories 4"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:185
+msgid "Restaurants Products"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:17
+msgid "Foodota-Team-Members"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:50
+msgid "Foodota Team Members"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:72
+msgid "Meet Our Best Team"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:83
+msgid "Content here content here making it look like readable English"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:93
+msgid "Team Member Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:105
+msgid "Team Member Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:107
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:116
+msgid "Alizeh Anderson"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:108
+msgid "Tema Member Title Here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:114
+msgid "Team Member Post"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:117
+msgid "Tema Member Post Title Here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:123
+msgid "Team Mebers Repeater"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:186
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:198
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:330
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:266
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:207
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:248
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:240
+msgid "icon"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:16
+msgid "foodota-papular-restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:49
+msgid "Foodota Papular Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:69
+msgid "Papular Restaurants Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:79
+msgid "Papular Restaurant Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:16
+msgid "Restaurant Price Plans"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:49
+msgid "Restaurant Price Plan"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:107
+msgid "Price Plan Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:109
+msgid "Bacics Plan"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:110
+msgid "Type your Plan heading Here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:117
+msgid "Price Plan Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:120
+msgid "Various versions have evolved over the years sometimes"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:127
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:128
+msgid "Plan Price"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:129
+msgid "Type your Plan Price!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:136
+msgid "Price Plan Currency"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:138
+msgid "$"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:139
+msgid "Type your Plan currency!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:145
+msgid "Price Plan Duration"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:149
+msgid "monthly"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:150
+msgid "yearly"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:160
+msgid "Price Plan Text"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:170
+msgid "Price Plan Button Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:172
+msgid "price plan button title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:173
+msgid "Get Started"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:180
+msgid "Price Plan Button Link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:195
+msgid "Rrice Plan Repeater"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:16
+msgid "Foodota-Product-restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:49
+msgid "Foodota All Product Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:70
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:70
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:70
+msgid "Product All by Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:72
+msgid "Our Product with Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:73
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:73
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:73
+msgid "Type your Product title!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:80
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:80
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:80
+msgid "Product All Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:16
+msgid "Foodota-Product-restaurants2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:49
+msgid "Foodota All Product Restaurants2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:72
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:72
+msgid "Super Delicious Deal"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:102
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:102
+msgid "Products Cols in row"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:116
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:116
+msgid "Number of Products"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:16
+msgid "Restaurant Counters"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:49
+msgid "Restaurant Counter"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:80
+msgid "video Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:82
+msgid "Click Here To Watch Our Videos"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:83
+msgid "short Description off your Video"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:89
+msgid "Restaurant Counter Video Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:92
+msgid "Best restaurant in new york city with awesome foods"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:93
+msgid "Type your counter description here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:101
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:96
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:161
+msgid "Counter Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:114
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:109
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:174
+msgid "Counter Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:116
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:111
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:176
+msgid "Restaurant"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:117
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:112
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:177
+msgid "Type your Counter Title!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:16
+msgid "Restaurant Counters2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:49
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:50
+msgid "Restaurant Counter Tab"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:70
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:71
+msgid "Counter Tab Background"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:82
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:83
+msgid "Counter Background"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:190
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:148
+msgid "Experience Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:193
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:151
+msgid ""
+"por incididunt ut labore et dolore mabore et dolore magna aliqua. Quis ipsum "
+"suspeisse ultrices gravida. Risus comabore et dolore ma"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:194
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:152
+msgid "Type your Description here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:200
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:103
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:129
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:118
+msgid "View All"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:203
+msgid "View More Food"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:210
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:113
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:139
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:128
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:137
+msgid "View All Button Link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:227
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:164
+msgid "Class For Check Status"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:229
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:230
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:166
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:167
+msgid "fa fa-check"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:236
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:173
+msgid "Describe Check Status"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:239
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:176
+msgid "Lorem Ipsum is simply"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:240
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:177
+msgid "Type your check status text"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:247
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:184
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:143
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:153
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:168
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:156
+msgid "Repeater Testimonial Slider"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:356
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:279
+msgid "tab-background"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:17
+msgid "Restaurant Counters3"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:16
+msgid "Restaurant App-1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:49
+msgid "Restaurant App Section"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:69
+msgid "Restaurnt Heading Sub Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:71
+msgid "Mobile Apps"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:72
+msgid "App Section sub Heading!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:78
+msgid "Restaurant App Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:80
+msgid "Restaurant Helps You To Order Food More Easily"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:81
+msgid "App Section Heading!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:88
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:96
+msgid "Restaurant App Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:91
+msgid ""
+"orem Ipsum has been the industrys standard dummy text ever since the 1500s, "
+"when an unknown printer took a galley of type "
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:99
+msgid "App Store Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:110
+msgid "App Store Link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:124
+msgid "Google Play App Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:135
+msgid "Google Play App Link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:150
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:259
+msgid "Mobile Phone Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:286
+msgid "App-Store-image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:287
+msgid "Google-Play-image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:16
+msgid "foodota-restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:49
+msgid "Foodota Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:82
+msgid "Restaurants Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:92
+msgid "Restaurant Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:106
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:132
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:121
+msgid "Button Link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:127
+msgid "Restaurants Animation"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:131
+msgid "Slider Animation"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:132
+msgid "No Animation"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:139
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:102
+msgid "Restaurants Cols in row"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:16
+msgid "Simple-Grid-Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:16
+msgid "Simple-List-Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:49
+msgid "Foodota simple list Restaurants"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:17
+msgid "Single Products Banners one"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:50
+msgid "Single Product Banners one"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:57
+msgid "Single Product Banner images 1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:68
+msgid "Banner Image one url"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:70
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:90
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:111
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:84
+msgid "https://marketplace.foodotawp.com/"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:71
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:91
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:112
+msgid "Give your Banner url here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:77
+msgid "Single Product Banner images 2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:88
+msgid "Banner Image two url"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:98
+msgid "Single Product Banner images 3"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:109
+msgid "Banner Image three url"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:17
+msgid "Single Products Banners two"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:50
+msgid "Single Product Banners two"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:57
+msgid "Banner Cols in row"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:71
+msgid "Select Product Banner Images"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:82
+msgid "Banner Images Link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:85
+msgid "Give your banner image link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:91
+msgid "Product Banner Images"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:16
+msgid "Single-Category-Products"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:49
+msgid "Single Products By Category"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:70
+msgid "Product Tab Tittle"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:72
+msgid "Our Popular Deal"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:73
+msgid "Type your Tabs Tittle Here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:80
+msgid "Product Tab Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:83
+msgid "OUR MENU"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:84
+msgid "Type your menu Description Here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:17
+msgid "Single Product Hero Section 1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:50
+msgid "Single Product Hero one"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:57
+msgid "Main Heading Top"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:59
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:60
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:106
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:107
+msgid "Special kombo Pack"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:66
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:113
+msgid "Heading Top Color"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:78
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:123
+msgid "Main Heading bottom"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:80
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:81
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:125
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:126
+msgid "Today’s Special Pizza Menu"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:88
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:132
+msgid "Main Heading Color"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:101
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:102
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:146
+msgid ""
+"Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, "
+"sit amet sem neque sed ipsum."
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:108
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:152
+msgid "Main Heading Description color"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:118
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:162
+msgid "Order Now Button Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:128
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:172
+msgid "Order Now Button Link"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:142
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:186
+msgid "real price"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:144
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:188
+msgid "52.00"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:145
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:189
+msgid "Give your Real price"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:152
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:195
+msgid "Sale price"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:154
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:197
+msgid "35.99"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:155
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:198
+msgid "Give your Sale price"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:161
+msgid "Main Hero bone side Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:172
+msgid "Main Hero mint image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:183
+msgid "Main Hero Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:194
+msgid "Main Hero Off Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:205
+msgid "Main Sub image 1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:216
+msgid "Main Sub image 2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:227
+msgid "Main Sub image 3"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:238
+msgid "Main Sub image 4"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:16
+msgid "Single Shop All Products one"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:49
+msgid "Foodota All Single Products"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:83
+msgid "SUPER DELICIOUS"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:127
+msgid "All Products Button Title Here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:130
+msgid "All Products"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:17
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:50
+msgid "Single Special Product"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:57
+msgid "Special main  Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:68
+msgid "Special Off Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:80
+msgid "Special Tomato image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:91
+msgid "Special Mushroom Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:104
+msgid "Special Product Heading Top"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:142
+msgid "Main Heading Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:145
+msgid ""
+"Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, "
+"sit amet sem neque sed ipsum.."
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:16
+msgid "Single-Product-Testimonial1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:49
+msgid "Single Product Testimonial1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:69
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:68
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:69
+msgid "Client Says Text"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:71
+msgid "What Our Clients Say"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:72
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:71
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:72
+msgid "Type you Client Say Heading!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:79
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:79
+msgid "Client Says Sub Title"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:82
+msgid "SATISFIED CLIENTS"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:92
+msgid "Foodota Single Product Testimonials"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:102
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:112
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:127
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:115
+msgid "Testimonial Client Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:113
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:123
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:138
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:126
+msgid "Testimonial Client Text"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:116
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:126
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:141
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:129
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua reader will be distracted "
+"by the readable content"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:124
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:134
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:149
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:137
+msgid "Client Says Name"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:126
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:136
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:151
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:139
+msgid "Alex John Doe"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:127
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:137
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:152
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:140
+msgid "Type your Client Name!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:133
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:143
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:158
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:146
+msgid "Client Says Position"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:135
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:145
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:160
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:148
+msgid "Master Chef"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:136
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:146
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:161
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:149
+msgid "Type your Client Position"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:16
+msgid "Restaurant Started Today"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:49
+msgid "Restaurant Get Started Today"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:69
+msgid "Heading Sub Title Here"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:71
+msgid "Today Sub Title Here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:72
+msgid "Sub Title!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:78
+msgid "Get Started Main Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:80
+msgid "Get Started Today!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:81
+msgid "Main Heading!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:87
+msgid "Get Started sub Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:89
+msgid "Sub Heading!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:106
+msgid "Get Started Paid  Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:117
+msgid "Get Started Paid Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:119
+msgid "Paid Listing"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:120
+msgid "Paid Heading!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:126
+msgid "Get Started Paid Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:128
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:160
+msgid ""
+"We have the right caring, experience and dedicated professional for you."
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:137
+msgid "Get Started Promote Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:149
+msgid "Get Started Promote Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:151
+msgid "Promote Your Business"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:152
+msgid "Promote Heading!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:158
+msgid "Get Started Promote Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:169
+msgid "Food Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:16
+msgid "Restaurant-Client-Testimonial"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:49
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:49
+msgid "Foodota Why Says"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:70
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:71
+msgid "Why Our Client Say"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:78
+msgid "Client Says Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:81
+msgid ""
+"It is a long established fact that a reader will be distracted by the "
+"readable content of a page when looking at its layout. The point of using "
+"Lorem Ipsum is that it has a more-or-less normal distribution"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:88
+msgid "Background Why Says Image"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:102
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:117
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:49
+msgid "Foodota Testimonials"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:16
+msgid "Restaurant-Client-Testimonial2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:82
+msgid "Client Thoughts"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:90
+msgid "Section side image-1"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:101
+msgid "Section side image-2"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:16
+msgid "Restaurant-Client-Testimonial3"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:69
+msgid "Testimonial Heading"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:71
+msgid "what our clients say"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:72
+msgid "Type Testimonial Heading here!"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:79
+msgid "Testimonial Description"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:82
+msgid "Satisfied Clients"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:89
+msgid "Testimonial Side  Background"
+msgstr ""
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:103
+msgid "Restaurant Image"
+msgstr ""
+
+#: include/widgets/restaurant-categories-filter.php:13
+msgid "A Food Categories Filter"
+msgstr ""
+
+#: include/widgets/restaurant-categories-filter.php:85
+#: include/widgets/restaurant-filters.php:93
+msgid "New title"
+msgstr ""
+
+#: include/widgets/restaurant-categories-filter.php:89
+#: include/widgets/restaurant-filters.php:97
+#: include/widgets/restaurant-product-sale.php:167
+#: include/widgets/restaurant-top-sale-product.php:164
+msgid "Title:"
+msgstr ""
+
+#: include/widgets/restaurant-filters.php:14
+msgid "A Food Filters Widget"
+msgstr ""
+
+#: include/widgets/restaurant-filters.php:37
+msgid "Refresh"
+msgstr ""
+
+#: include/widgets/restaurant-filters.php:55
+msgid "Near By Me"
+msgstr ""
+
+#: include/widgets/restaurant-filters.php:66
+msgid "Delivery"
+msgstr ""
+
+#: include/widgets/restaurant-filters.php:73
+msgid "Pickup"
+msgstr ""
+
+#: include/widgets/restaurant-product-sale.php:14
+msgid "A Restaurant Sale Product Widget"
+msgstr ""
+
+#: include/widgets/restaurant-product-sale.php:163
+msgid "Sale Products"
+msgstr ""
+
+#: include/widgets/restaurant-top-sale-product.php:14
+msgid "A Restaurant Top Rated Product Widget"
+msgstr ""
+
+#: include/widgets/restaurant-top-sale-product.php:160
+msgid "Best Selling Products"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Foodota Framework"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://themeforest.net/user/scriptsbundle/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "This plugin is used to addition functionality for foodota theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Scripts Bundle"
+msgstr ""

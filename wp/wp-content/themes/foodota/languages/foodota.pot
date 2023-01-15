@@ -1,0 +1,2104 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Foodota\n"
+"POT-Creation-Date: 2022-02-24 11:38+0500\n"
+"PO-Revision-Date: 2022-02-24 11:38+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: 404.php:5 inc/options.php:894
+msgid "Go To Home"
+msgstr ""
+
+#: 404.php:22 inc/options.php:875
+msgid "OOPS!!!"
+msgstr ""
+
+#: 404.php:33 inc/options.php:881
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php:44 inc/options.php:888
+msgid "We're sorry, but the page you were looking for doesn't exist."
+msgstr ""
+
+#: comments.php:42
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:50
+msgid "Your Email"
+msgstr ""
+
+#: comments.php:57
+msgid "Your Number"
+msgstr ""
+
+#: comments.php:71
+msgid "Your Comment"
+msgstr ""
+
+#: comments.php:81
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\">%4$s</a>"
+msgstr ""
+
+#: comments.php:81
+msgid "Log out"
+msgstr ""
+
+#: comments.php:84
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:94
+msgid "Leave Your Comment"
+msgstr ""
+
+#: footer.php:35
+msgid "Your Order"
+msgstr ""
+
+#: functions.php:39
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/localization.php:9
+msgid "Page"
+msgstr ""
+
+#: inc/localization.php:10
+msgid "of"
+msgstr ""
+
+#: inc/localization.php:11
+msgid "Operation completed!"
+msgstr ""
+
+#: inc/localization.php:12
+msgid "Invalid email or password."
+msgstr ""
+
+#: inc/localization.php:24
+msgid "Name field is required."
+msgstr ""
+
+#: inc/nav.php:174 inc/nav.php:177
+msgid "Home"
+msgstr ""
+
+#: inc/nav.php:269 inc/nav.php:287
+msgid "Select Option"
+msgstr ""
+
+#: inc/nav.php:269
+msgid "Simple Menu"
+msgstr ""
+
+#: inc/nav.php:269
+msgid "Mega Menu"
+msgstr ""
+
+#: inc/nav.php:281
+msgid "Column size "
+msgstr ""
+
+#: inc/nav.php:287
+msgid "Left to Right"
+msgstr ""
+
+#: inc/nav.php:287
+msgid "Right to Left"
+msgstr ""
+
+#: inc/nav.php:298 inc/nav.php:308
+msgid "Select Option - (No Offset)"
+msgstr ""
+
+#: inc/nav.php:301
+msgid "Column Offset "
+msgstr ""
+
+#: inc/nav.php:311
+msgid "Vertical Offset"
+msgstr ""
+
+#: inc/nav.php:375
+msgid ""
+"If you want to hide column name in mega menu just write {HideMe} in  "
+"Navigation Label"
+msgstr ""
+
+#: inc/nav.php:380
+msgid "Lebel Color"
+msgstr ""
+
+#: inc/nav.php:386
+msgid "Lebel Text"
+msgstr ""
+
+#: inc/nav.php:388
+msgid "Enter some text"
+msgstr ""
+
+#: inc/nav.php:393
+msgid "This select option is only for 1st level menu"
+msgstr ""
+
+#: inc/nav.php:399
+msgid "In parent add bigger value and in 2nd level add small value"
+msgstr ""
+
+#: inc/nav.php:405
+msgid "Menu Icons (Font Awesome Icons). "
+msgstr ""
+
+#: inc/nav.php:412
+msgid "Select Options - For simple menu only"
+msgstr ""
+
+#: inc/options.php:20 inc/options.php:21
+msgid "Foodota Options"
+msgstr ""
+
+#: inc/options.php:78
+msgid "General"
+msgstr ""
+
+#: inc/options.php:86 inc/options.php:100
+msgid "Show Site Preloader"
+msgstr ""
+
+#: inc/options.php:88 inc/options.php:102
+msgid "Turn on or off site loader."
+msgstr ""
+
+#: inc/options.php:93
+msgid "Demo Mode"
+msgstr ""
+
+#: inc/options.php:95
+msgid "Only for demo purpose don't enable on your site."
+msgstr ""
+
+#: inc/options.php:109
+msgid "upload your site spinner GIF"
+msgstr ""
+
+#: inc/options.php:111
+msgid "Upload your site spinner image size 150px X 150px"
+msgstr ""
+
+#: inc/options.php:122
+msgid "Typography"
+msgstr ""
+
+#: inc/options.php:129
+msgid "Theme Button Color"
+msgstr ""
+
+#: inc/options.php:130
+msgid "Please provide main theme button color"
+msgstr ""
+
+#: inc/options.php:141 inc/options.php:178
+msgid "Theme button shoadow color"
+msgstr ""
+
+#: inc/options.php:142 inc/options.php:155 inc/options.php:179
+msgid "Pick a show color for the theme buttons"
+msgstr ""
+
+#: inc/options.php:154
+msgid "Theme button Text color"
+msgstr ""
+
+#: inc/options.php:166
+msgid "Secondary Theme Button Color"
+msgstr ""
+
+#: inc/options.php:167
+msgid "Please provide secondary theme button color"
+msgstr ""
+
+#: inc/options.php:190
+msgid "Secondary button Text color"
+msgstr ""
+
+#: inc/options.php:191
+msgid "Pick a show color for the secondary theme buttons"
+msgstr ""
+
+#: inc/options.php:203
+msgid "The Sticky Header Menu color"
+msgstr ""
+
+#: inc/options.php:204
+msgid "Pickup Sticky Menu color"
+msgstr ""
+
+#: inc/options.php:213
+msgid "Section Background White  Heading Scheme"
+msgstr ""
+
+#: inc/options.php:214
+msgid "Pickup the Color Scheme for White Section"
+msgstr ""
+
+#: inc/options.php:223
+msgid "Section Background Dark  Heading Scheme"
+msgstr ""
+
+#: inc/options.php:224
+msgid "Pickup the Color Scheme for Dark Section"
+msgstr ""
+
+#: inc/options.php:236
+msgid "Body Font and details"
+msgstr ""
+
+#: inc/options.php:237 inc/options.php:256
+msgid "Specify the body font properties."
+msgstr ""
+
+#: inc/options.php:255
+msgid "Common Font Heading Settings"
+msgstr ""
+
+#: inc/options.php:272
+msgid "Common Tag Settings"
+msgstr ""
+
+#: inc/options.php:273
+msgid "Specify All Common Tags font properties."
+msgstr ""
+
+#: inc/options.php:291
+msgid "Profile Settings"
+msgstr ""
+
+#: inc/options.php:293
+msgid "These are really basic fields to setup theme!"
+msgstr ""
+
+#: inc/options.php:297
+msgid "Header Profile Pages Settings"
+msgstr ""
+
+#: inc/options.php:306
+msgid "Restaurant Button Text"
+msgstr ""
+
+#: inc/options.php:307
+msgid "Please give Register Button Text Here"
+msgstr ""
+
+#: inc/options.php:308
+msgid "Restaurant Register"
+msgstr ""
+
+#: inc/options.php:314
+msgid "Choose Register page"
+msgstr ""
+
+#: inc/options.php:316
+msgid "Only Choose Registerr  Page."
+msgstr ""
+
+#: inc/options.php:321
+msgid "Dashboard Button Text"
+msgstr ""
+
+#: inc/options.php:322
+msgid "Please give Dashboard Button Text Here"
+msgstr ""
+
+#: inc/options.php:323
+msgid "User Dashboard"
+msgstr ""
+
+#: inc/options.php:329
+msgid "Choose vendor Dashboard page"
+msgstr ""
+
+#: inc/options.php:331
+msgid "Only Choose Dashboard vendor  Page."
+msgstr ""
+
+#: inc/options.php:337
+msgid "Single Product Pages Settings"
+msgstr ""
+
+#: inc/options.php:346
+msgid "Call an Order Text"
+msgstr ""
+
+#: inc/options.php:347
+msgid "Please give Call  an order Text Here"
+msgstr ""
+
+#: inc/options.php:348
+msgid "call and Order in"
+msgstr ""
+
+#: inc/options.php:353
+msgid "Call an Order Number"
+msgstr ""
+
+#: inc/options.php:354
+msgid "Please give Call  an order Number Here"
+msgstr ""
+
+#: inc/options.php:355
+msgid "+92-1243-4567"
+msgstr ""
+
+#: inc/options.php:360
+msgid "Total Cart Text"
+msgstr ""
+
+#: inc/options.php:361
+msgid "Please give Total Cart Text Here"
+msgstr ""
+
+#: inc/options.php:362
+msgid "Shopping Cart"
+msgstr ""
+
+#: inc/options.php:368
+msgid "Choose Single Product Cart  Page "
+msgstr ""
+
+#: inc/options.php:370 inc/options.php:385
+msgid "Only Choose Shop Single Product Page."
+msgstr ""
+
+#: inc/options.php:375
+msgid "Single Product Header Button Text"
+msgstr ""
+
+#: inc/options.php:376
+msgid "Please give Button Text Here"
+msgstr ""
+
+#: inc/options.php:377
+msgid "Search Products"
+msgstr ""
+
+#: inc/options.php:383
+msgid "Choose Single Product  Page "
+msgstr ""
+
+#: inc/options.php:392
+msgid "Main Header Setting"
+msgstr ""
+
+#: inc/options.php:399
+msgid "Header Settings"
+msgstr ""
+
+#: inc/options.php:409
+msgid "Header Layout"
+msgstr ""
+
+#: inc/options.php:410
+msgid "Select Header Layout you want to show."
+msgstr ""
+
+#: inc/options.php:413
+msgid "Header Layout 1"
+msgstr ""
+
+#: inc/options.php:417
+msgid "Header Layout 2"
+msgstr ""
+
+#: inc/options.php:426
+msgid "Topbar Show/Hide"
+msgstr ""
+
+#: inc/options.php:427
+msgid "Hide and Show Top bar"
+msgstr ""
+
+#: inc/options.php:437
+msgid "Topbar Select Pages"
+msgstr ""
+
+#: inc/options.php:438 inc/options.php:712 inc/options.php:746
+msgid "Select the number of pages"
+msgstr ""
+
+#: inc/options.php:439
+msgid "Topbar Select Page"
+msgstr ""
+
+#: inc/options.php:450 inc/options.php:451
+msgid "Top bar Location Field"
+msgstr ""
+
+#: inc/options.php:452
+msgid "Please input the Location"
+msgstr ""
+
+#: inc/options.php:464
+msgid "Top bar Phone Number Field"
+msgstr ""
+
+#: inc/options.php:465
+msgid "Phone Number Here!"
+msgstr ""
+
+#: inc/options.php:466
+msgid "Please input the Phone Number"
+msgstr ""
+
+#: inc/options.php:479
+msgid "Logo Main"
+msgstr ""
+
+#: inc/options.php:481 inc/options.php:672
+msgid "Upload main logo of your website size should be 180x40 PX."
+msgstr ""
+
+#: inc/options.php:488
+msgid "Logo Sticky"
+msgstr ""
+
+#: inc/options.php:490
+msgid "Upload Sticky logo of your website size should be 180x40 PX."
+msgstr ""
+
+#: inc/options.php:496 inc/options.php:776
+msgid "Social Media"
+msgstr ""
+
+#: inc/options.php:497 inc/options.php:777
+msgid "You can sort it out as you want."
+msgstr ""
+
+#: inc/options.php:522
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/options.php:531
+msgid "Breadcrumb Type"
+msgstr ""
+
+#: inc/options.php:532
+msgid "Select breadcrumb Layout you want to show."
+msgstr ""
+
+#: inc/options.php:535
+msgid "Classic"
+msgstr ""
+
+#: inc/options.php:545
+msgid "Breadcrumb Background Image"
+msgstr ""
+
+#: inc/options.php:547
+msgid "Please give the image size 1583X330 px."
+msgstr ""
+
+#: inc/options.php:553
+msgid "Restaurants Settings"
+msgstr ""
+
+#: inc/options.php:559
+msgid "Restaurants Pagination Settings"
+msgstr ""
+
+#: inc/options.php:567
+msgid "Please Give the Restaurants Show in Pagination"
+msgstr ""
+
+#: inc/options.php:568
+msgid "Give the Pagination Indexing."
+msgstr ""
+
+#: inc/options.php:569
+msgid " Min: 1, max: 500, step: 1, default value: 9"
+msgstr ""
+
+#: inc/options.php:580
+msgid "Choose Search Page"
+msgstr ""
+
+#: inc/options.php:582
+msgid "Only Choose Search Page."
+msgstr ""
+
+#: inc/options.php:588
+msgid "Please Select the  page Banner"
+msgstr ""
+
+#: inc/options.php:591
+msgid "Please give the image size 770X100 px."
+msgstr ""
+
+#: inc/options.php:598
+msgid "Blog Page Settings"
+msgstr ""
+
+#: inc/options.php:605
+msgid "Social Media buttons  Show/Hide on Blog Detail page"
+msgstr ""
+
+#: inc/options.php:606
+msgid "Social Media Button"
+msgstr ""
+
+#: inc/options.php:612
+msgid "Set Social Media buttons Position"
+msgstr ""
+
+#: inc/options.php:613
+msgid "You Can choose the Social Media button position"
+msgstr ""
+
+#: inc/options.php:627
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/options.php:661
+msgid "Footer Links Settings"
+msgstr ""
+
+#: inc/options.php:670
+msgid "Footer Logo"
+msgstr ""
+
+#: inc/options.php:679
+msgid "Give short description about Restaurants"
+msgstr ""
+
+#: inc/options.php:680
+msgid ""
+"One is to focus on the quality of your meat. If you can call out organic "
+"beef, sustainable farming."
+msgstr ""
+
+#: inc/options.php:686
+msgid "Restaurant Phone Number"
+msgstr ""
+
+#: inc/options.php:687
+msgid "Please give Phone number Detail Here"
+msgstr ""
+
+#: inc/options.php:688
+msgid "+92300-400-2333"
+msgstr ""
+
+#: inc/options.php:694
+msgid "Restaurant Email Address"
+msgstr ""
+
+#: inc/options.php:695
+msgid "Please give Email Address Here"
+msgstr ""
+
+#: inc/options.php:696
+msgid "restaurant@gmail.com"
+msgstr ""
+
+#: inc/options.php:702
+msgid "Our Services Headings"
+msgstr ""
+
+#: inc/options.php:703
+msgid "Please give our Services headings"
+msgstr ""
+
+#: inc/options.php:704
+msgid "Our Service"
+msgstr ""
+
+#: inc/options.php:711
+msgid "Footer Our Services Pages"
+msgstr ""
+
+#: inc/options.php:713 inc/options.php:745 inc/options.php:747
+msgid "Footer Select Pages"
+msgstr ""
+
+#: inc/options.php:720
+msgid "Latest News Headings"
+msgstr ""
+
+#: inc/options.php:721
+msgid "Please give our Latest News headings"
+msgstr ""
+
+#: inc/options.php:722
+msgid "Latest News"
+msgstr ""
+
+#: inc/options.php:728
+msgid "Footer Latest news Post"
+msgstr ""
+
+#: inc/options.php:729
+msgid "Select the number of post"
+msgstr ""
+
+#: inc/options.php:730
+msgid "Footer Select Latest Post"
+msgstr ""
+
+#: inc/options.php:737
+msgid "Footer Menu Use Full Pages Title"
+msgstr ""
+
+#: inc/options.php:738
+msgid "Please give the Title of the Pages"
+msgstr ""
+
+#: inc/options.php:739
+msgid "Useful Links"
+msgstr ""
+
+#: inc/options.php:755
+msgid "Enter the Copy Rigt Text"
+msgstr ""
+
+#: inc/options.php:756
+msgid "Copyright By Scriptsbundle"
+msgstr ""
+
+#: inc/options.php:762
+msgid "Social Fields"
+msgstr ""
+
+#: inc/options.php:770
+msgid "Enter Social Icon Title "
+msgstr ""
+
+#: inc/options.php:771
+msgid "Social Links"
+msgstr ""
+
+#: inc/options.php:809
+msgid "API Settings"
+msgstr ""
+
+#: inc/options.php:814
+msgid "Google Map Api Setting"
+msgstr ""
+
+#: inc/options.php:822
+msgid "Map Api Show/Hide"
+msgstr ""
+
+#: inc/options.php:823
+msgid "Map Api"
+msgstr ""
+
+#: inc/options.php:829
+msgid "Google Map Api Key"
+msgstr ""
+
+#: inc/options.php:830
+msgid "Map Key Api"
+msgstr ""
+
+#: inc/options.php:831
+msgid "Please Enter Google Map Api Key"
+msgstr ""
+
+#: inc/options.php:838
+msgid "Given Distance In KM Search Restaurants"
+msgstr ""
+
+#: inc/options.php:839
+msgid "Distance KM Search"
+msgstr ""
+
+#: inc/options.php:840
+msgid "Given Distance in Radius Search"
+msgstr ""
+
+#: inc/options.php:848 inc/options.php:849
+msgid "Default Latitude"
+msgstr ""
+
+#: inc/options.php:850
+msgid "Set your default map Latitude"
+msgstr ""
+
+#: inc/options.php:857 inc/options.php:858
+msgid "Default Longitude"
+msgstr ""
+
+#: inc/options.php:859
+msgid "Set your default map Longitude"
+msgstr ""
+
+#: inc/options.php:867
+msgid "404 Pages Setting"
+msgstr ""
+
+#: inc/options.php:874
+msgid "Given Page 404 Sub Heading"
+msgstr ""
+
+#: inc/options.php:880
+msgid "Given page 404 Main Heading"
+msgstr ""
+
+#: inc/options.php:887
+msgid "Given the detail the 404 page"
+msgstr ""
+
+#: inc/options.php:893
+msgid "Given page 404 button Text"
+msgstr ""
+
+#: inc/options.php:899
+msgid "Given button Text Link"
+msgstr ""
+
+#: inc/options.php:906
+msgid "Given page 404 Image"
+msgstr ""
+
+#: inc/options.php:909
+msgid "Please give the image size 750X450 px."
+msgstr ""
+
+#: inc/theme_functions.php:138
+msgid "Copyright"
+msgstr ""
+
+#: inc/theme_functions.php:138
+msgid "All Rights Reserved"
+msgstr ""
+
+#: inc/theme_settings.php:43
+msgid "Foodota Menu"
+msgstr ""
+
+#: inc/theme_settings.php:58
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/theme_settings.php:83
+msgid "Disabled for demo"
+msgstr ""
+
+#: inc/theme_settings.php:100
+msgid "Restaurant Search"
+msgstr ""
+
+#: inc/theme_settings.php:102
+msgid "Widgets in this area will be shown on all Food Categories."
+msgstr ""
+
+#: inc/theme_settings.php:109
+msgid "Restaurant Search Detail Right"
+msgstr ""
+
+#: inc/theme_settings.php:111
+msgid ""
+"Widgets in this area will be shown on all Food Categories on Search Detail."
+msgstr ""
+
+#: inc/theme_settings.php:118
+msgid "Restaurant Search Detail Left"
+msgstr ""
+
+#: inc/theme_settings.php:120
+msgid "Widgets of Banner Image will be shown in this Area."
+msgstr ""
+
+#: inc/theme_utilities.php:50
+msgid "Category"
+msgstr ""
+
+#: inc/theme_utilities.php:52
+msgid "Listing Details"
+msgstr ""
+
+#: inc/theme_utilities.php:54
+msgid "Blog Details"
+msgstr ""
+
+#: inc/theme_utilities.php:62
+msgid "404"
+msgstr ""
+
+#: inc/theme_utilities.php:64
+msgid "Author"
+msgstr ""
+
+#: inc/theme_utilities.php:68
+msgid "Archive"
+msgstr ""
+
+#: inc/theme_utilities.php:70
+msgid "Latest News & Trends"
+msgstr ""
+
+#: inc/theme_utilities.php:74
+msgid "Product Details"
+msgstr ""
+
+#: inc/theme_utilities.php:76
+msgid "Cart"
+msgstr ""
+
+#: inc/theme_utilities.php:79
+msgid "Thank You"
+msgstr ""
+
+#: inc/theme_utilities.php:82
+msgid "Checkout"
+msgstr ""
+
+#: inc/theme_utilities.php:89
+msgid "Shop"
+msgstr ""
+
+#: inc/theme_utilities.php:207
+msgid "No Comments"
+msgstr ""
+
+#: inc/theme_utilities.php:209
+msgid " Comments"
+msgstr ""
+
+#: inc/theme_utilities.php:211
+msgid "1 Comment"
+msgstr ""
+
+#: inc/theme_utilities.php:224
+msgid "Search for:"
+msgstr ""
+
+#: inc/theme_utilities.php:239
+#, php-format
+msgctxt "Human-readable time"
+msgid "%s ago"
+msgstr ""
+
+#: inc/theme_utilities.php:250
+#, php-format
+msgctxt "Human-readable time"
+msgid "%s"
+msgstr ""
+
+#: inc/theme_utilities.php:297 inc/theme_utilities.php:300
+msgid "Previous"
+msgstr ""
+
+#: inc/theme_utilities.php:353 inc/theme_utilities.php:355
+msgid "Next"
+msgstr ""
+
+#: inc/theme_utilities.php:380
+msgid "Pingback:"
+msgstr ""
+
+#: inc/theme_utilities.php:380
+msgid "(Edit)"
+msgstr ""
+
+#: inc/theme_utilities.php:414
+msgid "on "
+msgstr ""
+
+#: inc/theme_utilities.php:450
+msgid "Direct access not allowed"
+msgstr ""
+
+#: inc/theme_utilities.php:700
+msgid "Posted on "
+msgstr ""
+
+#: inc/theme_utilities.php:970
+msgid "Restaurant Open 24/7"
+msgstr ""
+
+#: inc/theme_utilities.php:976
+msgid "Monday"
+msgstr ""
+
+#: inc/theme_utilities.php:976
+msgid "Tuesday"
+msgstr ""
+
+#: inc/theme_utilities.php:976
+msgid "Wednesday"
+msgstr ""
+
+#: inc/theme_utilities.php:976
+msgid "Thursday"
+msgstr ""
+
+#: inc/theme_utilities.php:976
+msgid "Friday"
+msgstr ""
+
+#: inc/theme_utilities.php:976
+msgid "Saturday"
+msgstr ""
+
+#: inc/theme_utilities.php:976
+msgid "Sunday"
+msgstr ""
+
+#: inc/theme_utilities.php:986
+msgid "Today "
+msgstr ""
+
+#: inc/theme_utilities.php:1007
+msgid "Restaurant Closed Today "
+msgstr ""
+
+#: inc/theme_utilities.php:1030 inc/theme_utilities.php:1215
+#: wcfm/store/wcfmmp-view-store.php:283
+msgid "Order Now"
+msgstr ""
+
+#: inc/theme_utilities.php:1123 inc/theme_utilities.php:1186
+msgid "Placeholder"
+msgstr ""
+
+#: inc/theme_utilities.php:1393 inc/theme_utilities.php:1404
+#: inc/theme_utilities.php:1451 inc/theme_utilities.php:1462
+msgid "Choose an option"
+msgstr ""
+
+#: page-vendors.php:181
+msgid "No Record Found"
+msgstr ""
+
+#: page-vendors.php:241
+msgid "  + Restaurants"
+msgstr ""
+
+#: single.php:18
+msgid "SHARE"
+msgstr ""
+
+#: template-parts/blog/blog-detial/content-area.php:29
+msgid "Post date"
+msgstr ""
+
+#: template-parts/blog/content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/blog/content-none.php:13
+msgid ""
+"Nothing matched your search term. Please try again with some different "
+"keywords."
+msgstr ""
+
+#: template-parts/blog/content-none.php:18
+msgid "Your search term"
+msgstr ""
+
+#: template-parts/blog/content-none.php:20
+msgid "Search"
+msgstr ""
+
+#: template-parts/blog/content-none.php:23
+msgid "Back to home"
+msgstr ""
+
+#: template-parts/blog/get-blog-posts.php:45
+msgid "Read More..."
+msgstr ""
+
+#: template-parts/footer/footer-1.php:2 template-parts/footer/footer-2.php:4
+#: template-parts/footer/footer-3.php:4
+msgid "Scriptsbundle"
+msgstr ""
+
+#: template-parts/footer/footer-1.php:7 template-parts/footer/footer-2.php:10
+#: template-parts/footer/footer-3.php:19
+msgid "Subscribe"
+msgstr ""
+
+#: template-parts/footer/footer-3.php:45
+msgid "Phone:"
+msgstr ""
+
+#: template-parts/footer/footer-3.php:48 woocommerce/checkout/thankyou.php:69
+msgid "Email:"
+msgstr ""
+
+#: template-parts/header/header-1.php:58
+msgid "Select From Location"
+msgstr ""
+
+#: template-parts/header/header-1.php:59
+msgid "Select an Location"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: tgm/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: tgm/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: tgm/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: tgm/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: tgm/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: tgm/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: tgm/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:393
+#: tgm/class-tgm-plugin-activation.php:912
+#: tgm/class-tgm-plugin-activation.php:2618
+#: tgm/class-tgm-plugin-activation.php:3648
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:394
+#: tgm/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:395
+#: tgm/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: tgm/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:1019
+#: tgm/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:1206
+#: tgm/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: tgm/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: tgm/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: tgm/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: tgm/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: tgm/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: tgm/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2808
+#: woocommerce/cart/shipping-calculator.php:84
+msgid "Update"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: tgm/class-tgm-plugin-activation.php:3566
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: tgm/class-tgm-plugin-activation.php:3569
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:3571
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:3575
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:3577
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:3577
+#: tgm/class-tgm-plugin-activation.php:3585
+msgid "Show Details"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:3577
+#: tgm/class-tgm-plugin-activation.php:3585
+msgid "Hide Details"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:3578
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: tgm/class-tgm-plugin-activation.php:3580
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:3583
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:3585
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:3586
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: tgm/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: tgm/tgm-init.php:40
+msgid "Gutenberg Template Library & Redux Framework"
+msgstr ""
+
+#: tgm/tgm-init.php:52
+msgid "WCFM - WooCommerce Multivendor Membership"
+msgstr ""
+
+#: tgm/tgm-init.php:63
+msgid "Woocommerce"
+msgstr ""
+
+#: tgm/tgm-init.php:74
+msgid "Foodota Framework"
+msgstr ""
+
+#: tgm/tgm-init.php:85
+msgid "WCFM - WooCommerce Multivendor Marketplace"
+msgstr ""
+
+#: tgm/tgm-init.php:96
+msgid "WCFM - WooCommerce Frontend Manager"
+msgstr ""
+
+#: tgm/tgm-init.php:107
+msgid "Elementor"
+msgstr ""
+
+#: tgm/tgm-init.php:118
+msgid "Post Views Counter"
+msgstr ""
+
+#: tgm/tgm-init.php:129
+msgid "One Click Demo Import"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:23
+msgid "Subscribe Now"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:131
+msgid "Day(s)"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:131
+msgid "Month(s)"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:131
+msgid "Year(s)"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:139
+#: wcfm/membership/vendor_membership.php:206
+msgid "Most Popular"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:151
+#: wcfm/membership/vendor_membership.php:218
+msgid "No payment required"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:155
+#: wcfm/membership/vendor_membership.php:222
+msgid "One time payment"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:158
+#: wcfm/membership/vendor_membership.php:225
+#, php-format
+msgid "for each %s %s"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:160
+#: wcfm/membership/vendor_membership.php:227
+#, php-format
+msgid "with %s for first %s %s"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:162
+#: wcfm/membership/vendor_membership.php:229
+#, php-format
+msgid "with %s %s free trial"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:269
+#: wcfm/membership/vendor_membership.php:289
+msgid "Extend Subscription"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:272
+#: wcfm/membership/vendor_membership.php:292
+msgid "Your Plan"
+msgstr ""
+
+#: wcfm/membership/vendor_membership.php:279
+#: wcfm/membership/vendor_membership.php:299
+msgid "Kindly logout from Admin account to have \"Subscribe Now\" button."
+msgstr ""
+
+#: wcfm/membership/vendor_membership_block.php:18
+#, php-format
+msgid ""
+"Restricted: You are not allowed to access this page. May be you already have "
+"a %sMembership Plan%s or your %sUser Role%s does not allow for this action. "
+"%sPlease contact %sStore Admin%s for more details."
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:69
+#: wcfm/membership/vendor_registration.php:75
+msgid "Username"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:70
+#: wcfm/membership/vendor_registration.php:76
+#: woocommerce/single-product-reviews.php:84
+msgid "Email"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:98
+msgid "Email already verified"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:107
+msgid "Email Verification Code: "
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:107
+#: wcfm/membership/vendor_registration.php:148
+#: wcfm/membership/vendor_registration.php:391
+msgid "This field is required."
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:107
+msgid "Verification Code"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:108
+#: wcfm/membership/vendor_registration.php:149
+msgid "Re-send Code"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:132
+#: wcfm/membership/vendor_registration.php:262
+msgid "Store Phone"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:139
+msgid "Phone already verified"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:148
+msgid "Phone Verification Code: "
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:148
+msgid "OTP"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:163
+msgid "First Name"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:164
+msgid "Last Name"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:165
+msgid "Store Name"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:184
+msgid "your_store"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:186
+msgid "Available"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:186
+msgid "Un-available"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:246
+msgid "Address 1"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:247
+msgid "Address 2"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:248
+msgid "Country"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:249
+msgid "City/Town"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:250
+msgid "State/County"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:251
+msgid "Postcode/Zip"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:359
+msgid "-Select-"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:380
+msgid "Password"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:380
+msgid "Password and Confirm-password are not same."
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:382
+msgid "Confirm Password"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:391
+#: wcfm/membership/vendor_registration.php:396
+msgid "Agree"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:391
+#: wcfm/membership/vendor_registration.php:399
+#: wcfm/membership/vendor_registration.php:401
+msgid "Terms & Conditions"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:442
+msgid "Confirm"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:442
+msgid "Register"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:444
+msgid "Plans"
+msgstr ""
+
+#: wcfm/membership/vendor_registration.php:447
+msgid "Your user role not allowed to subscription!"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store-reviews.php:47
+msgid "reviews"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:58
+msgid "N/A"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:130
+msgid "Restaurant Time Not Set Yet"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:132
+msgid "Working Hours"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:151
+msgid "All Details"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:166
+msgid "Menu"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:171
+#: woocommerce/single-product-reviews.php:32
+msgid "Reviews"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:179 wcfm/store/wcfmmp-view-store.php:312
+msgid "Restaurant Info"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:200
+msgid "Categories"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:266
+msgid "  ...Read more"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:267
+msgid "  ...Read less"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:282
+msgid "Add Product to your cart"
+msgstr ""
+
+#: wcfm/store/wcfmmp-view-store.php:330
+msgid "Current Location"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:51
+#, php-format
+msgid "Shipping to %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:52
+msgid "Change address"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:54
+msgid "Shipping options will be updated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:62
+msgid "Shipping costs are calculated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:64
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:67
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:70
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:71
+msgid "Enter a different address"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:27
+msgid "Cart totals"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:30 woocommerce/cart/cart-totals.php:31
+#: woocommerce/checkout/review-order.php:24
+#: woocommerce/checkout/review-order.php:55
+msgid "Subtotal"
+msgstr ""
+
+#. translators: %s location.
+#: woocommerce/cart/cart-totals.php:56
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:90 woocommerce/cart/cart-totals.php:91
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:98
+#: woocommerce/checkout/review-order.php:102
+#: woocommerce/order/order-details.php:44
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:56 woocommerce/cart/cart.php:213
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:67 woocommerce/cart/cart.php:268
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:70 woocommerce/cart/cart.php:271
+msgid "Remove"
+msgstr ""
+
+#: woocommerce/cart/cart.php:78 woocommerce/cart/cart.php:227
+#: woocommerce/global/quantity-input.php:28
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:102 woocommerce/cart/cart.php:221
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:119 woocommerce/cart/cart.php:287
+#: woocommerce/checkout/form-coupon.php:31
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:121 woocommerce/cart/cart.php:289
+#: woocommerce/checkout/form-coupon.php:37
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:128 woocommerce/cart/cart.php:129
+#: woocommerce/cart/cart.php:296 woocommerce/cart/cart.php:297
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:231 woocommerce/cart/cart.php:240
+msgctxt "front-end"
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/proceed-to-checkout-button.php:25
+msgid "Proceed to checkout"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate shipping"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:31
+msgid "Select a country&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:50
+#: woocommerce/cart/shipping-calculator.php:54
+#: woocommerce/cart/shipping-calculator.php:65
+msgid "State / County"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:55
+msgid "Select an option&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:74
+msgid "City"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:80
+msgid "Postcode / ZIP"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:22
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:44
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:26
+msgid "If you have a coupon code, please apply it below."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:23
+#: woocommerce/order/order-details.php:43
+msgid "Product"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:29
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:32
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:35
+msgid "My account"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:47
+msgid "Order number:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:58
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:80
+msgid "Payment method:"
+msgstr ""
+
+#: woocommerce/content-product.php:84
+msgid "Sale"
+msgstr ""
+
+#. translators: %s: Quantity.
+#: woocommerce/global/quantity-input.php:28
+#, php-format
+msgid "%s quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:42
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/order/order-details.php:39
+msgid "Order details"
+msgstr ""
+
+#: woocommerce/order/order-details.php:80
+msgid "Note:"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:29
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product-reviews.php:57
+msgid "There are no reviews yet."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:66
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:66
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:67
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:71
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:78
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:106
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:107
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:108
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:109
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:110
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:111
+msgid "Very poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:120
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:35
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Foodota"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://marketplace.foodotawp.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Foodota is a premium & responsive WordPress theme designed for Food Related "
+"Restaurants. Foodota theme provides a complete food order your door step "
+"system where users can complete online order the food."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Scripts Bundle"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://scriptsbundle.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Home template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "All Vendors"
+msgstr ""

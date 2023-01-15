@@ -1,0 +1,138 @@
+
+---Downloaded files---
+The import files for: Foodotashop were successfully downloaded!
+Initial max execution time = 0
+Files info:
+Site URL = http://www.goodmealtime.com
+Data file = /home/qhoxo1zue6nw/public_html/wp-content/plugins/foodota-framework/demo-data/Foodotashop/content.xml
+Widget file = /home/qhoxo1zue6nw/public_html/wp-content/plugins/foodota-framework/demo-data/Foodotashop/widgets.json
+Customizer file = /home/qhoxo1zue6nw/public_html/wp-content/plugins/foodota-framework/demo-data/Foodotashop/customizer.dat
+Redux files:
+foodota_options -> /home/qhoxo1zue6nw/public_html/wp-content/plugins/foodota-framework/demo-data/Foodotashop/theme-options.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+foodota_blog_sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+Block - No Title - Imported to Inactive
+Block - No Title - Imported to Inactive
+Block - No Title - Imported to Inactive
+
+rest_search : Sidebar does not exist in theme (moving widget to Inactive)
+
+Image - Advertisement - Widget already exists
+
+rest_search_detail_left : Sidebar does not exist in theme (moving widget to Inactive)
+
+Image - Advertisement - Widget already exists
+
+Vendor Store Sidebar : 
+
+Block - No Title - Imported
+Block - No Title - Imported
+Archives - No Title - Widget already exists
+Categories - No Title - Widget already exists
+Meta - No Title - Widget already exists
+
+
+
+---Importing Redux settings---
+The Redux option name: foodota_options, was not found in this WP site, so it was not imported!
+
+---Importing customizer settings---
+Error: The customizer import file is not suitable for current theme. You can only import customizer settings for the same theme or a child theme.
+
+---ocdi/after_import---
+

@@ -1,0 +1,237 @@
+
+---Downloaded files---
+The import files for: FoodotaDemo1 were successfully downloaded!
+Initial max execution time = 0
+Files info:
+Site URL = http://www.goodmealtime.com
+Data file = /home/qhoxo1zue6nw/public_html/wp-content/plugins/foodota-framework/demo-data/FoodotaDemo1/content.xml
+Widget file = /home/qhoxo1zue6nw/public_html/wp-content/plugins/foodota-framework/demo-data/FoodotaDemo1/widgets.json
+Customizer file = /home/qhoxo1zue6nw/public_html/wp-content/plugins/foodota-framework/demo-data/FoodotaDemo1/customizer.dat
+Redux files:
+foodota_options -> /home/qhoxo1zue6nw/public_html/wp-content/plugins/foodota-framework/demo-data/FoodotaDemo1/theme-options.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+foodota_blog_sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+Search - No Title - Imported to Inactive
+Categories - Food Categories - Imported to Inactive
+Image - Advertisement - Imported to Inactive
+Recent Posts - No Title - Imported to Inactive
+
+rest_search : Sidebar does not exist in theme (moving widget to Inactive)
+
+Restaurant:Food Filter - Filters - Imported to Inactive
+Restaurant:Food Categories Filter - Food Categories - Imported to Inactive
+Image - Advertisement - Imported to Inactive
+
+rest_search_detail_right : Sidebar does not exist in theme (moving widget to Inactive)
+
+Restaurant:Top Rated Products - Best Selling Products - Imported to Inactive
+Restaurant:Sale Products - Sale Products - Imported to Inactive
+
+rest_search_detail_left : Sidebar does not exist in theme (moving widget to Inactive)
+
+Image - Advertisement - Imported to Inactive
+
+Vendor Store Sidebar : 
+
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+Restaurant:Sale Products - Sale Products - Imported
+Restaurant:Top Rated Products - Best Selling Products - Imported
+Restaurant:Sale Products - Sale Products - Imported
+Restaurant:Sale Products - Sale Products - Imported
+Restaurant:Top Rated Products - Best Selling Products - Imported
+
+
+
+---Importing Redux settings---
+The Redux option name: foodota_options, was not found in this WP site, so it was not imported!
+
+---Importing customizer settings---
+Error: The customizer import file is not suitable for current theme. You can only import customizer settings for the same theme or a child theme.
+
+---ocdi/after_import---
+out form while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loopin while loop

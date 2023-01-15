@@ -1,0 +1,1286 @@
+/**
+ * main-style.css
+ * Copyright 2021
+ * theme Name foodota
+ */
+
+
+/*Thtis is woocommerce style css*/
+/*woocommerce Start Hero */
+.woocommerce .woocommerce-result-count {
+    margin: 15px 0;
+}
+.foodota-shop .select2-container {
+    width: 100% !important;
+}
+.woocommerce .foodota-shop .select2-container .select2-selection--single {
+    width: 230px;
+}
+.foodota-shop .select2-container .select2-selection--single {
+    height: 50px;
+    margin: 0;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background: #f3f5ff;
+    color: #656565;
+    border: 1px solid #ddd;
+}
+
+.foodota-shop .select2-container--classic.select2-container--open .select2-selection--single {
+    border: 1px solid #ddd;
+    border-bottom-color: #ddd;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.foodota-shop .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px;
+    background-color: #f3f5ff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+}
+.foodota-shop .select2-container--classic .select2-selection--single .select2-selection__rendered {
+    color: #656565;
+    line-height: 50px;
+    font-size: 14px;
+}
+.foodota-shop .select2-container--classic .select2-selection--single .select2-selection__arrow {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 20px;
+    background: transparent;
+    border:0;
+}
+.foodota-shop .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.foodota-shop .select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+.select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+.select2-container--classic .select2-results__option--highlighted[aria-selected] {
+    background-color: #ff7900 !important;
+    color: #fff !important;
+}
+
+
+.woocommerce .foodota-shop .woocommerce-ordering {
+    margin-right: 5px !important;
+}
+
+.foodota-shop span.onsale  {
+    border-radius: 0% !important;
+    background: #ff7900 !important;
+    box-shadow: 1px 2px 10px 0px rgb(0 0 0 / 30%);
+    top: 7px !important;
+    right: 7px !important;
+    line-height: inherit !important;
+    min-height:auto !important;
+}
+
+.woocommerce .foodota-shop ul.products li.product .woocommerce-loop-category__title, .woocommerce .foodota-shop ul.products li.product .woocommerce-loop-product__title, .woocommerce .foodota-shop ul.products li.product h3, .woocommerce .foodota-shop-detail ul.products li.product .woocommerce-loop-category__title, .woocommerce .foodota-shop-detail ul.products li.product .woocommerce-loop-product__title, .woocommerce .foodota-shop-detail ul.products li.product h3 {
+    padding: inherit;
+    color: #000;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.woocommerce  ul.products li.product .price , .woocommerce  ul.products li.product .price ins {
+    color: #c70909;
+    font-weight: 600;
+    font-size: 20px;
+}
+.woocommerce  ul.products li.product .price del {
+	opacity: 1;
+}
+.woocommerce  ul.products li.product .price del .woocommerce-Price-amount {
+    color: #231900;
+    font-weight: 700;
+    font-size: 15px;
+	
+}
+
+
+
+.woocommerce .foodota-shop ul.products li.product .button {
+    margin-top: 0.3em;
+    border-radius: 0px;
+    height: auto;
+    width: auto;
+    padding: 12px 28px;
+    border: none;
+    transition: .6s;
+	text-transform: capitalize;
+	background-color: #f3f5ff;
+}
+
+.woocommerce .foodota-shop ul.products li.product .button::after {
+    margin-top: 5px;
+    margin-left: 5px;
+    right: 10px;
+}
+
+.woocommerce .foodota-shop ul.products li.product .button:hover {
+    background-color: #071c1f;
+    color: #fff;
+}
+.woocommerce .foodota-shop nav.woocommerce-pagination {
+    text-align: right;
+    background: #fff;
+}
+
+.woocommerce .foodota-shop nav.woocommerce-pagination{
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.woocommerce .foodota-shop nav.woocommerce-pagination ul {
+    border: 0px;
+    border-right-color: #dee2e6;
+}
+.woocommerce .foodota-shop nav.woocommerce-pagination ul li {
+    border-right: 0px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+.woocommerce .foodota-shop nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
+    padding: .8rem 1rem;
+    color: #20292f;
+    border: 1px solid #dee2e6;
+}
+.woocommerce .foodota-shop nav.woocommerce-pagination ul li a:focus, .woocommerce .foodota-shop nav.woocommerce-pagination ul li a:hover, .woocommerce .foodota-shop nav.woocommerce-pagination ul li span.current {
+    color: #231900;
+    background-color: #FFCC00;
+    border-color: #FFCC00;
+}
+
+.foodota-shop .wcfmmp_sold_by_container{
+    display: none;
+}
+
+.foodota-shop .wcfm_buttons{
+    background: #FFCC00 !important;
+    border-radius: 0px;
+    box-shadow: 1px 2px 10px 0px rgb(0 0 0 / 30%);
+    padding: 1px;
+    z-index: 9;
+}
+.foodota-shop .wcfm_buttons .wcfm_button{
+    color: #231900;
+}
+.foodota-shop .wcfm_buttons .wcfm_button span.wcfmfa{
+    line-height: 22px;
+    vertical-align: top;
+    font-size: 16px;
+}
+.foodota-shop .wcfm_buttons .wcfm_button_separator {
+    color: #fff;
+    float: left;
+    margin-top: -3px;
+}
+
+
+
+/*woocommerce Shop detail page*/
+
+.woocommerce .foodota-shop-detail #content div.product div.summary, .woocommerce .foodota-shop-detail div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+    width: 50%;
+}
+
+.foodota-shop-detail span.onsale  {
+    border-radius: 0% !important;
+    background: #ff7900 !important;
+    box-shadow: 1px 2px 10px 0px rgb(0 0 0 / 30%);
+    line-height: inherit !important;
+    min-height: auto !important;
+    left: 13px;
+    right: auto;
+	margin: 0 !important;
+}
+
+
+.woocommerce .foodota-shop-detail div.product .product_title {
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.woocommerce .foodota-shop-detail .product_meta .wcfmmp_sold_by_container_advanced{
+    display: none;
+}
+
+
+.woocommerce .foodota-shop-detail div.product .price del .woocommerce-Price-amount{
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 3px;
+}
+.woocommerce .foodota-shop-detail div.product .price del .woocommerce-Price-amount bdi {
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.woocommerce .foodota-shop-detail div.product .price ins , .woocommerce .foodota-shop-detail div.product p.price, .woocommerce .foodota-shop-detail div.product span.price {
+    color: #c70909;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/*.woocommerce .foodota-shop-detail div.product form.cart div.quantity .qty {
+    height: 37px;
+    font-size: 15px;
+    background-color: #f3f5ff;
+    padding: 0px 2px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    width: 55px;
+    margin-right: 10px;
+}*/
+
+.woocommerce .foodota-shop-detail div.product .button {
+border-radius: 0px;
+height: 38px;
+line-height: 38px;
+padding: 0 20px;
+border: none;
+transition: .6s;
+text-transform: capitalize;
+background-color: #FFCC00;
+	font-size: 15px;
+}
+.woocommerce .foodota-shop-detail div.product .button:hover {
+    background-color: #071c1f;
+    color: #fff;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+  color: #231900;
+}
+
+.woocommerce table.shop_attributes {
+    text-transform: capitalize;
+}
+
+.woocommerce table.shop_attributes td p {
+    margin: 0;
+    padding: 8px 10px;
+}
+.woocommerce #review_form_wrapper #review_form #respond input#submit{
+    padding: 12px 26px;
+}
+.woocommerce #review_form_wrapper #review_form #respond input#submit:hover {
+	background-color: #071c1f;
+color: #fff;
+}
+.woocommerce .foodota-shop-detail div.product p.price del, .woocommerce .foodota-shop-detail div.product span.price del {
+    opacity: 1;
+	
+}
+.foodota-shop-detail .wcfm_buttons{
+    background: #ff7900 !important;
+    border-radius: 0px;
+    box-shadow: 1px 2px 10px 0px rgb(0 0 0 / 30%);
+    padding: 1px;
+    z-index: 9;
+    left: 68px;
+    top: 13px;
+}
+.foodota-shop-detail .wcfm_buttons .wcfm_button{
+    color: #fff;
+}
+.foodota-shop-detail .wcfm_buttons .wcfm_button span.wcfmfa{
+    line-height: 22px;
+    vertical-align: top;
+    font-size: 16px;
+}
+.foodota-shop-detail .wcfm_buttons .wcfm_button_separator {
+    color: #fff;
+    float: left;
+    margin-top: -3px;
+}
+
+.foodota-shop-detail div.product form.cart {
+    margin-bottom: 15px;
+}
+.foodota-shop-detail div.product .product_meta .posted_in{
+    font-weight: 500;
+    color: #000;
+}
+.foodota-shop-detail div.product .product_meta .tagged_as{
+    font-weight: 500;
+    color: #000;
+    display: block;
+}
+.foodota-shop-detail div.product .product_meta .tagged_as a {
+    font-weight: normal;
+    color:#656565;
+
+}
+.foodota-shop-detail div.product .product_meta .posted_in a{
+    font-weight: normal;
+    color:#656565;
+}
+
+.foodota-shop-detail .wcfm_ele_wrapper{
+    margin: 0px auto;
+}
+
+.foodota-shop-detail .wcfm_ele_wrapper .wcfm_catalog_enquiry {
+    font-size: 14px;
+    border-radius: 0px;
+    height: auto;
+    width: auto;
+    padding: 12px 28px;
+    background-color: #f3f5ff !important;
+    color: #656565 !important;
+    border: none;
+    transition: .6s;
+    border-bottom: 0px;
+    box-shadow: none;
+}
+.foodota-shop-detail .wcfm_ele_wrapper .wcfm_catalog_enquiry:hover {
+    background-color: #ff7900 !important;
+    color: #fff !important;
+}
+
+.woocommerce .foodota-shop-detail div.product .woocommerce-tabs ul.tabs {
+    padding-left: 0;
+}
+.woocommerce .foodota-shop-detail div.product .woocommerce-tabs ul.tabs li {
+    border-radius: 0;
+    margin: auto;
+    background-color: #f3f5ff;
+}
+.woocommerce .foodota-shop-detail div.product .woocommerce-tabs ul.tabs li.active {
+    background: #fff;
+    background-color: rgb(255, 255, 255);
+}
+.woocommerce .foodota-shop-detail div.product .woocommerce-tabs .panel h2 {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.woocommerce .foodota-shop-detail div.product .woocommerce-tabs .panel p span{
+    color:#656565 !important;
+}
+.woocommerce .foodota-shop-detail .related.products h2{
+  margin-bottom: 30px;
+font-size: 22px;
+text-transform: capitalize;
+margin-top: 30px;
+}
+
+ .woocommerce-Reviews #review_form .comment-respond .comment-reply-title{
+font-size: 22px;
+text-transform: capitalize;
+	 font-weight: 700;
+line-height: 1.5;
+font-family: 'Montserrat', sans-serif;
+	 color: #231900;
+}
+
+.woocommerce .foodota-shop-detail .related.products ul li .wcfmmp_sold_by_container {
+    display: none;
+}
+
+.woocommerce .foodota-shop-detail .related.products ul li .price {
+    margin-bottom: 0px;
+}
+
+
+.woocommerce .foodota-shop-detail div.product table.woocommerce-product-attributes:not(.has-background) th {
+    background-color: #f3f5ff;
+}
+
+.related.products .food-shop-1 {
+    margin-bottom: 0;
+	
+}
+
+
+.woocommerce .foodota-shop-detail .comment-respond {
+    padding: 25px 20px;
+    background-color: #f3f5ff;
+    overflow: auto;
+}
+.woocommerce .foodota-shop-detail .comment-form .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.woocommerce .foodota-shop-detail .comment-form .comment-form-author, .woocommerce .foodota-shop-detail .comment-form .comment-form-email {
+    width: calc(50% - 0.5rem);
+    float: left;
+}
+.woocommerce .foodota-shop-detail .comment-form .comment-form-email {
+    margin-left: 1rem !important;
+}
+.woocommerce .foodota-shop-detail .woocommerce-noreviews{
+    margin-bottom: 0px;
+}
+.woocommerce .foodota-shop-detail .star-rating span, .woocommerce .foodota-shop-detail p.stars a {
+    color: orange;
+}
+
+.woocommerce .foodota-shop-detail div.product form.cart .variations {
+    margin-bottom: 1em;
+    border: 0;
+    width: 100%;
+}
+.woocommerce .foodota-shop-detail div.product form.cart .variations label {
+    font-weight: 600
+}
+
+.woocommerce .foodota-shop-detail .variations .select2-container {
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+.woocommerce .foodota-shop-detail .variations .select2-container .select2-selection--single {
+    width:100%;
+}
+.foodota-shop-detail .variations .select2-container .select2-selection--single {
+    height: 50px;
+    margin: 0;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background: #f3f5ff;
+    color: #656565;
+    border: 1px solid #ddd;
+}
+
+.foodota-shop-detail .variations .select2-container--classic.select2-container--open .select2-selection--single {
+    border: 1px solid #ddd;
+    border-bottom-color: #ddd;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.foodota-shop-detail .variations .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px;
+    background-color: #f3f5ff;
+    border: 0px solid #ddd;
+    border-radius: 0px;
+}
+.foodota-shop-detail .variations .select2-container--classic .select2-selection--single .select2-selection__rendered {
+    color: #656565;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.foodota-shop-detail .variations .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.foodota-shop-detail .variations .select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+.foodota-shop-detail .variations .select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],.foodota-shop-detail .select2-container--default .select2-results__option--highlighted[data-selected] {
+    background-color: #FFCC00 !important;
+    color: #231900 !important;
+}
+.container--default .select2-results__option[data-selected="true"] {
+    background-color: #FFCC00 !important;
+    color: #231900 !important;
+}
+
+.woocommerce .foodota-shop-detail ul.products li.product .button::after {
+    margin-top: 5px;
+    margin-left: 5px;
+    right: 10px;
+}
+
+.woocommerce .foodota-shop-detail .woocommerce-message .button{
+    font-size: 14px;
+    border-radius: 0px;
+    height: auto;
+    width: auto;
+    padding: 12px 28px;
+    background-color: #FFCC00;
+    color: #231900;
+    border: none;
+    transition: .6s;
+	text-transform: capitalize;
+}
+.woocommerce .foodota-shop-detail .woocommerce-message .button:hover{
+    background-color: #071c1f;
+    color: #fff;
+}
+
+
+/*cart page start css Here*/
+
+.woocommerce .foodota-cart .woocommerce-cart-form__cart-item .product-thumbnail img {
+    width: 90px;
+    margin-right: 15px;
+}
+.exertio-cart .woocommerce-cart-form .form-control {
+    height: 49.6px;
+}
+
+.woocommerce .foodota-cart .woocommerce-cart-form__cart-item .media-body .main-product-name h3{
+    font-size: 22px;
+}
+.woocommerce .foodota-cart .woocommerce-cart-form__cart-item .media-body .product-price{
+    font-size: 22px;
+}
+
+.woocommerce .foodota-cart .woocommerce-cart-form__cart-item .media-body .product-price {
+    color: #c70909;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+
+.foodota-cart .woocommerce-cart-form .form-control {
+    height: 37px;
+    font-size: 15px;
+    padding: 0px 2px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    width: 80px;
+    margin-right: 0px;
+    margin: 3px 0px;
+}
+.foodota-cart .fa-times-circle::before {
+    content: "\f057";
+    font-family: FontAwesome;
+    font-style: initial;
+}
+.woocommerce .foodota-cart .cart-collaterals .cart_totals, .woocommerce-page .foodota-cart .cart-collaterals .cart_totals {
+    float: none;
+    width: 100%;
+    padding: 20px;
+}
+.woocommerce .foodota-cart .woocommerce-cart-form .form-control {
+    height: 40px;
+    margin: 0px auto;
+}
+.woocommerce .foodota-cart .woocommerce-cart-form .btn-outline-secondary {
+    padding: 7px 14px;
+    border-radius: 0;
+    border-color: #ddd;
+}
+.foodota-cart .woocommerce-cart-form .prop-up-cart .btn-block {
+    border-radius: 0px;
+	float: right;
+}
+.foodota-cart .shipping p:not(:last-child) {
+    margin: 0px;
+}
+
+.foodota-cart .shipping .shipping-calculator-form{
+    padding-top: 0px !important;
+}
+.foodota-cart .shipping .shipping-calculator-form{
+    padding-top: 0px !important;
+}
+
+.foodota-cart .shipping .shipping-calculator-button{
+    margin-bottom: 15px;
+}
+
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-container {
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-container .select2-selection--single {
+    width:100%;
+}
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-selection--single {
+    height: 50px;
+    margin: 0;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background: #f3f5ff;
+    color: #656565;
+    border: 0;
+}
+
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-container--classic.select2-container--open .select2-selection--single {
+    border: 1px solid #ddd;
+    border-bottom-color: #ddd;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px;
+    background-color: #f3f5ff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-container--classic .select2-selection--single .select2-selection__rendered {
+    color: #656565;
+    line-height: 50px;
+    font-size: 14px;
+}
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 20px;
+    background: transparent;
+    border:0;
+}
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+.foodota-cart .shipping .woocommerce-shipping-calculator .select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+
+
+.foodota-cart .shipping .woocommerce-shipping-calculator .input-text{
+    height: 50px;
+    margin: 0;
+    border-radius: 4px;
+    background: #f3f5ff;
+    color: #656565;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.foodota-cart .shipping .shipping-calculator-form .select2-container {
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+.foodota-cart .shipping .shipping-calculator-form .select2-container .select2-selection--single {
+    width:100%;
+}
+.foodota-cart .shipping .shipping-calculator-form .select2-selection--single {
+    height: 50px;
+    margin: 0;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background: #f3f5ff;
+    color: #656565;
+    border: 0;
+}
+
+.foodota-cart .shipping .shipping-calculator-form .select2-container--classic.select2-container--open .select2-selection--single {
+    border: 1px solid #ddd;
+    border-bottom-color: #ddd;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.foodota-cart .shipping .shipping-calculator-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px;
+    background-color: #f3f5ff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.foodota-cart .shipping .shipping-calculator-form .select2-container--classic .select2-selection--single .select2-selection__rendered {
+    color: #656565;
+    line-height: 50px;
+    font-size: 14px;
+}
+.foodota-cart .shipping .shipping-calculator-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 20px;
+    background: transparent;
+    border:0;
+}
+.foodota-cart .shipping .shipping-calculator-form .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.foodota-cart .shipping .shipping-calculator-form .select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+.foodota-cart .shipping .shipping-calculator-form .select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+
+.foodota-cart .shipping .shipping-calculator-form .input-text{
+    height: 50px;
+    margin: 0;
+    border-radius: 4px;
+    background: #f3f5ff;
+    color: #656565;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.foodota-cart .shipping .shipping-calculator-form .button{
+    background-color: #ff7900 !important;
+    color: #fff !important;
+    margin-bottom: 15px;
+}
+
+.foodota-cart .shipping .woocommerce-shipping-calculator .button{
+    font-size: 14px;
+    border-radius: 0px;
+    height: auto;
+    width: auto;
+    padding: 12px 28px;
+    background-color: #f3f5ff;
+    color: #656565;
+    border: none;
+    transition: .6s;
+}
+.foodota-cart .shipping .woocommerce-shipping-calculator .button:hover,.foodota-cart .cart-collaterals .checkout-button:hover{
+    background-color: #231900 !important;
+    color: #ffffff !important;
+}
+
+.foodota-cart .cart-collaterals .wc-proceed-to-checkout .checkout-button{
+   box-shadow: none;
+border: none;
+text-shadow: none;
+background: #FFCC00;
+color: #231900;
+border-radius: 0;
+padding: 13px 25px;
+font-weight: 600;
+font-family: 'Montserrat', sans-serif;
+-webkit-transition: all 0.4s ease-in-out 0.1s;
+-moz-transition: all 0.4s ease-in-out 0.1s;
+-o-transition: all 0.4s ease-in-out 0.1s;
+transition: all 0.4s ease-in-out 0.1s;
+position: relative;
+text-transform: capitalize;
+}
+
+.foodota-checkout .woocommerce-error, .foodota-checkout .woocommerce-info, .foodota-checkout .woocommerce-message {
+	margin-bottom:0;
+}
+	
+
+.woocommerce .foodota-cart .cart-collaterals .cart_totals h2{
+	font-size: 22px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals table {
+	margin-bottom: 20px;
+}
+
+
+/*check-out page start css Here*/
+.woocommerce .foodota-checkout .woocommerce-billing-fields h3 {
+    display: none;
+}
+.foodota-checkout .input-text  {
+    background-color: #f3f5ff;
+    border: none;
+    height: 50px;
+    line-height: 30px;
+    color: #000;
+    border-radius: 0px;
+    padding: .375rem .75rem;
+}
+.woocommerce .foodota-checkout .entry-left::before {
+    background: transparent;
+    position: absolute;
+    right: calc(38% - 40px);
+    top: 0;
+    bottom: 0;
+    width: 10000px;
+    border-right: none;
+    content: "";
+    z-index: -1;
+}
+
+.woocommerce .foodota-checkout .form-row {
+    padding: 0px;
+    margin: 1rem 0rem;
+}
+
+.woocommerce .foodota-checkout form .form-row label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #231900;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.woocommerce .foodota-checkout form .select2-container {
+    width: 100% !important;
+    margin-bottom: 0px;
+}
+.woocommerce .foodota-checkout form .select2-container .select2-selection--single {
+    width:100%;
+}
+.woocommerce .foodota-checkout form .select2-selection--single {
+    height: 50px;
+    margin: 0;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background: #f3f5ff;
+    color: #656565;
+    border: 0;
+}
+
+.woocommerce .foodota-checkout form .select2-container--classic.select2-container--open .select2-selection--single {
+    border: 1px solid #ddd;
+    border-bottom-color: #ddd;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.woocommerce .foodota-checkout form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px;
+    background-color: #f3f5ff;
+    border-radius: 0px;
+}
+.woocommerce .foodota-checkout form .select2-container--classic .select2-selection--single .select2-selection__rendered {
+    color: #656565;
+    line-height: 50px;
+    font-size: 14px;
+}
+.woocommerce .foodota-checkout form .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 20px;
+    background: transparent;
+    border:0;
+}
+.woocommerce .foodota-checkout form .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.woocommerce .foodota-checkout form .select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+.woocommerce .foodota-checkout form .select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #ddd !important;
+}
+.woocommerce .foodota-checkout form .screen-reader-text {
+    border: none;
+    clip: unset;
+    -webkit-clip-path:unset !important;
+    clip-path: unset !important;
+    height: initial !important;
+    overflow: auto !important;
+    overflow-wrap: normal !important;
+    word-wrap: normal !important;
+    position: relative !important;
+    width: auto !important;
+    margin-bottom: 5px;
+    color:#000 !important;
+    padding: 0 0 10px 0;
+    position: relative !important;
+    top:inherit !important;
+}
+
+.woocommerce .foodota-checkout .variation-Store a{
+    color: #4e4e4e;
+}
+
+.foodota-checkout #order_review_heading {
+    font-size: 22px;
+    margin: 0;
+	text-transform: capitalize;
+}
+
+.woocommerce .foodota-checkout table.shop_table {
+    margin: 20px -1px 24px 0;
+    border-radius: 0;
+}
+.woocommerce table.shop_table th {
+    border: none;
+    font-weight: 700;
+    color: #231900;
+}
+.woocommerce table.shop_table td {
+    border: none;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 9px 12px;
+    vertical-align: middle;
+    line-height: 1.5em;
+    font-size: 16px;
+}
+.woocommerce table.shop_table tfoot th {
+    font-weight: 700;
+}
+.woocommerce .foodota-checkout .place-order  #place_order{
+    background-color: #FFCC00;
+    color:#231900;
+}
+.woocommerce .foodota-checkout .place-order  #place_order:hover{
+    background-color: #231900 !important;
+    color: #ffffff !important;
+}
+add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+    background-color: #f3f5ff !important;
+    border-radius: 5px;
+}
+
+
+/* Thank you page start */
+
+.woocommerce .foodota-thanksyou .dashboard-statistic-block {
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 5%);
+    margin-bottom: 0;
+}
+.woocommerce .foodota-thanksyou .dashboard-statistic-block .icon {
+    width: 3rem;
+    height: 3rem;
+    max-width: 100%;
+    flex: 0 0 auto;
+    margin-right: 15px;
+    display: inline-flex;
+    padding: 7px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.woocommerce .foodota-thanksyou .icon i, .woocommerce .foodota-thanksyou .icon svg {
+    font-size: 20px;
+    color: #fff;
+}
+.woocommerce .foodota-thanksyou .dashboard-statistic-block h5 {
+    color: #a1a8c3;
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.woocommerce .foodota-thanksyou .dashboard-statistic-block h2 {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 30px;
+    word-wrap: anywhere;
+}
+.woocommerce .foodota-thanksyou .gradient-1 {
+    background: #3398fb;
+    background: -moz-linear-gradient(left, #3398fb 0%, #8553ee 100%);
+    background: -webkit-linear-gradient(left, #3398fb 0%, #8553ee 100%);
+    background: linear-gradient(to right, #3398fb 0%, #8553ee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3398fb', endColorstr='#8553ee', GradientType=1);
+}
+.woocommerce .foodota-thanksyou .gradient-9 {
+    background: linear-gradient(87deg, #f5365c 0, #f56036 100%);
+}
+.woocommerce .foodota-thanksyou .gradient-4 {
+    background: #23bdb8;
+    background: -moz-linear-gradient(-45deg, #23bdb8 0%, #43e794 100%);
+    background: -webkit-linear-gradient(-45deg, #23bdb8 0%, #43e794 100%);
+    background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#23bdb8', endColorstr='#43e794', GradientType=1);
+}
+.woocommerce .foodota-thanksyou .gradient-5 {
+    background: #9a56ff;
+    background: -moz-linear-gradient(-45deg, #9a56ff 0%, #e36cd9 100%);
+    background: -webkit-linear-gradient(-45deg, #9a56ff 0%, #e36cd9 100%);
+    background: linear-gradient(135deg, #9a56ff 0%, #e36cd9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a56ff', endColorstr='#e36cd9', GradientType=1);
+}
+.woocommerce .foodota-thanksyou .woocommerce-order-details__title, .woocommerce .foodota-thanksyou .woocommerce-order-downloads__title {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.woocommerce .foodota-thanksyou table.shop_table th {
+    color: #000;
+}
+
+.woocommerce .foodota-thanksyou table.shop_table td .wc-item-meta a{
+    color:#000 !important;
+}
+.woocommerce .foodota-thanksyou .woocommerce-order-details h2{
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+/*youtube Popup css Start here*/
+
+.YouTubePopUp-Wrap{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:#000;
+    background-color:rgba(0,0,0,0.8);
+    top:0;
+    left:0;
+    z-index:9999999999999;
+}
+
+.YouTubePopUp-animation{
+    opacity: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: YouTubePopUp;
+    animation-name: YouTubePopUp;
+}
+
+@-webkit-keyframes YouTubePopUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes YouTubePopUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
+top:32px;
+z-index:99998;
+}
+
+.YouTubePopUp-Content{
+    max-width:680px;
+    display:block;
+    margin:0 auto;
+    height:100%;
+    position:relative;
+}
+
+.YouTubePopUp-Content iframe{
+    max-width:100% !important;
+    width:100% !important;
+    display:block !important;
+    height:480px !important;
+    border:none !important;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.YouTubePopUp-Hide{
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: YouTubePopUpHide;
+    animation-name: YouTubePopUpHide;
+}
+
+@-webkit-keyframes YouTubePopUpHide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes YouTubePopUpHide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.YouTubePopUp-Close{
+    position:absolute;
+    top:0;
+    cursor:pointer;
+    bottom:528px;
+    right:0px;
+    margin:auto 0;
+    width:24px;
+    height:24px;
+    background:url(../images/close.png) no-repeat;
+    background-size:24px 24px;
+    -webkit-background-size:24px 24px;
+    -moz-background-size:24px 24px;
+    -o-background-size:24px 24px;
+}
+
+.YouTubePopUp-Close:hover{
+    opacity:0.5;
+}
+
+@media all and (max-width: 768px) and (min-width: 10px){
+    .YouTubePopUp-Content{
+        max-width:90%;
+    }
+}
+
+@media all and (max-width: 600px) and (min-width: 10px){
+    .YouTubePopUp-Content iframe{
+        height:320px !important;
+    }
+
+    .YouTubePopUp-Close{
+        bottom:362px;
+    }
+}
+
+@media all and (max-width: 480px) and (min-width: 10px){
+    .YouTubePopUp-Content iframe{
+        height:220px !important;
+    }
+
+    .YouTubePopUp-Close{
+        bottom:262px;
+    }
+}
+.woocommerce .foodota-checkout .checkout_coupon.woocommerce-form-coupon {
+	margin-bottom: 0;
+}
+.woocommerce .foodota-checkout .checkout_coupon.woocommerce-form-coupon .btn {
+	float: right;
+}
+.woocommerce .maxwheels-cart .woocommerce-cart-form__cart-item .product-thumbnail img {
+    width: 90px;
+}
+.woocommerce-cart-form .media-body {
+    margin-left: 10px;
+}
+.woocommerce .maxwheels-cart .cart-collaterals .cart_totals, .woocommerce-page .maxwheels-cart .cart-collaterals .cart_totals {
+    float: none;
+    width: 100%;
+    padding: 20px;
+}
+ .maxwheels-cart .woocommerce-cart-form__cart-item .main-product-name h3 a {
+    margin-bottom: 10px;
+	 font-size: 20px;
+    color: #20292f;
+}
+.cart_totals h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+/*youtube Popup css Close here*/
+
+/*Shop single manage-ul li*/
+
+.shop-manage .woocommerce-product-details__short-description ul{
+  margin: 15px 0px !important;
+}
+.shop-manage .woocommerce-product-details__short-description ul li{
+    padding-bottom: 8px;
+    list-style: inside;
+    font-size: 14px;
+}
+.woocommerce ul.order_details{
+    text-align: center;
+    margin: 30px 0px;
+}
+.woocommerce #wc-paystack-form{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.woocommerce ul.order_details li {
+    float: none;
+    display: inline-block;
+}
+.foodota-custom-woo .product-name{
+    width: 95%;
+}
+.foodota-custom-woo .product-total{
+    width: 5%;
+}
+
+.food-cats-child {
+    width:100%;
+}

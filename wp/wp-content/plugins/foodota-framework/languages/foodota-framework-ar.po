@@ -1,0 +1,2429 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Project-Id-Version: Foodota Framework\n"
+"POT-Creation-Date: 2022-02-24 11:39+0500\n"
+"PO-Revision-Date: 2022-02-24 11:40+0500\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: foodota-framework.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: ar\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: foodota-framework.php:41
+msgid "Page Settings"
+msgstr "اعدادات الصفحة"
+
+#: foodota-framework.php:59
+msgid "Breadcrumb"
+msgstr "مسار التنقل ( Breadcrumb )"
+
+#: foodota-framework.php:62
+msgid "Hide breadcrumb?"
+msgstr "إخفاء فتات الخبز؟"
+
+#: foodota-framework.php:66
+msgid "Transparent Header"
+msgstr "رأس شفاف"
+
+#: foodota-framework.php:69
+msgid "Mark Header As Transparent?"
+msgstr "وضع علامة على الرأس على أنه شفاف؟"
+
+#: foodota-framework.php:70
+msgid "Transparent Header will only work on home pages only"
+msgstr "سوف رأس شفافة تعمل فقط على الصفحات الرئيسية فقط"
+
+#: foodota-framework.php:74
+msgid "Transparent Menu Color"
+msgstr "لون قائمة شفاف"
+
+#: foodota-framework.php:77
+msgid "Select primary color"
+msgstr "تحديد اللون الأساسي"
+
+#: foodota-framework.php:134
+msgid "Confirmation"
+msgstr "تأكيد"
+
+#: foodota-framework.php:135
+msgid "Are you Sure You want to Delete"
+msgstr "هل أنت متأكد أنك تريد حذف"
+
+#: foodota-framework.php:136
+msgid "Yes"
+msgstr "نعم"
+
+#: foodota-framework.php:137
+msgid "NO"
+msgstr "لا"
+
+#: foodota-framework.php:138
+msgid "Successfully Deleted"
+msgstr "تم حذفه بنجاح"
+
+#: foodota-framework.php:139
+msgid "Successfully updated"
+msgstr "تم التحديث بنجاح"
+
+#: foodota-framework.php:140
+msgid "Something went wrong"
+msgstr "حدث خطأ ما"
+
+#: foodota-framework.php:141
+msgid "Opps"
+msgstr "أوبس"
+
+#: foodota-framework.php:142
+msgid "Registerad and login Successfully"
+msgstr "تسجيل وتسجيل الدخول بنجاح"
+
+#: foodota-framework.php:143
+msgid "Registerad Successfully"
+msgstr "سجل بنجاح"
+
+#: foodota-framework.php:144
+msgid "User already Exist"
+msgstr "المستخدم موجود بالفعل"
+
+#: foodota-framework.php:145
+msgid "Permission for Current Location"
+msgstr "إذن للموقع الحالي"
+
+#: foodota-framework.php:146
+msgid "No Restaurant Found Nearby your Location"
+msgstr "لا يوجد مطعم قريب من موقعك"
+
+#: foodota-framework.php:147
+msgid "No Restaurant Found"
+msgstr "لم يتم العثور على مطعم"
+
+#: foodota-framework.php:148
+msgid "Login Successfully"
+msgstr "تسجيل الدخول بنجاح"
+
+#: foodota-framework.php:149
+msgid "Your account is not verified yet"
+msgstr "لم يتم التحقق من حسابك بعد"
+
+#: foodota-framework.php:150
+msgid "Invalid email or password"
+msgstr "البريد الإلكتروني أو كلمة السر خاطئة"
+
+#: foodota-framework.php:151
+msgid "Successfully Favorite"
+msgstr "مفضلة بنجاح"
+
+#: foodota-framework.php:152
+msgid "Remove From Favorite"
+msgstr "إزالة من المفضلة"
+
+#: foodota-framework.php:153
+msgid "First Login For Favorite"
+msgstr "تسجيل الدخول الأول للمفضلة"
+
+#: foodota-framework.php:154
+msgid "Code text field can not be empty."
+msgstr "لا يمكن أن يكون حقل نص التعليمات البرمجية فارغا."
+
+#: foodota-framework.php:155
+msgid "Invalid code entered. Please try again."
+msgstr "تم إدخال رمز غير صالح. الرجاء المحاولة مرة أخرى."
+
+#: foodota-framework.php:156
+msgid "Token Successfully Applied."
+msgstr "الرمز المميز تطبيق بنجاح."
+
+#: foodota-framework.php:157
+msgid "Need To Login First."
+msgstr "تحتاج إلى تسجيل الدخول أولا."
+
+#: foodota-framework.php:158
+msgid "Sorry you are in demo mode!"
+msgstr "آسف كنت في وضع تجريبي!"
+
+#: foodota-framework.php:159
+msgid "You can add item only one restaurant!"
+msgstr "يمكنك إضافة عنصر مطعم واحد فقط!"
+
+#: foodota-framework.php:160
+msgid "Your cart has been updated"
+msgstr "تم تحديث سلة التسوق الخاصة بك"
+
+#: foodota-framework.php:161
+msgid "Permission denied "
+msgstr "تم رفض الإذن "
+
+#: include/ajax/action.php:123
+msgid "Not Deleted"
+msgstr "غير محذوفة"
+
+#: include/ajax/action.php:147
+msgid "Model Show"
+msgstr "عرض النماذج"
+
+#: include/ajax/action.php:150
+msgid "Model not show "
+msgstr "نموذج لا تظهر "
+
+#: include/ajax/action.php:313
+msgid "Confirm Order"
+msgstr "أكد الطلب"
+
+#: include/ajax/action.php:450
+msgid ""
+"Well, you already have some item in your cart. First checkout with those and "
+"then purchase other items!"
+msgstr ""
+"حسنا، لديك بالفعل بعض البنود في عربة التسوق الخاصة بك. الخروج الأول مع تلك "
+"ومن ثم شراء سلع أخرى!"
+
+#: include/ajax/action.php:495
+msgid "Please Checkout or Delete items This Restaurant First!"
+msgstr "يرجى الخروج أو حذف العناصر هذا المطعم أولا!"
+
+#: include/ajax/action.php:541
+msgid "Menu Level"
+msgstr "مستوى القائمة"
+
+#: include/ajax/action.php:566
+msgid "Add Product to your cart"
+msgstr "إضافة منتج إلى سلة التسوق"
+
+#: include/ajax/action.php:566
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:121
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:165
+msgid "Order Now"
+msgstr "اطلب الان"
+
+#: include/ajax/action.php:570
+msgid "  ...Read more"
+msgstr "اقرأ المزيد..."
+
+#: include/ajax/action.php:575
+msgid "...Read less"
+msgstr "اقرأ المزيد..."
+
+#: include/foodota-demo-data.php:19
+msgid "Note: This demo data is already imported."
+msgstr "ملاحظه: يتم استيراد بيانات العرض التوضيحي هذه بالفعل."
+
+#: include/foodota-demo-data.php:42
+msgid "Imported"
+msgstr "تم الاستيراد"
+
+#: include/foodota-demo-data.php:56 include/foodota-demo-data.php:70
+msgid ""
+"Please waiting for a few minutes, do not close the window or refresh the "
+"page until the data is imported."
+msgstr "فضلا، إنتظر حتى يتم إستيراد البيانات"
+
+#: include/foodota-demo-data.php:211
+msgid ""
+"Best if used on new WordPress install & this theme requires PHP version 7.1+"
+msgstr ""
+"أفضل إذا ما استخدمت على تثبيت وورد جديد وهذا الموضوع يتطلب PHP الإصدار 7.1 +"
+
+#: include/foodota-demo-data.php:212
+msgid "Images are for demo purpose only."
+msgstr "الصور للعرض التوضيحي فقط."
+
+#: include/shortcodes/elementor/elementor-shortcodes.php:99
+msgid "Foodota Widgets"
+msgstr "فودوتا الحاجيات"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:17
+msgid "Blog-Grid"
+msgstr "شبكة المدونة"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:50
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:49
+msgid "Foodota simple Grid Restaurants"
+msgstr "مطاعم فودوتا الشبكة البسيطة"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:57
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:57
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:58
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:58
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:56
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:57
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:62
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:56
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:56
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:57
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:56
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:57
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:56
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:57
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:56
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:56
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:56
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:57
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:56
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:56
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:56
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:56
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:56
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:56
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:57
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:56
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:56
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:56
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:57
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:56
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:56
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:56
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:56
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:56
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:56
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:56
+msgid "Foodota Color Heading Scheme"
+msgstr "Foodota لون عنوان النظام"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:61
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:61
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:62
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:62
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:60
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:61
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:66
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:60
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:60
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:61
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:60
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:61
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:60
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:60
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:60
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:60
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:61
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:60
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:60
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:60
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:60
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:60
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:60
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:60
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:60
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:60
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:61
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:60
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:60
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:60
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:60
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:60
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:60
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:60
+msgid "White Section Heading Scheme"
+msgstr "مخطط عنوان المقطع الأبيض"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:62
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:62
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:63
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:63
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:61
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:62
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:67
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:61
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:61
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:62
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:61
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:62
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:62
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:61
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:62
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:61
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:61
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:61
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:62
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:61
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:61
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:61
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:62
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:61
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:61
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:61
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:61
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:61
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:61
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:61
+msgid "Dark Section Heading Scheme"
+msgstr "مخطط عنوان المقطع الداكن"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:71
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:83
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:71
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:70
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:70
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:82
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:81
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:84
+msgid "Restaurants Header Title"
+msgstr "عنوان رأس المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:73
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:85
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:73
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:106
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:139
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:172
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:71
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:84
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:84
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:83
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:86
+msgid "All Restaurant"
+msgstr "كل مطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:74
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:86
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:74
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:107
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:140
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:173
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:73
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:106
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:139
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:172
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:87
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:120
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:153
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:186
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:73
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:72
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:85
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:85
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:84
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:87
+msgid "Type your Restaurants Title Here!"
+msgstr "اكتب عنوان المطاعم هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:81
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:93
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:81
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:80
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:94
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:80
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:92
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:91
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:94
+msgid "Restaurant Header Description"
+msgstr "وصف رأس المطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:84
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:96
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:84
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:116
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:149
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:182
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:83
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:82
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:95
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:83
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:95
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:94
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:97
+msgid "Lorem Ipsum is simply dummy text of the printing"
+msgstr "لوريم إيبسوم هو ببساطة نص وهمي للطباعة"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:85
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:97
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:85
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:117
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:150
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:183
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:84
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:116
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:149
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:182
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:98
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:130
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:163
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:196
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:85
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:85
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:84
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:83
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:96
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:121
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:84
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:84
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:92
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:96
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:95
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:98
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:84
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:83
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:117
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:99
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:130
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:162
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:82
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:127
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:83
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:142
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:83
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:130
+msgid "Type your description here"
+msgstr "اكتب الوصف هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:91
+msgid "Blog Post Cols in row"
+msgstr "مدونة بوست كولس في الصف"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:95
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:106
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:143
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:106
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:61
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:106
+msgid "Two Cols in row"
+msgstr "اثنين من كولس في الصف"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:96
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:107
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:144
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:107
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:62
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:107
+msgid "Three Cols in row"
+msgstr "ثلاثة كولس في الصف"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:97
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:108
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:145
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:108
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:63
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:108
+msgid "Four Cols in row"
+msgstr "أربعة كولس في الصف"
+
+#: include/shortcodes/elementor/elementor-widgets/blog-grids.php:105
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:104
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:139
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:124
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:125
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:120
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:185
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:153
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:116
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:105
+msgid "Number of Restaurants"
+msgstr "عدد المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:16
+msgid "Restaurant-Experience"
+msgstr "مطعم-تجربة"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:49
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:50
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:151
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:109
+msgid "Restaurant Experience Tab"
+msgstr "علامة تبويب تجربة المطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:71
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:81
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:160
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:118
+msgid "Experience Top Heading"
+msgstr "عنوان أعلى التجربة"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:73
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:83
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:162
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:120
+msgid "Our Best About Us"
+msgstr "أفضل ما لدينا عنا"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:74
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:84
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:163
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:121
+msgid "Type Your Top Heading!"
+msgstr "اكتب العنوان العلوي!"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:80
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:90
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:169
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:127
+msgid "Experience bottom Heading"
+msgstr "عنوان أسفل التجربة"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:82
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:92
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:171
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:129
+msgid "An Experience For Your Senses"
+msgstr "تجربة لشعورك"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:83
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:93
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:172
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:130
+msgid "Type Your bottom Heading!"
+msgstr "اكتب عنوانك السفلي!"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:90
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:100
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:179
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:137
+msgid "Experience Heading Description"
+msgstr "وصف عنوان التجربة"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:93
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:103
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:182
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:140
+msgid ""
+"Over 19 years of proving the very best vegan and plant based food to london"
+msgstr "أكثر من 19 عاما من إثبات أفضل الأطعمة النباتية والنباتية إلى لندن"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:94
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:104
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:183
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:141
+msgid "Type your Heading Description here"
+msgstr "اكتب وصف العنوان هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:102
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:105
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:112
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:115
+msgid "Read More"
+msgstr "اقرأ المزيد"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:104
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:129
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:114
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:139
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:202
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:105
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:131
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:120
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:120
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:129
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:164
+msgid "Button title here"
+msgstr "عنوان الزر هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:112
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:122
+msgid "Read More button link"
+msgstr "قراءة المزيد زر الارتباط"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:114
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:139
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:124
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:149
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:182
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:212
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:112
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:137
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:115
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:141
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:130
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:130
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:139
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:174
+msgid "https://your-link.com"
+msgstr "https://themeforest.net/user/scriptsbundle/"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:127
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:130
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:137
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:140
+msgid "Search Now"
+msgstr "ابحث الان"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:137
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:147
+msgid "Search Now button link"
+msgstr "زر البحث الآن الارتباط"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses.php:153
+msgid "Delivery image"
+msgstr "صورة التسليم"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:17
+msgid "Restaurant-Experience2"
+msgstr "مطعم-تجربة2"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:71
+msgid "Sub Title For Main Heading"
+msgstr "العنوان الفرعي للعنوان الرئيسي"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:73
+msgid "tasty Burger"
+msgstr "برغر لذيذ"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:74
+msgid "Type Your Sub Title Heree!"
+msgstr "اكتب عنوانك الفرعي هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/experience-senses2.php:163
+msgid "Background image"
+msgstr "صورة الخلفية"
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:17
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:50
+msgid "Food Category Slider"
+msgstr "شريط التمرير لفئة الطعام"
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:72
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:92
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:93
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:92
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:92
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:91
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:92
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:91
+msgid "Chose Categories"
+msgstr "اختار فئات"
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:84
+msgid "Receip Logo Image"
+msgstr "Receip شعار صورة"
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:178
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:187
+msgid "category-image"
+msgstr "صورة الفئة"
+
+#: include/shortcodes/elementor/elementor-widgets/food-category-slider.php:195
+msgid "recipe-icon"
+msgstr "وصفة أيقونة"
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:16
+msgid "Restaurant-Food-Types"
+msgstr "مطعم-أنواع الطعام"
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:49
+msgid "Foodota Food type Restaurants"
+msgstr "مطاعم من نوع الطعام Foodota"
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:70
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:69
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:69
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:68
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:71
+msgid "Restaurants Header Design"
+msgstr "تصميم رأس المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:74
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:73
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:73
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:72
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:75
+msgid "Classic Header"
+msgstr "رأس كلاسيكي"
+
+#: include/shortcodes/elementor/elementor-widgets/food-types.php:75
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:74
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:74
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:73
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:76
+msgid "Modern Header"
+msgstr "رأس حديث"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:17
+msgid "Hero Search one"
+msgstr "بطل البحث واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:50
+msgid "Hero Search One"
+msgstr "البطل بحث واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:70
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:76
+msgid "Search Heading Top"
+msgstr "البحث في أعلى العنوان"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:72
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:73
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:79
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:80
+msgid "Learn How to Make"
+msgstr "تعلم كيفية صنع"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:81
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:86
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:82
+msgid "Search Heading bottom"
+msgstr "البحث في أسفل العنوان"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:83
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:84
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:106
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:115
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:89
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:85
+msgid "Your Favorite Restaurant Wishes"
+msgstr "رغبات مطعمك المفضل"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:92
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:97
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:93
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:98
+msgid "Search Hero Description"
+msgstr "وصف بطل البحث"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:95
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:96
+msgid ""
+"Lorem Ipsum has been the industry standard dummy text ever since the 1500s, "
+"when an unknown"
+msgstr ""
+"كان Lorem Ipsum النص الوهمي القياسي للصناعة منذ القرن التاسع عشر ، عندما كان "
+"مجهولا"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:103
+msgid "Label Recipe"
+msgstr "وصفة التسمية"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:105
+msgid "Recipe"
+msgstr "وصفة"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:112
+msgid "Label Location"
+msgstr "موقع التسمية"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:114
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:124
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:131
+msgid "Location"
+msgstr "الموقع"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:122
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:113
+msgid "Placeholder Recipe Search"
+msgstr "بحث وصفة العنصر النائب"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:125
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:132
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:116
+msgid "What are you looking for"
+msgstr "اكتب كلمة البحث"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:132
+msgid "Search Button Text"
+msgstr "نص زر البحث"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:134
+msgid "Search"
+msgstr "بحث"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:140
+msgid "Search Fields"
+msgstr "حقول البحث"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:144
+msgid "Search By Recipes"
+msgstr "البحث حسب الوصفات"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:145
+msgid "Search by Location"
+msgstr "البحث حسب الموقع"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:146
+msgid "Both"
+msgstr "كلاهما"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:238
+#: include/shortcodes/elementor/elementor-widgets/hero-search1.php:257
+msgid "Select an Location"
+msgstr "الموقع"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:18
+msgid "Hero Search Two"
+msgstr "بطل البحث اثنين"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:55
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:49
+msgid "Hero Search two"
+msgstr "بطل البحث اثنين"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:88
+msgid "Favourite Restaurants & Takeaways, Delivered To Your Door"
+msgstr "المطاعم المفضلة والوجبات الجاهزة، وتسليمها إلى الباب الخاص بك"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:100
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:96
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula dolor."
+msgstr ""
+"لوريم إيبسوم دولور الجلوس amet، consectetuer adipiscing إيليت. (إينيان "
+"كومودو ليغولا دولور)"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:101
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:97
+msgid "Write Description Here"
+msgstr "كتابة الوصف هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:108
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:104
+msgid "Search Heading Restaurants"
+msgstr "البحث في مطاعم العنوان"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:110
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:106
+msgid "Popular Restaurant"
+msgstr "مطعم شعبي"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:111
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:107
+msgid "Write Your Restaurant Heading"
+msgstr "كتابة عنوان المطعم الخاص بك"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:118
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:70
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:94
+msgid "Video Link"
+msgstr "رابط الفيديو"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:120
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:72
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:96
+msgid "https://www.youtube.com/watch?v=KP69YPqHquY"
+msgstr "https://www.youtube.com/watch?v=KP69YPqHquY"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:121
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:73
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:97
+msgid "https://www.youtube.com"
+msgstr "https://www.youtube.com"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search2.php:129
+msgid "Placeholder location Search"
+msgstr "بحث عن موقع العنصر النائب"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:16
+msgid "Hero Search three"
+msgstr "بطل البحث ثلاثة"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:70
+msgid "Bike Image"
+msgstr "صورة الدراجة"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:84
+msgid "Order Healthy and Fresh Food Any Time"
+msgstr "اطلب طعاما صحيا وطازجة في أي وقت"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:115
+msgid "Recipe Name Here!"
+msgstr "وصفة اسم هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-search3.php:228
+msgid "Search Keywords"
+msgstr "كلمات البحث"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:16
+msgid "Hero Slider 1"
+msgstr "البطل المنزلق 1"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:49
+msgid "Hero Slider One"
+msgstr "البطل المنزلق واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:71
+msgid "Hero Image"
+msgstr "صورة hero"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:83
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:115
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:114
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:114
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:138
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:133
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:198
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:114
+msgid "Repeater Images"
+msgstr "صور مكرر"
+
+#: include/shortcodes/elementor/elementor-widgets/hero-slider1.php:161
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:259
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:266
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:273
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:260
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:272
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:283
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:238
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:256
+msgid "slider-image"
+msgstr "صورة السلايدر"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:17
+msgid "Foodota-how-work"
+msgstr "فودوتا كيف العمل"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:50
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:49
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:50
+msgid "Foodota How It Work"
+msgstr "فودوتا كيف يعمل"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:92
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:91
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:105
+msgid "Its work image-1"
+msgstr "صورة عملها-1"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:104
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:103
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:117
+msgid "Its work title-1"
+msgstr "عنوان عملها-1"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:113
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:112
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:126
+msgid "Its work description-1"
+msgstr "وصف عملها-1"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:125
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:124
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:138
+msgid "Its work image-2"
+msgstr "صورة عملها-2"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:137
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:136
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:150
+msgid "Its work title-2"
+msgstr "عنوان عملها-2"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:146
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:145
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:159
+msgid "Its work description-2"
+msgstr "وصف عملها-2"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:158
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:157
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:171
+msgid "Its work image-3"
+msgstr "صورة عملها-3"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:170
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:169
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:183
+msgid "Its work title-3"
+msgstr "عنوان عملها-3"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work.php:179
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:178
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:192
+msgid "Its work description-3"
+msgstr "وصف عملها-3"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:16
+msgid "Foodota-how-work2"
+msgstr "فودوتا كيف-العمل2"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:72
+msgid "How It Work"
+msgstr "كيف اكتشفتِ ذلك؟"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:105
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:119
+msgid "Your Order"
+msgstr "طلبك"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:115
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:148
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:181
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:129
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:162
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:195
+msgid "Quis ipsum suspeisse ultrices gravida. Risus comabore et dolore ma"
+msgstr "كويس إيبسوم سوسبيس أولتريس جرافيدا. ريسوس كومابور ودولوري ما"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:138
+msgid "Cash Delivery / Onlice Transfer"
+msgstr "تسليم النقدية / تحويل أونليس"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work2.php:171
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:185
+msgid "Receive Order"
+msgstr "استلام الطلب"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:17
+msgid "Foodota-how-work3"
+msgstr "فودوتا كيف-العمل3"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:71
+msgid "How its work section Background"
+msgstr "كيف يعمل قسم خلفية"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:86
+msgid "Simple Process"
+msgstr "عملية بسيطة"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:97
+msgid "How It Works"
+msgstr "كيف تعمل"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:152
+msgid "Cash Delivery / Online Transfer"
+msgstr "تسليم نقدي / تحويل عبر الإنترنت"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:287
+msgid "01"
+msgstr "01"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:298
+msgid "02"
+msgstr "02"
+
+#: include/shortcodes/elementor/elementor-widgets/how-it-work3.php:309
+msgid "03"
+msgstr "03"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:16
+msgid "foodota-newsletter"
+msgstr "الغذاءota-النشرة الإخبارية"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:49
+msgid "Foodota Newsletters"
+msgstr "نشرات فودوتا الإخبارية"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:70
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:102
+msgid "Address Icone"
+msgstr "أيقونة العنوان"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:72
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:73
+msgid "fa fa-home"
+msgstr "فا فا هوم"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:74
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:106
+msgid "Use only Font-Awesome Classes"
+msgstr "استخدام الفئات الخط رهيبة فقط"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:81
+msgid "Location Address Title"
+msgstr "عنوان الموقع"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:83
+msgid "Location Adress"
+msgstr "موقع فستان"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:84
+msgid "Type your Location Address Title Here!"
+msgstr "اكتب عنوان موقعك هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:91
+msgid "Location Address"
+msgstr "عنوان الموقع"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:94
+msgid "Jones Street 126, Edgbaston"
+msgstr "شارع جونز 126، إدجباستون"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:95
+msgid "Type your Location Address Here"
+msgstr "اكتب عنوان موقعك هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:104
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:105
+msgid "fa fa-phone"
+msgstr "فا فا الهاتف"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:113
+msgid "Phone Number Heading Title"
+msgstr "عنوان عنوان رقم الهاتف"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:115
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:116
+msgid "Type your Phone Number Heading"
+msgstr "اكتب عنوان رقم الهاتف"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:123
+msgid "Phone Number Detail"
+msgstr "تفاصيل رقم الهاتف"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:126
+msgid "00-22-55-77-88"
+msgstr "00-22-55-77-88"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:127
+msgid "Type your Phone Number Here"
+msgstr "اكتب رقم هاتفك هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:135
+msgid "Newletter Heading"
+msgstr "عنوان نيوليتر"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:137
+msgid "Signup For Newsletter"
+msgstr "الاشتراك في النشرة الإخبارية"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:138
+msgid "Type your Newsletter Heading"
+msgstr "اكتب عنوان الرسالة الإخبارية"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:145
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:153
+msgid "Newsletter input Placeholder Field"
+msgstr "حقل العنصر النائب لإدخال النشرة الإخبارية"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:147
+msgid "Enter Your Email Address"
+msgstr "ادخل عنوان بريدك الإلكتروني"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:155
+msgid "Subscribe"
+msgstr "الاشتراك"
+
+#: include/shortcodes/elementor/elementor-widgets/newsletter.php:156
+msgid "Enter Text For Newsletter button"
+msgstr "إدخال زر نص للرسائل الإخبارية"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:17
+msgid "Foodota-item-Categories"
+msgstr "فئات المواد الغذائية"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:50
+msgid "Foodota Restaurant Categories"
+msgstr "فئات مطعم فودوتا"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:71
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:71
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:70
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:70
+msgid "Footota Categories"
+msgstr "فئات فوتوتا"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:73
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:73
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:72
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:72
+msgid "Our Categories"
+msgstr "فئاتنا"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:74
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:74
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:73
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:73
+msgid "Type your Restaurants Categories!"
+msgstr "اكتب فئات المطاعم الخاصة بك!"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:81
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:81
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:80
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:80
+msgid "Footota Categories Description"
+msgstr "وصف فئات فوتوتا"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:84
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:83
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:83
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:83
+msgid "Content here content here making it look like readable English "
+msgstr "محتوى هنا المحتوى هنا مما يجعلها تبدو وكأنها مقروءة الإنجليزية "
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:16
+msgid "Foodota-item-Categories2"
+msgstr "فودوتا-بند-فئات2"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:49
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:49
+msgid "Foodota Restaurant Categories 2"
+msgstr "فئات مطعم فودوتا 2"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:103
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:102
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:102
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:102
+msgid "Category Image"
+msgstr "صورة الفئة"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:230
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:224
+msgid "Restaurants"
+msgstr "المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories2.php:234
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:228
+msgid "View Detials"
+msgstr "عرض ديتيالس"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories3.php:16
+msgid "Foodota-item-Categories3"
+msgstr "فودوتا-بند-فئات3"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:16
+msgid "Foodota-item-Categories4"
+msgstr "فودوتا-بند-فئات4"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:49
+msgid "Foodota Restaurant Categories 4"
+msgstr "فئات مطعم فودوتا 4"
+
+#: include/shortcodes/elementor/elementor-widgets/our-categories4.php:185
+msgid "Restaurants Products"
+msgstr "منتجات المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:17
+msgid "Foodota-Team-Members"
+msgstr "فودوتا-أعضاء الفريق"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:50
+msgid "Foodota Team Members"
+msgstr "أعضاء فريق فودوتا"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:72
+msgid "Meet Our Best Team"
+msgstr "تعرف على أفضل فريق لدينا"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:83
+msgid "Content here content here making it look like readable English"
+msgstr "محتوى هنا المحتوى هنا مما يجعلها تبدو وكأنها مقروءة الإنجليزية"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:93
+msgid "Team Member Image"
+msgstr "صورة عضو الفريق"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:105
+msgid "Team Member Title"
+msgstr "لقب عضو الفريق"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:107
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:116
+msgid "Alizeh Anderson"
+msgstr "أليزيه أندرسون"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:108
+msgid "Tema Member Title Here!"
+msgstr "تيما عضو اللقب هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:114
+msgid "Team Member Post"
+msgstr "عضو الفريق بوست"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:117
+msgid "Tema Member Post Title Here!"
+msgstr "تيما عضو آخر العنوان هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:123
+msgid "Team Mebers Repeater"
+msgstr "فريق تيبييرز مكرر"
+
+#: include/shortcodes/elementor/elementor-widgets/our-team-members.php:186
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:198
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:330
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:266
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:207
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:248
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:240
+msgid "icon"
+msgstr "ايقونة"
+
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:16
+msgid "foodota-papular-restaurants"
+msgstr "مطاعم الطعام- البابي"
+
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:49
+msgid "Foodota Papular Restaurants"
+msgstr "مطاعم فودوتا بابولار"
+
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:69
+msgid "Papular Restaurants Title"
+msgstr "عنوان المطاعم البابية"
+
+#: include/shortcodes/elementor/elementor-widgets/papular-restaurants.php:79
+msgid "Papular Restaurant Description"
+msgstr "وصف المطعم البابي"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:16
+msgid "Restaurant Price Plans"
+msgstr "خطط أسعار المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:49
+msgid "Restaurant Price Plan"
+msgstr "خطة سعر المطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:107
+msgid "Price Plan Title"
+msgstr "عنوان خطة السعر"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:109
+msgid "Bacics Plan"
+msgstr "خطة البكالوريا"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:110
+msgid "Type your Plan heading Here!"
+msgstr "اكتب عنوان الخطة هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:117
+msgid "Price Plan Description"
+msgstr "وصف خطة السعر"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:120
+msgid "Various versions have evolved over the years sometimes"
+msgstr "وقد تطورت إصدارات مختلفة على مر السنين في بعض الأحيان"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:127
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:128
+msgid "Plan Price"
+msgstr "سعر المخطط"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:129
+msgid "Type your Plan Price!"
+msgstr "اكتب سعر الخطة!"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:136
+msgid "Price Plan Currency"
+msgstr "عملة خطة السعر"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:138
+msgid "$"
+msgstr "$"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:139
+msgid "Type your Plan currency!"
+msgstr "اكتب عملة الخطة!"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:145
+msgid "Price Plan Duration"
+msgstr "مدة خطة السعر"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:149
+msgid "monthly"
+msgstr "شهري"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:150
+msgid "yearly"
+msgstr "سنوية"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:160
+msgid "Price Plan Text"
+msgstr "نص خطة السعر"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:170
+msgid "Price Plan Button Title"
+msgstr "عنوان زر خطة السعر"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:172
+msgid "price plan button title"
+msgstr "عنوان زر خطة السعر"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:173
+msgid "Get Started"
+msgstr "ابدأ"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:180
+msgid "Price Plan Button Link"
+msgstr "رابط زر خطة السعر"
+
+#: include/shortcodes/elementor/elementor-widgets/price-plan.php:195
+msgid "Rrice Plan Repeater"
+msgstr "مكرر خطة Rrice"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:16
+msgid "Foodota-Product-restaurants"
+msgstr "فودوتا المنتج المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:49
+msgid "Foodota All Product Restaurants"
+msgstr "Foodota جميع مطاعم المنتجات"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:70
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:70
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:70
+msgid "Product All by Restaurants"
+msgstr "المنتج كل حسب المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:72
+msgid "Our Product with Restaurants"
+msgstr "منتجاتنا مع المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:73
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:73
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:73
+msgid "Type your Product title!"
+msgstr "اكتب عنوان المنتج!"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants.php:80
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:80
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:80
+msgid "Product All Description"
+msgstr "المنتج كل وصف"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:16
+msgid "Foodota-Product-restaurants2"
+msgstr "فودوتا-المنتج-المطاعم2"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:49
+msgid "Foodota All Product Restaurants2"
+msgstr "فودوتا جميع مطاعم المنتجات2"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:72
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:72
+msgid "Super Delicious Deal"
+msgstr "صفقة سوبر لذيذ"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:102
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:102
+msgid "Products Cols in row"
+msgstr "المنتجات Cols في صف واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/product-restaurants2.php:116
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:116
+msgid "Number of Products"
+msgstr "عدد المنتجات"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:16
+msgid "Restaurant Counters"
+msgstr "عدادات المطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:49
+msgid "Restaurant Counter"
+msgstr "عداد المطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:80
+msgid "video Description"
+msgstr "وصف الفيديو"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:82
+msgid "Click Here To Watch Our Videos"
+msgstr "انقر هنا لمشاهدة مقاطع الفيديو الخاصة بنا"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:83
+msgid "short Description off your Video"
+msgstr "وصف قصيرة قبالة الفيديو الخاص بك"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:89
+msgid "Restaurant Counter Video Title"
+msgstr "عنوان الفيديو المضاد للمطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:92
+msgid "Best restaurant in new york city with awesome foods"
+msgstr "أفضل مطعم في مدينة نيويورك مع الأطعمة رهيبة"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:93
+msgid "Type your counter description here"
+msgstr "اكتب وصف العداد هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:101
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:96
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:161
+msgid "Counter Image"
+msgstr "صورة العداد"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:114
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:109
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:174
+msgid "Counter Description"
+msgstr "وصف العداد"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:116
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:111
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:176
+msgid "Restaurant"
+msgstr "مطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters.php:117
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:112
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:177
+msgid "Type your Counter Title!"
+msgstr "اكتب عنوان العداد الخاص بك!"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:16
+msgid "Restaurant Counters2"
+msgstr "عدادات المطعم2"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:49
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:50
+msgid "Restaurant Counter Tab"
+msgstr "مطعم كاونتر تاب"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:70
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:71
+msgid "Counter Tab Background"
+msgstr "خلفية علامة التبويب العداد"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:82
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:83
+msgid "Counter Background"
+msgstr "خلفية العداد"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:190
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:148
+msgid "Experience Description"
+msgstr "وصف الخبرة"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:193
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:151
+msgid ""
+"por incididunt ut labore et dolore mabore et dolore magna aliqua. Quis ipsum "
+"suspeisse ultrices gravida. Risus comabore et dolore ma"
+msgstr ""
+"بور incididunt ut labore ودولوري مابور ودولوري ماجنا aliqua. كويس إيبسوم "
+"سوسبيس أولتريس جرافيدا. ريسوس كومابور ودولوري ما"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:194
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:152
+msgid "Type your Description here"
+msgstr "اكتب الوصف هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:200
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:103
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:129
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:118
+msgid "View All"
+msgstr "عرض الكل"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:203
+msgid "View More Food"
+msgstr "عرض المزيد من الطعام"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:210
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:113
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:139
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:128
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:137
+msgid "View All Button Link"
+msgstr "عرض الارتباط"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:227
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:164
+msgid "Class For Check Status"
+msgstr "فئة للتحقق من الحالة"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:229
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:230
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:166
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:167
+msgid "fa fa-check"
+msgstr "فا فا شيك"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:236
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:173
+msgid "Describe Check Status"
+msgstr "وصف حالة التحقق"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:239
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:176
+msgid "Lorem Ipsum is simply"
+msgstr "لوريم إيبسوم هو ببساطة"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:240
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:177
+msgid "Type your check status text"
+msgstr "اكتب نص حالة الشيك"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:247
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:184
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:143
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:153
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:168
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:156
+msgid "Repeater Testimonial Slider"
+msgstr "مكرر شهادة المنزلق"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters2.php:356
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:279
+msgid "tab-background"
+msgstr "خلفية علامة التبويب"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurant-counters3.php:17
+msgid "Restaurant Counters3"
+msgstr "عدادات المطعم3"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:16
+msgid "Restaurant App-1"
+msgstr "مطعم التطبيق-1"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:49
+msgid "Restaurant App Section"
+msgstr "قسم تطبيق المطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:69
+msgid "Restaurnt Heading Sub Title"
+msgstr "العنوان الفرعي للعنوان المتبقى"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:71
+msgid "Mobile Apps"
+msgstr "تطبيقات الجوال"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:72
+msgid "App Section sub Heading!"
+msgstr "عنوان فرعي لقسم التطبيق!"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:78
+msgid "Restaurant App Heading"
+msgstr "عنوان تطبيق المطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:80
+msgid "Restaurant Helps You To Order Food More Easily"
+msgstr "مطعم يساعدك على طلب الطعام بسهولة أكبر"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:81
+msgid "App Section Heading!"
+msgstr "إظهار التطبيق حول المقطع في صفحه الاعداد"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:88
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:96
+msgid "Restaurant App Description"
+msgstr "وصف تطبيق المطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:91
+msgid ""
+"orem Ipsum has been the industrys standard dummy text ever since the 1500s, "
+"when an unknown printer took a galley of type "
+msgstr ""
+"وقد orem Ipsum الصناعات النص وهمية القياسية من أي وقت مضى منذ 1500s ، عندما "
+"أخذت طابعة غير معروفة من نوع المطبخ "
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:99
+msgid "App Store Image"
+msgstr "صورة متجر تطبيقات آبل"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:110
+msgid "App Store Link"
+msgstr "رابط متجر التطبيق"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:124
+msgid "Google Play App Image"
+msgstr "جوجل لعب صورة التطبيق"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:135
+msgid "Google Play App Link"
+msgstr "جوجل لعب التطبيق الارتباط"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:150
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:259
+msgid "Mobile Phone Image"
+msgstr "صورة الهاتف المحمول"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:286
+msgid "App-Store-image"
+msgstr "صورة متجر تطبيقات آبل"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants-app1.php:287
+msgid "Google-Play-image"
+msgstr "جوجل لعب صورة"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:16
+msgid "foodota-restaurants"
+msgstr "مطاعم الطعام"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:49
+msgid "Foodota Restaurants"
+msgstr "مطاعم فودوتا"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:82
+msgid "Restaurants Title"
+msgstr "عنوان المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:92
+msgid "Restaurant Description"
+msgstr "وصف المطعم"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:106
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:132
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:121
+msgid "Button Link"
+msgstr "رابط الزر"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:127
+msgid "Restaurants Animation"
+msgstr "مطاعم الرسوم المتحركة"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:131
+msgid "Slider Animation"
+msgstr "حركة التمرير"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:132
+msgid "No Animation"
+msgstr "بدون حركة"
+
+#: include/shortcodes/elementor/elementor-widgets/restaurants.php:139
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:102
+msgid "Restaurants Cols in row"
+msgstr "مطاعم كولز في صف واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/simple-gridstyle.php:16
+msgid "Simple-Grid-Restaurants"
+msgstr "مطاعم الشبكة البسيطة"
+
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:16
+msgid "Simple-List-Restaurants"
+msgstr "قائمة بسيطة-مطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/simple-liststyle.php:49
+msgid "Foodota simple list Restaurants"
+msgstr "Foodota قائمة بسيطة المطاعم"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:17
+msgid "Single Products Banners one"
+msgstr "لافتات منتجات واحدة واحدة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:50
+msgid "Single Product Banners one"
+msgstr "لافتات منتج واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:57
+msgid "Single Product Banner images 1"
+msgstr "صورة شعار منتج واحد 1"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:68
+msgid "Banner Image one url"
+msgstr "صورة الشعار رابط واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:70
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:90
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:111
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:84
+msgid "https://marketplace.foodotawp.com/"
+msgstr "https://marketplace.foodotawp.com/"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:71
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:91
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:112
+msgid "Give your Banner url here!"
+msgstr "إعطاء عنوان راية الخاص بك هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:77
+msgid "Single Product Banner images 2"
+msgstr "صورة شعار منتج واحد 2"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:88
+msgid "Banner Image two url"
+msgstr "صورة بانر اثنين رابط"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:98
+msgid "Single Product Banner images 3"
+msgstr "صورة شعار منتج واحد 3"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners1.php:109
+msgid "Banner Image three url"
+msgstr "صورة بانر ثلاثة رابط"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:17
+msgid "Single Products Banners two"
+msgstr "لافتات المنتجات المفردة الثانية"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:50
+msgid "Single Product Banners two"
+msgstr "لافتات منتج واحد اثنين"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:57
+msgid "Banner Cols in row"
+msgstr "بانر كولز في الصف"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:71
+msgid "Select Product Banner Images"
+msgstr "تحديد صور شعار المنتج"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:82
+msgid "Banner Images Link"
+msgstr "رابط صور البانر"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:85
+msgid "Give your banner image link"
+msgstr "إعطاء رابط صورة الشعار"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-banners2.php:91
+msgid "Product Banner Images"
+msgstr "صور شعار المنتج"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:16
+msgid "Single-Category-Products"
+msgstr "منتجات ذات فئة واحدة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:49
+msgid "Single Products By Category"
+msgstr "منتجات فردية حسب الفئة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:70
+msgid "Product Tab Tittle"
+msgstr "علامة التبويب المنتج Tittle"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:72
+msgid "Our Popular Deal"
+msgstr "صفقتنا الشعبية"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:73
+msgid "Type your Tabs Tittle Here!"
+msgstr "اكتب علامات التبويب Tittle هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:80
+msgid "Product Tab Description"
+msgstr "وصف علامة تبويب المنتج"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:83
+msgid "OUR MENU"
+msgstr "قائمتنا"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-category-product.php:84
+msgid "Type your menu Description Here"
+msgstr "اكتب وصف القائمة هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:17
+msgid "Single Product Hero Section 1"
+msgstr "قسم بطل المنتج الواحد 1"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:50
+msgid "Single Product Hero one"
+msgstr "بطل منتج واحد واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:57
+msgid "Main Heading Top"
+msgstr "أعلى العنوان الرئيسي"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:59
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:60
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:106
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:107
+msgid "Special kombo Pack"
+msgstr "حزمة كومبو الخاصة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:66
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:113
+msgid "Heading Top Color"
+msgstr "لون رأس العنوان"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:78
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:123
+msgid "Main Heading bottom"
+msgstr "أسفل العنوان الرئيسي"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:80
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:81
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:125
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:126
+msgid "Today’s Special Pizza Menu"
+msgstr "قائمة بيتزا اليوم الخاصة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:88
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:132
+msgid "Main Heading Color"
+msgstr "لون العنوان الرئيسي"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:101
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:102
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:146
+msgid ""
+"Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, "
+"sit amet sem neque sed ipsum."
+msgstr ""
+"Maecenas tempus، تيلوس eget التوابل rhoncus، sem quam semper libero، الجلوس "
+"amet sem neque sed ipsum."
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:108
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:152
+msgid "Main Heading Description color"
+msgstr "لون وصف العنوان الرئيسي"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:118
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:162
+msgid "Order Now Button Title"
+msgstr "ترتيب الآن عنوان الزر"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:128
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:172
+msgid "Order Now Button Link"
+msgstr "ترتيب الآن زر الارتباط"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:142
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:186
+msgid "real price"
+msgstr "السعر الحقيقي"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:144
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:188
+msgid "52.00"
+msgstr "52.00"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:145
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:189
+msgid "Give your Real price"
+msgstr "امنح سعرك الحقيقي"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:152
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:195
+msgid "Sale price"
+msgstr "سعر البيع"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:154
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:197
+msgid "35.99"
+msgstr "35.99"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:155
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:198
+msgid "Give your Sale price"
+msgstr "أعط سعر البيع"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:161
+msgid "Main Hero bone side Image"
+msgstr "البطل الرئيسي الجانب العظام صورة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:172
+msgid "Main Hero mint image"
+msgstr "البطل الرئيسي صورة النعناع"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:183
+msgid "Main Hero Image"
+msgstr "صورة البطل الرئيسي"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:194
+msgid "Main Hero Off Image"
+msgstr "البطل الرئيسي خارج الصورة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:205
+msgid "Main Sub image 1"
+msgstr "الصورة الفرعية الرئيسية 1"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:216
+msgid "Main Sub image 2"
+msgstr "الصورة الفرعية الرئيسية 2"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:227
+msgid "Main Sub image 3"
+msgstr "الصورة الفرعية الرئيسية 3"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-hero1.php:238
+msgid "Main Sub image 4"
+msgstr "الصورة الفرعية الرئيسية 4"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:16
+msgid "Single Shop All Products one"
+msgstr "متجر واحد جميع المنتجات واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:49
+msgid "Foodota All Single Products"
+msgstr "فودوتا جميع المنتجات الفردية"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:83
+msgid "SUPER DELICIOUS"
+msgstr "سوبر لذيذ"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:127
+msgid "All Products Button Title Here!"
+msgstr "جميع المنتجات زر العنوان هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-products1.php:130
+msgid "All Products"
+msgstr "جميع المنتجات"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:17
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:50
+msgid "Single Special Product"
+msgstr "منتج خاص واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:57
+msgid "Special main  Image"
+msgstr "صورة رئيسية خاصة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:68
+msgid "Special Off Image"
+msgstr "خاص خارج الصورة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:80
+msgid "Special Tomato image"
+msgstr "صورة الطماطم الخاصة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:91
+msgid "Special Mushroom Image"
+msgstr "صورة الفطر الخاصة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:104
+msgid "Special Product Heading Top"
+msgstr "رأس عنوان المنتج الخاص"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:142
+msgid "Main Heading Description"
+msgstr "وصف العنوان الرئيسي"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-special-product.php:145
+msgid ""
+"Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, "
+"sit amet sem neque sed ipsum.."
+msgstr ""
+"Maecenas tempus، تيلوس eget التوابل rhoncus، sem quam semper libero، الجلوس "
+"amet sem neque sed ipsum.."
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:16
+msgid "Single-Product-Testimonial1"
+msgstr "منتج واحد-شهادة1"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:49
+msgid "Single Product Testimonial1"
+msgstr "شهادة منتج واحد1"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:69
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:68
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:69
+msgid "Client Says Text"
+msgstr "العميل يقول النص"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:71
+msgid "What Our Clients Say"
+msgstr "ما يقوله عملاؤنا"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:72
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:71
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:72
+msgid "Type you Client Say Heading!"
+msgstr "اكتب لك العميل يقول العنوان!"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:79
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:79
+msgid "Client Says Sub Title"
+msgstr "العميل يقول العنوان الفرعي"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:82
+msgid "SATISFIED CLIENTS"
+msgstr "عملاء راضون"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:92
+msgid "Foodota Single Product Testimonials"
+msgstr "Foodota شهادات المنتج واحد"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:102
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:112
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:127
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:115
+msgid "Testimonial Client Image"
+msgstr "شهادة صورة العميل"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:113
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:123
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:138
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:126
+msgid "Testimonial Client Text"
+msgstr "نص عميل الشهادة"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:116
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:126
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:141
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:129
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua reader will be distracted "
+"by the readable content"
+msgstr ""
+"Lorem ipsum دولور الجلوس amet، consectetur adipiscing إيليت، سيد دو eiusmod "
+"tempor incididunt ut labore وdlore magna aliqua القارئ سوف يصرف من قبل محتوى "
+"مقروء"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:124
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:134
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:149
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:137
+msgid "Client Says Name"
+msgstr "العميل يقول الاسم"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:126
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:136
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:151
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:139
+msgid "Alex John Doe"
+msgstr "أليكس جون دو"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:127
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:137
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:152
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:140
+msgid "Type your Client Name!"
+msgstr "اكتب اسم العميل الخاص بك!"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:133
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:143
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:158
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:146
+msgid "Client Says Position"
+msgstr "العميل يقول الموقف"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:135
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:145
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:160
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:148
+msgid "Master Chef"
+msgstr "ماجستير الشيف"
+
+#: include/shortcodes/elementor/elementor-widgets/single-product/sp-testimonial-says1.php:136
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:146
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:161
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:149
+msgid "Type your Client Position"
+msgstr "اكتب موضع العميل"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:16
+msgid "Restaurant Started Today"
+msgstr "مطعم بدأ اليوم"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:49
+msgid "Restaurant Get Started Today"
+msgstr "مطعم ابدأ اليوم"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:69
+msgid "Heading Sub Title Here"
+msgstr "العنوان الفرعي هنا"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:71
+msgid "Today Sub Title Here!"
+msgstr "اليوم العنوان الفرعي هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:72
+msgid "Sub Title!"
+msgstr "العنوان الفرعي للمشروع"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:78
+msgid "Get Started Main Heading"
+msgstr "بدء العنوان الرئيسي"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:80
+msgid "Get Started Today!"
+msgstr "ابدأ اليوم!"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:81
+msgid "Main Heading!"
+msgstr "النص الموجود أسفل العنوان الرئيسي."
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:87
+msgid "Get Started sub Heading"
+msgstr "بدء العنوان الفرعي"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:89
+msgid "Sub Heading!"
+msgstr "العنوان الفرعي"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:106
+msgid "Get Started Paid  Image"
+msgstr "بدء الصورة المدفوعة"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:117
+msgid "Get Started Paid Heading"
+msgstr "بدء تشغيل العنوان المدفوع"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:119
+msgid "Paid Listing"
+msgstr "إرسال مدفوع لكل قائمة"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:120
+msgid "Paid Heading!"
+msgstr "العنوان المدفوع!"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:126
+msgid "Get Started Paid Description"
+msgstr "بدء تشغيل الوصف المدفوع"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:128
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:160
+msgid ""
+"We have the right caring, experience and dedicated professional for you."
+msgstr "لدينا الرعاية المناسبة والخبرة والمهنية مكرسة لك."
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:137
+msgid "Get Started Promote Image"
+msgstr "بدء الترويج للصورة"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:149
+msgid "Get Started Promote Heading"
+msgstr "بدء الترويج للعنوان"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:151
+msgid "Promote Your Business"
+msgstr "الترويج لأعمالك"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:152
+msgid "Promote Heading!"
+msgstr "الترويج للعنوان!"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:158
+msgid "Get Started Promote Description"
+msgstr "بدء الترويج للوصف"
+
+#: include/shortcodes/elementor/elementor-widgets/started-today.php:169
+msgid "Food Image"
+msgstr "صورة الطعام"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:16
+msgid "Restaurant-Client-Testimonial"
+msgstr "مطعم- عميل-شهادة"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:49
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:49
+msgid "Foodota Why Says"
+msgstr "فودوتا لماذا يقول"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:70
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:71
+msgid "Why Our Client Say"
+msgstr "لماذا يقول عميلنا"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:78
+msgid "Client Says Description"
+msgstr "العميل يقول الوصف"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:81
+msgid ""
+"It is a long established fact that a reader will be distracted by the "
+"readable content of a page when looking at its layout. The point of using "
+"Lorem Ipsum is that it has a more-or-less normal distribution"
+msgstr ""
+"إنها حقيقة راسخة منذ فترة طويلة أن القارئ سيتشتت انتباهه بسبب المحتوى القابل "
+"للقراءة للصفحة عند النظر إلى تخطيطها. النقطة من استخدام Lorem Ipsum هو أن "
+"لديها توزيع طبيعي أكثر أو أقل"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:88
+msgid "Background Why Says Image"
+msgstr "خلفية لماذا يقول صورة"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says.php:102
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:117
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:49
+msgid "Foodota Testimonials"
+msgstr "شهادات فودوتا"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:16
+msgid "Restaurant-Client-Testimonial2"
+msgstr "مطعم- عميل-شهادة2"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:82
+msgid "Client Thoughts"
+msgstr "أفكار العميل"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:90
+msgid "Section side image-1"
+msgstr "صورة جانب القسم-1"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says2.php:101
+msgid "Section side image-2"
+msgstr "صورة جانب القسم-2"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:16
+msgid "Restaurant-Client-Testimonial3"
+msgstr "مطعم-عميل-شهادة3"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:69
+msgid "Testimonial Heading"
+msgstr "عنوان الشهادة"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:71
+msgid "what our clients say"
+msgstr "ما يقوله عملاؤنا"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:72
+msgid "Type Testimonial Heading here!"
+msgstr "اكتب شهادة العنوان هنا!"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:79
+msgid "Testimonial Description"
+msgstr "وصف الشهادة"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:82
+msgid "Satisfied Clients"
+msgstr "العملاء السعيدة"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:89
+msgid "Testimonial Side  Background"
+msgstr "خلفية جانبية للشهادة"
+
+#: include/shortcodes/elementor/elementor-widgets/testimonial-says3.php:103
+msgid "Restaurant Image"
+msgstr "صورة المطعم"
+
+#: include/widgets/restaurant-categories-filter.php:13
+msgid "A Food Categories Filter"
+msgstr "مرشح فئات الطعام"
+
+#: include/widgets/restaurant-categories-filter.php:85
+#: include/widgets/restaurant-filters.php:93
+msgid "New title"
+msgstr "عنوان جديد"
+
+#: include/widgets/restaurant-categories-filter.php:89
+#: include/widgets/restaurant-filters.php:97
+#: include/widgets/restaurant-product-sale.php:167
+#: include/widgets/restaurant-top-sale-product.php:164
+msgid "Title:"
+msgstr "العنوان:"
+
+#: include/widgets/restaurant-filters.php:14
+msgid "A Food Filters Widget"
+msgstr "أداة فلاتر الطعام"
+
+#: include/widgets/restaurant-filters.php:37
+msgid "Refresh"
+msgstr "تحديث"
+
+#: include/widgets/restaurant-filters.php:55
+msgid "Near By Me"
+msgstr "بالقرب مني"
+
+#: include/widgets/restaurant-filters.php:66
+msgid "Delivery"
+msgstr "التسليم"
+
+#: include/widgets/restaurant-filters.php:73
+msgid "Pickup"
+msgstr "الإستلام"
+
+#: include/widgets/restaurant-product-sale.php:14
+msgid "A Restaurant Sale Product Widget"
+msgstr "A مطعم بيع المنتج القطعة"
+
+#: include/widgets/restaurant-product-sale.php:163
+msgid "Sale Products"
+msgstr "منتجات بسعر مخفض"
+
+#: include/widgets/restaurant-top-sale-product.php:14
+msgid "A Restaurant Top Rated Product Widget"
+msgstr "مطعم أعلى تصنيف المنتج القطعة"
+
+#: include/widgets/restaurant-top-sale-product.php:160
+msgid "Best Selling Products"
+msgstr "افضل المنتجات المباعة"
+
+#. Plugin Name of the plugin/theme
+msgid "Foodota Framework"
+msgstr "إطار عمل فودوتا"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://themeforest.net/user/scriptsbundle/"
+msgstr "https://themeforest.net/user/scriptsbundle/"
+
+#. Description of the plugin/theme
+msgid "This plugin is used to addition functionality for foodota theme."
+msgstr "يستخدم هذا البرنامج المساعد لإضافة وظائف لموضوع foodota."
+
+#. Author of the plugin/theme
+msgid "Scripts Bundle"
+msgstr "حزمه مخطوطات"
