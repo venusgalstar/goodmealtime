@@ -9,10 +9,10 @@ import { Constants, hp, Typography, wp } from '../../global';
 const EventDetails = (props: any) => {
     const [event, setEvent] = useState({
         images: [
-            "https://source.unsplash.com/1024x768/?nature",
-            "https://source.unsplash.com/1024x768/?water",
-            "https://source.unsplash.com/1024x768/?girl",
-            "https://source.unsplash.com/1024x768/?tree",
+            "https://goosebumps.finance/images/easter-battle.png",
+            "https://goosebumps.finance/images/easter-battle.png",
+            "https://goosebumps.finance/images/easter-battle.png",
+            "https://goosebumps.finance/images/easter-battle.png",
         ],
         name: 'The Speed of Now (Live Performance)',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.',
@@ -23,7 +23,7 @@ const EventDetails = (props: any) => {
         time: '08:50AM',
         allDayEvent: true,
         attendees: 44,
-        liveStreamUrl: "https://source.unsplash.com/1024x768/?nature",
+        liveStreamUrl: "https://goosebumps.finance/images/logo-icon.png",
         host: 'Will Smith',
         presenters: [{
             name: 'Keith Urban',

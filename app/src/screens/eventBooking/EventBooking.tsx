@@ -9,10 +9,10 @@ import { SliderBox } from "react-native-image-slider-box";
 const EventBooking = (props: any) => {
     const [event, setEvent] = useState({
         images: [
-            "https://source.unsplash.com/1024x768/?nature",
-            "https://source.unsplash.com/1024x768/?water",
-            "https://source.unsplash.com/1024x768/?girl",
-            "https://source.unsplash.com/1024x768/?tree",
+            "https://goosebumps.finance/images/unknown_token.png",
+            "https://goosebumps.finance/images/unknown_token.png",
+            "https://goosebumps.finance/images/unknown_token.png",
+            "https://goosebumps.finance/images/unknown_token.png",
         ],
         name: 'Heavy is the Head',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.',
