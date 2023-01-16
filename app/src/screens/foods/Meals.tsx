@@ -11,9 +11,7 @@ const Meals = (props: any) => {
         navigation = {}
     } = props
 
-
-
-    const onFoodItemPress = () => navigation.navigate('FoodDetails')
+    const onFoodItemPress = (foodId: any) => navigation.navigate('FoodDetails', { foodId: foodId })
 
     const renderCategoryItems = ({ item, index }: any) => {
         return (
@@ -22,7 +20,7 @@ const Meals = (props: any) => {
                 backgroundColor: index % 2 === 0 ? Colors.color11 : Colors.color3
             }}
                 activeOpacity={Constants.btnActiveOpacity}
-                onPress={onFoodItemPress.bind(null, item)}
+                onPress={onFoodItemPress.bind(null, item.id)}
             >
                 <Image
                     source={{ uri: item.image }}

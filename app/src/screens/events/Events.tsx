@@ -10,7 +10,9 @@ const Events = (props: any) => {
     } = props
 
     const onEventPress = () => {
+        // console.log("[==EventDetails==]")
         navigation.navigate('EventDetails')
+        // console.log("[==EventDetails==]")
     }
 
     const renderList = ({ item }: any) => {

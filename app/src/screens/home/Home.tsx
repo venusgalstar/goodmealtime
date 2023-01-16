@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from '../../components/Container'
 import { Colors, Images } from '../../res'
 import EventsMealsBar from './EventsMealsBar'
@@ -8,7 +8,10 @@ import MyTableBtn from './MyTableBtn'
 import TableSlider from './TableSlider'
 import BottomBar from './BottomBar'
 import { Cards } from '../cards';
+import { API_PATH } from '../../config'
 import { mealsData, eventsData } from './Data'
+// import { getAsyncData, postAsyncData } from '../../utils/fetch'
+// import mock from './Mock.json';
 
 const Home = (props: any) => {
     const [tableBtnPressed, setTableBtnPressed] = useState(false)
@@ -28,7 +31,23 @@ const Home = (props: any) => {
         }
     ])
     const [events, setEvents] = useState(eventsData)
-    const [meals, setMeals] = useState(mealsData)
+    const [meals, setMeals] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch(`${API_PATH}?meals=-1`, {
+                    method: 'GET',
+                });
+                const json = await response.json();
+                // console.log("[=====mealsData Json======]", json)
+                setMeals(json)
+            } catch (error) {
+                console.log("[=====Fetch mealsData ERR======]", error)
+            }
+        };
+        fetchData();
+    }, [])
 
 
     const onTableBtnPress = () => {
