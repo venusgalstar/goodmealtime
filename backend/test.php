@@ -1,6 +1,6 @@
 <?php
 
-    if (!isset($_GET['meals']) && !isset($_GET['events'])){
+    if ( !isset($_GET['meals']) && !isset($_GET['events']) && !isset($_GET['eventbooking']) ){
         exit(0);
     }
 
@@ -294,13 +294,60 @@
         }
     }
 
-    
+    function getBooking(){
+        global $conn;
+        $event_id = $_GET["eventbooking"];
+
+        if( $event_id != -1 ){
+            $sql = "select t1.*, t2.* from 
+            (select ticket_id as id, event_id, ticket_description as description, ticket_price as fee, ticket_members as attendees from wp_em_tickets) as t1
+            right join
+            (select event_id as eid,post_id,event_owner, event_status, event_name as name, event_start_date as date, event_start_time as time ,event_all_day, post_content,location_id  from wp_em_events where event_id = ".$event_id.") as t2
+            on t1.event_id = t2.eid
+            ";
+
+            $result = $conn->query($sql);
+
+            $new_item = array();
+
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc() ) {
+                    $new_item["id"] = $row["id"];
+                    $new_item["attendees"] = $row["attendees"]!=''?$row["attendees"]:0;
+                    $new_item["date"] = $row["date"];
+                    $new_item["time"] = $row["time"];
+                    $new_item["name"] = $row["name"];
+
+                    $new_item["description"] = preg_replace('#(\[(.*)\](.*)\[/.*\])#Us','',$row["post_content"]);
+
+                    //adding picture
+                    preg_match_all('#\bhttps?://[^,\s()<>]+(?:\([\w\d]+\)|([^,[:punct:]\s]|/))#', $row["post_content"], $match);
+                    
+                    $new_item["images"] = array();
+
+                    foreach($match[0] as $url){
+                        if( strpos($url, "upload") )
+                            array_push($new_item["images"], $url);
+                    }                   
+                    
+                }
+            }
+            echo json_encode($new_item);
+        }
+    }
+
+
     if (isset($_GET['meals'])){
         getMeals();
     }
     else if( isset($_GET['events'])){
         getEvents();
     }
+    else if( isset($_GET['eventbooking'])){
+        getBooking();
+    }
+
     $conn->close();
 
 ?>
