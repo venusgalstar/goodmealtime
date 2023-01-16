@@ -184,8 +184,7 @@
             // order by t1.id desc
             // ";
 
-            $sql = "select t5.*, t6.comment_content as description from
-            (select t3.*, t4.display_name as name from 
+            $sql = "select t3.*, t4.display_name as name from 
             (select t1.*,t2.* from
             (select event_id as id, event_name as title, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events) as t1
             left join
@@ -193,10 +192,7 @@
             on t1.id = t2.event_id) as t3
             left join
             wp_users t4
-            on t3.event_owner = t4.ID) as t5
-            left join
-            wp_comments t6
-            on t5.post_id = t6.comment_post_ID";
+            on t3.event_owner = t4.ID";
 
             $result = $conn->query($sql);
 
@@ -234,8 +230,7 @@
             echo json_encode($response_data);
         }else{
 
-            $sql = "select t5.*, t6.comment_content as description from
-            (select t3.*, t4.display_name as eventManager from 
+            $sql = "select t3.*, t4.display_name as eventManager from 
             (select t1.*,t2.* from
             (select event_id as id, event_name as name, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events where event_id = ".$event_id.") as t1
             left join
@@ -243,10 +238,7 @@
             on t1.id = t2.event_id) as t3
             left join
             wp_users t4
-            on t3.event_owner = t4.ID) as t5
-            left join
-            wp_comments t6
-            on t5.post_id = t6.comment_post_ID
+            on t3.event_owner = t4.ID
             ";
 
             $result = $conn->query($sql);
