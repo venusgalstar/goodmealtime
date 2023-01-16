@@ -213,7 +213,9 @@
                     $new_item["date"] = $row["date"];
                     $new_item["time"] = $row["time"];
                     $new_item["name"] = $row["name"];
-                    $new_item["description"] = preg_replace('#(\[(.*)\](.*)\[/.*\])#Us','',$row["post_content"]);
+                    $new_item["description"] = strip_tags(preg_replace('#(\[(.*)\](.*)\[/.*\])#Us','',$row["post_content"]));
+                    $new_item["description"] = str_replace("&nbsp;",' ',$new_item["description"]);
+                    $new_item["description"] = str_replace("\r\n",' ',$new_item["description"]);
 
                     //adding picture
                     preg_match_all('#\bhttps?://[^,\s()<>]+(?:\([\w\d]+\)|([^,[:punct:]\s]|/))#', $row["post_content"], $match);
@@ -275,7 +277,9 @@
                     $presenter1["createdBy"] = "Dept for Digital Culture, Media & Sport";
                     array_push($new_item["presenters"], $presenter1);
 
-                    $new_item["description"] = preg_replace('#(\[(.*)\](.*)\[/.*\])#Us','',$row["post_content"]);
+                    $new_item["description"] = strip_tags(preg_replace('#(\[(.*)\](.*)\[/.*\])#Us','',$row["post_content"]));
+                    $new_item["description"] = str_replace("&nbsp;",' ',$new_item["description"]);
+                    $new_item["description"] = str_replace("\r\n",' ',$new_item["description"]);
 
                     //adding picture
                     preg_match_all('#\bhttps?://[^,\s()<>]+(?:\([\w\d]+\)|([^,[:punct:]\s]|/))#', $row["post_content"], $match);
@@ -319,7 +323,9 @@
                     $new_item["time"] = $row["time"];
                     $new_item["name"] = $row["name"];
 
-                    $new_item["description"] = preg_replace('#(\[(.*)\](.*)\[/.*\])#Us','',$row["post_content"]);
+                    $new_item["description"] = strip_tags(preg_replace('#(\[(.*)\](.*)\[/.*\])#Us','',$row["post_content"]));
+                    $new_item["description"] = str_replace("&nbsp;",' ',$new_item["description"]);
+                    $new_item["description"] = str_replace("\r\n",' ',$new_item["description"]);
 
                     //adding picture
                     preg_match_all('#\bhttps?://[^,\s()<>]+(?:\([\w\d]+\)|([^,[:punct:]\s]|/))#', $row["post_content"], $match);
