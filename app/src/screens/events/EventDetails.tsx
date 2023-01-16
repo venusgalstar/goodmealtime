@@ -1,51 +1,84 @@
 import { View, Text, StyleSheet, StatusBar, ScrollView, TouchableOpacity, Dimensions, Image, Platform } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Colors, Fonts } from '../../res'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import { Images } from '../../res'
 import { SliderBox } from "react-native-image-slider-box";
 import { Constants, hp, Typography, wp } from '../../global';
+import { API_PATH, REFETCH } from '../../config';
 
 const EventDetails = (props: any) => {
     const [event, setEvent] = useState({
-        images: [
-            "https://goosebumps.finance/images/easter-battle.png",
-            "https://goosebumps.finance/images/easter-battle.png",
-            "https://goosebumps.finance/images/easter-battle.png",
-            "https://goosebumps.finance/images/easter-battle.png",
-        ],
-        name: 'The Speed of Now (Live Performance)',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.',
-        price: 'Free',
-        discount: '500',
-        liveNow: true,
-        date: 'Thu, May 5, 2021',
-        time: '08:50AM',
-        allDayEvent: true,
-        attendees: 44,
-        liveStreamUrl: "https://goosebumps.finance/images/logo-icon.png",
-        host: 'Will Smith',
+        id: "",
+        images: [],
+        name: ' ',
+        description: ' ',
+        price: ' ',
+        discount: ' ',
+        liveNow: false,
+        date: ' ',
+        time: ' ',
+        allDayEvent: false,
+        attendees: 0,
+        liveStreamUrl: "",
+        host: ' ',
         presenters: [{
-            name: 'Keith Urban',
-            starPresenter: true
-        },
-        {
-            name: 'Birds of Tokyo',
+            name: ' ',
             starPresenter: false
         },
         {
-            name: 'Stomzy',
+            name: ' ',
+            starPresenter: false
+        },
+        {
+            name: ' ',
             starPresenter: false
         }],
-        createdBy: 'Dept for Digital Culture, Media & Sports',
-        accessRestrictions: 'Staff, VIPs, Executive Members, All Executives of DDCMS',
-        gate: '6',
-        seating: 'Free',
-        eventManager: 'Alice Susan'
+        createdBy: ' ',
+        accessRestrictions: ' ',
+        gate: ' ',
+        seating: ' ',
+        eventManager: ' '
     })
+
+    const [refetch, setRefetch] = useState(true);
+
+    useEffect(() => {
+        const timerID = setInterval(() => {
+            setRefetch((prevRefetch) => {
+                return !prevRefetch;
+            });
+        }, REFETCH);
+
+        return () => {
+            clearInterval(timerID);
+        };
+
+    }, []);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch(`${API_PATH}?events=${props.route.params.eventId}`, {
+                    method: 'GET',
+                });
+                const json = await response.json();
+                // console.log("[=====EventDetails Json======]", json)
+                // console.log("[=====EventDetails Stringify======]", JSON.stringify(json))
+                setEvent(json)
+            } catch (error) {
+                console.log("[=====EventDetails ERR======]", error)
+            }
+        };
+        fetchData();
+        // console.log("[=====EventDetails=====]", props)
+        // console.log("[=====EventDetails props.route.params stringify======]", JSON.stringify(props.route.params))
+        // console.log("[=====EventDetails props.route.params foodId======]", props.route.params.eventId)
+    }, [refetch])
+
     const onBackPress = () => props.navigation.goBack()
     const onSaveForLaterPress = () => props.navigation.navigate('SavedEvents')
-    const onBookNowPress = () => props.navigation.navigate('EventBooking')
+    const onBookNowPress = (eventbookingId: any) => props.navigation.navigate('EventBooking', {eventbookingId:eventbookingId})
 
     const RenderFieldList = (props: any) => {
         const { icon, heading, description, first, presenters } = props
@@ -271,7 +304,7 @@ const EventDetails = (props: any) => {
                 </TouchableOpacity>
                 <TouchableOpacity style={Styles.bookNowBtn}
                     activeOpacity={Constants.btnActiveOpacity}
-                    onPress={onBookNowPress}
+                    onPress={onBookNowPress.bind(null, event.id)}
                 >
                     <Image
                         source={Images.calenderWhite}

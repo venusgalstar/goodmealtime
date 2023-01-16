@@ -1,27 +1,59 @@
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Container from '../../components/Container'
 import { ButtonWithRightIcon, Header } from '../../components'
 import { Colors, Fonts, Images } from '../../res'
 import { hp, Typography, wp } from '../../global'
 import { SliderBox } from "react-native-image-slider-box";
+import { API_PATH, REFETCH } from '../../config'
 
 const EventBooking = (props: any) => {
-    const [event, setEvent] = useState({
-        images: [
-            "https://goosebumps.finance/images/unknown_token.png",
-            "https://goosebumps.finance/images/unknown_token.png",
-            "https://goosebumps.finance/images/unknown_token.png",
-            "https://goosebumps.finance/images/unknown_token.png",
-        ],
-        name: 'Heavy is the Head',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.',
-        stormzy: 'Stormzy',
-        attendees: 44,
-        date: 'Fri, May 6, 2021',
-        time: '10:00AM',
-        fee: 5600
+    const [eventBooking, setEventBooking] = useState({
+        id: "",
+        images: [],
+        name: ' ',
+        description: ' ',
+        stormzy: ' ',
+        attendees: 0,
+        date: ' ',
+        time: ' ',
+        fee: 0
     })
+
+    const [refetch, setRefetch] = useState(true);
+
+    useEffect(() => {
+        const timerID = setInterval(() => {
+            setRefetch((prevRefetch) => {
+                return !prevRefetch;
+            });
+        }, REFETCH);
+
+        return () => {
+            clearInterval(timerID);
+        };
+
+    }, []);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch(`${API_PATH}?eventbooking=${props.route.params.eventbookingId}`, {
+                    method: 'GET',
+                });
+                const json = await response.json();
+                // console.log("[=====EventBooking Json======]", json)
+                // console.log("[=====EventBooking Stringify======]", JSON.stringify(json))
+                setEventBooking(json)
+            } catch (error) {
+                console.log("[=====EventBooking ERR======]", error)
+            }
+        };
+        fetchData();
+        // console.log("[=====EventBooking=====]", props)
+        // console.log("[=====EventBooking props.route.params stringify======]", JSON.stringify(props.route.params))
+        // console.log("[=====EventBooking props.route.params foodId======]", props.route.params.eventbookingId)
+    }, [refetch])
 
     const RenderField = ({ icon, name }: any) => {
         return (
@@ -53,7 +85,7 @@ const EventBooking = (props: any) => {
                 </Text>
                 <View style={[Styles.eventBoxContainer, Styles.shadow]}>
                     <SliderBox
-                        images={event.images}
+                        images={eventBooking.images}
                         disableOnPress
                         sliderBoxHeight={hp(25)}
                         parentWidth={wp(90)}
@@ -61,29 +93,29 @@ const EventBooking = (props: any) => {
                         dotColor={Colors.color3}
                     />
                     <Text style={Styles.eventName}>
-                        {event.name}
+                        {eventBooking.name}
                     </Text>
                     <Text style={Styles.eventDescription}>
-                        {event.description}
+                        {eventBooking.description}
                     </Text>
                     <View style={Styles.renderFieldCon}>
                         <RenderField
                             icon={Images.micTheme}
-                            name={event.stormzy}
+                            name={eventBooking.stormzy}
                         />
                         <RenderField
                             icon={Images.users}
-                            name={`${event.attendees} attendees`}
+                            name={`${eventBooking.attendees} attendees`}
                         />
                     </View>
                     <View style={Styles.renderFieldCon}>
                         <RenderField
                             icon={Images.calender}
-                            name={event.date}
+                            name={eventBooking.date}
                         />
                         <RenderField
                             icon={Images.time}
-                            name={event.time}
+                            name={eventBooking.time}
                         />
                     </View>
                 </View>
@@ -95,7 +127,7 @@ const EventBooking = (props: any) => {
                         <Text style={Styles.eventFeeTxt}>
                             <Text style={{ ...Styles.eventFeeTxt, color: Colors.color19 }}>
                                 $ </Text>
-                            {event.fee}
+                            {eventBooking.fee}
                         </Text>
                     </View>
                     <ButtonWithRightIcon

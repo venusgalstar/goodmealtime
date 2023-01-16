@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Entypo from 'react-native-vector-icons/Entypo'
 import { Typography, wp } from '../../global'
 import { Colors, Fonts } from '../../res'
@@ -10,8 +10,8 @@ import { Meals } from '../foods'
 const EventsMealsBar = (props: any) => {
     const [activeBtn, setActiveBtn] = useState('Events')
     const {
-        events = [],
-        meals = [],
+        // events = [],
+        // meals = [],
         dataVisible = false,
         navigation = {}
     } = props
@@ -20,6 +20,11 @@ const EventsMealsBar = (props: any) => {
         setActiveBtn(active)
         props.onBarBtnPress(active)
     }
+
+    // useEffect(() => {
+    //     console.log("[=====EventsMealsBar=====]", props)
+    // }, [])
+
     return (
         <View style={dataVisible ? Styles.container : {}}>
             <View style={[Styles.barContainer, Styles.shadow]}>
@@ -54,12 +59,12 @@ const EventsMealsBar = (props: any) => {
                 dataVisible &&
                     activeBtn === 'Events' ?
                     <Events
-                        data={events}
+                        // data={events}
                         navigation={navigation}
                     />
                     :
                     <Meals
-                        data={meals}
+                        // data={meals}
                         navigation={navigation}
                     />
             }

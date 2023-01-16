@@ -25,11 +25,11 @@ const EventCard = (props: any) => {
             <TouchableOpacity style={[Styles.contentOuterCon, Styles.shadow]}
                 activeOpacity={Constants.btnActiveOpacity}
                 onPress={() => {
-                    // console.log("[=================prince start=================]", props);
-                    // console.log("[=================prince start=================]", item);
+                    // console.log("[======EventCard onPress start=====]", props);
+                    // console.log("[======EventCard onPress start=====]", item);
                     // onPress.bind(null, item)
                     onPress()
-                    // console.log("[=================prince end11=================]", item);
+                    // console.log("[======EventCard onPress end=======]", item);
                 }}
             >
                 <View style={Styles.contentInnerCon}>
