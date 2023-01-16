@@ -5,8 +5,8 @@
     }
 
     $servername = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "dev_Alek";
+    $password = "_6X;$7,Cl!}G";
     $dbname = "i7452067_wp3";
 
     // Create connection
@@ -16,6 +16,17 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
+	
+	function utf8ize($d) {
+	    if (is_array($d)) {
+	        foreach ($d as $k => $v) {
+	            $d[$k] = utf8ize($v);
+	        }
+	    } else if (is_string ($d)) {
+	        return utf8_encode($d);
+	    }
+	    return $d;
+	}
 
     function getMeals(){
         global $conn;
@@ -77,8 +88,8 @@
             } 
 
             $response_final = array($response_data);
-
-            echo json_encode($response_final);
+			
+            echo json_encode(utf8ize($response_final));
 
         } else{
             $sql = "select t3.*, t4.guid as image from
@@ -166,7 +177,7 @@
 
             }
 
-            echo json_encode($new_item);
+            echo json_encode(utf8ize($new_item));
         }
     }
 
@@ -227,7 +238,7 @@
                     array_push($response_data, $new_item);
                 }
             }
-            echo json_encode($response_data);
+            echo json_encode(utf8ize($response_data));
         }else{
 
             $sql = "select t3.*, t4.display_name as eventManager from 
@@ -285,7 +296,7 @@
                     
                 }
             }
-            echo json_encode($new_item);
+            echo json_encode(utf8ize($new_item));
 
         }
     }
@@ -331,7 +342,7 @@
                     
                 }
             }
-            echo json_encode($new_item);
+            echo json_encode(utf8ize($new_item));
         }
     }
 
