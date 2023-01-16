@@ -8,10 +8,9 @@ import MyTableBtn from './MyTableBtn'
 import TableSlider from './TableSlider'
 import BottomBar from './BottomBar'
 import { Cards } from '../cards';
-import { API_PATH } from '../../config'
-import { mealsData, eventsData } from './Data'
+// import { API_PATH, REFETCH } from '../../config'
+// import { mealsData, eventsData } from './Data'
 // import { getAsyncData, postAsyncData } from '../../utils/fetch'
-// import mock from './Mock.json';
 
 const Home = (props: any) => {
     const [tableBtnPressed, setTableBtnPressed] = useState(false)
@@ -30,24 +29,6 @@ const Home = (props: any) => {
             id: '3'
         }
     ])
-    const [events, setEvents] = useState(eventsData)
-    const [meals, setMeals] = useState([])
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch(`${API_PATH}?meals=-1`, {
-                    method: 'GET',
-                });
-                const json = await response.json();
-                // console.log("[=====mealsData Json======]", json)
-                setMeals(json)
-            } catch (error) {
-                console.log("[=====Fetch mealsData ERR======]", error)
-            }
-        };
-        fetchData();
-    }, [])
 
 
     const onTableBtnPress = () => {
@@ -71,8 +52,8 @@ const Home = (props: any) => {
 
     const RenderEventsMealsBar = () => (
         <EventsMealsBar
-            events={events}
-            meals={meals}
+            // events={events}
+            // meals={meals}
             dataVisible={tableBtnPressed}
             onBarBtnPress={onBarBtnPress}
             navigation={props.navigation}
