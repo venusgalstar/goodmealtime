@@ -61,7 +61,7 @@ const EventCard = (props: any) => {
                                     style={Styles.micIcon}
                                 />
                                 <Text style={Styles.itemTicket}>
-                                    ₦{item.ticket}
+                                    ₦ {item.ticket > 0?item.ticket :"free"}
                                 </Text>
                             </View>
                         </View>
@@ -85,7 +85,7 @@ const EventCard = (props: any) => {
                                 style={Styles.userIcon}
                             />
                             <Text style={{ ...Styles.liveNowTxt, color: Colors.color5 }}>
-                                {item.peopleAttending}
+                                {item.peopleAttending?item.peopleAttending:0}
                             </Text>
                         </View>
                         <View style={Styles.liveCon}>

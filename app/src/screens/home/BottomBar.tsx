@@ -5,7 +5,7 @@ import { Colors, Images } from '../../res'
 
 const BottomBar = () => {
     return (
-        <View style={Styles.container}>
+        <View style={{ ...Styles.container, display: "none"}}>
             <TouchableOpacity style={Styles.btnCon}
                 activeOpacity={Constants.btnActiveOpacity}
             >
@@ -39,6 +39,9 @@ const BottomBar = () => {
 export default BottomBar
 
 const Styles = StyleSheet.create({
+    logout:{
+        display: 'none'
+    },
     container: {
         width: wp(100),
         backgroundColor: Colors.color2,

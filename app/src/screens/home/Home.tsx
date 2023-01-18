@@ -13,7 +13,7 @@ import { Cards } from '../cards';
 // import { getAsyncData, postAsyncData } from '../../utils/fetch'
 
 const Home = (props: any) => {
-    const [tableBtnPressed, setTableBtnPressed] = useState(false)
+    const [tableBtnPressed, setTableBtnPressed] = useState(true)
     const [cardsVisible, setCardsVisible] = useState(false)
     const [cards, setCards] = useState([
         {
