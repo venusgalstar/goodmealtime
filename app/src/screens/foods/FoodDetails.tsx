@@ -151,7 +151,7 @@ const FoodDetails = (props: any) => {
                     >
                         <AntDesign name='plus' color={Colors.theme} size={wp(4)} />
                         <Text style={{ ...Styles.buyNow, color: Colors.theme }}>
-                            Add To Cart
+                            Add To Event
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={Styles.buyNowBtn}

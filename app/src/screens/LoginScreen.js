@@ -22,7 +22,9 @@ export default function App({ navigation }) {
   }
 
   const onSignInPress = () => {
-    navigation.navigate('Home')
+
+    if( checked == true )
+      navigation.navigate('Home')
   }
 
   return (
@@ -35,14 +37,14 @@ export default function App({ navigation }) {
             tw`flex flex-row`,
             {
               paddingTop: dimensions.height * 0.16,
-              paddingBottom: dimensions.height * 0.16,
+              paddingBottom: dimensions.height * 0.08,
             },
           ]}
         >
           <Logo />
         </View>
         <Text
-          style={tw`text-xl font-lato-bold text-gray-500 dark:text-slate-100 pb-12`}
+          style={tw`text-xl font-lato-bold text-gray-500 dark:text-slate-100 pb-8`}
         >
           Let's sign you in!
         </Text>
@@ -59,7 +61,7 @@ export default function App({ navigation }) {
             secureTextEntry
           />
         </View>
-        <View style={tw`w-full flex flex-row`}>
+        <View style={tw`w-full flex flex-row items-center justify-center`}>
           <CheckBox
             disabled = {false}
             value={checked}
@@ -78,7 +80,7 @@ export default function App({ navigation }) {
           />
           <TouchableOpacity onPress={navigateToRegisterScreen}>
             <Text
-              style={tw`text-base font-lato text-gray-500 dark:text-slate-100 pb-12 text-center`}
+              style={tw`text-base font-lato text-gray-500 dark:text-slate-100 pb-8 text-center`}
             >
               Or{" "}
               <Text style={tw`text-secondary dark:text-secondary-light`}>

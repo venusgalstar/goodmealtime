@@ -15,7 +15,7 @@ const BottomBar = () => {
                         resizeMode='contain'
                         style={Styles.bellIcon}
                     />
-                    <Text style={Styles.btnTxt}>Call a waiter</Text>
+                    <Text style={Styles.btnTxt}>Call attendant</Text>
                 </View>
 
             </TouchableOpacity>
