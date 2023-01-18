@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Text, View, TouchableOpacity } from "react-native";
+import { Text, View, TouchableOpacity  } from "react-native";
 import { useDimensions } from "@react-native-community/hooks";
+import CheckBox from "@react-native-community/checkbox";
 import Icon from "react-native-vector-icons/AntDesign";
 import { useDeviceContext } from "twrnc";
 
@@ -11,6 +12,7 @@ import routeNames from "../utils/routeNames";
 export default function App({ navigation }) {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [checked, setChecked] = useState(false);
   useDeviceContext(tw);
 
   const dimensions = useDimensions().window;
@@ -46,7 +48,7 @@ export default function App({ navigation }) {
         </Text>
         <View style={tw`w-full flex flex-col`}>
           <TextField
-            placeholder="Username"
+            placeholder="Email"
             value={userName}
             onChange={(text) => setUserName(text)}
           />
@@ -56,6 +58,14 @@ export default function App({ navigation }) {
             onChange={(text) => setPassword(text)}
             secureTextEntry
           />
+        </View>
+        <View style={tw`w-full flex flex-row`}>
+          <CheckBox
+            disabled = {false}
+            value={checked}
+            onValueChange={(newValue) =>setChecked(newValue)}
+          />
+          <Text>Accept terms & conditions</Text>
         </View>
         <View style={tw`w-full px-5`}>
           <Button
