@@ -9,8 +9,12 @@ import AntDesign from 'react-native-vector-icons/AntDesign'
 const EventCard = (props: any) => {
     const {
         item = {},
-        onPress = () => null
+        onPress = () => null,
+        navigation,
     } = props
+    
+    const onBookNowPress = (eventbookingId: any) => props.navigation.navigate('EventBooking', {eventbookingId:eventbookingId})
+
     return (
         <View style={Styles.itemContainer}>
             <View style={Styles.outerDateCon}>
@@ -106,11 +110,18 @@ const EventCard = (props: any) => {
                             <AntDesign name='hearto' color={Colors.theme} size={wp(4)} />
                         </TouchableOpacity>
                         <TouchableOpacity
+                        style={Styles.bookBtn}
+                            activeOpacity={Constants.btnActiveOpacity}
+                            onPress={onBookNowPress.bind(null, item.id)}
+                        >
+                            <Text style={Styles.bookTxt}>Book Now</Text>
+                        </TouchableOpacity>
+                        {/* <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
                             style={Styles.bookBtn}
                         >
                             <Text style={Styles.bookTxt}>Book</Text>
-                        </TouchableOpacity>
+                        </TouchableOpacity> */}
                     </View>
                 </View>
 

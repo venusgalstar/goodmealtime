@@ -72,7 +72,6 @@ const EventBooking = (props: any) => {
 
     const onProceedPress = () => props.navigation.navigate('EventBookingCard')
 
-
     return (
         <Container>
             <Header
@@ -126,7 +125,7 @@ const EventBooking = (props: any) => {
                         </Text>
                         <Text style={Styles.eventFeeTxt}>
                             <Text style={{ ...Styles.eventFeeTxt, color: Colors.color19 }}>
-                                $ </Text>
+                            ₦ </Text>
                             {eventBooking.fee}
                         </Text>
                     </View>

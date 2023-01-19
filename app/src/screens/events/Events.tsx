@@ -54,6 +54,7 @@ const Events = (props: any) => {
             <EventCard
                 onPress={onEventPress.bind(null, item.id)}
                 item={item}
+                navigation = {navigation}
             />
         )
     }
