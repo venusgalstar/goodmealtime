@@ -152,12 +152,8 @@ const EventDetails = (props: any) => {
                     <Text style={Styles.eventDesc}>{event.description}</Text>
                     <View style={Styles.priceOuterCon}>
                         <View style={Styles.priceView}>
-                            <Image
-                                source={Images.dollar}
-                                resizeMode='contain'
-                                style={Styles.listIcon}
-                            />
-                            <Text style={Styles.price}>{event.price}</Text>
+                            <Text style={Styles.listIcon}>₦</Text>
+                            <Text style={Styles.price}>{parseFloat(event.price) > 0?event.price:"free"}</Text>
                             <Text style={Styles.discount}>{event.discount}</Text>
                         </View>
                         {
@@ -214,7 +210,7 @@ const EventDetails = (props: any) => {
                         </View>
                         <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
-                            style={Styles.copyBtn}
+                            style={{ ...Styles.copyBtn, opacity: event.liveStreamUrl ? 0.5 : Constants.btnActiveOpacity}}
                         >
                             <Image
                                 source={Images.copy}
@@ -236,7 +232,7 @@ const EventDetails = (props: any) => {
                         </View>
                         <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
-                            style={Styles.copyBtn}
+                            style={{...Styles.copyBtn, opacity: event.liveStreamUrl ? 0.5 : Constants.btnActiveOpacity}}
                         >
                             <Image
                                 source={Images.copy}
