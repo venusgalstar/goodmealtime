@@ -289,7 +289,7 @@ const EventDetails = (props: any) => {
                 </View>
             </ScrollView >
             <View style={{ ...Styles.btnsOuterCon, ...Styles.shadow }}>
-                <TouchableOpacity style={{ ...Styles.bookNowBtn, borderWidth: 1, borderColor: Colors.theme, backgroundColor: Colors.color3, }}
+                {/* <TouchableOpacity style={{ ...Styles.bookNowBtn, borderWidth: 1, borderColor: Colors.theme, backgroundColor: Colors.color3, }}
                     activeOpacity={Constants.btnActiveOpacity}
                     onPress={onSaveForLaterPress}
                 >
@@ -297,7 +297,7 @@ const EventDetails = (props: any) => {
                     <Text style={{ ...Styles.bookNow, color: Colors.theme }}>
                         Save For Later
                     </Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
                 <TouchableOpacity style={Styles.bookNowBtn}
                     activeOpacity={Constants.btnActiveOpacity}
                     onPress={onBookNowPress.bind(null, event.id)}
@@ -497,7 +497,7 @@ const Styles = StyleSheet.create({
         borderTopRightRadius: 20,
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         paddingHorizontal: wp(8)
     },
     shadow: {
