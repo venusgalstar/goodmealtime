@@ -6,6 +6,7 @@ import { Colors, Fonts } from '../../res'
 import { Constants } from '../../global'
 import { Events } from '../events'
 import { Meals } from '../foods'
+import { REFETCH, API_PATH } from '../../config'
 
 const EventsMealsBar = (props: any) => {
     const [activeBtn, setActiveBtn] = useState('Events')
@@ -21,9 +22,49 @@ const EventsMealsBar = (props: any) => {
         props.onBarBtnPress(active)
     }
 
-    // useEffect(() => {
-    //     console.log("[=====EventsMealsBar=====]", props)
-    // }, [])
+    const [refetch, setRefetch] = useState(true);
+    const [events, setEvents] = useState([])
+    const [meals, setMeals] = useState([])
+
+    useEffect(() => {
+        const timerID = setInterval(() => {
+            setRefetch((prevRefetch) => {
+                return !prevRefetch;
+            });
+        }, REFETCH);
+
+        return () => {
+            clearInterval(timerID);
+        };
+
+    }, []);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const eventsResponse = await fetch(`${API_PATH}?events=-1`, {
+                    method: 'GET',
+                });
+                const eventsJson = await eventsResponse.json();
+                // console.log("[=====Events Json======]", eventsJson)
+                // console.log("[=====Events Json Stringify======]", JSON.stringify(eventsJson))
+                setEvents(eventsJson)
+            } catch (error) {
+                console.log("[=====Fetch Events ERR======]", error)
+            }
+            try {
+                const mealsResponse = await fetch(`${API_PATH}?meals=-1`, {
+                    method: 'GET',
+                });
+                const mealsJson = await mealsResponse.json();
+                // console.log("[=====Meals Json======]", mealsJson)
+                setMeals(mealsJson)
+            } catch (error) {
+                console.log("[=====Fetch Meals ERR======]", error)
+            }
+        };
+        fetchData();
+    }, [refetch])
 
     return (
         <View style={dataVisible ? Styles.container : {}}>
@@ -59,12 +100,12 @@ const EventsMealsBar = (props: any) => {
                 dataVisible &&
                     activeBtn === 'Events' ?
                     <Events
-                        // data={events}
+                        data={events}
                         navigation={navigation}
                     />
                     :
                     <Meals
-                        // data={meals}
+                        data={meals}
                         navigation={navigation}
                     />
             }

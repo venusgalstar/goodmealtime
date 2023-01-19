@@ -8,41 +8,9 @@ import { API_PATH, REFETCH } from '../../config'
 
 const Meals = (props: any) => {
     const {
-        // data = [],
+        data = [],
         navigation = {}
     } = props
-
-    const [refetch, setRefetch] = useState(true);
-    const [meals, setMeals] = useState([])
-
-    useEffect(() => {
-        const timerID = setInterval(() => {
-            setRefetch((prevRefetch) => {
-                return !prevRefetch;
-            });
-        }, REFETCH);
-
-        return () => {
-            clearInterval(timerID);
-        };
-
-    }, []);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const mealsResponse = await fetch(`${API_PATH}?meals=-1`, {
-                    method: 'GET',
-                });
-                const mealsJson = await mealsResponse.json();
-                // console.log("[=====Meals Json======]", mealsJson)
-                setMeals(mealsJson)
-            } catch (error) {
-                console.log("[=====Fetch Meals ERR======]", error)
-            }
-        };
-        fetchData();
-    }, [refetch])
 
     const onFoodItemPress = (foodId: any) => navigation.navigate('FoodDetails', { foodId: foodId })
 
@@ -94,7 +62,7 @@ const Meals = (props: any) => {
                     <TouchableOpacity
                         activeOpacity={Constants.btnActiveOpacity}
                     >
-                        <Text style={Styles.viewAllTxt}>View All</Text>
+                        <Text style={Styles.viewAllTxt}>View Event</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -117,7 +85,7 @@ const Meals = (props: any) => {
     return (
         <View style={[Styles.container, Styles.shadow]}>
             <FlatList
-                data={meals}
+                data={data}
                 renderItem={renderCategory}
                 contentContainerStyle={Styles.listContainer}
                 showsVerticalScrollIndicator={false}

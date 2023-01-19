@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import { eventsData } from '../home/Data'
 import Container from '../../components/Container'
 import { Header } from '../../components'
@@ -8,13 +9,44 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { wp } from '../../global'
 import Events from './Events'
 import SavedEventsFilter from './SavedEventsFilter'
+import { SAVE_EVENT, FAST_REFETCH } from '../../config'
 
 const SavedEvents = (props: any) => {
-    const [events, setEvents] = useState(eventsData)
+    const [events, setEvents] = useState([])
+    const [refetch, setRefetch] = useState(true);
     const [filterPressed, setFilterPressed] = useState(false)
 
     const onFilterPress = () => setFilterPressed(true)
     const onCloseFilter = () => setFilterPressed(false)
+
+    useEffect(() => {
+        const timerID = setInterval(() => {
+            setRefetch((prevRefetch) => {
+                return !prevRefetch;
+            });
+        }, FAST_REFETCH * 3);
+
+        return () => {
+            clearInterval(timerID);
+        };
+    }, []);
+
+    useEffect(() => {
+        const fetchAsyncStorage = async () => {
+            console.log("[=====SavedEvents======]")
+            try {
+                const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
+                if (getSavedData) {
+                    console.log("[=====SavedEvents getSavedData JSON======]", JSON.parse(getSavedData))
+                    setEvents(JSON.parse(getSavedData))
+                }
+            } catch (error) {
+                console.log("SavedEvents AsyncStorage: ", error)
+            }
+        }
+
+        fetchAsyncStorage()
+    }, [refetch])
 
     return (
         <Container>

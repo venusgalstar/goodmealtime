@@ -1,19 +1,50 @@
 import { View, Text, StyleSheet, FlatList, Image, Dimensions, TouchableOpacity, Platform } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Animation } from '../../animations'
 import { Constants, hp, Typography, wp } from '../../global'
 import { Fonts, Colors, Images } from '../../res'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
+import { SAVE_EVENT } from '../../config';
 
 const EventCard = (props: any) => {
     const {
         item = {},
         onPress = () => null,
+        isSavedEvent = false,
         navigation,
     } = props
-    
-    const onBookNowPress = (eventbookingId: any) => props.navigation.navigate('EventBooking', {eventbookingId:eventbookingId})
+
+    const [isSaved, setIsSaved] = useState(isSavedEvent)
+
+    const onSavedEvents = async (event: any) => {
+        try {
+            const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
+            if (!getSavedData) {
+                await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify([event]))
+            } else {
+                const jsonData = JSON.parse(getSavedData)
+                const findData = jsonData.filter((item: any) => {
+                    return item.id === event.id
+                })
+                if (findData.length === 0) {
+                    jsonData.push(event)
+                    await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify(jsonData))
+                    setIsSaved(true);
+                } else {
+                    const remainItems = jsonData.filter((item: any) => { return item.id !== event.id })
+                    await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify(remainItems))
+                    setIsSaved(false);
+                }
+            }
+        } catch (error) {
+            console.log("onSaveForLaterPress AsyncStorage: ", error)
+            console.log("remove SAVE_EVENT")
+            await AsyncStorage.removeItem(SAVE_EVENT);
+        }
+    }
+    const onBookNowPress = (eventbookingId: any) => props.navigation.navigate('EventBooking', { eventbookingId: eventbookingId })
 
     return (
         <View style={Styles.itemContainer}>
@@ -65,7 +96,7 @@ const EventCard = (props: any) => {
                                     style={Styles.micIcon}
                                 />
                                 <Text style={Styles.itemTicket}>
-                                    ₦ {item.ticket > 0?item.ticket :"free"}
+                                    ₦ {item.ticket > 0 ? item.ticket : "free"}
                                 </Text>
                             </View>
                         </View>
@@ -78,10 +109,19 @@ const EventCard = (props: any) => {
                 </View>
                 <View style={Styles.contentInnerCon}>
                     <View style={{ ...Styles.contentInnerConOneInnerCon, width: wp(64), paddingHorizontal: wp(2.5) }}>
-                        <View style={Styles.liveCon}>
-                            <View style={Styles.liveIcon} />
-                            <Text style={Styles.liveNowTxt}>Live Now</Text>
-                        </View>
+                        {
+                            item.liveNow ? (
+                                <View style={Styles.liveCon}>
+                                    <View style={Styles.liveIcon} />
+                                    <Text style={Styles.liveNowTxt}>Live Now</Text>
+                                </View>
+                            ) : (
+                                <View style={Styles.endCon}>
+                                    <View style={Styles.endIcon} />
+                                    <Text style={Styles.endNowTxt}>End</Text>
+                                </View>
+                            )
+                        }
                         <View style={Styles.liveCon}>
                             <Image
                                 source={Images.users}
@@ -89,7 +129,7 @@ const EventCard = (props: any) => {
                                 style={Styles.userIcon}
                             />
                             <Text style={{ ...Styles.liveNowTxt, color: Colors.color5 }}>
-                                {item.peopleAttending?item.peopleAttending:0}
+                                {item.peopleAttending ? item.peopleAttending : 0}
                             </Text>
                         </View>
                         <View style={Styles.liveCon}>
@@ -104,13 +144,14 @@ const EventCard = (props: any) => {
                         </View>
                     </View>
                     <View style={Styles.bookHeartCon}>
-                        <TouchableOpacity style={Styles.heartBtn}
+                        <TouchableOpacity style={isSaved ? Styles.heartBtnBrown : Styles.heartBtn}
                             activeOpacity={Constants.btnActiveOpacity}
+                            onPress={onSavedEvents.bind(null, item)}
                         >
-                            <AntDesign name='hearto' color={Colors.theme} size={wp(4)} />
+                            <AntDesign name='hearto' color={isSaved ? Colors.color2 : Colors.theme} size={wp(4)} />
                         </TouchableOpacity>
                         <TouchableOpacity
-                        style={Styles.bookBtn}
+                            style={Styles.bookBtn}
                             activeOpacity={Constants.btnActiveOpacity}
                             onPress={onBookNowPress.bind(null, item.id)}
                         >
@@ -231,14 +272,32 @@ const Styles = StyleSheet.create({
         alignItems: 'center',
         marginBottom: hp(0.8),
     },
+    endCon: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: hp(0.8),
+    },
     liveIcon: {
+        width: width * 0.025,
+        height: width * 1 * 0.025,
+        borderRadius: width * 1 * 0.025 / 2,
+        backgroundColor: Colors.colorGrey,
+        marginTop: hp(0.2)
+    },
+    liveNowTxt: {
+        color: Colors.colorBrown,
+        fontFamily: Fonts.APPFONT_R,
+        marginLeft: wp(2),
+        fontSize: Typography.small1
+    },
+    endIcon: {
         width: width * 0.025,
         height: width * 1 * 0.025,
         borderRadius: width * 1 * 0.025 / 2,
         backgroundColor: Colors.color8,
         marginTop: hp(0.2)
     },
-    liveNowTxt: {
+    endNowTxt: {
         color: Colors.color9,
         fontFamily: Fonts.APPFONT_R,
         marginLeft: wp(2),
@@ -262,6 +321,16 @@ const Styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: 4,
         borderColor: Colors.theme
+    },
+    heartBtnBrown: {
+        borderWidth: 1,
+        height: hp(3.2),
+        width: wp(7),
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 4,
+        borderColor: Colors.color1,
+        backgroundColor: Colors.theme,
     },
     bookBtn: {
         borderWidth: 1,

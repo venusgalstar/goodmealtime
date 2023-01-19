@@ -51,6 +51,8 @@ const LightColors: any = {
     color18: '#DEDEDE',
     color19: '#DCB28C',
     color20: '#707070',
+    colorBrown: '#C04936',
+    colorGrey: '#808080',
 
     color1RGBA100: 'rgba(0,0,0,1)',
     color1RGBA0: 'rgba(0,0,0,0)',

@@ -1,67 +1,66 @@
 import { View, StyleSheet, FlatList } from 'react-native'
 import React, { useState, useEffect } from 'react'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import { wp } from '../../global'
 import EventCard from './EventCard'
-import { API_PATH, REFETCH } from '../../config'
+import { SAVE_EVENT, FAST_REFETCH } from '../../config'
 
 const Events = (props: any) => {
     const {
-        // data = [],
+        data = [],
         navigation = {}
     } = props
 
+    const [savedEvents, setSavedEvents] = useState([])
     const [refetch, setRefetch] = useState(true);
-    const [events, setEvents] = useState([])
 
     useEffect(() => {
         const timerID = setInterval(() => {
             setRefetch((prevRefetch) => {
                 return !prevRefetch;
             });
-        }, REFETCH);
+        }, FAST_REFETCH);
 
         return () => {
             clearInterval(timerID);
         };
-
     }, []);
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchAsyncStorage = async () => {
             try {
-                const eventsResponse = await fetch(`${API_PATH}?events=-1`, {
-                    method: 'GET',
-                });
-                const eventsJson = await eventsResponse.json();
-                // console.log("[=====Events Json======]", eventsJson)
-                // console.log("[=====Events Json Stringify======]", JSON.stringify(eventsJson))
-                setEvents(eventsJson)
+                const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
+                if (getSavedData) {
+                    setSavedEvents(JSON.parse(getSavedData))
+                }
             } catch (error) {
-                console.log("[=====Fetch Events ERR======]", error)
+                console.log("SavedEvents AsyncStorage: ", error)
             }
-        };
-        fetchData();
+        }
+
+        fetchAsyncStorage()
     }, [refetch])
 
-    const onEventPress = (eventId: any) => {
+    const onEventPress = (eventId: any, isSavedEvent: any, savedAmounts: number) => {
         // console.log("[==EventDetails==]")
-        navigation.navigate('EventDetails', { eventId: eventId })
+        navigation.navigate('EventDetails', { eventId: eventId, isSavedEvent: isSavedEvent, savedAmounts: savedAmounts })
         // console.log("[==EventDetails==]")
     }
 
     const renderList = ({ item }: any) => {
         return (
             <EventCard
-                onPress={onEventPress.bind(null, item.id)}
+                onPress={onEventPress.bind(null, item.id, (savedEvents.filter((event: any) => {return event.id === item.id}).length > 0), savedEvents.length)}
                 item={item}
-                navigation = {navigation}
+                isSavedEvent={savedEvents.filter((event: any) => {return event.id === item.id}).length > 0}
+                navigation={navigation}
             />
         )
     }
     return (
         <View style={Styles.container}>
             <FlatList
-                data={events}
+                data={data}
                 renderItem={renderList}
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={Styles.listContainer}
