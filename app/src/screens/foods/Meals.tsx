@@ -67,7 +67,7 @@ const Meals = (props: any) => {
                         {item.name}
                     </Text>
                     <Text style={Styles.itemPrice} numberOfLines={1}>
-                        ${item.price}
+                        ₦{item.price}
                     </Text>
                     <View style={Styles.itemLocationCon}>
                         <Entypo name='location-pin' color={Colors.color4} size={wp(4)} />
