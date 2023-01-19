@@ -155,7 +155,7 @@ const EventCard = (props: any) => {
                             activeOpacity={Constants.btnActiveOpacity}
                             onPress={onBookNowPress.bind(null, item.id)}
                         >
-                            <Text style={Styles.bookTxt}>Book Now</Text>
+                            <Text style={Styles.bookTxt}>Book</Text>
                         </TouchableOpacity>
                         {/* <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}

@@ -15,6 +15,7 @@ const Events = (props: any) => {
     const [refetch, setRefetch] = useState(true);
 
     useEffect(() => {
+        // console.log("[===Events data===]", data)
         const timerID = setInterval(() => {
             setRefetch((prevRefetch) => {
                 return !prevRefetch;
@@ -49,12 +50,17 @@ const Events = (props: any) => {
 
     const renderList = ({ item }: any) => {
         return (
-            <EventCard
-                onPress={onEventPress.bind(null, item.id, (savedEvents.filter((event: any) => {return event.id === item.id}).length > 0), savedEvents.length)}
-                item={item}
-                isSavedEvent={savedEvents.filter((event: any) => {return event.id === item.id}).length > 0}
-                navigation={navigation}
-            />
+            <>
+                {
+                    new Date(item.date).toDateString() === new Date().toDateString() &&
+                    <EventCard
+                        onPress={onEventPress.bind(null, item.id, (savedEvents.filter((event: any) => { return event.id === item.id }).length > 0), savedEvents.length)}
+                        item={item}
+                        isSavedEvent={savedEvents.filter((event: any) => { return event.id === item.id }).length > 0}
+                        navigation={navigation}
+                    />
+                }
+            </>
         )
     }
     return (

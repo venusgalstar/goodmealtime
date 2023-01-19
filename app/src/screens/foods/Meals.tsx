@@ -6,61 +6,103 @@ import { Constants } from '../../global'
 import Entypo from 'react-native-vector-icons/Entypo'
 import { API_PATH, REFETCH } from '../../config'
 
+const MealCard = (props: any) => {
+    const {
+        item = null,
+        index = null,
+        navigation = {}
+    } = props
+
+    // const [isAvailable, setIsAvailable] = useState(false)
+
+    // const onAvailablePress = (eventbookingId: any) => {
+    //     console.log("[=====onAvailablePress======]", isAvailable)
+    //     setIsAvailable(prev => !prev)
+    //     // TODO+
+    // }
+
+    const onFoodItemPress = (foodId: any) => navigation.navigate('FoodDetails', { foodId: foodId })
+    return (
+        <TouchableOpacity style={{
+            ...Styles.itemOuterContainer,
+            backgroundColor: index % 2 === 0 ? Colors.color11 : Colors.color3
+        }}
+            activeOpacity={Constants.btnActiveOpacity}
+            onPress={onFoodItemPress.bind(null, item.id)}
+        >
+            <Image
+                source={{ uri: item.image }}
+                resizeMode='cover'
+                style={Styles.itemImage}
+            />
+            <View style={Styles.itemContentCon}>
+                <Text style={Styles.itemName}
+                    numberOfLines={1}
+                >
+                    {item.name}
+                </Text>
+                <Text style={Styles.itemPrice} numberOfLines={1}>
+                    ₦{item.price}
+                </Text>
+                {/* <TouchableOpacity
+                    style={isAvailable ? Styles.bookBtn : Styles.bookBtnWhite}
+                    activeOpacity={Constants.btnActiveOpacity}
+                    onPress={onAvailablePress.bind(null, item.id)}
+                >
+                    <Text style={isAvailable ? Styles.bookTxt : Styles.bookTxtWhite}>Available</Text>
+                </TouchableOpacity> */}
+                <View style={Styles.itemLocationCon}>
+                    <Entypo name='location-pin' color={Colors.color4} size={wp(4)} />
+                    <Text
+                        style={Styles.itemLocation}
+                        numberOfLines={1}
+                    >
+                        {item.location}
+                    </Text>
+                </View>
+            </View>
+        </TouchableOpacity>
+    )
+}
+
 const Meals = (props: any) => {
     const {
         data = [],
         navigation = {}
     } = props
 
-    const onFoodItemPress = (foodId: any) => navigation.navigate('FoodDetails', { foodId: foodId })
+
+    const onEventsPress = (eventId: any) => navigation.navigate('EventDetails', { eventId: 1, isSavedEvent: false, savedAmounts: 0 })
 
     const renderCategoryItems = ({ item, index }: any) => {
         return (
-            <TouchableOpacity style={{
-                ...Styles.itemOuterContainer,
-                backgroundColor: index % 2 === 0 ? Colors.color11 : Colors.color3
-            }}
-                activeOpacity={Constants.btnActiveOpacity}
-                onPress={onFoodItemPress.bind(null, item.id)}
-            >
-                <Image
-                    source={{ uri: item.image }}
-                    resizeMode='cover'
-                    style={Styles.itemImage}
-                />
-                <View style={Styles.itemContentCon}>
-                    <Text style={Styles.itemName}
-                        numberOfLines={1}
-                    >
-                        {item.name}
-                    </Text>
-                    <Text style={Styles.itemPrice} numberOfLines={1}>
-                        ₦{item.price}
-                    </Text>
-                    <View style={Styles.itemLocationCon}>
-                        <Entypo name='location-pin' color={Colors.color4} size={wp(4)} />
-                        <Text
-                            style={Styles.itemLocation}
-                            numberOfLines={1}
-                        >
-                            {item.location}
-                        </Text>
-                    </View>
-                </View>
-            </TouchableOpacity>
+            <MealCard
+                item={item}
+                index={index}
+                navigation={navigation}
+            />
         )
     }
-
 
     const renderCategory = ({ item }: any) => {
         return (
             <View style={[Styles.categoryContainer, Styles.shadow]}>
+                <View style={Styles.outerDateCon}>
+                    <View style={Styles.innerConLine} />
+                    <View style={Styles.outerDateCon}>
+                        <Text style={Styles.itemDateDay}>Today</Text>
+                        <Text style={Styles.itemDate}>|</Text>
+                        <Text style={Styles.itemDate}>{new Date().toDateString()}</Text>
+                    </View>
+                    <View style={Styles.innerConLine} />
+                </View>
                 <View style={Styles.categoryHeaderCon}>
                     <Text style={Styles.categoryHeader}>
                         {Object.keys(item)[0]}
                     </Text>
                     <TouchableOpacity
                         activeOpacity={Constants.btnActiveOpacity}
+                        onPress={onEventsPress.bind(null, item.id)}
                     >
                         <Text style={Styles.viewAllTxt}>View Event</Text>
                     </TouchableOpacity>
@@ -180,5 +222,57 @@ const Styles = StyleSheet.create({
         alignItems: 'center',
         paddingTop: hp(1),
         marginLeft: wp(-0.5)
+    },
+    outerDateCon: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
+    innerConLine: {
+        borderTopWidth: 0.4,
+        width: wp(30)
+    },
+    itemDateDay: {
+        fontFamily: Fonts.APPFONT_B,
+        color: Colors.color5,
+        fontSize: Typography.small2
+    },
+    itemDate: {
+        fontFamily: Fonts.APPFONT_R,
+        color: Colors.color5,
+        marginLeft: wp(1),
+        fontSize: Typography.small2
     }
+    // bookBtn: {
+    //     borderWidth: 1,
+    //     width: wp(21),
+    //     height: hp(3.2),
+    //     marginRight: wp(1),
+    //     flexDirection: 'row',
+    //     alignItems: 'center',
+    //     justifyContent: 'center',
+    //     paddingHorizontal: wp(1),
+    //     backgroundColor: Colors.color2,
+    //     borderRadius: 4
+    // },
+    // bookTxt: {
+    //     color: Colors.theme,
+    //     fontFamily: Fonts.APPFONT_B
+    // },
+    // bookBtnWhite: {
+    //     borderWidth: 1,
+    //     width: wp(21),
+    //     height: hp(3.2),
+    //     marginRight: wp(1),
+    //     flexDirection: 'row',
+    //     alignItems: 'center',
+    //     justifyContent: 'center',
+    //     paddingHorizontal: wp(1),
+    //     backgroundColor: Colors.theme,
+    //     borderRadius: 4
+    // },
+    // bookTxtWhite: {
+    //     color: Colors.color2,
+    //     fontFamily: Fonts.APPFONT_B
+    // }
 })

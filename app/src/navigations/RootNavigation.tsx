@@ -4,7 +4,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
     Home, EventDetails, FoodDetails, CardsDetails,
     FingerprintVerification, TurnstileEntry, SavedEvents,
-    EventBooking, EventBookingCard
+    EventBooking, EventBookingCard,
+    Events
 } from '../screens'
 import AuthNavigator from './AuthNavigator';
 
