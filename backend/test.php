@@ -5,10 +5,10 @@
     }
 
     $servername = "localhost";
-    // $username = "dev_Alek";
-    // $password = "_6X;$7,Cl!}G";    
-    $username = "root";
-    $password = "";
+    $username = "dev_Alek";
+    $password = "_6X;$7,Cl!}G";    
+    // $username = "root";
+    // $password = "";
     $dbname = "i7452067_wp3";
 
     // Create connection
