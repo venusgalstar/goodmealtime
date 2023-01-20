@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet, FlatList, ScrollView, TouchableOpacity, Image } from 'react-native'
 import React, { useState, useEffect } from 'react'
-import { Colors, Fonts, } from '../../res'
+import { Colors, Fonts, Images } from '../../res'
 import { hp, Typography, wp } from '../../global'
 import { Constants } from '../../global'
 import Entypo from 'react-native-vector-icons/Entypo'
-import { API_PATH, REFETCH } from '../../config'
+// import { API_PATH, REFETCH } from '../../config'
 
 const MealCard = (props: any) => {
     const {
@@ -30,11 +30,21 @@ const MealCard = (props: any) => {
             activeOpacity={Constants.btnActiveOpacity}
             onPress={onFoodItemPress.bind(null, item.id)}
         >
-            <Image
-                source={{ uri: item.image }}
-                resizeMode='cover'
-                style={Styles.itemImage}
-            />
+            {
+                item.image ? (
+                    <Image
+                        source={{ uri: item.image }}
+                        resizeMode='cover'
+                        style={Styles.itemImage}
+                    />
+                ) : (
+                    <Image
+                        source={Images.unknownImages}
+                        resizeMode='cover'
+                        style={Styles.itemImage}
+                    />
+                )
+            }
             <View style={Styles.itemContentCon}>
                 <Text style={Styles.itemName}
                     numberOfLines={1}

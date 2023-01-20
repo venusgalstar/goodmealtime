@@ -101,11 +101,22 @@ const EventCard = (props: any) => {
                             </View>
                         </View>
                     </View>
-                    <Image
-                        source={{ uri: item.image }}
-                        resizeMode="cover"
-                        style={Styles.itemImage}
-                    />
+                    {
+                        item.image ?
+                            (
+                                <Image
+                                    source={{ uri: item.image }}
+                                    resizeMode="cover"
+                                    style={Styles.itemImage}
+                                />
+                            ) : (
+                                <Image
+                                    source={Images.unknownImages}
+                                    resizeMode="cover"
+                                    style={Styles.itemImage}
+                                />
+                            )
+                    }
                 </View>
                 <View style={Styles.contentInnerCon}>
                     <View style={{ ...Styles.contentInnerConOneInnerCon, width: wp(64), paddingHorizontal: wp(2.5) }}>
@@ -316,7 +327,7 @@ const Styles = StyleSheet.create({
     heartBtn: {
         borderWidth: 1,
         height: hp(3.2),
-        width: wp(7),
+        width: wp(6),
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 4,
@@ -325,7 +336,7 @@ const Styles = StyleSheet.create({
     heartBtnBrown: {
         borderWidth: 1,
         height: hp(3.2),
-        width: wp(7),
+        width: wp(6),
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 4,
@@ -336,7 +347,7 @@ const Styles = StyleSheet.create({
         borderWidth: 1,
         width: wp(14),
         height: hp(3.2),
-        marginRight: wp(1),
+        marginRight: wp(3),
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
