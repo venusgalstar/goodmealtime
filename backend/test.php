@@ -5,8 +5,10 @@
     }
 
     $servername = "localhost";
-    $username = "dev_Alek";
-    $password = "_6X;$7,Cl!}G";
+    // $username = "dev_Alek";
+    // $password = "_6X;$7,Cl!}G";    
+    $username = "root";
+    $password = "";
     $dbname = "i7452067_wp3";
 
     // Create connection
@@ -196,14 +198,14 @@
             // ";
 
             $sql = "select t3.*, t4.display_name as name from 
-            (select t1.*,t2.* from
-            (select event_id as id, event_name as title, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events) as t1
-            left join
-            (select event_id, count(booking_id) as peopleAttending, sum(booking_spaces) as ticket from wp_em_bookings group by event_id) as t2
-            on t1.id = t2.event_id) as t3
-            left join
-            wp_users t4
-            on t3.event_owner = t4.ID";
+                (select t1.*,t2.* from
+                (select event_id as eid, event_name as title, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events) as t1
+                right join
+                (select ticket_id as id, event_id, ticket_members as peopleAttending, ticket_price as ticket from wp_em_tickets) as t2
+                on t1.eid = t2.event_id) as t3
+                left join
+                wp_users t4
+                on t3.event_owner = t4.ID";
 
             $result = $conn->query($sql);
 
@@ -242,14 +244,14 @@
         }else{
 
             $sql = "select t3.*, t4.display_name as eventManager from 
-            (select t1.*,t2.* from
-            (select event_id as id, event_name as name, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events where event_id = ".$event_id.") as t1
-            left join
-            (select event_id, count(booking_id) as peopleAttending, sum(booking_spaces) as ticket from wp_em_bookings group by event_id) as t2
-            on t1.id = t2.event_id) as t3
-            left join
-            wp_users t4
-            on t3.event_owner = t4.ID
+                (select t1.*,t2.* from
+                (select event_all_day as allDayEvent, event_id as eid, event_name as name, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events) as t1
+                right join
+                (select ticket_id as id, event_id, ticket_members as attendees, ticket_price as price from wp_em_tickets where ticket_id = ".$event_id.") as t2
+                on t1.eid = t2.event_id) as t3
+                left join
+                wp_users t4
+                on t3.event_owner = t4.ID
             ";
 
             $result = $conn->query($sql);
@@ -261,24 +263,24 @@
                 while($row = $result->fetch_assoc() ) {
                     $new_item["id"] = $row["id"];
                     $new_item["liveNow"] = $row["event_status"]==1?true:false;
-                    $new_item["peopleAttending"] = $row["peopleAttending"]!=''?$row["peopleAttending"]:0;
-                    $new_item["ticket"] = $row["ticket"]!=''?$row["ticket"]:0;
+                    $new_item["attendees"] = $row["attendees"]!=''?$row["attendees"]:0;
+                    $new_item["price"] = $row["price"]!=''?$row["price"]:0;
                     $new_item["date"] = $row["date"];
                     $new_item["time"] = $row["time"];
                     $new_item["name"] = $row["name"];
                     $new_item["eventManager"] = $row["eventManager"];
                     $new_item["host"] = $row["eventManager"];
                     
-                    $new_item["liveStreamUrl"] = "https://goosebumps.finance/images/logo-icon.png";
-                    $new_item["gate"] = 6;
-                    $new_item["seating"] = "free";
-                    $new_item["accessRestrictions"] = "Staff, VIPs, Executive Members, All Executives of DDCMS";
+                    // $new_item["liveStreamUrl"] = "https://goosebumps.finance/images/logo-icon.png";
+                    // $new_item["gate"] = 6;
+                    // $new_item["seating"] = "free";
+                    // $new_item["accessRestrictions"] = "Staff, VIPs, Executive Members, All Executives of DDCMS";
                     
                     $new_item["presenters"] = array();
-                    $presenter1["name"] = $row["eventManager"];
-                    $presenter1["starPresenter"] = true;
-                    $presenter1["createdBy"] = "Dept for Digital Culture, Media & Sport";
-                    array_push($new_item["presenters"], $presenter1);
+                    // $presenter1["name"] = $row["eventManager"];
+                    // $presenter1["starPresenter"] = true;
+                    // $presenter1["createdBy"] = "Dept for Digital Culture, Media & Sport";
+                    // array_push($new_item["presenters"], $presenter1);
 
                     $new_item["description"] = strip_tags(preg_replace('#(\[(.*)\](.*)\[/.*\])#Us','',$row["post_content"]));
                     $new_item["description"] = str_replace("&nbsp;",' ',$new_item["description"]);
