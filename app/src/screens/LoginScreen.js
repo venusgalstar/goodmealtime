@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, View, TouchableOpacity  } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 import { useDimensions } from "@react-native-community/hooks";
 import CheckBox from "@react-native-community/checkbox";
 import Icon from "react-native-vector-icons/AntDesign";
@@ -21,10 +21,10 @@ export default function App({ navigation }) {
     navigation.navigate(routeNames.addPhoneNumber);
   }
 
-  const onSignInPress = () => {
+  const onSignInPress = (tabId) => {
 
-    if( checked == true )
-      navigation.navigate('Home')
+    if (checked == true)
+      navigation.navigate('Home', { tabId: tabId })
   }
 
   return (
@@ -63,9 +63,9 @@ export default function App({ navigation }) {
         </View>
         <View style={tw`w-full flex flex-row items-center justify-center`}>
           <CheckBox
-            disabled = {false}
+            disabled={false}
             value={checked}
-            onValueChange={(newValue) =>setChecked(newValue)}
+            onValueChange={(newValue) => setChecked(newValue)}
           />
           <Text>Accept terms & conditions</Text>
         </View>
@@ -76,7 +76,7 @@ export default function App({ navigation }) {
             Icon={({ color, size }) => (
               <Icon name="arrowright" size={size} color={color} />
             )}
-            onPress={onSignInPress}
+            onPress={onSignInPress.bind(null, 0)}
           />
           <TouchableOpacity onPress={navigateToRegisterScreen}>
             <Text

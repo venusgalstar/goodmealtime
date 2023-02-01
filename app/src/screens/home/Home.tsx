@@ -31,14 +31,6 @@ const Home = (props: any) => {
         }
     ])
 
-    // TODO
-    // const x = useContext(AppStateContext)
-
-    // useEffect(() => {
-    //     console.log(x)
-    // }, [])
-
-
     const onTableBtnPress = () => {
         setTableBtnPressed(!tableBtnPressed)
     }
@@ -65,6 +57,7 @@ const Home = (props: any) => {
             dataVisible={tableBtnPressed}
             onBarBtnPress={onBarBtnPress}
             navigation={props.navigation}
+            tabId={props.route.params.tabId}
         />
     )
 

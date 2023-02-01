@@ -60,7 +60,7 @@ const EventDetails = (props: any) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${API_PATH}?events=${props.route.params.eventId}`, {
+                const response = await fetch(`${API_PATH}?events=${props.route.params.eventId}&author=-1`, {
                     method: 'GET',
                 });
                 const json = await response.json();

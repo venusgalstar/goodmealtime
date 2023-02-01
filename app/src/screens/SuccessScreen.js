@@ -6,10 +6,11 @@ import { Button } from "../components";
 
 export default function SuccessScreen({ modalVisible, setModalVisible, navigation }) {
 
-  const onGoToHomePress = () => {
+  const onGoToHomePress = (tabId) => {
     setModalVisible(false);
-    navigation.navigate('Home')
+    navigation.navigate('Home', { tabId: tabId })
   }
+
   return (
     <View>
       <Modal
@@ -61,7 +62,7 @@ export default function SuccessScreen({ modalVisible, setModalVisible, navigatio
                 text="Go to Homescreen"
                 style={tw`mt-6 mb-3 py-3 px-8 justify-center bg-secondary-light`}
                 textStyle={tw`text-base text-center text-primary`}
-                onPress={onGoToHomePress}
+                onPress={onGoToHomePress.bind(null, 0)}
               />
             </View>
           </View>
