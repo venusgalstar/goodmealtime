@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import Container from '../../components/Container'
 import { Colors, Images } from '../../res'
 import EventsMealsBar from './EventsMealsBar'
@@ -8,6 +8,7 @@ import MyTableBtn from './MyTableBtn'
 import TableSlider from './TableSlider'
 import BottomBar from './BottomBar'
 import { Cards } from '../cards';
+import { AppStateContext } from '../../App'
 // import { API_PATH, REFETCH } from '../../config'
 // import { mealsData, eventsData } from './Data'
 // import { getAsyncData, postAsyncData } from '../../utils/fetch'
@@ -29,6 +30,11 @@ const Home = (props: any) => {
             id: '3'
         }
     ])
+    const x = useContext(AppStateContext)
+
+    useEffect(() => {
+        console.log(x)
+    }, [])
 
 
     const onTableBtnPress = () => {
