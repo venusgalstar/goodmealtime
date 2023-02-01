@@ -30,11 +30,13 @@ const Home = (props: any) => {
             id: '3'
         }
     ])
-    const x = useContext(AppStateContext)
 
-    useEffect(() => {
-        console.log(x)
-    }, [])
+    // TODO
+    // const x = useContext(AppStateContext)
+
+    // useEffect(() => {
+    //     console.log(x)
+    // }, [])
 
 
     const onTableBtnPress = () => {
