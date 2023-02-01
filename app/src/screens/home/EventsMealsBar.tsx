@@ -61,6 +61,7 @@ const EventsMealsBar = (props: any) => {
                 dataVisible &&
                     activeBtn === TABID.EVENTS ?
                     <Events
+                        author={author}
                         navigation={navigation}
                     />
                     :

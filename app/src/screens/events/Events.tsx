@@ -7,6 +7,7 @@ import { SAVE_EVENT, FAST_REFETCH, REFETCH, API_PATH } from '../../config'
 
 const Events = (props: any) => {
     const {
+        author = -1,
         navigation = {}
     } = props
 
@@ -53,7 +54,7 @@ const Events = (props: any) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const eventsResponse = await fetch(`${API_PATH}?events=-1&author=-1`, {
+                const eventsResponse = await fetch(`${API_PATH}?events=-1&author=${author}`, {
                     method: 'GET',
                 });
                 const eventsJson = await eventsResponse.json();
