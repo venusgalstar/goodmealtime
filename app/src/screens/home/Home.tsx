@@ -9,9 +9,7 @@ import TableSlider from './TableSlider'
 import BottomBar from './BottomBar'
 import { Cards } from '../cards';
 import { AppStateContext } from '../../App'
-// import { API_PATH, REFETCH } from '../../config'
 // import { mealsData, eventsData } from './Data'
-// import { getAsyncData, postAsyncData } from '../../utils/fetch'
 
 const Home = (props: any) => {
     const [tableBtnPressed, setTableBtnPressed] = useState(true)
@@ -52,12 +50,11 @@ const Home = (props: any) => {
 
     const RenderEventsMealsBar = () => (
         <EventsMealsBar
-            // events={events}
-            // meals={meals}
             dataVisible={tableBtnPressed}
             onBarBtnPress={onBarBtnPress}
             navigation={props.navigation}
             tabId={props.route.params.tabId}
+            author={props.route.params.author}
         />
     )
 

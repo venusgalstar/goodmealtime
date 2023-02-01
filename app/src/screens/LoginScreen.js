@@ -21,10 +21,10 @@ export default function App({ navigation }) {
     navigation.navigate(routeNames.addPhoneNumber);
   }
 
-  const onSignInPress = (tabId) => {
+  const onSignInPress = (tabId, author) => {
 
     if (checked == true)
-      navigation.navigate('Home', { tabId: tabId })
+      navigation.navigate('Home', { tabId: tabId, author: author })
   }
 
   return (
@@ -76,7 +76,7 @@ export default function App({ navigation }) {
             Icon={({ color, size }) => (
               <Icon name="arrowright" size={size} color={color} />
             )}
-            onPress={onSignInPress.bind(null, 0)}
+            onPress={onSignInPress.bind(null, 0, -1)}
           />
           <TouchableOpacity onPress={navigateToRegisterScreen}>
             <Text

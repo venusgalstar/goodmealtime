@@ -15,11 +15,10 @@ enum TABID {
 
 const EventsMealsBar = (props: any) => {
     const {
-        // events = [],
-        // meals = [],
         dataVisible = false,
         navigation = {},
-        tabId = 0
+        tabId = 0,
+        author = -1
     } = props
     const [activeBtn, setActiveBtn] = useState(tabId)
 
@@ -27,50 +26,6 @@ const EventsMealsBar = (props: any) => {
         setActiveBtn(active)
         props.onBarBtnPress(active)
     }
-
-    const [refetch, setRefetch] = useState(true);
-    const [events, setEvents] = useState([])
-    const [meals, setMeals] = useState([])
-
-    useEffect(() => {
-        const timerID = setInterval(() => {
-            setRefetch((prevRefetch) => {
-                return !prevRefetch;
-            });
-        }, REFETCH);
-
-        return () => {
-            clearInterval(timerID);
-        };
-
-    }, []);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const eventsResponse = await fetch(`${API_PATH}?events=-1&author=-1`, {
-                    method: 'GET',
-                });
-                const eventsJson = await eventsResponse.json();
-                // console.log("[=====Events Json======]", eventsJson)
-                // console.log("[=====Events Json Stringify======]", JSON.stringify(eventsJson))
-                setEvents(eventsJson)
-            } catch (error) {
-                console.log("[=====Fetch Events ERR======]", error)
-            }
-            try {
-                const mealsResponse = await fetch(`${API_PATH}?meals=-1`, {
-                    method: 'GET',
-                });
-                const mealsJson = await mealsResponse.json();
-                // console.log("[=====Meals Json======]", mealsJson)
-                setMeals(mealsJson)
-            } catch (error) {
-                console.log("[=====Fetch Meals ERR======]", error)
-            }
-        };
-        fetchData();
-    }, [refetch])
 
     return (
         <View style={dataVisible ? Styles.container : {}}>
@@ -106,12 +61,10 @@ const EventsMealsBar = (props: any) => {
                 dataVisible &&
                     activeBtn === TABID.EVENTS ?
                     <Events
-                        data={events}
                         navigation={navigation}
                     />
                     :
                     <Meals
-                        data={meals}
                         navigation={navigation}
                     />
             }

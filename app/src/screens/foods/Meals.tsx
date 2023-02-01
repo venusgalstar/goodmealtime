@@ -4,7 +4,7 @@ import { Colors, Fonts, Images } from '../../res'
 import { hp, Typography, wp } from '../../global'
 import { Constants } from '../../global'
 import Entypo from 'react-native-vector-icons/Entypo'
-// import { API_PATH, REFETCH } from '../../config'
+import { API_PATH, REFETCH } from '../../config'
 
 const MealCard = (props: any) => {
     const {
@@ -77,9 +77,40 @@ const MealCard = (props: any) => {
 
 const Meals = (props: any) => {
     const {
-        data = [],
         navigation = {}
     } = props
+
+    const [refetch, setRefetch] = useState(true);
+    const [meals, setMeals] = useState([])
+
+    useEffect(() => {
+        const timerID = setInterval(() => {
+            setRefetch((prevRefetch) => {
+                return !prevRefetch;
+            });
+        }, REFETCH);
+
+        return () => {
+            clearInterval(timerID);
+        };
+
+    }, []);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const mealsResponse = await fetch(`${API_PATH}?meals=-1`, {
+                    method: 'GET',
+                });
+                const mealsJson = await mealsResponse.json();
+                // console.log("[=====Meals Json======]", mealsJson)
+                setMeals(mealsJson)
+            } catch (error) {
+                console.log("[=====Fetch Meals ERR======]", error)
+            }
+        };
+        fetchData();
+    }, [refetch])
 
 
     const onEventsPress = (eventId: any) => navigation.navigate('EventDetails', { eventId: 1, isSavedEvent: false, savedAmounts: 0 })
@@ -137,7 +168,7 @@ const Meals = (props: any) => {
     return (
         <View style={[Styles.container, Styles.shadow]}>
             <FlatList
-                data={data}
+                data={meals}
                 renderItem={renderCategory}
                 contentContainerStyle={Styles.listContainer}
                 showsVerticalScrollIndicator={false}
