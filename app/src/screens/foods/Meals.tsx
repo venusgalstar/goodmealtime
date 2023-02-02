@@ -5,6 +5,7 @@ import { hp, Typography, wp } from '../../global'
 import { Constants } from '../../global'
 import Entypo from 'react-native-vector-icons/Entypo'
 import { API_PATH, REFETCH } from '../../config'
+import { mealsData1 } from '../home/Data'
 
 const MealCard = (props: any) => {
     const {
@@ -81,7 +82,7 @@ const Meals = (props: any) => {
     } = props
 
     const [refetch, setRefetch] = useState(true);
-    const [meals, setMeals] = useState([])
+    const [meals, setMeals] = useState(mealsData1)
 
     useEffect(() => {
         const timerID = setInterval(() => {
@@ -104,7 +105,7 @@ const Meals = (props: any) => {
                 });
                 const mealsJson = await mealsResponse.json();
                 // console.log("[=====Meals Json======]", mealsJson)
-                setMeals(mealsJson)
+                // setMeals(mealsJson)
             } catch (error) {
                 console.log("[=====Fetch Meals ERR======]", error)
             }
@@ -113,7 +114,7 @@ const Meals = (props: any) => {
     }, [refetch])
 
 
-    const onEventsPress = (eventId: any) => navigation.navigate('EventDetails', { eventId: 1, isSavedEvent: false, savedAmounts: 0 })
+    const onEventsPress = (eventId: any) => navigation.navigate('EventDetails', { eventId: eventId, isSavedEvent: false, savedAmounts: 0 })
 
     const renderCategoryItems = ({ item, index }: any) => {
         return (
@@ -271,7 +272,7 @@ const Styles = StyleSheet.create({
     },
     innerConLine: {
         borderTopWidth: 0.4,
-        width: wp(30)
+        width: wp(25)
     },
     itemDateDay: {
         fontFamily: Fonts.APPFONT_B,

@@ -11,14 +11,14 @@ import React, { createContext, useState, useEffect, useRef } from 'react'
 import { RootNavigation } from '../src/navigations'
 import Geolocation, { GeoPosition } from 'react-native-geolocation-service';
 
-export const AppStateContext = createContext({});
+export const AppStateContext = createContext<any>(null);
 
 const App = () => {
   const setGeoData = (_geoData: any) => {
     setGeo(_geoData)
   }
 
-  const [geo, setGeo] = useState({
+  const [geo, setGeo] = useState<any>({
     geoData: null,
     setGeoData
   })
@@ -165,8 +165,8 @@ const App = () => {
         },
         enableHighAccuracy: true,
         distanceFilter: 0,
-        interval: 5000,
-        fastestInterval: 2000,
+        interval: 240000,
+        fastestInterval: 240000,
         forceRequestLocation: true,
         forceLocationManager: false,
         showLocationDialog: true,

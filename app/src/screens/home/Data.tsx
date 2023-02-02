@@ -93,6 +93,157 @@ const mealsData = [
     }
 ]
 
+const mealsData1 = [
+    {
+        category: [
+            {
+                id: "139",
+                price: "1200",
+                image: "https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/karahi.jpg",
+                location: "admin",
+                restaurant: "admin",
+                available: 1,
+                lng: null,
+                lat: null,
+                author: "13"
+            },
+            {
+                id: "140",
+                price: null,
+                image: "https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/CHICKEN_CHEESE_KARAHI-1.jpg",
+                location: "admin",
+                restaurant: "admin",
+                available: 1,
+                lng: null,
+                lat: null,
+                author: "13"
+            },
+            {
+                id: "5103",
+                price: "6000",
+                image: "https:\/\/www.goodmealtime.com\/wp-content\/uploads\/2023\/01\/uAqhND6SapKjK7pB.png",
+                location: "Gwarimpa",
+                restaurant: "Miojah",
+                available: 1,
+                lng: "0",
+                lat: "0",
+                author: "52"
+            }
+        ]
+    },
+    {
+        category2: [
+            {
+                id: "139",
+                price: "1200",
+                image: "https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/karahi.jpg",
+                location: "admin",
+                restaurant: "admin",
+                available: 1,
+                lng: null,
+                lat: null,
+                author: "13"
+            },
+            {
+                id: "140",
+                price: null,
+                image: "https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/CHICKEN_CHEESE_KARAHI-1.jpg",
+                location: "admin",
+                restaurant: "admin",
+                available: 1,
+                lng: null,
+                lat: null,
+                author: "13"
+            },
+            {
+                id: "5103",
+                price: "6000",
+                image: "https:\/\/www.goodmealtime.com\/wp-content\/uploads\/2023\/01\/uAqhND6SapKjK7pB.png",
+                location: "Gwarimpa",
+                restaurant: "Miojah",
+                available: 1,
+                lng: "0",
+                lat: "0",
+                author: "52"
+            }
+        ]
+    },
+    {
+        category3: [
+            {
+                id: "139",
+                price: "1200",
+                image: "https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/karahi.jpg",
+                location: "admin",
+                restaurant: "admin",
+                available: 1,
+                lng: null,
+                lat: null,
+                author: "13"
+            },
+            {
+                id: "140",
+                price: null,
+                image: "https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/CHICKEN_CHEESE_KARAHI-1.jpg",
+                location: "admin",
+                restaurant: "admin",
+                available: 1,
+                lng: null,
+                lat: null,
+                author: "13"
+            },
+            {
+                id: "5103",
+                price: "6000",
+                image: "https:\/\/www.goodmealtime.com\/wp-content\/uploads\/2023\/01\/uAqhND6SapKjK7pB.png",
+                location: "Gwarimpa",
+                restaurant: "Miojah",
+                available: 1,
+                lng: "0",
+                lat: "0",
+                author: "52"
+            }
+        ]
+    },
+    {
+        category4: [
+            {
+                id: "139",
+                price: "1200",
+                image: "https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/karahi.jpg",
+                location: "admin",
+                restaurant: "admin",
+                available: 1,
+                lng: null,
+                lat: null,
+                author: "13"
+            },
+            {
+                id: "140",
+                price: null,
+                image: "https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/CHICKEN_CHEESE_KARAHI-1.jpg",
+                location: "admin",
+                restaurant: "admin",
+                available: 1,
+                lng: null,
+                lat: null,
+                author: "13"
+            },
+            {
+                id: "5103",
+                price: "6000",
+                image: "https:\/\/www.goodmealtime.com\/wp-content\/uploads\/2023\/01\/uAqhND6SapKjK7pB.png",
+                location: "Gwarimpa",
+                restaurant: "Miojah",
+                available: 1,
+                lng: "0",
+                lat: "0",
+                author: "52"
+            }
+        ]
+    }
+]
+
 
 const eventsData = [
     {
@@ -149,4 +300,4 @@ const eventsData = [
     },
 
 ]
-export { mealsData, eventsData }
+export { mealsData, eventsData, mealsData1 }

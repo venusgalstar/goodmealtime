@@ -8,7 +8,6 @@ import MyTableBtn from './MyTableBtn'
 import TableSlider from './TableSlider'
 import BottomBar from './BottomBar'
 import { Cards } from '../cards';
-import { AppStateContext } from '../../App'
 // import { mealsData, eventsData } from './Data'
 
 const Home = (props: any) => {

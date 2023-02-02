@@ -48,15 +48,6 @@ const EventCard = (props: any) => {
 
     return (
         <View style={Styles.itemContainer}>
-            <View style={Styles.outerDateCon}>
-                <View style={Styles.innerConLine} />
-                <View style={Styles.outerDateCon}>
-                    <Text style={Styles.itemDateDay}>Today</Text>
-                    <Text style={Styles.itemDate}>|</Text>
-                    <Text style={Styles.itemDate}>{item.date}</Text>
-                </View>
-                <View style={Styles.innerConLine} />
-            </View>
             <TouchableOpacity style={[Styles.contentOuterCon, Styles.shadow]}
                 activeOpacity={Constants.btnActiveOpacity}
                 onPress={() => {
@@ -189,26 +180,6 @@ const Styles = StyleSheet.create({
     itemContainer: {
         marginTop: hp(3),
         marginBottom: hp(1)
-    },
-    outerDateCon: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between'
-    },
-    innerConLine: {
-        borderTopWidth: 0.4,
-        width: wp(30)
-    },
-    itemDateDay: {
-        fontFamily: Fonts.APPFONT_B,
-        color: Colors.color5,
-        fontSize: Typography.small2
-    },
-    itemDate: {
-        fontFamily: Fonts.APPFONT_R,
-        color: Colors.color5,
-        marginLeft: wp(1),
-        fontSize: Typography.small2
     },
     contentOuterCon: {
         backgroundColor: Colors.color2,
