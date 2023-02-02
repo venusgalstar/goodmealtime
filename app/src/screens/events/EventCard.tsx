@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, FlatList, Image, Dimensions, TouchableOpacity, Platform } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Animation } from '../../animations'
 import { Constants, hp, Typography, wp } from '../../global'
@@ -8,13 +8,30 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import { SAVE_EVENT } from '../../config';
 
+enum POSITION {
+    TODAY,
+    TOMORROW,
+    WEEK,
+    MONTH,
+    MONTH3,
+    MONTH6,
+    MONTH6PLUS
+}
+
+const POSITION_STRING = ["Today", "Tomorrow", "This Week", "This Month", "3 Months", "6 Months", "6 Months +"]
+
 const EventCard = (props: any) => {
     const {
         item = {},
         onPress = () => null,
         isSavedEvent = false,
         navigation,
+        position
     } = props
+
+    // useEffect(() => {
+    //     console.log("[===EventCard===]", position)
+    // }, [])
 
     const [isSaved, setIsSaved] = useState(isSavedEvent)
 
@@ -51,6 +68,25 @@ const EventCard = (props: any) => {
 
     return (
         <View style={Styles.itemContainer}>
+            {
+                position === POSITION.TODAY ?
+                    <View style={Styles.outerDateCon}>
+                        <View style={Styles.innerTodayConLine} />
+                        <View style={Styles.outerDateCon}>
+                            <Text style={Styles.itemDateDay}>Today</Text>
+                            <Text style={Styles.itemDate}>|</Text>
+                            <Text style={Styles.itemDate}>{new Date().toDateString()}</Text>
+                        </View>
+                        <View style={Styles.innerTodayConLine} />
+                    </View> :
+                    <View style={Styles.outerDateCon}>
+                        <View style={Styles.innerConLine} />
+                        <View style={Styles.outerDateCon}>
+                            <Text style={Styles.itemDateDay}>{POSITION_STRING[position]}</Text>
+                        </View>
+                        <View style={Styles.innerConLine} />
+                    </View>
+            }
             <TouchableOpacity style={[Styles.contentOuterCon, Styles.shadow]}
                 activeOpacity={Constants.btnActiveOpacity}
                 onPress={() => {
@@ -179,6 +215,30 @@ export default EventCard
 
 const { width } = Dimensions.get('window')
 const Styles = StyleSheet.create({
+    outerDateCon: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
+    innerTodayConLine: {
+        borderTopWidth: 0.4,
+        width: wp(25)
+    },
+    innerConLine: {
+        borderTopWidth: 0.4,
+        width: wp(35)
+    },
+    itemDateDay: {
+        fontFamily: Fonts.APPFONT_B,
+        color: Colors.color5,
+        fontSize: Typography.small2
+    },
+    itemDate: {
+        fontFamily: Fonts.APPFONT_R,
+        color: Colors.color5,
+        marginLeft: wp(1),
+        fontSize: Typography.small2
+    },
     itemContainer: {
         marginTop: hp(3),
         marginBottom: hp(1)

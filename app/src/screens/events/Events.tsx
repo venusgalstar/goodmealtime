@@ -8,6 +8,17 @@ import { SAVE_EVENT, FAST_REFETCH, REFETCH, API_PATH } from '../../config'
 import { AppStateContext } from '../../App'
 import { getDistance } from '../../utils'
 
+const getPosition = (pos: number[], value: number) => {
+    var low = 0;
+    var high = pos[0] - 1;
+    for (var i = 0; i < pos.length - 1; i++) {
+        if ((low <= value) && (value <= high)) return i;
+        low = low + pos[i];
+        high = high + pos[i + 1];
+    }
+    return pos.length - 1
+}
+
 const Events = (props: any) => {
     const {
         author = -1,
@@ -25,6 +36,8 @@ const Events = (props: any) => {
     const [threeMEvents, setThreeMEvents] = useState([])
     const [sixMEvents, setSixMEvents] = useState([])
     const [sixPlusMEvents, setSixPlusMEvents] = useState([])
+    const [concatEvents, setConcatEvents] = useState([])
+    const [positions, setPositions] = useState<number[]>([])
     const [isLoading, setIsLoading] = useState(false)
 
     const geo = useContext(AppStateContext)
@@ -93,7 +106,25 @@ const Events = (props: any) => {
             return Date.parse(item.event_start_date) > sixMonth
         })
         console.log("[===_sixPlusMEvents===]", _sixPlusMEvents)
-        setSixPlusMEvents(_sixPlusMEvents)
+        setPositions([
+            _todaySortedEvents.length,
+            _tmrSortedEvents.length,
+            _weekSortedEvents.length,
+            _monthSortedEvents.length,
+            _threeMEvents.length,
+            _sixMEvents.length,
+            _sixPlusMEvents.length
+        ])
+
+        const _concatEvents = _todaySortedEvents
+            .concat(_tmrSortedEvents)
+            .concat(_weekSortedEvents)
+            .concat(_monthSortedEvents)
+            .concat(_threeMEvents)
+            .concat(_sixMEvents)
+            .concat(_sixPlusMEvents)
+        // console.log("[===concat===]", _concatEvents)
+        setConcatEvents(_concatEvents)
         setIsLoading(true)
     }, [events, geo])
 
@@ -157,193 +188,24 @@ const Events = (props: any) => {
         console.log("[==EventDetails end==]")
     }
 
-    const renderItem = ({ item }: any) => {
-        return (
-            <EventCard
-                onPress={onEventPress.bind(null, item.id, (savedEvents.filter((event: any) => { return event.id === item.id }).length > 0), savedEvents.length)}
-                item={item}
-                isSavedEvent={savedEvents.filter((event: any) => { return event.id === item.id }).length > 0}
-                navigation={navigation}
-            />
-        )
-    }
-
-    const TodayList = () => {
-        return (
-            <View style={[Styles.categoryContainer, Styles.shadow]}>
-                <View style={Styles.outerDateCon}>
-                    <View style={Styles.innerTodayConLine} />
-                    <View style={Styles.outerDateCon}>
-                        <Text style={Styles.itemDateDay}>Today</Text>
-                        <Text style={Styles.itemDate}>|</Text>
-                        <Text style={Styles.itemDate}>{new Date().toDateString()}</Text>
-                    </View>
-                    <View style={Styles.innerTodayConLine} />
-                </View>
-                {
-                    isLoading &&
-                    <FlatList
-                        data={todayEvents}
-                        renderItem={renderItem}
-                        showsVerticalScrollIndicator={false}
-                        contentContainerStyle={Styles.listContainer}
-                    />
-                }
-            </View>
-        )
-    }
-
-    const TmrList = () => {
-        return (
-            <View style={[Styles.categoryContainer, Styles.shadow]}>
-                <View style={Styles.outerDateCon}>
-                    <View style={Styles.innerConLine} />
-                    <View style={Styles.outerDateCon}>
-                        <Text style={Styles.itemDateDay}>Tomorrow</Text>
-                    </View>
-                    <View style={Styles.innerConLine} />
-                </View>
-                {
-                    isLoading &&
-                    <FlatList
-                        data={tmrEvents}
-                        renderItem={renderItem}
-                        showsVerticalScrollIndicator={false}
-                        contentContainerStyle={Styles.listContainer}
-                    />
-                }
-            </View>
-        )
-    }
-
-    const WeekList = () => {
-        return (
-            <View style={[Styles.categoryContainer, Styles.shadow]}>
-                <View style={Styles.outerDateCon}>
-                    <View style={Styles.innerConLine} />
-                    <View style={Styles.outerDateCon}>
-                        <Text style={Styles.itemDateDay}>This Week</Text>
-                    </View>
-                    <View style={Styles.innerConLine} />
-                </View>
-                {
-                    isLoading &&
-                    <FlatList
-                        data={weekEvents}
-                        renderItem={renderItem}
-                        showsVerticalScrollIndicator={false}
-                        contentContainerStyle={Styles.listContainer}
-                    />
-                }
-            </View>
-        )
-    }
-
-    const MonthList = () => {
-        return (
-            <View style={[Styles.categoryContainer, Styles.shadow]}>
-                <View style={Styles.outerDateCon}>
-                    <View style={Styles.innerConLine} />
-                    <View style={Styles.outerDateCon}>
-                        <Text style={Styles.itemDateDay}>This Month</Text>
-                    </View>
-                    <View style={Styles.innerConLine} />
-                </View>
-                {
-                    isLoading &&
-                    <FlatList
-                        data={monthEvents}
-                        renderItem={renderItem}
-                        showsVerticalScrollIndicator={false}
-                        contentContainerStyle={Styles.listContainer}
-                    />
-                }
-            </View>
-        )
-    }
-
-    const ThreeMList = () => {
-        return (
-            <View style={[Styles.categoryContainer, Styles.shadow]}>
-                <View style={Styles.outerDateCon}>
-                    <View style={Styles.innerConLine} />
-                    <View style={Styles.outerDateCon}>
-                        <Text style={Styles.itemDateDay}>3 Months</Text>
-                    </View>
-                    <View style={Styles.innerConLine} />
-                </View>
-                {
-                    isLoading &&
-                    <FlatList
-                        data={threeMEvents}
-                        renderItem={renderItem}
-                        showsVerticalScrollIndicator={false}
-                        contentContainerStyle={Styles.listContainer}
-                    />
-                }
-            </View>
-        )
-    }
-
-    const SixMList = () => {
-        return (
-            <View style={[Styles.categoryContainer, Styles.shadow]}>
-                <View style={Styles.outerDateCon}>
-                    <View style={Styles.innerConLine} />
-                    <View style={Styles.outerDateCon}>
-                        <Text style={Styles.itemDateDay}>6 Months</Text>
-                    </View>
-                    <View style={Styles.innerConLine} />
-                </View>
-                {
-                    isLoading &&
-                    <FlatList
-                        data={sixMEvents}
-                        renderItem={renderItem}
-                        showsVerticalScrollIndicator={false}
-                        contentContainerStyle={Styles.listContainer}
-                    />
-                }
-            </View>
-        )
-    }
-
-    const SixPlusMList = () => {
-        return (
-            <View style={[Styles.categoryContainer]}>
-                <View style={Styles.outerDateCon}>
-                    <View style={Styles.innerConLine} />
-                    <View style={Styles.outerDateCon}>
-                        <Text style={Styles.itemDateDay}>6 Months+</Text>
-                    </View>
-                    <View style={Styles.innerConLine} />
-                </View>
-                {
-                    isLoading &&
-                    <FlatList
-                        data={sixPlusMEvents}
-                        renderItem={renderItem}
-                        showsVerticalScrollIndicator={false}
-                        contentContainerStyle={Styles.listContainer}
-                    />
-                }
-            </View>
-        )
-    }
-
     return (
-        <View style={[Styles.container, Styles.shadow]}>
+        <View style={Styles.container}>
             <ScrollView
-                showsHorizontalScrollIndicator={false}
+                showsVerticalScrollIndicator={false}
                 contentContainerStyle={Styles.itemListContainer}
             >
-                <TodayList />
-                <TmrList />
-                <WeekList />
-                <MonthList />
-                <ThreeMList />
-                <SixMList />
-                <SixPlusMList />
+                {
+                    isLoading && concatEvents.map((item: any, key: number) =>
+                        <EventCard
+                            onPress={onEventPress.bind(null, item.id, (savedEvents.filter((event: any) => { return event.id === item.id }).length > 0), savedEvents.length)}
+                            item={item}
+                            isSavedEvent={savedEvents.filter((event: any) => { return event.id === item.id }).length > 0}
+                            navigation={navigation}
+                            key={key}
+                            position={getPosition(positions, key)}
+                        />
+                    )
+                }
             </ScrollView>
         </View>
     )
@@ -357,30 +219,6 @@ const Styles = StyleSheet.create({
     },
     listContainer: {
         paddingHorizontal: wp(4),
-    },
-    outerDateCon: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between'
-    },
-    innerTodayConLine: {
-        borderTopWidth: 0.4,
-        width: wp(25)
-    },
-    innerConLine: {
-        borderTopWidth: 0.4,
-        width: wp(35)
-    },
-    itemDateDay: {
-        fontFamily: Fonts.APPFONT_B,
-        color: Colors.color5,
-        fontSize: Typography.small2
-    },
-    itemDate: {
-        fontFamily: Fonts.APPFONT_R,
-        color: Colors.color5,
-        marginLeft: wp(1),
-        fontSize: Typography.small2
     },
     shadow: {
         shadowColor: Colors.color1,
