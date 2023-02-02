@@ -54,7 +54,7 @@ const Events = (props: any) => {
     }
 
     useEffect(() => {
-        console.log("[===useContext geo===]", geo)
+        // console.log("[===useContext geo===]", geo)
         const _sortedEvents = events.sort(compareEvents)
         // console.log("[===_sortedEvents===]", _sortedEvents)
 
@@ -62,48 +62,48 @@ const Events = (props: any) => {
         const _todaySortedEvents = _sortedEvents.filter((item: any) => {
             return (Date.parse(item.event_start_date) <= today) && (today <= Date.parse(item.event_end_date))
         })
-        console.log("[===_todaySortedEvents===]", _todaySortedEvents)
+        // console.log("[===_todaySortedEvents===]", _todaySortedEvents)
         setTodayEvents(_todaySortedEvents)
 
         const tmr = today + 24 * 3600 * 1000;
         const _tmrSortedEvents = _sortedEvents.filter((item: any) => {
             return (Date.parse(item.event_start_date) <= tmr) && (tmr <= Date.parse(item.event_end_date))
         })
-        console.log("[===_tmrSortedEvents===]", _tmrSortedEvents)
+        // console.log("[===_tmrSortedEvents===]", _tmrSortedEvents)
         setTmrEvents(_tmrSortedEvents)
 
         const thisWeek = today + (6 - new Date().getDay()) * 24 * 3600 * 1000;
         const _weekSortedEvents = _sortedEvents.filter((item: any) => {
             return (Date.parse(item.event_start_date) <= tmr) && (thisWeek <= Date.parse(item.event_end_date))
         })
-        console.log("[===_weekSortedEvents===]", _weekSortedEvents)
+        // console.log("[===_weekSortedEvents===]", _weekSortedEvents)
         setWeekEvents(_weekSortedEvents)
 
         const thisMonth = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0).toString());
         const _monthSortedEvents = _sortedEvents.filter((item: any) => {
             return (Date.parse(item.event_start_date) <= thisWeek) && (thisMonth <= Date.parse(item.event_end_date))
         })
-        console.log("[===_monthSortedEvents===]", _monthSortedEvents)
+        // console.log("[===_monthSortedEvents===]", _monthSortedEvents)
         setMonthEvents(_monthSortedEvents)
 
         const threeMonth = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 3, 0).toString());
         const _threeMEvents = _sortedEvents.filter((item: any) => {
             return (Date.parse(item.event_start_date) <= thisMonth) && (threeMonth <= Date.parse(item.event_end_date))
         })
-        console.log("[===_threeMEvents===]", _threeMEvents)
+        // console.log("[===_threeMEvents===]", _threeMEvents)
         setThreeMEvents(_threeMEvents)
 
         const sixMonth = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 6, 0).toString());
         const _sixMEvents = _sortedEvents.filter((item: any) => {
             return (Date.parse(item.event_start_date) <= threeMonth) && (sixMonth <= Date.parse(item.event_end_date))
         })
-        console.log("[===_sixMEvents===]", _sixMEvents)
+        // console.log("[===_sixMEvents===]", _sixMEvents)
         setSixMEvents(_sixMEvents)
 
         const _sixPlusMEvents = _sortedEvents.filter((item: any) => {
             return Date.parse(item.event_start_date) > sixMonth
         })
-        console.log("[===_sixPlusMEvents===]", _sixPlusMEvents)
+        // console.log("[===_sixPlusMEvents===]", _sixPlusMEvents)
         setPositions([
             _todaySortedEvents.length,
             _tmrSortedEvents.length,
@@ -157,12 +157,6 @@ const Events = (props: any) => {
         };
         fetchData();
     }, [refetch])
-
-    const onEventPress = (eventId: any, isSavedEvent: any, savedAmounts: number) => {
-        console.log("[==EventDetails start==]")
-        navigation.navigate('EventDetails', { eventId: eventId, isSavedEvent: isSavedEvent, savedAmounts: savedAmounts })
-        console.log("[==EventDetails end==]")
-    }
 
     return (
         <View style={Styles.container}>

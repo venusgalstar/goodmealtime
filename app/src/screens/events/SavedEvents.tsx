@@ -33,11 +33,11 @@ const SavedEvents = (props: any) => {
 
     useEffect(() => {
         const fetchAsyncStorage = async () => {
-            console.log("[=====SavedEvents======]")
+            // console.log("[=====SavedEvents======]")
             try {
                 const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
                 if (getSavedData) {
-                    console.log("[=====SavedEvents getSavedData JSON======]", JSON.parse(getSavedData))
+                    // console.log("[=====SavedEvents getSavedData JSON======]", JSON.parse(getSavedData))
                     setEvents(JSON.parse(getSavedData))
                 }
             } catch (error) {

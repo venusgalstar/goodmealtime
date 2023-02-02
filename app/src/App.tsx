@@ -117,7 +117,7 @@ const App = () => {
     Geolocation.getCurrentPosition(
       position => {
         setGeoData(position);
-        console.log("[=====Geolocation.getCurrentPosition position=====]", position);
+        // console.log("[=====Geolocation.getCurrentPosition position=====]", position);
       },
       error => {
         Alert.alert(`Code ${error.code}`, error.message);
@@ -152,7 +152,7 @@ const App = () => {
     watchId.current = Geolocation.watchPosition(
       position => {
         setGeoData(position);
-        console.log("[=====Geolocation.watchPosition position=====]", position);
+        // console.log("[=====Geolocation.watchPosition position=====]", position);
       },
       error => {
         setGeoData(null);
