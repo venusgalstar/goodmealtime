@@ -5,7 +5,7 @@ import { hp, Typography, wp } from '../../global'
 import { Constants } from '../../global'
 import Entypo from 'react-native-vector-icons/Entypo'
 import { API_PATH, REFETCH } from '../../config'
-import { mealsData1 } from '../home/Data'
+// import { mealsData1 } from '../home/Data'
 
 const MealCard = (props: any) => {
     const {
@@ -82,7 +82,7 @@ const Meals = (props: any) => {
     } = props
 
     const [refetch, setRefetch] = useState(true);
-    const [meals, setMeals] = useState(mealsData1)
+    const [meals, setMeals] = useState<any[]>([])
 
     useEffect(() => {
         const timerID = setInterval(() => {
@@ -105,7 +105,19 @@ const Meals = (props: any) => {
                 });
                 const mealsJson = await mealsResponse.json();
                 // console.log("[=====Meals Json======]", mealsJson)
-                // setMeals(mealsJson)
+                const products = mealsJson[0].category
+                const groupByCategory = products.reduce((group: any, product: any) => {
+                    const { restaurant } = product;
+                    group[restaurant] = group[restaurant] ?? [];
+                    group[restaurant].push(product);
+                    return group;
+                }, {});
+                var newArray: any[] = [];
+                Object.keys(groupByCategory).map((value, index) => {
+                    newArray.push({ [value]: groupByCategory[value] })
+                })
+                // console.log(newArray);
+                setMeals(newArray)
             } catch (error) {
                 console.log("[=====Fetch Meals ERR======]", error)
             }
@@ -113,8 +125,11 @@ const Meals = (props: any) => {
         fetchData();
     }, [refetch])
 
-
-    const onEventsPress = (eventId: any) => navigation.navigate('EventDetails', { eventId: eventId, isSavedEvent: false, savedAmounts: 0 })
+    const onEventsPress = (author: any) => 
+    {
+        console.log("[===onEventsPress===]", author)
+        navigation.navigate('Home', { tabId: 0, author: author })
+    }
 
     const renderCategoryItems = ({ item, index }: any) => {
         return (
@@ -144,7 +159,7 @@ const Meals = (props: any) => {
                     </Text>
                     <TouchableOpacity
                         activeOpacity={Constants.btnActiveOpacity}
-                        onPress={onEventsPress.bind(null, item.id)}
+                        onPress={onEventsPress.bind(null, item[Object.keys(item)[0]][0].author)}
                     >
                         <Text style={Styles.viewAllTxt}>View Event</Text>
                     </TouchableOpacity>

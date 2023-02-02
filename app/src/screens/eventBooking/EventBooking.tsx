@@ -70,7 +70,7 @@ const EventBooking = (props: any) => {
         )
     }
 
-    const onProceedPress = () => props.navigation.navigate('EventBookingCard')
+    const onProceedPress = () => props.navigation.navigate('EventBookingCard', { eventbookingId: props.route.params.eventbookingId })
 
     return (
         <Container>
@@ -125,7 +125,7 @@ const EventBooking = (props: any) => {
                         </Text>
                         <Text style={Styles.eventFeeTxt}>
                             <Text style={{ ...Styles.eventFeeTxt, color: Colors.color19 }}>
-                            ₦ </Text>
+                                ₦ </Text>
                             {eventBooking.fee}
                         </Text>
                     </View>

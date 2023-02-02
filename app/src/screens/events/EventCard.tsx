@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, FlatList, Image, Dimensions, TouchableOpacity, Platform } from 'react-native'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Animation } from '../../animations'
 import { Constants, hp, Typography, wp } from '../../global'
@@ -27,11 +27,12 @@ const EventCard = (props: any) => {
         position
     } = props
 
-    const [savedEvents, setSavedEvents] = useState([])
     const [fastRefetch, setFastRefetch] = useState(true)
+    const [savedEvents, setSavedEvents] = useState([])
     const [isSaved, setIsSaved] = useState(false)
 
     useEffect(() => {
+        // console.log("[===EventCard===]", position)
         // console.log("[===Events data===]", data)
         const fastTimerID = setInterval(() => {
             setFastRefetch((prevRefetch) => {
@@ -49,7 +50,9 @@ const EventCard = (props: any) => {
             try {
                 const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
                 if (getSavedData) {
-                    setSavedEvents(JSON.parse(getSavedData))
+                    const _jsonSavedData = JSON.parse(getSavedData)
+                    setSavedEvents(_jsonSavedData)
+                    setIsSaved(_jsonSavedData.filter((event: any) => { return event.id === item.id }).length > 0)
                 }
             } catch (error) {
                 console.log("SavedEvents AsyncStorage: ", error)
@@ -58,20 +61,6 @@ const EventCard = (props: any) => {
 
         fetchAsyncStorage()
     }, [fastRefetch])
-
-    // useEffect(() => {
-    //     console.log("[===EventCard===]", position)
-    // }, [])
-
-    const onEventPress = useCallback((eventId: any) => {
-        console.log("[==EventDetails start==]")
-        navigation.navigate('EventDetails', { eventId: eventId, isSaved, savedAmounts: savedEvents.length })
-        console.log("[==EventDetails end==]")
-    }, [isSaved, savedEvents])
-
-    useEffect(() => {
-        setIsSaved(savedEvents.filter((event: any) => { return event.id === item.id }).length > 0)
-    }, [savedEvents])
 
     const onSavedEvents = async (event: any) => {
         try {
@@ -99,9 +88,16 @@ const EventCard = (props: any) => {
             await AsyncStorage.removeItem(SAVE_EVENT);
         }
     }
+
     const onBookNowPress = (eventbookingId: any) => {
         console.log("[===onBookNowPress===]")
         props.navigation.navigate('EventBooking', { eventbookingId: eventbookingId })
+    }
+
+    const onEventPress = (eventId: any) => {
+        console.log("[==EventDetails start==]")
+        navigation.navigate('EventDetails', { eventId, isSaved, savedAmounts: savedEvents.length })
+        // console.log("[==EventDetails end==]")
     }
 
     return (
