@@ -25,8 +25,6 @@ const Events = (props: any) => {
         navigation = {}
     } = props
 
-    const [savedEvents, setSavedEvents] = useState([])
-    const [fastRefetch, setFastRefetch] = useState(true)
     const [refetch, setRefetch] = useState(true)
     const [events, setEvents] = useState([])
     const [todayEvents, setTodayEvents] = useState([])
@@ -136,32 +134,10 @@ const Events = (props: any) => {
             });
         }, REFETCH);
 
-        const fastTimerID = setInterval(() => {
-            setFastRefetch((prevRefetch) => {
-                return !prevRefetch;
-            });
-        }, FAST_REFETCH);
-
         return () => {
             clearInterval(timerID);
-            clearInterval(fastTimerID);
         };
     }, []);
-
-    useEffect(() => {
-        const fetchAsyncStorage = async () => {
-            try {
-                const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
-                if (getSavedData) {
-                    setSavedEvents(JSON.parse(getSavedData))
-                }
-            } catch (error) {
-                console.log("SavedEvents AsyncStorage: ", error)
-            }
-        }
-
-        fetchAsyncStorage()
-    }, [fastRefetch])
 
     useEffect(() => {
         const fetchData = async () => {
@@ -197,9 +173,7 @@ const Events = (props: any) => {
                 {
                     isLoading && concatEvents.map((item: any, key: number) =>
                         <EventCard
-                            onPress={onEventPress.bind(null, item.id, (savedEvents.filter((event: any) => { return event.id === item.id }).length > 0), savedEvents.length)}
                             item={item}
-                            isSavedEvent={savedEvents.filter((event: any) => { return event.id === item.id }).length > 0}
                             navigation={navigation}
                             key={key}
                             position={getPosition(positions, key)}

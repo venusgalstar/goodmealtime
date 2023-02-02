@@ -1,12 +1,12 @@
 import { View, Text, StyleSheet, FlatList, Image, Dimensions, TouchableOpacity, Platform } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Animation } from '../../animations'
 import { Constants, hp, Typography, wp } from '../../global'
 import { Fonts, Colors, Images } from '../../res'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
-import { SAVE_EVENT } from '../../config';
+import { SAVE_EVENT, FAST_REFETCH } from '../../config';
 
 enum POSITION {
     TODAY,
@@ -23,17 +23,55 @@ const POSITION_STRING = ["Today", "Tomorrow", "This Week", "This Month", "3 Mont
 const EventCard = (props: any) => {
     const {
         item = {},
-        onPress = () => null,
-        isSavedEvent = false,
         navigation,
         position
     } = props
+
+    const [savedEvents, setSavedEvents] = useState([])
+    const [fastRefetch, setFastRefetch] = useState(true)
+    const [isSaved, setIsSaved] = useState(false)
+
+    useEffect(() => {
+        // console.log("[===Events data===]", data)
+        const fastTimerID = setInterval(() => {
+            setFastRefetch((prevRefetch) => {
+                return !prevRefetch;
+            });
+        }, FAST_REFETCH);
+
+        return () => {
+            clearInterval(fastTimerID);
+        };
+    }, []);
+
+    useEffect(() => {
+        const fetchAsyncStorage = async () => {
+            try {
+                const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
+                if (getSavedData) {
+                    setSavedEvents(JSON.parse(getSavedData))
+                }
+            } catch (error) {
+                console.log("SavedEvents AsyncStorage: ", error)
+            }
+        }
+
+        fetchAsyncStorage()
+    }, [fastRefetch])
 
     // useEffect(() => {
     //     console.log("[===EventCard===]", position)
     // }, [])
 
-    const [isSaved, setIsSaved] = useState(isSavedEvent)
+    const onEventPress = useCallback((eventId: any) => {
+        console.log("[==EventDetails start==]")
+        navigation.navigate('EventDetails', { eventId: eventId, isSaved, savedAmounts: savedEvents.length })
+        console.log("[==EventDetails end==]")
+    }, [isSaved, savedEvents])
+
+    useEffect(() => {
+        setIsSaved(savedEvents.filter((event: any) => { return event.id === item.id }).length > 0)
+    }, [savedEvents])
 
     const onSavedEvents = async (event: any) => {
         try {
@@ -89,12 +127,7 @@ const EventCard = (props: any) => {
             }
             <TouchableOpacity style={[Styles.contentOuterCon, Styles.shadow]}
                 activeOpacity={Constants.btnActiveOpacity}
-                onPress={() => {
-                    console.log("[======EventCard onPress start=====]", props);
-                    // onPress.bind(null, item)
-                    onPress()
-                    console.log("[======EventCard onPress end=======]", item);
-                }}
+                onPress={onEventPress.bind(null, item.id)}
             >
                 <View style={Styles.contentInnerCon}>
                     <View style={Styles.contentInnerConOne}>
