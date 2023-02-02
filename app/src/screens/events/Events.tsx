@@ -25,6 +25,7 @@ const Events = (props: any) => {
     const [threeMEvents, setThreeMEvents] = useState([])
     const [sixMEvents, setSixMEvents] = useState([])
     const [sixPlusMEvents, setSixPlusMEvents] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
 
     const geo = useContext(AppStateContext)
 
@@ -93,6 +94,7 @@ const Events = (props: any) => {
         })
         console.log("[===_sixPlusMEvents===]", _sixPlusMEvents)
         setSixPlusMEvents(_sixPlusMEvents)
+        setIsLoading(true)
     }, [events, geo])
 
     useEffect(() => {
@@ -150,9 +152,9 @@ const Events = (props: any) => {
     }, [refetch])
 
     const onEventPress = (eventId: any, isSavedEvent: any, savedAmounts: number) => {
-        // console.log("[==EventDetails==]")
+        console.log("[==EventDetails start==]")
         navigation.navigate('EventDetails', { eventId: eventId, isSavedEvent: isSavedEvent, savedAmounts: savedAmounts })
-        // console.log("[==EventDetails==]")
+        console.log("[==EventDetails end==]")
     }
 
     const renderItem = ({ item }: any) => {
@@ -178,12 +180,15 @@ const Events = (props: any) => {
                     </View>
                     <View style={Styles.innerTodayConLine} />
                 </View>
-                <FlatList
-                    data={todayEvents}
-                    renderItem={renderItem}
-                    showsVerticalScrollIndicator={false}
-                    contentContainerStyle={Styles.listContainer}
-                />
+                {
+                    isLoading &&
+                    <FlatList
+                        data={todayEvents}
+                        renderItem={renderItem}
+                        showsVerticalScrollIndicator={false}
+                        contentContainerStyle={Styles.listContainer}
+                    />
+                }
             </View>
         )
     }
@@ -198,12 +203,15 @@ const Events = (props: any) => {
                     </View>
                     <View style={Styles.innerConLine} />
                 </View>
-                <FlatList
-                    data={tmrEvents}
-                    renderItem={renderItem}
-                    showsVerticalScrollIndicator={false}
-                    contentContainerStyle={Styles.listContainer}
-                />
+                {
+                    isLoading &&
+                    <FlatList
+                        data={tmrEvents}
+                        renderItem={renderItem}
+                        showsVerticalScrollIndicator={false}
+                        contentContainerStyle={Styles.listContainer}
+                    />
+                }
             </View>
         )
     }
@@ -218,12 +226,15 @@ const Events = (props: any) => {
                     </View>
                     <View style={Styles.innerConLine} />
                 </View>
-                <FlatList
-                    data={weekEvents}
-                    renderItem={renderItem}
-                    showsVerticalScrollIndicator={false}
-                    contentContainerStyle={Styles.listContainer}
-                />
+                {
+                    isLoading &&
+                    <FlatList
+                        data={weekEvents}
+                        renderItem={renderItem}
+                        showsVerticalScrollIndicator={false}
+                        contentContainerStyle={Styles.listContainer}
+                    />
+                }
             </View>
         )
     }
@@ -238,12 +249,15 @@ const Events = (props: any) => {
                     </View>
                     <View style={Styles.innerConLine} />
                 </View>
-                <FlatList
-                    data={monthEvents}
-                    renderItem={renderItem}
-                    showsVerticalScrollIndicator={false}
-                    contentContainerStyle={Styles.listContainer}
-                />
+                {
+                    isLoading &&
+                    <FlatList
+                        data={monthEvents}
+                        renderItem={renderItem}
+                        showsVerticalScrollIndicator={false}
+                        contentContainerStyle={Styles.listContainer}
+                    />
+                }
             </View>
         )
     }
@@ -258,12 +272,15 @@ const Events = (props: any) => {
                     </View>
                     <View style={Styles.innerConLine} />
                 </View>
-                <FlatList
-                    data={threeMEvents}
-                    renderItem={renderItem}
-                    showsVerticalScrollIndicator={false}
-                    contentContainerStyle={Styles.listContainer}
-                />
+                {
+                    isLoading &&
+                    <FlatList
+                        data={threeMEvents}
+                        renderItem={renderItem}
+                        showsVerticalScrollIndicator={false}
+                        contentContainerStyle={Styles.listContainer}
+                    />
+                }
             </View>
         )
     }
@@ -278,12 +295,15 @@ const Events = (props: any) => {
                     </View>
                     <View style={Styles.innerConLine} />
                 </View>
-                <FlatList
-                    data={sixMEvents}
-                    renderItem={renderItem}
-                    showsVerticalScrollIndicator={false}
-                    contentContainerStyle={Styles.listContainer}
-                />
+                {
+                    isLoading &&
+                    <FlatList
+                        data={sixMEvents}
+                        renderItem={renderItem}
+                        showsVerticalScrollIndicator={false}
+                        contentContainerStyle={Styles.listContainer}
+                    />
+                }
             </View>
         )
     }
@@ -298,12 +318,15 @@ const Events = (props: any) => {
                     </View>
                     <View style={Styles.innerConLine} />
                 </View>
-                <FlatList
-                    data={sixPlusMEvents}
-                    renderItem={renderItem}
-                    showsVerticalScrollIndicator={false}
-                    contentContainerStyle={Styles.listContainer}
-                />
+                {
+                    isLoading &&
+                    <FlatList
+                        data={sixPlusMEvents}
+                        renderItem={renderItem}
+                        showsVerticalScrollIndicator={false}
+                        contentContainerStyle={Styles.listContainer}
+                    />
+                }
             </View>
         )
     }

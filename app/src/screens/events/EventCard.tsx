@@ -44,18 +44,20 @@ const EventCard = (props: any) => {
             await AsyncStorage.removeItem(SAVE_EVENT);
         }
     }
-    const onBookNowPress = (eventbookingId: any) => props.navigation.navigate('EventBooking', { eventbookingId: eventbookingId })
+    const onBookNowPress = (eventbookingId: any) => {
+        console.log("[===onBookNowPress===]")
+        props.navigation.navigate('EventBooking', { eventbookingId: eventbookingId })
+    }
 
     return (
         <View style={Styles.itemContainer}>
             <TouchableOpacity style={[Styles.contentOuterCon, Styles.shadow]}
                 activeOpacity={Constants.btnActiveOpacity}
                 onPress={() => {
-                    // console.log("[======EventCard onPress start=====]", props);
-                    // console.log("[======EventCard onPress start=====]", item);
+                    console.log("[======EventCard onPress start=====]", props);
                     // onPress.bind(null, item)
                     onPress()
-                    // console.log("[======EventCard onPress end=======]", item);
+                    console.log("[======EventCard onPress end=======]", item);
                 }}
             >
                 <View style={Styles.contentInnerCon}>
