@@ -6,7 +6,6 @@ import { Colors, Fonts } from '../../res'
 import { Constants } from '../../global'
 import { Events } from '../events'
 import { Meals } from '../foods'
-import { REFETCH, API_PATH } from '../../config'
 
 enum TABID {
     EVENTS,

@@ -149,8 +149,7 @@ const Events = (props: any) => {
                 // console.log("[=====Events Json======]", eventsJson)
                 console.log("[=====Events Json length======]", eventsJson.length)
                 // console.log("[=====Events Json Stringify======]", JSON.stringify(eventsJson))
-                setEvents(eventsJson.slice(0, 5))
-                // setEvents(eventsJson)
+                setEvents(eventsJson)
             } catch (error) {
                 console.log("[=====Fetch Events ERR======]", error)
             }
