@@ -159,7 +159,13 @@ const Events = (props: any) => {
 
     return (
         <View style={Styles.container}>
-            <ScrollView
+            <FlatList
+                data={todayEvents}
+                renderItem={renderCategory}
+                contentContainerStyle={Styles.listContainer}
+                showsVerticalScrollIndicator={false}
+            />
+            {/* <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={Styles.itemListContainer}
             >
@@ -173,7 +179,7 @@ const Events = (props: any) => {
                         />
                     )
                 }
-            </ScrollView>
+            </ScrollView> */}
         </View>
     )
 }

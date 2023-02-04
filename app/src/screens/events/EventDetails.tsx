@@ -1,12 +1,19 @@
 import { View, Text, StyleSheet, StatusBar, ScrollView, TouchableOpacity, Dimensions, Image, Platform } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import Clipboard from '@react-native-clipboard/clipboard';
 import { Colors, Fonts } from '../../res'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import { Images } from '../../res'
 import { SliderBox } from "react-native-image-slider-box";
 import { Constants, hp, Typography, wp } from '../../global';
 import { API_PATH, REFETCH, SAVE_EVENT } from '../../config';
+
+const copyToClipboard = (copyVal: string) => {
+    if (copyVal) {
+        Clipboard.setString(copyVal);
+    }
+};
 
 const EventDetails = (props: any) => {
     const [event, setEvent] = useState({
@@ -245,6 +252,7 @@ const EventDetails = (props: any) => {
                         <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
                             style={{ ...Styles.copyBtn, opacity: event.liveStreamUrl ? 0.5 : Constants.btnActiveOpacity }}
+                            onPress={() => copyToClipboard(event.liveStreamUrl)}
                         >
                             <Image
                                 source={Images.copy}
@@ -267,6 +275,7 @@ const EventDetails = (props: any) => {
                         <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
                             style={{ ...Styles.copyBtn, opacity: event.liveStreamUrl ? 0.5 : Constants.btnActiveOpacity }}
+                            onPress={() => copyToClipboard(event.liveStreamUrl)}
                         >
                             <Image
                                 source={Images.copy}
