@@ -8,6 +8,18 @@ import { SAVE_EVENT, FAST_REFETCH, REFETCH, API_PATH } from '../../config'
 import { AppStateContext } from '../../App'
 import { getDistance } from '../../utils'
 
+enum POSITION {
+    TODAY,
+    TOMORROW,
+    WEEK,
+    MONTH,
+    MONTH3,
+    MONTH6,
+    MONTH6PLUS
+}
+
+const POSITION_STRING = ["Today", "Tomorrow", "This Week", "This Month", "3 Months", "6 Months", "6 Months +"]
+
 const getPosition = (pos: number[], value: number) => {
     var low = 0;
     var high = pos[0] - 1;
@@ -34,7 +46,7 @@ const Events = (props: any) => {
     const [threeMEvents, setThreeMEvents] = useState([])
     const [sixMEvents, setSixMEvents] = useState([])
     const [sixPlusMEvents, setSixPlusMEvents] = useState([])
-    const [concatEvents, setConcatEvents] = useState([])
+    // const [concatEvents, setConcatEvents] = useState([])
     const [positions, setPositions] = useState<number[]>([])
     const [isLoading, setIsLoading] = useState(false)
 
@@ -114,15 +126,15 @@ const Events = (props: any) => {
             _sixPlusMEvents.length
         ])
 
-        const _concatEvents = _todaySortedEvents
-            .concat(_tmrSortedEvents)
-            .concat(_weekSortedEvents)
-            .concat(_monthSortedEvents)
-            .concat(_threeMEvents)
-            .concat(_sixMEvents)
-            .concat(_sixPlusMEvents)
-        // console.log("[===concat===]", _concatEvents)
-        setConcatEvents(_concatEvents)
+        // const _concatEvents = _todaySortedEvents
+        //     .concat(_tmrSortedEvents)
+        //     .concat(_weekSortedEvents)
+        //     .concat(_monthSortedEvents)
+        //     .concat(_threeMEvents)
+        //     .concat(_sixMEvents)
+        //     .concat(_sixPlusMEvents)
+        // // console.log("[===concat===]", _concatEvents)
+        // setConcatEvents(_concatEvents)
         setIsLoading(true)
     }, [events, geo])
 
@@ -157,29 +169,50 @@ const Events = (props: any) => {
         fetchData();
     }, [refetch])
 
+    const renderList = ({ item }: any) => {
+        return (
+            <EventCard
+                item={item}
+                navigation={navigation}
+            />
+        )
+    }
+
     return (
         <View style={Styles.container}>
-            <FlatList
-                data={todayEvents}
-                renderItem={renderCategory}
-                contentContainerStyle={Styles.listContainer}
-                showsVerticalScrollIndicator={false}
-            />
-            {/* <ScrollView
-                showsVerticalScrollIndicator={false}
+            <ScrollView
+                showsHorizontalScrollIndicator={false}
                 contentContainerStyle={Styles.itemListContainer}
             >
-                {
-                    isLoading && concatEvents.map((item: any, key: number) =>
-                        <EventCard
-                            item={item}
-                            navigation={navigation}
-                            key={key}
-                            position={getPosition(positions, key)}
-                        />
-                    )
-                }
-            </ScrollView> */}
+                <View style={Styles.outerDateCon}>
+                    <View style={Styles.innerTodayConLine} />
+                    <View style={Styles.outerDateCon}>
+                        <Text style={Styles.itemDateDay}>Today</Text>
+                        <Text style={Styles.itemDate}>|</Text>
+                        <Text style={Styles.itemDate}>{new Date().toDateString()}</Text>
+                    </View>
+                    <View style={Styles.innerTodayConLine} />
+                </View>
+                {/* {
+                    todayEvents && todayEvents.map((event: any, key) => {
+
+                    })
+                } */}
+                <View style={Styles.outerDateCon}>
+                    <View style={Styles.innerConLine} />
+                    <View style={Styles.outerDateCon}>
+                        <Text style={Styles.itemDateDay}>Tomorrow</Text>
+                    </View>
+                    <View style={Styles.innerConLine} />
+                </View>
+                {/* <FlatList
+                    nestedScrollEnabled={true}
+                    data={tmrEvents}
+                    renderItem={renderList}
+                    showsVerticalScrollIndicator={false}
+                    contentContainerStyle={Styles.listContainer}
+                /> */}
+            </ScrollView>
         </View>
     )
 }
@@ -187,6 +220,30 @@ const Events = (props: any) => {
 export default Events
 
 const Styles = StyleSheet.create({
+    outerDateCon: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
+    innerTodayConLine: {
+        borderTopWidth: 0.4,
+        width: wp(25)
+    },
+    innerConLine: {
+        borderTopWidth: 0.4,
+        width: wp(35)
+    },
+    itemDateDay: {
+        fontFamily: Fonts.APPFONT_B,
+        color: Colors.color5,
+        fontSize: Typography.small2
+    },
+    itemDate: {
+        fontFamily: Fonts.APPFONT_R,
+        color: Colors.color5,
+        marginLeft: wp(1),
+        fontSize: Typography.small2
+    },
     container: {
         flex: 1,
     },
