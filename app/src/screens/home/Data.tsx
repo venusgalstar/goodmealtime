@@ -1,100 +1,5 @@
 const mealsData = [
     {
-        Category1: [
-            {
-                name: 'Roast Roast Dinner',
-                price: '2500',
-                location: '1Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Shepherd’s Pie",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Fish and Chips",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Cornish pasty",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Eton Mess",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Chicken Tikka Masala",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Beef Wellington",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-        ]
-    },
-    {
-        Category2: [
-            {
-                name: 'Roast Roast Dinner',
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Shepherd’s Pie",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Fish and Chips",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Cornish pasty",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Eton Mess",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Chicken Tikka Masala",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-            {
-                name: "Beef Wellington",
-                price: '2500',
-                location: 'Wambi Restaurant',
-                image: 'https://goosebumps.finance/images/hero.png'
-            },
-        ]
-    }
-]
-
-const mealsData1 = [
-    {
         category: [
             {
                 id: "139",
@@ -244,60 +149,291 @@ const mealsData1 = [
     }
 ]
 
-
 const eventsData = [
     {
-        title: '2The Speed of NowNow (Live Performance)',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.',
-        name: 'Keith Urban',
-        liveNow: true,
-        time: '10:00 AM',
-        date: '29th Apr',
-        like: false,
-        ticket: '2,300',
-        id: '1',
-        peopleAttending: 49,
-        image: 'https://goosebumps.finance/images/hero.png'
+        "Today": [
+            {
+                "id": "3",
+                "title": "Test Event Store manager",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-31",
+                "event_end_date": "2023-01-31",
+                "event_owner": "40",
+                "time": "00:00:00",
+                "name": "Developer Desevens",
+                "description": "This event is created by a store manager",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/imgpsh_fullsize_anim-300x223.jpg"
+            },
+            {
+                "id": "4",
+                "title": "Test Event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-25",
+                "event_end_date": "2023-01-25",
+                "event_owner": "42",
+                "time": "00:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/imgpsh_fullsize_anim-300x223.jpg"
+            },
+            {
+                "id": "10",
+                "title": "Test recuring event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-29",
+                "event_end_date": "2024-01-29",
+                "event_owner": "42",
+                "time": "16:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "     text",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/Access-Mobile-App-155x300.jpg"
+            }
+        ]
     },
     {
-        title: '2The Speed of NowNow (Live Performance)',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.',
-        name: 'Keith Urban',
-        liveNow: true,
-        time: '10:00 AM',
-        date: '29th Apr',
-        like: false,
-        ticket: '2,300',
-        id: '2',
-        peopleAttending: 49,
-        image: 'https://goosebumps.finance/images/hero.png'
+        "Tomorrow": [
+            {
+                "id": "8",
+                "title": "Test recuring event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-27",
+                "event_end_date": "2024-01-27",
+                "event_owner": "42",
+                "time": "16:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "     text",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/Access-Mobile-App-155x300.jpg"
+            },
+            {
+                "id": "9",
+                "title": "Test recuring event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-28",
+                "event_end_date": "2024-01-28",
+                "event_owner": "42",
+                "time": "16:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "     text",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/Access-Mobile-App-155x300.jpg"
+            },
+            {
+                "id": "10",
+                "title": "Test recuring event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-29",
+                "event_end_date": "2024-01-29",
+                "event_owner": "42",
+                "time": "16:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "     text",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/Access-Mobile-App-155x300.jpg"
+            }
+        ]
     },
     {
-        title: '2The Speed of NowNow (Live Performance)',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.',
-        name: 'Keith Urban',
-        liveNow: true,
-        time: '10:00 AM',
-        date: '29th Apr',
-        like: false,
-        ticket: '2,300',
-        id: '3',
-        peopleAttending: 49,
-        image: 'https://goosebumps.finance/images/hero.png'
+        "This Week": [
+            {
+                "id": "1",
+                "title": "test event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-20",
+                "event_end_date": "2023-01-21",
+                "event_owner": "1",
+                "time": "00:00:00",
+                "name": "admin",
+                "description": "      aaaaaadfd  asdf          ",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/imgpsh_fullsize_anim-300x223.jpg"
+            },
+            {
+                "id": "10",
+                "title": "Test recuring event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-29",
+                "event_end_date": "2024-01-29",
+                "event_owner": "42",
+                "time": "16:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "     text",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/Access-Mobile-App-155x300.jpg"
+            }
+        ]
     },
     {
-        title: '2The Speed of NowNow (Live Performance)',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.',
-        name: 'Keith Urban',
-        liveNow: true,
-        time: '10:00 AM',
-        date: '29th Apr',
-        like: false,
-        ticket: '2,300',
-        id: '4',
-        peopleAttending: 49,
-        image: 'https://goosebumps.finance/images/hero.png'
+        "This Month": [
+            {
+                "id": "1",
+                "title": "test event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-20",
+                "event_end_date": "2023-01-21",
+                "event_owner": "1",
+                "time": "00:00:00",
+                "name": "admin",
+                "description": "      aaaaaadfd  asdf          ",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/imgpsh_fullsize_anim-300x223.jpg"
+            },
+            {
+                "id": "6",
+                "title": "Test recuring event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-25",
+                "event_end_date": "2024-01-25",
+                "event_owner": "42",
+                "time": "16:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "     text",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/Access-Mobile-App-155x300.jpg"
+            }
+        ]
     },
-
+    {
+        "3 Months": [
+            {
+                "id": "9",
+                "title": "Test recuring event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-28",
+                "event_end_date": "2024-01-28",
+                "event_owner": "42",
+                "time": "16:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "     text",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/Access-Mobile-App-155x300.jpg"
+            },
+            {
+                "id": "10",
+                "title": "Test recuring event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-29",
+                "event_end_date": "2024-01-29",
+                "event_owner": "42",
+                "time": "16:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "     text",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/Access-Mobile-App-155x300.jpg"
+            }
+        ]
+    },
+    {
+        "6 Months": [
+            {
+                "id": "1",
+                "title": "test event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-20",
+                "event_end_date": "2023-01-21",
+                "event_owner": "1",
+                "time": "00:00:00",
+                "name": "admin",
+                "description": "      aaaaaadfd  asdf          ",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/imgpsh_fullsize_anim-300x223.jpg"
+            },
+            {
+                "id": "10",
+                "title": "Test recuring event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-29",
+                "event_end_date": "2024-01-29",
+                "event_owner": "42",
+                "time": "16:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "     text",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/Access-Mobile-App-155x300.jpg"
+            }
+        ]
+    },
+    {
+        "6 Months +": [
+            {
+                "id": "3",
+                "title": "Test Event Store manager",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-31",
+                "event_end_date": "2023-01-31",
+                "event_owner": "40",
+                "time": "00:00:00",
+                "name": "Developer Desevens",
+                "description": "This event is created by a store manager",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/imgpsh_fullsize_anim-300x223.jpg"
+            },
+            {
+                "id": "4",
+                "title": "Test Event",
+                "liveNow": true,
+                "peopleAttending": 0,
+                "ticket": 0,
+                "event_start_date": "2023-01-25",
+                "event_end_date": "2023-01-25",
+                "event_owner": "42",
+                "time": "00:00:00",
+                "name": "Fejiro Otovwe",
+                "description": "",
+                "location_latitude": null,
+                "location_longitude": null,
+                "images": "https://www.goodmealtime.com/wp-content/uploads/2023/01/imgpsh_fullsize_anim-300x223.jpg"
+            }
+        ]
+    }
 ]
-export { mealsData, eventsData, mealsData1 }
+
+export { mealsData, eventsData }

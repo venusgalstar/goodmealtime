@@ -22,6 +22,7 @@ const EventsMealsBar = (props: any) => {
     const [activeBtn, setActiveBtn] = useState(tabId)
 
     const onBarBtnPress = (active: any) => {
+        console.log("[===onBarBtnPress===]", active)
         setActiveBtn(active)
         props.onBarBtnPress(active)
     }
