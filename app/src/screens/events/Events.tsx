@@ -21,17 +21,6 @@ enum POSITION {
     MONTH6PLUS = "6 Months +"
 }
 
-const getPosition = (pos: number[], value: number) => {
-    var low = 0;
-    var high = pos[0] - 1;
-    for (var i = 0; i < pos.length - 1; i++) {
-        if ((low <= value) && (value <= high)) return i;
-        low = low + pos[i];
-        high = high + pos[i + 1];
-    }
-    return pos.length - 1
-}
-
 const Events = (props: any) => {
     const {
         author = -1,
@@ -307,22 +296,22 @@ const Styles = StyleSheet.create({
     },
     innerTodayConLine: {
         borderTopWidth: 0.4,
-        width: wp(27)
+        width: wp(22)
     },
     innerConLine: {
         borderTopWidth: 0.4,
-        width: wp(35)
+        width: wp(33)
     },
     itemDateDay: {
         fontFamily: Fonts.APPFONT_B,
         color: Colors.color5,
-        fontSize: Typography.small2
+        fontSize: Typography.medium2
     },
     itemDate: {
-        fontFamily: Fonts.APPFONT_R,
+        fontFamily: Fonts.APPFONT_B,
         color: Colors.color5,
         marginLeft: wp(1),
-        fontSize: Typography.small2
+        fontSize: Typography.medium2
     },
     container: {
         flex: 1,
@@ -347,8 +336,10 @@ const Styles = StyleSheet.create({
     },
     categoryContainer: {
         marginVertical: hp(1),
-        marginHorizontal: wp(0),
-        borderRadius: 3,
+        marginHorizontal: wp(0.5),
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: Colors.color1,
         paddingVertical: hp(1),
         backgroundColor: Colors.color2,
     },

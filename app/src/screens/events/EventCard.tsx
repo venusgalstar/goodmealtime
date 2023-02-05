@@ -152,7 +152,9 @@ const { width } = Dimensions.get('window')
 const Styles = StyleSheet.create({
     itemContainer: {
         marginTop: hp(0.5),
-        marginBottom: hp(0.5)
+        marginBottom: hp(0.5),
+        marginRight: wp(0.2),
+        marginLeft: wp(0.2)
     },
     contentOuterCon: {
         backgroundColor: Colors.color2,
