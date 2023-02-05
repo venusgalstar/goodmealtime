@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, FlatList, Image, Dimensions, TouchableOpacity, Platform } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import FastImage from 'react-native-fast-image'
+import React, { useEffect, useState, memo } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Animation } from '../../animations'
 import { Constants, hp, Typography, wp } from '../../global'
@@ -8,84 +9,20 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import { SAVE_EVENT, FAST_REFETCH } from '../../config';
 
-const EventCard = (props: any) => {
+const EventCardNM = (props: any) => {
     const {
+        onSavedEvents,
+        onEventPress,
+        onBookNowPress,
+        isSaved,
         item = {},
+        index = null,
         navigation
     } = props
 
-    const [fastRefetch, setFastRefetch] = useState(true)
-    const [savedEvents, setSavedEvents] = useState([])
-    const [isSaved, setIsSaved] = useState(false)
-
-    useEffect(() => {
-        // console.log("[===EventCard===]", position)
-        // console.log("[===Events data===]", data)
-        const fastTimerID = setInterval(() => {
-            setFastRefetch((prevRefetch) => {
-                return !prevRefetch;
-            });
-        }, FAST_REFETCH);
-
-        return () => {
-            clearInterval(fastTimerID);
-        };
-    }, []);
-
-    useEffect(() => {
-        const fetchAsyncStorage = async () => {
-            try {
-                const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
-                if (getSavedData) {
-                    const _jsonSavedData = JSON.parse(getSavedData)
-                    setSavedEvents(_jsonSavedData)
-                    setIsSaved(_jsonSavedData.filter((event: any) => { return event.id === item.id }).length > 0)
-                }
-            } catch (error) {
-                console.log("SavedEvents AsyncStorage: ", error)
-            }
-        }
-
-        fetchAsyncStorage()
-    }, [fastRefetch])
-
-    const onSavedEvents = async (event: any) => {
-        try {
-            const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
-            if (!getSavedData) {
-                await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify([event]))
-            } else {
-                const jsonData = JSON.parse(getSavedData)
-                const findData = jsonData.filter((item: any) => {
-                    return item.id === event.id
-                })
-                if (findData.length === 0) {
-                    jsonData.push(event)
-                    await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify(jsonData))
-                    setIsSaved(true);
-                } else {
-                    const remainItems = jsonData.filter((item: any) => { return item.id !== event.id })
-                    await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify(remainItems))
-                    setIsSaved(false);
-                }
-            }
-        } catch (error) {
-            console.log("onSaveForLaterPress AsyncStorage: ", error)
-            console.log("remove SAVE_EVENT")
-            await AsyncStorage.removeItem(SAVE_EVENT);
-        }
-    }
-
-    const onBookNowPress = (eventbookingId: any) => {
-        console.log("[===onBookNowPress===]")
-        props.navigation.navigate('EventBooking', { eventbookingId: eventbookingId })
-    }
-
-    const onEventPress = (eventId: any) => {
-        console.log("[==EventDetails start==]")
-        navigation.navigate('EventDetails', { eventId, isSaved, savedAmounts: savedEvents.length })
-        // console.log("[==EventDetails end==]")
-    }
+    // useEffect(() => {
+    //     console.log("[===EventCard===]", item.id)
+    // }, []);
 
     return (
         <View style={Styles.itemContainer}>
@@ -106,9 +43,9 @@ const EventCard = (props: any) => {
                         </Text>
                         <View style={Styles.contentInnerConOneInnerCon}>
                             <View style={Styles.contentInnerConOneInnerConInner}>
-                                <Image
+                                <FastImage
                                     source={Images.multimediaMic}
-                                    resizeMode='contain'
+                                    resizeMode={FastImage.resizeMode.contain}
                                     style={Styles.micIcon}
                                 />
                                 <Text style={Styles.itemName}>
@@ -116,9 +53,9 @@ const EventCard = (props: any) => {
                                 </Text>
                             </View>
                             <View style={Styles.contentInnerConOneInnerConInner}>
-                                <Image
+                                <FastImage
                                     source={Images.priceTag}
-                                    resizeMode='contain'
+                                    resizeMode={FastImage.resizeMode.contain}
                                     style={Styles.micIcon}
                                 />
                                 <Text style={Styles.itemTicket}>
@@ -130,15 +67,15 @@ const EventCard = (props: any) => {
                     {
                         item.image ?
                             (
-                                <Image
+                                <FastImage
                                     source={{ uri: item.image }}
-                                    resizeMode="cover"
+                                    resizeMode={FastImage.resizeMode.cover}
                                     style={Styles.itemImage}
                                 />
                             ) : (
-                                <Image
+                                <FastImage
                                     source={Images.unknownImages}
-                                    resizeMode="cover"
+                                    resizeMode={FastImage.resizeMode.cover}
                                     style={Styles.itemImage}
                                 />
                             )
@@ -160,9 +97,9 @@ const EventCard = (props: any) => {
                             )
                         }
                         <View style={Styles.liveCon}>
-                            <Image
+                            <FastImage
                                 source={Images.users}
-                                resizeMode='contain'
+                                resizeMode={FastImage.resizeMode.contain}
                                 style={Styles.userIcon}
                             />
                             <Text style={{ ...Styles.liveNowTxt, color: Colors.color5 }}>
@@ -202,23 +139,24 @@ const EventCard = (props: any) => {
                         </TouchableOpacity> */}
                     </View>
                 </View>
-
             </TouchableOpacity>
         </View>
     )
 }
+
+const EventCard = memo(EventCardNM)
 
 export default EventCard
 
 const { width } = Dimensions.get('window')
 const Styles = StyleSheet.create({
     itemContainer: {
-        marginTop: hp(3),
-        marginBottom: hp(1)
+        marginTop: hp(0.5),
+        marginBottom: hp(0.5)
     },
     contentOuterCon: {
         backgroundColor: Colors.color2,
-        marginTop: hp(2)
+        marginTop: hp(1)
     },
     shadow: {
         shadowColor: Colors.color1,

@@ -1,5 +1,5 @@
 import { View, StyleSheet, FlatList, Text, ScrollView } from 'react-native'
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useCallback, memo } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Fonts, Colors, Images } from '../../res'
 import { wp, hp, Typography } from '../../global'
@@ -7,18 +7,18 @@ import EventCard from './EventCard'
 import { SAVE_EVENT, FAST_REFETCH, REFETCH, API_PATH } from '../../config'
 import { AppStateContext } from '../../App'
 import { getDistance } from '../../utils'
+import { ITEM_HEIGHT } from '../../config'
+// import { eventsData } from '../home/Data'
 
 enum POSITION {
-    TODAY,
-    TOMORROW,
-    WEEK,
-    MONTH,
-    MONTH3,
-    MONTH6,
-    MONTH6PLUS
+    TODAY = "Today",
+    TOMORROW = "Tomorrow",
+    WEEK = "This Week",
+    MONTH = "This Month",
+    MONTH3 = "3 Months",
+    MONTH6 = "6 Months",
+    MONTH6PLUS = "6 Months +"
 }
-
-const POSITION_STRING = ["Today", "Tomorrow", "This Week", "This Month", "3 Months", "6 Months", "6 Months +"]
 
 const getPosition = (pos: number[], value: number) => {
     var low = 0;
@@ -38,17 +38,9 @@ const Events = (props: any) => {
     } = props
 
     const [refetch, setRefetch] = useState(true)
-    const [events, setEvents] = useState([])
-    const [todayEvents, setTodayEvents] = useState([])
-    const [tmrEvents, setTmrEvents] = useState([])
-    const [weekEvents, setWeekEvents] = useState([])
-    const [monthEvents, setMonthEvents] = useState([])
-    const [threeMEvents, setThreeMEvents] = useState([])
-    const [sixMEvents, setSixMEvents] = useState([])
-    const [sixPlusMEvents, setSixPlusMEvents] = useState([])
-    // const [concatEvents, setConcatEvents] = useState([])
-    const [positions, setPositions] = useState<number[]>([])
-    const [isLoading, setIsLoading] = useState(false)
+    const [fastRefetch, setFastRefetch] = useState(true)
+    const [savedEvents, setSavedEvents] = useState([])
+    const [listEvents, setListEvents] = useState<any[]>([])
 
     const geo = useContext(AppStateContext)
 
@@ -65,78 +57,9 @@ const Events = (props: any) => {
         return 0
     }
 
-    useEffect(() => {
-        // console.log("[===useContext geo===]", geo)
-        const _sortedEvents = events.sort(compareEvents)
-        // console.log("[===_sortedEvents===]", _sortedEvents)
-
-        const today = Date.parse(new Date().toString());
-        const _todaySortedEvents = _sortedEvents.filter((item: any) => {
-            return (Date.parse(item.event_start_date) <= today) && (today <= Date.parse(item.event_end_date))
-        })
-        // console.log("[===_todaySortedEvents===]", _todaySortedEvents)
-        setTodayEvents(_todaySortedEvents)
-
-        const tmr = today + 24 * 3600 * 1000;
-        const _tmrSortedEvents = _sortedEvents.filter((item: any) => {
-            return (Date.parse(item.event_start_date) <= tmr) && (tmr <= Date.parse(item.event_end_date))
-        })
-        // console.log("[===_tmrSortedEvents===]", _tmrSortedEvents)
-        setTmrEvents(_tmrSortedEvents)
-
-        const thisWeek = today + (6 - new Date().getDay()) * 24 * 3600 * 1000;
-        const _weekSortedEvents = _sortedEvents.filter((item: any) => {
-            return (Date.parse(item.event_start_date) <= tmr) && (thisWeek <= Date.parse(item.event_end_date))
-        })
-        // console.log("[===_weekSortedEvents===]", _weekSortedEvents)
-        setWeekEvents(_weekSortedEvents)
-
-        const thisMonth = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0).toString());
-        const _monthSortedEvents = _sortedEvents.filter((item: any) => {
-            return (Date.parse(item.event_start_date) <= thisWeek) && (thisMonth <= Date.parse(item.event_end_date))
-        })
-        // console.log("[===_monthSortedEvents===]", _monthSortedEvents)
-        setMonthEvents(_monthSortedEvents)
-
-        const threeMonth = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 3, 0).toString());
-        const _threeMEvents = _sortedEvents.filter((item: any) => {
-            return (Date.parse(item.event_start_date) <= thisMonth) && (threeMonth <= Date.parse(item.event_end_date))
-        })
-        // console.log("[===_threeMEvents===]", _threeMEvents)
-        setThreeMEvents(_threeMEvents)
-
-        const sixMonth = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 6, 0).toString());
-        const _sixMEvents = _sortedEvents.filter((item: any) => {
-            return (Date.parse(item.event_start_date) <= threeMonth) && (sixMonth <= Date.parse(item.event_end_date))
-        })
-        // console.log("[===_sixMEvents===]", _sixMEvents)
-        setSixMEvents(_sixMEvents)
-
-        const _sixPlusMEvents = _sortedEvents.filter((item: any) => {
-            return Date.parse(item.event_start_date) > sixMonth
-        })
-        // console.log("[===_sixPlusMEvents===]", _sixPlusMEvents)
-        setPositions([
-            _todaySortedEvents.length,
-            _tmrSortedEvents.length,
-            _weekSortedEvents.length,
-            _monthSortedEvents.length,
-            _threeMEvents.length,
-            _sixMEvents.length,
-            _sixPlusMEvents.length
-        ])
-
-        // const _concatEvents = _todaySortedEvents
-        //     .concat(_tmrSortedEvents)
-        //     .concat(_weekSortedEvents)
-        //     .concat(_monthSortedEvents)
-        //     .concat(_threeMEvents)
-        //     .concat(_sixMEvents)
-        //     .concat(_sixPlusMEvents)
-        // // console.log("[===concat===]", _concatEvents)
-        // setConcatEvents(_concatEvents)
-        setIsLoading(true)
-    }, [events, geo])
+    // useEffect(() => {
+    //     console.log("[===useContext geo===]", geo)
+    // }, [geo])
 
     useEffect(() => {
         // console.log("[===Events data===]", data)
@@ -145,11 +68,34 @@ const Events = (props: any) => {
                 return !prevRefetch;
             });
         }, REFETCH);
+        const fastTimerID = setInterval(() => {
+            setFastRefetch((prevRefetch) => {
+                return !prevRefetch;
+            });
+        }, FAST_REFETCH);
 
         return () => {
+            clearInterval(fastTimerID);
             clearInterval(timerID);
         };
+
     }, []);
+
+    useEffect(() => {
+        const fetchAsyncStorage = async () => {
+            try {
+                const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
+                if (getSavedData) {
+                    const _jsonSavedData = JSON.parse(getSavedData)
+                    setSavedEvents(_jsonSavedData)
+                }
+            } catch (error) {
+                console.log("SavedEvents AsyncStorage: ", error)
+            }
+        }
+
+        fetchAsyncStorage()
+    }, [fastRefetch])
 
     useEffect(() => {
         const fetchData = async () => {
@@ -161,7 +107,62 @@ const Events = (props: any) => {
                 // console.log("[=====Events Json======]", eventsJson)
                 console.log("[=====Events Json length======]", eventsJson.length)
                 // console.log("[=====Events Json Stringify======]", JSON.stringify(eventsJson))
-                setEvents(eventsJson)
+
+                const _sortedEvents = eventsJson.sort(compareEvents)
+                console.log("[===_sortedEvents===]", _sortedEvents.length)
+
+                const today = Date.parse(new Date().toString());
+                const _todaySortedEvents = _sortedEvents.filter((item: any) => {
+                    return (Date.parse(item.event_start_date) <= today) && (today <= Date.parse(item.event_end_date))
+                })
+                console.log("[===_todaySortedEvents===]", _todaySortedEvents.length)
+
+                const tmr = today + 24 * 3600 * 1000;
+                const _tmrSortedEvents = _sortedEvents.filter((item: any) => {
+                    return (Date.parse(item.event_start_date) <= tmr) && (tmr <= Date.parse(item.event_end_date))
+                })
+                console.log("[===_tmrSortedEvents===]", _tmrSortedEvents.length)
+
+                const thisWeek = today + (6 - new Date().getDay()) * 24 * 3600 * 1000;
+                const _weekSortedEvents = _sortedEvents.filter((item: any) => {
+                    return (Date.parse(item.event_start_date) <= tmr) && (thisWeek <= Date.parse(item.event_end_date))
+                })
+                console.log("[===_weekSortedEvents===]", _weekSortedEvents.length)
+
+                const thisMonth = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0).toString());
+                const _monthSortedEvents = _sortedEvents.filter((item: any) => {
+                    return (Date.parse(item.event_start_date) <= thisWeek) && (thisMonth <= Date.parse(item.event_end_date))
+                })
+                console.log("[===_monthSortedEvents===]", _monthSortedEvents.length)
+
+                const threeMonth = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 3, 0).toString());
+                const _threeMSortedEvents = _sortedEvents.filter((item: any) => {
+                    return (Date.parse(item.event_start_date) <= thisMonth) && (threeMonth <= Date.parse(item.event_end_date))
+                })
+                console.log("[===_threeMSortedEvents===]", _threeMSortedEvents.length)
+
+                const sixMonth = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 6, 0).toString());
+                const _sixMSortedEvents = _sortedEvents.filter((item: any) => {
+                    return (Date.parse(item.event_start_date) <= threeMonth) && (sixMonth <= Date.parse(item.event_end_date))
+                })
+                console.log("[===_sixMSortedEvents===]", _sixMSortedEvents.length)
+
+                const _sixPlusMSortedEvents = _sortedEvents.filter((item: any) => {
+                    return Date.parse(item.event_start_date) > sixMonth
+                })
+                console.log("[===_sixPlusMSortedEvents===]", _sixPlusMSortedEvents.length)
+
+                const _listEvents = [
+                    { [POSITION.TODAY]: _todaySortedEvents },
+                    { [POSITION.TOMORROW]: _tmrSortedEvents },
+                    { [POSITION.WEEK]: _weekSortedEvents },
+                    { [POSITION.MONTH]: _monthSortedEvents },
+                    { [POSITION.MONTH3]: _threeMSortedEvents },
+                    { [POSITION.MONTH6]: _sixMSortedEvents },
+                    { [POSITION.MONTH6PLUS]: _sixPlusMSortedEvents }
+                ]
+                setListEvents(_listEvents)
+                // console.log("[===list===]", JSON.stringify(_listEvents))
             } catch (error) {
                 console.log("[=====Fetch Events ERR======]", error)
             }
@@ -169,50 +170,120 @@ const Events = (props: any) => {
         fetchData();
     }, [refetch])
 
-    const renderList = ({ item }: any) => {
-        return (
-            <EventCard
-                item={item}
-                navigation={navigation}
-            />
-        )
+    const onSavedEvents = async (event: any) => {
+        // const onSavedEvents = async (event: any) => {
+        console.log("[===onSavedEvents event===]", event.id)
+        try {
+            const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
+            if (!getSavedData) {
+                await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify([event]))
+            } else {
+                const jsonData = JSON.parse(getSavedData)
+                const findData = jsonData.filter((item: any) => {
+                    return item.id === event.id
+                })
+                if (findData.length === 0) {
+                    jsonData.push(event)
+                    await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify(jsonData))
+                } else {
+                    const remainItems = jsonData.filter((item: any) => { return item.id !== event.id })
+                    await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify(remainItems))
+                }
+            }
+        } catch (error) {
+            console.log("onSaveForLaterPress AsyncStorage: ", error)
+            console.log("remove SAVE_EVENT")
+            await AsyncStorage.removeItem(SAVE_EVENT);
+        }
     }
 
-    return (
-        <View style={Styles.container}>
-            <ScrollView
-                showsHorizontalScrollIndicator={false}
-                contentContainerStyle={Styles.itemListContainer}
-            >
-                <View style={Styles.outerDateCon}>
-                    <View style={Styles.innerTodayConLine} />
-                    <View style={Styles.outerDateCon}>
-                        <Text style={Styles.itemDateDay}>Today</Text>
-                        <Text style={Styles.itemDate}>|</Text>
-                        <Text style={Styles.itemDate}>{new Date().toDateString()}</Text>
-                    </View>
-                    <View style={Styles.innerTodayConLine} />
-                </View>
-                {/* {
-                    todayEvents && todayEvents.map((event: any, key) => {
+    const onBookNowPress = (eventbookingId: any) => {
+        console.log("[===onBookNowPress===]", eventbookingId)
+        props.navigation.navigate('EventBooking', { eventbookingId: eventbookingId })
+    }
 
-                    })
-                } */}
-                <View style={Styles.outerDateCon}>
-                    <View style={Styles.innerConLine} />
-                    <View style={Styles.outerDateCon}>
-                        <Text style={Styles.itemDateDay}>Tomorrow</Text>
-                    </View>
-                    <View style={Styles.innerConLine} />
-                </View>
-                {/* <FlatList
-                    nestedScrollEnabled={true}
-                    data={tmrEvents}
-                    renderItem={renderList}
+    const onEventPress = (eventId: any) => {
+        console.log("[==EventDetails start==]", eventId)
+        navigation.navigate('EventDetails', { eventId, isSaved: savedEvents.filter((event: any) => { return event.id === eventId }).length > 0, savedAmounts: savedEvents.length })
+    }
+
+    const renderCategoryItems = useCallback(({ item, index }: any) => {
+        return (
+            <>
+                <EventCard
+                    item={item}
+                    index={index}
+                    onEventPress={onEventPress}
+                    onBookNowPress={onBookNowPress}
+                    onSavedEvents={onSavedEvents}
+                    navigation={navigation}
+                    isSaved={savedEvents.filter((event: any) => { return event.id === item.id }).length > 0}
+                />
+            </>
+        )
+    }, []);
+
+    const keyExtractor = (item: any) => item.id;
+    const getItemLayout = (data: any, index: number) => (
+        { length: ITEM_HEIGHT, offset: ITEM_HEIGHT * index, index }
+    )
+
+    const CategoryItemNM = ({ item }: any) => {
+        return (
+            <View style={[Styles.categoryContainer, Styles.shadow]}>
+                {
+                    (Object.keys(item)[0] && Object.keys(item)[0] === POSITION.TODAY) ?
+                        <View style={Styles.outerDateCon}>
+                            <View style={Styles.innerTodayConLine} />
+                            <View style={Styles.outerDateCon}>
+                                <Text style={Styles.itemDateDay}>{Object.keys(item)[0]}</Text>
+                                <Text style={Styles.itemDate}>|</Text>
+                                <Text style={Styles.itemDate}>{new Date().toDateString()}</Text>
+                            </View>
+                            <View style={Styles.innerTodayConLine} />
+                        </View> :
+                        <View style={Styles.outerDateCon}>
+                            <View style={Styles.innerConLine} />
+                            <View style={Styles.outerDateCon}>
+                                <Text style={Styles.itemDateDay}>{Object.keys(item)[0]}</Text>
+                            </View>
+                            <View style={Styles.innerConLine} />
+                        </View>
+                }
+                <FlatList
+                    data={item[Object.keys(item)[0]]}
+                    renderItem={renderCategoryItems}
+                    keyExtractor={keyExtractor}
                     showsVerticalScrollIndicator={false}
-                    contentContainerStyle={Styles.listContainer}
-                /> */}
-            </ScrollView>
+                    contentContainerStyle={Styles.itemContainer}
+                    maxToRenderPerBatch={6}
+                    initialNumToRender={6}
+                    windowSize={5}
+                    getItemLayout={getItemLayout}
+                />
+            </View>
+        )
+    };
+
+    const CategoryItem = memo(CategoryItemNM)
+
+    const renderCategory = useCallback(({ item }: any) => {
+        return (
+            <CategoryItem item={item} />
+        )
+    }, []);
+
+    return (
+        <View style={[Styles.container, Styles.shadow]}>
+            <FlatList
+                data={listEvents}
+                renderItem={renderCategory}
+                contentContainerStyle={Styles.listContainer}
+                showsVerticalScrollIndicator={false}
+                maxToRenderPerBatch={5}
+                initialNumToRender={5}
+                windowSize={7}
+            />
         </View>
     )
 }
@@ -227,7 +298,7 @@ const Styles = StyleSheet.create({
     },
     innerTodayConLine: {
         borderTopWidth: 0.4,
-        width: wp(25)
+        width: wp(27)
     },
     innerConLine: {
         borderTopWidth: 0.4,
@@ -246,9 +317,14 @@ const Styles = StyleSheet.create({
     },
     container: {
         flex: 1,
+        backgroundColor: Colors.color2,
+    },
+    itemContainer: {
+        paddingHorizontal: wp(0.5),
     },
     listContainer: {
-        paddingHorizontal: wp(4),
+        paddingHorizontal: wp(0.5),
+        paddingVertical: hp(2),
     },
     shadow: {
         shadowColor: Colors.color1,
@@ -262,9 +338,9 @@ const Styles = StyleSheet.create({
     },
     categoryContainer: {
         marginVertical: hp(1),
-        marginHorizontal: wp(1),
-        borderRadius: 5,
-        paddingVertical: hp(2),
+        marginHorizontal: wp(0),
+        borderRadius: 3,
+        paddingVertical: hp(1),
         backgroundColor: Colors.color2,
     },
     itemListContainer: {

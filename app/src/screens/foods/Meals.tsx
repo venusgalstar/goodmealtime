@@ -5,7 +5,7 @@ import { hp, Typography, wp } from '../../global'
 import { Constants } from '../../global'
 import Entypo from 'react-native-vector-icons/Entypo'
 import { API_PATH, REFETCH } from '../../config'
-// import { mealsData1 } from '../home/Data'
+// import { mealsData } from '../home/Data'
 
 const MealCard = (props: any) => {
     const {
@@ -22,7 +22,15 @@ const MealCard = (props: any) => {
     //     // TODO+
     // }
 
-    const onFoodItemPress = (foodId: any) => navigation.navigate('FoodDetails', { foodId: foodId })
+    // useEffect(() => {
+    //     console.log("[===MealCard===]", item.id)
+    // }, []);
+
+    const onFoodItemPress = (foodId: any) => {
+        console.log("[=====onFoodItemPress======]", foodId)
+        navigation.navigate('FoodDetails', { foodId: foodId })
+    }
+
     return (
         <TouchableOpacity style={{
             ...Styles.itemOuterContainer,
@@ -125,8 +133,7 @@ const Meals = (props: any) => {
         fetchData();
     }, [refetch])
 
-    const onEventsPress = (author: any) => 
-    {
+    const onEventsPress = (author: any) => {
         console.log("[===onEventsPress===]", author)
         navigation.navigate('Home', { tabId: 0, author: author })
     }
