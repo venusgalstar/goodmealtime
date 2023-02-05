@@ -1,6 +1,7 @@
 import { View, StyleSheet, FlatList, Text, ScrollView } from 'react-native'
 import React, { useState, useEffect, useContext, useCallback, memo } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+// import { FlashList } from '@shopify/flash-list'
 import { Fonts, Colors, Images } from '../../res'
 import { wp, hp, Typography } from '../../global'
 import EventCard from './EventCard'
@@ -250,6 +251,14 @@ const Events = (props: any) => {
                             <View style={Styles.innerConLine} />
                         </View>
                 }
+                {/* 
+                // TODO
+                <SafeAreaView>
+                <FlashList>
+
+                </FlashList>
+                </SafeAreaView>  
+                */}
                 <FlatList
                     data={item[Object.keys(item)[0]]}
                     renderItem={renderCategoryItems}
