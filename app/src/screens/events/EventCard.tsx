@@ -65,10 +65,10 @@ const EventCardNM = (props: any) => {
                         </View>
                     </View>
                     {
-                        item.image ?
+                        item.images ?
                             (
                                 <FastImage
-                                    source={{ uri: item.image }}
+                                    source={{ uri: item.images }}
                                     resizeMode={FastImage.resizeMode.cover}
                                     style={Styles.itemImage}
                                 />

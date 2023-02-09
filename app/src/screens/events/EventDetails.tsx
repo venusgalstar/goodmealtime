@@ -10,6 +10,7 @@ import { Constants, hp, Typography, wp } from '../../global';
 import { API_PATH, REFETCH, SAVE_EVENT } from '../../config';
 
 const copyToClipboard = (copyVal: string) => {
+    // console.log("[===copyToClipboard, copyVal===]", copyVal)
     if (copyVal) {
         Clipboard.setString(copyVal);
     }
@@ -29,6 +30,7 @@ const EventDetails = (props: any) => {
         allDayEvent: false,
         attendees: 0,
         liveStreamUrl: "",
+        googleCalendarUrl: "",
         host: ' ',
         presenters: [{
             name: ' ',
@@ -158,7 +160,7 @@ const EventDetails = (props: any) => {
             <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: hp(15) }}>
                 <View style={Styles.imageSliderCon}>
                     <SliderBox
-                        images={event.images}
+                        images={event.images ? event.images : Images.unknownImages}
                         disableOnPress
                         sliderBoxHeight={hp(35)}
                         imageLoadingColor={Colors.theme}
@@ -251,7 +253,7 @@ const EventDetails = (props: any) => {
                         </View>
                         <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
-                            style={{ ...Styles.copyBtn, opacity: event.liveStreamUrl ? 0.5 : Constants.btnActiveOpacity }}
+                            style={{ ...Styles.copyBtn, opacity: event.liveStreamUrl ? 1 : Constants.btnActiveOpacity }}
                             onPress={() => copyToClipboard(event.liveStreamUrl)}
                         >
                             <Image
@@ -274,8 +276,8 @@ const EventDetails = (props: any) => {
                         </View>
                         <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
-                            style={{ ...Styles.copyBtn, opacity: event.liveStreamUrl ? 0.5 : Constants.btnActiveOpacity }}
-                            onPress={() => copyToClipboard(event.liveStreamUrl)}
+                            style={{ ...Styles.copyBtn, opacity: event.googleCalendarUrl ? 1 : Constants.btnActiveOpacity }}
+                            onPress={() => copyToClipboard(event.googleCalendarUrl)}
                         >
                             <Image
                                 source={Images.copy}
