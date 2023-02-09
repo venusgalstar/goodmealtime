@@ -7,30 +7,32 @@ import { Constants } from '../../global'
 import { Events } from '../events'
 import { Meals } from '../foods'
 
+enum TABID {
+    EVENTS,
+    MEALS
+}
+
 const EventsMealsBar = (props: any) => {
-    const [activeBtn, setActiveBtn] = useState('Events')
     const {
-        // events = [],
-        // meals = [],
         dataVisible = false,
-        navigation = {}
+        navigation = {},
+        tabId = 0,
+        author = -1
     } = props
+    const [activeBtn, setActiveBtn] = useState(tabId)
 
     const onBarBtnPress = (active: any) => {
+        console.log("[===onBarBtnPress===]", active)
         setActiveBtn(active)
         props.onBarBtnPress(active)
     }
-
-    // useEffect(() => {
-    //     console.log("[=====EventsMealsBar=====]", props)
-    // }, [])
 
     return (
         <View style={dataVisible ? Styles.container : {}}>
             <View style={[Styles.barContainer, Styles.shadow]}>
                 <TouchableOpacity
                     activeOpacity={Constants.btnActiveOpacity}
-                    style={{ ...Styles.dotsBtn, borderBottomWidth: activeBtn === 'Events' && dataVisible ? 2 : 0 }}
+                    style={{ ...Styles.dotsBtn, borderBottomWidth: activeBtn === TABID.EVENTS && dataVisible ? 2 : 0 }}
                 >
                     <Entypo name='dots-three-vertical' size={wp(5)} color={Colors.theme} />
                 </TouchableOpacity>
@@ -40,16 +42,16 @@ const EventsMealsBar = (props: any) => {
                         activeOpacity={Constants.btnActiveOpacity}
                         style={{
                             ...Styles.btnView, width: wp(38.5),
-                            borderBottomWidth: activeBtn === 'Events' && dataVisible ? 2 : 0
+                            borderBottomWidth: activeBtn === TABID.EVENTS && dataVisible ? 2 : 0
                         }}
-                        onPress={onBarBtnPress.bind(null, 'Events')}
+                        onPress={onBarBtnPress.bind(null, TABID.EVENTS)}
                     >
                         <Text style={Styles.btnTxt}>Events</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         activeOpacity={Constants.btnActiveOpacity}
-                        style={{ ...Styles.btnView, borderBottomWidth: activeBtn !== 'Events' && dataVisible ? 2 : 0 }}
-                        onPress={onBarBtnPress.bind(null, 'Meals')}
+                        style={{ ...Styles.btnView, borderBottomWidth: activeBtn !== TABID.EVENTS && dataVisible ? 2 : 0 }}
+                        onPress={onBarBtnPress.bind(null, TABID.MEALS)}
                     >
                         <Text style={Styles.btnTxt}>Meals</Text>
                     </TouchableOpacity>
@@ -57,14 +59,13 @@ const EventsMealsBar = (props: any) => {
             </View>
             {
                 dataVisible &&
-                    activeBtn === 'Events' ?
+                    activeBtn === TABID.EVENTS ?
                     <Events
-                        // data={events}
+                        author={author}
                         navigation={navigation}
                     />
                     :
                     <Meals
-                        // data={meals}
                         navigation={navigation}
                     />
             }

@@ -4,8 +4,6 @@ import { hp, Typography, wp } from '../../global'
 import { Colors, Fonts } from '../../res';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-
-
 const SavedEventsFilter = (props: any) => {
     const [statusList, setStatusList] = useState([
         {

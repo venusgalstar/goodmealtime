@@ -11,7 +11,7 @@ const MyTableBtn = (props: any) => {
     } = props
 
     return (
-        <TouchableOpacity style={{ ...Styles.container }}
+        <TouchableOpacity style={{ ...Styles.container, display: "none" }}
             activeOpacity={Constants.btnActiveOpacity}
             onPress={onPress}
         >

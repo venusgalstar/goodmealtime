@@ -1,11 +1,20 @@
 import { View, Text, StyleSheet, StatusBar, ScrollView, TouchableOpacity, Dimensions, Image, Platform } from 'react-native'
 import React, { useEffect, useState } from 'react'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import Clipboard from '@react-native-clipboard/clipboard';
 import { Colors, Fonts } from '../../res'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import { Images } from '../../res'
 import { SliderBox } from "react-native-image-slider-box";
 import { Constants, hp, Typography, wp } from '../../global';
-import { API_PATH, REFETCH } from '../../config';
+import { API_PATH, REFETCH, SAVE_EVENT } from '../../config';
+
+const copyToClipboard = (copyVal: string) => {
+    // console.log("[===copyToClipboard, copyVal===]", copyVal)
+    if (copyVal) {
+        Clipboard.setString(copyVal);
+    }
+};
 
 const EventDetails = (props: any) => {
     const [event, setEvent] = useState({
@@ -21,6 +30,7 @@ const EventDetails = (props: any) => {
         allDayEvent: false,
         attendees: 0,
         liveStreamUrl: "",
+        googleCalendarUrl: "",
         host: ' ',
         presenters: [{
             name: ' ',
@@ -59,7 +69,7 @@ const EventDetails = (props: any) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${API_PATH}?events=${props.route.params.eventId}`, {
+                const response = await fetch(`${API_PATH}?events=${props.route.params.eventId}&author=-1`, {
                     method: 'GET',
                 });
                 const json = await response.json();
@@ -77,8 +87,34 @@ const EventDetails = (props: any) => {
     }, [refetch])
 
     const onBackPress = () => props.navigation.goBack()
-    const onSaveForLaterPress = () => props.navigation.navigate('SavedEvents')
-    const onBookNowPress = (eventbookingId: any) => props.navigation.navigate('EventBooking', {eventbookingId:eventbookingId})
+    const onSaveForLaterPress = async (event: any) => {
+        // console.log("[=====EventDetails onSaveForLaterPress======]")
+        try {
+            const getSavedData = await AsyncStorage.getItem(SAVE_EVENT);
+            if (!getSavedData) {
+                await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify([event]))
+            } else {
+                const jsonData = JSON.parse(getSavedData)
+                // console.log("[=====EventDetails getSavedData JSON======]", jsonData)
+                const findData = jsonData.filter((item: any) => { return item.id === event.id })
+                // console.log("[=====EventDetails findData======]", findData)
+                if (findData.length === 0) {
+                    jsonData.push(event)
+                    // console.log("[=====EventDetails jsonData push stringify======]", jsonData)
+                    await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify(jsonData))
+                } else {
+                    const remainItems = jsonData.filter((item: any) => { return item.id !== event.id })
+                    await AsyncStorage.setItem(SAVE_EVENT, JSON.stringify(remainItems))
+                }
+            }
+        } catch (error) {
+            console.log("onSaveForLaterPress AsyncStorage: ", error)
+            console.log("remove SAVE_EVENT")
+            await AsyncStorage.removeItem(SAVE_EVENT);
+        }
+        props.navigation.navigate('SavedEvents')
+    }
+    const onBookNowPress = (event: any) => props.navigation.navigate('EventBooking', { eventbookingId: event.id })
 
     const RenderFieldList = (props: any) => {
         const { icon, heading, description, first, presenters } = props
@@ -124,7 +160,7 @@ const EventDetails = (props: any) => {
             <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: hp(15) }}>
                 <View style={Styles.imageSliderCon}>
                     <SliderBox
-                        images={event.images}
+                        images={event.images ? event.images : Images.unknownImages}
                         disableOnPress
                         sliderBoxHeight={hp(35)}
                         imageLoadingColor={Colors.theme}
@@ -137,12 +173,13 @@ const EventDetails = (props: any) => {
                         >
                             <AntDesign name='arrowleft' color={Colors.color3} size={wp(6)} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={{ ...Styles.headerBtn, backgroundColor: Colors.color3, }}
+                        <TouchableOpacity style={{ ...Styles.headerBtn, backgroundColor: props.route.params.isSavedEvent ? Colors.theme : Colors.color3 }}
                             activeOpacity={Constants.btnActiveOpacity}
+                            onPress={onSaveForLaterPress.bind(null, event)}
                         >
-                            <AntDesign name='hearto' color={Colors.theme} size={wp(5)} />
+                            <AntDesign name='hearto' color={props.route.params.isSavedEvent ? Colors.color2 : Colors.theme} size={wp(5)} />
                             <View style={Styles.headerBadgeView}>
-                                <Text style={Styles.headerBadgeTxt}>4</Text>
+                                <Text style={Styles.headerBadgeTxt}>{props.route.params.savedAmounts ? props.route.params.savedAmounts : 0}</Text>
                             </View>
                         </TouchableOpacity>
                     </View >
@@ -152,20 +189,22 @@ const EventDetails = (props: any) => {
                     <Text style={Styles.eventDesc}>{event.description}</Text>
                     <View style={Styles.priceOuterCon}>
                         <View style={Styles.priceView}>
-                            <Image
-                                source={Images.dollar}
-                                resizeMode='contain'
-                                style={Styles.listIcon}
-                            />
-                            <Text style={Styles.price}>{event.price}</Text>
+                            <Text style={Styles.listIcon}>₦</Text>
+                            <Text style={Styles.price}>{parseFloat(event.price) > 0 ? event.price : "free"}</Text>
                             <Text style={Styles.discount}>{event.discount}</Text>
                         </View>
                         {
-                            event.liveNow &&
-                            <View style={Styles.priceView}>
-                                <View style={Styles.liveIcon} />
-                                <Text style={Styles.liveNow}>Live Now</Text>
-                            </View>
+                            event.liveNow ? (
+                                <View style={Styles.priceView}>
+                                    <View style={Styles.liveIcon} />
+                                    <Text style={Styles.liveNow}>Live Now</Text>
+                                </View>
+                            ) : (
+                                <View style={Styles.priceView}>
+                                    <View style={Styles.endIcon} />
+                                    <Text style={Styles.endNow}>End</Text>
+                                </View>
+                            )
                         }
                     </View>
                 </View>
@@ -214,7 +253,8 @@ const EventDetails = (props: any) => {
                         </View>
                         <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
-                            style={Styles.copyBtn}
+                            style={{ ...Styles.copyBtn, opacity: event.liveStreamUrl ? 1 : Constants.btnActiveOpacity }}
+                            onPress={() => copyToClipboard(event.liveStreamUrl)}
                         >
                             <Image
                                 source={Images.copy}
@@ -236,7 +276,8 @@ const EventDetails = (props: any) => {
                         </View>
                         <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
-                            style={Styles.copyBtn}
+                            style={{ ...Styles.copyBtn, opacity: event.googleCalendarUrl ? 1 : Constants.btnActiveOpacity }}
+                            onPress={() => copyToClipboard(event.googleCalendarUrl)}
                         >
                             <Image
                                 source={Images.copy}
@@ -293,7 +334,7 @@ const EventDetails = (props: any) => {
                 </View>
             </ScrollView >
             <View style={{ ...Styles.btnsOuterCon, ...Styles.shadow }}>
-                <TouchableOpacity style={{ ...Styles.bookNowBtn, borderWidth: 1, borderColor: Colors.theme, backgroundColor: Colors.color3, }}
+                {/* <TouchableOpacity style={{ ...Styles.bookNowBtn, borderWidth: 1, borderColor: Colors.theme, backgroundColor: Colors.color3, }}
                     activeOpacity={Constants.btnActiveOpacity}
                     onPress={onSaveForLaterPress}
                 >
@@ -301,10 +342,10 @@ const EventDetails = (props: any) => {
                     <Text style={{ ...Styles.bookNow, color: Colors.theme }}>
                         Save For Later
                     </Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
                 <TouchableOpacity style={Styles.bookNowBtn}
                     activeOpacity={Constants.btnActiveOpacity}
-                    onPress={onBookNowPress.bind(null, event.id)}
+                    onPress={onBookNowPress.bind(null, event)}
                 >
                     <Image
                         source={Images.calenderWhite}
@@ -413,10 +454,23 @@ const Styles = StyleSheet.create({
         width: width * 0.025,
         height: width * 1 * 0.025,
         borderRadius: width * 1 * 0.025 / 2,
-        backgroundColor: Colors.color8,
+        backgroundColor: Colors.colorGrey,
         marginTop: hp(0.2)
     },
     liveNow: {
+        color: Colors.colorBrown,
+        fontSize: Typography.small2,
+        fontFamily: Fonts.APPFONT_R,
+        marginLeft: wp(2)
+    },
+    endIcon: {
+        width: width * 0.025,
+        height: width * 1 * 0.025,
+        borderRadius: width * 1 * 0.025 / 2,
+        backgroundColor: Colors.color8,
+        marginTop: hp(0.2)
+    },
+    endNow: {
         color: Colors.color5,
         fontSize: Typography.small2,
         fontFamily: Fonts.APPFONT_R,
@@ -501,7 +555,7 @@ const Styles = StyleSheet.create({
         borderTopRightRadius: 20,
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         paddingHorizontal: wp(8)
     },
     shadow: {

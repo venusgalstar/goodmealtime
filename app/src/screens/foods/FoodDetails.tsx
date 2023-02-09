@@ -93,7 +93,7 @@ const FoodDetails = (props: any) => {
                         >
                             <AntDesign name='arrowleft' color={Colors.color3} size={wp(6)} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={{ ...Styles.headerBtn, backgroundColor: Colors.color3, }}
+                        {/* <TouchableOpacity style={{ ...Styles.headerBtn, backgroundColor: Colors.color3, }}
                             activeOpacity={Constants.btnActiveOpacity}
                         >
                             <Image
@@ -101,6 +101,14 @@ const FoodDetails = (props: any) => {
                                 resizeMode='contain'
                                 style={Styles.cartIcon}
                             />
+                            <View style={Styles.headerBadgeView}>
+                                <Text style={Styles.headerBadgeTxt}>4</Text>
+                            </View>
+                        </TouchableOpacity> */}
+                        <TouchableOpacity style={{ ...Styles.headerBtn, backgroundColor: Colors.color3, }}
+                            activeOpacity={Constants.btnActiveOpacity}
+                        >
+                            <AntDesign name='hearto' color={Colors.theme} size={wp(5)} />
                             <View style={Styles.headerBadgeView}>
                                 <Text style={Styles.headerBadgeTxt}>4</Text>
                             </View>
@@ -125,7 +133,7 @@ const FoodDetails = (props: any) => {
                         </View>
                     </View>
                     <RenderListItem
-                        heading="Ingredients"
+                        heading="Contains"
                         description={food.ingredients}
                     />
                     <RenderListItem
@@ -151,7 +159,7 @@ const FoodDetails = (props: any) => {
                     >
                         <AntDesign name='plus' color={Colors.theme} size={wp(4)} />
                         <Text style={{ ...Styles.buyNow, color: Colors.theme }}>
-                            Add To Cart
+                            Add To Event
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={Styles.buyNowBtn}

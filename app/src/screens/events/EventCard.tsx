@@ -1,36 +1,34 @@
 import { View, Text, StyleSheet, FlatList, Image, Dimensions, TouchableOpacity, Platform } from 'react-native'
-import React from 'react'
+import FastImage from 'react-native-fast-image'
+import React, { useEffect, useState, memo } from 'react'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Animation } from '../../animations'
 import { Constants, hp, Typography, wp } from '../../global'
 import { Fonts, Colors, Images } from '../../res'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
+import { SAVE_EVENT, FAST_REFETCH } from '../../config';
 
-const EventCard = (props: any) => {
+const EventCardNM = (props: any) => {
     const {
+        onSavedEvents,
+        onEventPress,
+        onBookNowPress,
+        isSaved,
         item = {},
-        onPress = () => null
+        index = null,
+        navigation
     } = props
+
+    // useEffect(() => {
+    //     console.log("[===EventCard===]", item.id)
+    // }, []);
+
     return (
         <View style={Styles.itemContainer}>
-            <View style={Styles.outerDateCon}>
-                <View style={Styles.innerConLine} />
-                <View style={Styles.outerDateCon}>
-                    <Text style={Styles.itemDateDay}>Today</Text>
-                    <Text style={Styles.itemDate}>|</Text>
-                    <Text style={Styles.itemDate}>{item.date}</Text>
-                </View>
-                <View style={Styles.innerConLine} />
-            </View>
             <TouchableOpacity style={[Styles.contentOuterCon, Styles.shadow]}
                 activeOpacity={Constants.btnActiveOpacity}
-                onPress={() => {
-                    // console.log("[======EventCard onPress start=====]", props);
-                    // console.log("[======EventCard onPress start=====]", item);
-                    // onPress.bind(null, item)
-                    onPress()
-                    // console.log("[======EventCard onPress end=======]", item);
-                }}
+                onPress={onEventPress.bind(null, item.id)}
             >
                 <View style={Styles.contentInnerCon}>
                     <View style={Styles.contentInnerConOne}>
@@ -45,9 +43,9 @@ const EventCard = (props: any) => {
                         </Text>
                         <View style={Styles.contentInnerConOneInnerCon}>
                             <View style={Styles.contentInnerConOneInnerConInner}>
-                                <Image
+                                <FastImage
                                     source={Images.multimediaMic}
-                                    resizeMode='contain'
+                                    resizeMode={FastImage.resizeMode.contain}
                                     style={Styles.micIcon}
                                 />
                                 <Text style={Styles.itemName}>
@@ -55,37 +53,57 @@ const EventCard = (props: any) => {
                                 </Text>
                             </View>
                             <View style={Styles.contentInnerConOneInnerConInner}>
-                                <Image
+                                <FastImage
                                     source={Images.priceTag}
-                                    resizeMode='contain'
+                                    resizeMode={FastImage.resizeMode.contain}
                                     style={Styles.micIcon}
                                 />
                                 <Text style={Styles.itemTicket}>
-                                    ₦{item.ticket}
+                                    ₦ {item.ticket > 0 ? item.ticket : "free"}
                                 </Text>
                             </View>
                         </View>
                     </View>
-                    <Image
-                        source={{ uri: item.image }}
-                        resizeMode="cover"
-                        style={Styles.itemImage}
-                    />
+                    {
+                        item.images ?
+                            (
+                                <FastImage
+                                    source={{ uri: item.images }}
+                                    resizeMode={FastImage.resizeMode.cover}
+                                    style={Styles.itemImage}
+                                />
+                            ) : (
+                                <FastImage
+                                    source={Images.unknownImages}
+                                    resizeMode={FastImage.resizeMode.cover}
+                                    style={Styles.itemImage}
+                                />
+                            )
+                    }
                 </View>
                 <View style={Styles.contentInnerCon}>
                     <View style={{ ...Styles.contentInnerConOneInnerCon, width: wp(64), paddingHorizontal: wp(2.5) }}>
+                        {
+                            item.liveNow ? (
+                                <View style={Styles.liveCon}>
+                                    <View style={Styles.liveIcon} />
+                                    <Text style={Styles.liveNowTxt}>Live Now</Text>
+                                </View>
+                            ) : (
+                                <View style={Styles.endCon}>
+                                    <View style={Styles.endIcon} />
+                                    <Text style={Styles.endNowTxt}>End</Text>
+                                </View>
+                            )
+                        }
                         <View style={Styles.liveCon}>
-                            <View style={Styles.liveIcon} />
-                            <Text style={Styles.liveNowTxt}>Live Now</Text>
-                        </View>
-                        <View style={Styles.liveCon}>
-                            <Image
+                            <FastImage
                                 source={Images.users}
-                                resizeMode='contain'
+                                resizeMode={FastImage.resizeMode.contain}
                                 style={Styles.userIcon}
                             />
                             <Text style={{ ...Styles.liveNowTxt, color: Colors.color5 }}>
-                                {item.peopleAttending}
+                                {item.peopleAttending ? item.peopleAttending : 0}
                             </Text>
                         </View>
                         <View style={Styles.liveCon}>
@@ -100,56 +118,47 @@ const EventCard = (props: any) => {
                         </View>
                     </View>
                     <View style={Styles.bookHeartCon}>
-                        <TouchableOpacity style={Styles.heartBtn}
+                        <TouchableOpacity style={isSaved ? Styles.heartBtnBrown : Styles.heartBtn}
                             activeOpacity={Constants.btnActiveOpacity}
+                            onPress={onSavedEvents.bind(null, item)}
                         >
-                            <AntDesign name='hearto' color={Colors.theme} size={wp(4)} />
+                            <AntDesign name='hearto' color={isSaved ? Colors.color2 : Colors.theme} size={wp(4)} />
                         </TouchableOpacity>
                         <TouchableOpacity
+                            style={Styles.bookBtn}
+                            activeOpacity={Constants.btnActiveOpacity}
+                            onPress={onBookNowPress.bind(null, item.id)}
+                        >
+                            <Text style={Styles.bookTxt}>Book</Text>
+                        </TouchableOpacity>
+                        {/* <TouchableOpacity
                             activeOpacity={Constants.btnActiveOpacity}
                             style={Styles.bookBtn}
                         >
                             <Text style={Styles.bookTxt}>Book</Text>
-                        </TouchableOpacity>
+                        </TouchableOpacity> */}
                     </View>
                 </View>
-
             </TouchableOpacity>
         </View>
     )
 }
+
+const EventCard = memo(EventCardNM)
 
 export default EventCard
 
 const { width } = Dimensions.get('window')
 const Styles = StyleSheet.create({
     itemContainer: {
-        marginTop: hp(3),
-        marginBottom: hp(1)
-    },
-    outerDateCon: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between'
-    },
-    innerConLine: {
-        borderTopWidth: 0.4,
-        width: wp(30)
-    },
-    itemDateDay: {
-        fontFamily: Fonts.APPFONT_B,
-        color: Colors.color5,
-        fontSize: Typography.small2
-    },
-    itemDate: {
-        fontFamily: Fonts.APPFONT_R,
-        color: Colors.color5,
-        marginLeft: wp(1),
-        fontSize: Typography.small2
+        marginTop: hp(0.5),
+        marginBottom: hp(0.5),
+        marginRight: wp(0.2),
+        marginLeft: wp(0.2)
     },
     contentOuterCon: {
         backgroundColor: Colors.color2,
-        marginTop: hp(2)
+        marginTop: hp(1)
     },
     shadow: {
         shadowColor: Colors.color1,
@@ -220,14 +229,32 @@ const Styles = StyleSheet.create({
         alignItems: 'center',
         marginBottom: hp(0.8),
     },
+    endCon: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: hp(0.8),
+    },
     liveIcon: {
+        width: width * 0.025,
+        height: width * 1 * 0.025,
+        borderRadius: width * 1 * 0.025 / 2,
+        backgroundColor: Colors.colorGrey,
+        marginTop: hp(0.2)
+    },
+    liveNowTxt: {
+        color: Colors.colorBrown,
+        fontFamily: Fonts.APPFONT_R,
+        marginLeft: wp(2),
+        fontSize: Typography.small1
+    },
+    endIcon: {
         width: width * 0.025,
         height: width * 1 * 0.025,
         borderRadius: width * 1 * 0.025 / 2,
         backgroundColor: Colors.color8,
         marginTop: hp(0.2)
     },
-    liveNowTxt: {
+    endNowTxt: {
         color: Colors.color9,
         fontFamily: Fonts.APPFONT_R,
         marginLeft: wp(2),
@@ -246,17 +273,27 @@ const Styles = StyleSheet.create({
     heartBtn: {
         borderWidth: 1,
         height: hp(3.2),
-        width: wp(7),
+        width: wp(6),
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 4,
         borderColor: Colors.theme
     },
+    heartBtnBrown: {
+        borderWidth: 1,
+        height: hp(3.2),
+        width: wp(6),
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 4,
+        borderColor: Colors.color1,
+        backgroundColor: Colors.theme,
+    },
     bookBtn: {
         borderWidth: 1,
         width: wp(14),
         height: hp(3.2),
-        marginRight: wp(1),
+        marginRight: wp(3),
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
