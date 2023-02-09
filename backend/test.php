@@ -292,7 +292,7 @@
             $sql = "select t5.*, t6.liveStreamUrl from
             (select t3.*, t4.display_name as eventManager from 
             (select t1.*,t2.* from
-            (select event_id as id, event_name as name, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events where event_id = 16) as t1
+            (select event_id as id, event_name as name, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events where event_id = ".$meal_id.") as t1
             left join
             (select event_id, count(booking_id) as peopleAttending, sum(booking_spaces) as ticket from wp_em_bookings group by event_id) as t2
             on t1.id = t2.event_id) as t3
@@ -300,7 +300,7 @@
             wp_users t4
             on t3.event_owner = t4.ID) as t5
             left join
-            (select post_id, meta_value as liveStreamUrl from wp_postmeta where meta_key = "_event_location_url") as t6
+            (select post_id, meta_value as liveStreamUrl from wp_postmeta where meta_key = '_event_location_url') as t6
             on t5.post_id = t6.post_id
             ";
 
