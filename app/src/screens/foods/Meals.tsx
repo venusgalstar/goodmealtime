@@ -299,7 +299,7 @@ const Meals = (props: any) => {
                     { [POSITION.MONTH6]: sixMMealsByRestaurant },
                     { [POSITION.MONTH6PLUS]: sixPlusMMealsByRestaurant }
                 ]
-                console.log("[=====_listMeals Json======]", JSON.stringify(_listMeals))
+                // console.log("[=====_listMeals Json======]", JSON.stringify(_listMeals))
                 setMeals(_listMeals)
             } catch (error) {
                 console.log("[=====Fetch Meals ERR======]", error)
