@@ -1,14 +1,17 @@
 <?php
 
-    if ( !isset($_GET['meals']) && !isset($_GET['events']) && !isset($_GET['eventbooking']) ){
+    if ( !isset($_GET['meals']) && !isset($_GET['events']) && !isset($_GET['eventbooking'])){
         exit(0);
     }
 
+    // $servername = "localhost";
+    // $username = "dev_Alek";
+    // $password = "_6X;$7,Cl!}G";
+    // $dbname = "i7452067_wp3";
+
     $servername = "localhost";
-    $username = "dev_Alek";
-    $password = "_6X;$7,Cl!}G";    
-    // $username = "root";
-    // $password = "";
+    $username = "root";
+    $password = "";
     $dbname = "i7452067_wp3";
 
     // Create connection
@@ -36,7 +39,14 @@
         $meal_id = $_GET['meals'];
 
         if($meal_id == -1){
-            $sql = "select t9.*, t10.location from
+
+            $sql = "select t18.event_start_date, t17.* from
+            (select * from wp_em_events where event_start_date >= CURRENT_DATE ) as t18
+            left join
+            (select t15.*, t16.lat from
+            (select t13.*, t14.lng from 
+            (select t11.*, t12.location from
+            (select t9.*, t10.restaurant from
             (select t7.*, t8.guid as image1 from
             (select t3.*, t4.guid as image from
             (select t1.ID, t1.name, t1.post_author, t2.price from
@@ -65,16 +75,35 @@
             on t7.ID = t8.parent_posts
             group by t7.ID) as t9
             left join
-            (select user_id, meta_value as location
+            (select user_id, meta_value as restaurant
             from wp_usermeta
             where meta_key = 'wcfmmp_store_name') as t10
             on t9.post_author = t10.user_id
-            ORDER BY ID DESC        
+            ORDER BY restaurant DESC, ID DESC) as t11        
+            left join
+            (select user_id, meta_value as location
+            from wp_usermeta
+            where meta_key = '_wcfm_city') as t12
+            on t11.post_author = t12.user_id) as t13
+            left join
+            (select user_id, meta_value as lng
+            from wp_usermeta
+            where meta_key = '_wcfm_store_lng') as t14
+            on t13.post_author = t14.user_id) as t15
+            left join
+            (select user_id, meta_value as lat
+            from wp_usermeta
+            where meta_key = '_wcfm_store_lat') as t16
+            on t15.post_author = t16.user_id
+            where !ISNULL(restaurant)
+            ORDER BY restaurant) as t17
+            on t17.post_author = t18.event_owner
+            where !ISNULL(ID)
             ";
 
             $result = $conn->query($sql);
 
-            $response_data["category"] = array();
+            $response_data = array();
 
             if ($result->num_rows > 0) {
                 // output data of each row
@@ -82,16 +111,20 @@
                     // echo json_encode($row);
 
                     $new_item["id"] = $row["ID"];
+                    $new_item["event_start_date"] = $row["event_start_date"];
                     $new_item["price"] = $row["price"];
                     $new_item["image"] = $row["image"]!=''?$row["image"]:$row["image1"];
                     $new_item["location"] = $row["location"]!=''?$row["location"]:'admin';
-                    array_push($response_data["category"], $new_item);
+                    $new_item["restaurant"] = $row["restaurant"]!=''?$row["restaurant"]:'admin';
+                    $new_item["available"] = 1;
+                    $new_item["lng"] = $row["lng"];
+                    $new_item["lat"] = $row["lat"];
+                    $new_item["author"] = $row["post_author"];
+                    array_push($response_data, $new_item);
                 }
             } 
-
-            $response_final = array($response_data);
 			
-            echo json_encode(utf8ize($response_final));
+            echo json_encode(utf8ize($response_data));
 
         } else{
             $sql = "select t3.*, t4.guid as image from
@@ -198,14 +231,14 @@
             // ";
 
             $sql = "select t3.*, t4.display_name as name from 
-                (select t1.*,t2.* from
-                (select event_id as eid, event_name as title, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events) as t1
-                right join
-                (select ticket_id as id, event_id, ticket_members as peopleAttending, ticket_price as ticket from wp_em_tickets) as t2
-                on t1.eid = t2.event_id) as t3
-                left join
-                wp_users t4
-                on t3.event_owner = t4.ID";
+            (select t1.*,t2.* from
+            (select event_id as id, event_name as title, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events) as t1
+            left join
+            (select event_id, count(booking_id) as peopleAttending, sum(booking_spaces) as ticket from wp_em_bookings group by event_id) as t2
+            on t1.id = t2.event_id) as t3
+            left join
+            wp_users t4
+            on t3.event_owner = t4.ID";
 
             $result = $conn->query($sql);
 
@@ -219,12 +252,16 @@
                     $new_item["liveNow"] = $row["event_status"]==1?true:false;
                     $new_item["peopleAttending"] = $row["peopleAttending"]!=''?$row["peopleAttending"]:0;
                     $new_item["ticket"] = $row["ticket"]!=''?$row["ticket"]:0;
-                    $new_item["date"] = $row["date"];
+                    $new_item["event_start_date"] = $row["event_start_date"];
+                    $new_item["event_end_date"] = $row["event_end_date"];
+                    $new_item["event_owner"] = $row["event_owner"];
                     $new_item["time"] = $row["time"];
                     $new_item["name"] = $row["name"];
                     $new_item["description"] = strip_tags(preg_replace('#(\[(.*)\](.*)\[/.*\])#Us','',$row["post_content"]));
                     $new_item["description"] = str_replace("&nbsp;",' ',$new_item["description"]);
                     $new_item["description"] = str_replace("\r\n",' ',$new_item["description"]);
+                    $new_item["location_latitude"] = $row["location_latitude"];
+                    $new_item["location_longitude"] = $row["location_longitude"];
 
                     //adding picture
                     preg_match_all('#\bhttps?://[^,\s()<>]+(?:\([\w\d]+\)|([^,[:punct:]\s]|/))#', $row["post_content"], $match);
@@ -244,14 +281,14 @@
         }else{
 
             $sql = "select t3.*, t4.display_name as eventManager from 
-                (select t1.*,t2.* from
-                (select event_all_day as allDayEvent, event_id as eid, event_name as name, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events) as t1
-                right join
-                (select ticket_id as id, event_id, ticket_members as attendees, ticket_price as price from wp_em_tickets where ticket_id = ".$event_id.") as t2
-                on t1.eid = t2.event_id) as t3
-                left join
-                wp_users t4
-                on t3.event_owner = t4.ID
+            (select t1.*,t2.* from
+            (select event_id as id, event_name as name, post_id, post_content, event_owner, event_status, event_start_date as date, event_start_time as time from wp_em_events where event_id = ".$event_id.") as t1
+            left join
+            (select event_id, count(booking_id) as peopleAttending, sum(booking_spaces) as ticket from wp_em_bookings group by event_id) as t2
+            on t1.id = t2.event_id) as t3
+            left join
+            wp_users t4
+            on t3.event_owner = t4.ID
             ";
 
             $result = $conn->query($sql);
@@ -271,10 +308,10 @@
                     $new_item["eventManager"] = $row["eventManager"];
                     $new_item["host"] = $row["eventManager"];
                     
-                    // $new_item["liveStreamUrl"] = "https://goosebumps.finance/images/logo-icon.png";
-                    // $new_item["gate"] = 6;
-                    // $new_item["seating"] = "free";
-                    // $new_item["accessRestrictions"] = "Staff, VIPs, Executive Members, All Executives of DDCMS";
+                    $new_item["liveStreamUrl"] = "https://goosebumps.finance/images/logo-icon.png";
+                    $new_item["gate"] = 6;
+                    $new_item["seating"] = "free";
+                    $new_item["accessRestrictions"] = "Staff, VIPs, Executive Members, All Executives of DDCMS";
                     
                     $new_item["presenters"] = array();
                     // $presenter1["name"] = $row["eventManager"];
@@ -347,7 +384,6 @@
             echo json_encode(utf8ize($new_item));
         }
     }
-
 
     if (isset($_GET['meals'])){
         getMeals();
