@@ -78,6 +78,8 @@ const FoodDetails = (props: any) => {
     return (
         <View style={Styles.container}>
             <StatusBar translucent backgroundColor={'transparent'} barStyle='dark-content' />
+            {
+            Object.keys(food).length > 0 ? 
             <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: hp(15) }}>
                 <View style={Styles.imageContainer}>
                     <Image
@@ -149,7 +151,8 @@ const FoodDetails = (props: any) => {
                         <Text style={{ ...Styles.mealNo, marginTop: 0 }}>{food.location}</Text>
                     </View>
                 </View>
-            </ScrollView>
+            </ScrollView> : <Text>Not Found Food Detail Data</Text>
+            }
             {
                 cartItems.length === 0 &&
                 <View style={{ ...Styles.btnsOuterCon, ...Styles.shadow }}>

@@ -78,7 +78,8 @@ const EventBooking = (props: any) => {
                 centetText="Book an Event"
                 navigation={props.navigation}
             />
-            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1 }}>
+            {
+                Object.keys(eventBooking).length > 0 ? <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1 }}>
                 <Text style={Styles.description}>
                     You are about to pay for
                 </Text>
@@ -134,7 +135,8 @@ const EventBooking = (props: any) => {
                         onPress={onProceedPress}
                     />
                 </View>
-            </ScrollView>
+                </ScrollView> : <Text>Not Found Event Booking Data</Text>
+            }
         </Container>
     )
 }

@@ -31,6 +31,7 @@ const Events = (props: any) => {
     const [fastRefetch, setFastRefetch] = useState(true)
     const [savedEvents, setSavedEvents] = useState([])
     const [listEvents, setListEvents] = useState<any[]>([])
+    const [eventsJsonData, setEventsJsonData] = useState<any[]>([])
 
     const geo = useContext(AppStateContext)
 
@@ -94,6 +95,7 @@ const Events = (props: any) => {
                     method: 'GET',
                 });
                 const eventsJson = await eventsResponse.json();
+                setEventsJsonData(eventsJson);
                 // console.log("[=====Events Json======]", eventsJson)
                 console.log("[=====Events Json length======]", eventsJson.length)
                 // console.log("[=====Events Json Stringify======]", JSON.stringify(eventsJson))
@@ -286,6 +288,8 @@ const Events = (props: any) => {
 
     return (
         <View style={[Styles.container, Styles.shadow]}>
+        {
+            Object.keys(eventsJsonData).length > 0 ? 
             <FlatList
                 data={listEvents}
                 renderItem={renderCategory}
@@ -294,7 +298,8 @@ const Events = (props: any) => {
                 maxToRenderPerBatch={5}
                 initialNumToRender={5}
                 windowSize={7}
-            />
+            /> : <Text>Not Found Events Data</Text>
+        }
         </View>
     )
 }

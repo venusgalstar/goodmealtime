@@ -103,6 +103,7 @@ const Meals = (props: any) => {
 
     const [refetch, setRefetch] = useState(true);
     const [meals, setMeals] = useState<any[]>([])
+    const [mealsJsonData, setMealsJsonData] = useState<any[]>([])
 
     const geo = useContext(AppStateContext)
 
@@ -145,6 +146,7 @@ const Meals = (props: any) => {
                     method: 'GET',
                 });
                 const mealsJson = await mealsResponse.json();
+                setMealsJsonData(mealsJson)
                 // console.log("[=====mealsJson Json======]", JSON.stringify(mealsJson))
                 const mealsSortedByDateAndLocation = mealsJson.sort(compareMeals)
                 // console.log("[=====mealsSortedByDateAndLocation Json======]", JSON.stringify(mealsSortedByDate))
@@ -392,12 +394,15 @@ const Meals = (props: any) => {
 
     return (
         <View style={[Styles.container, Styles.shadow]}>
+        {
+            Object.keys(mealsJsonData).length > 0 ? 
             <FlatList
                 data={meals}
                 renderItem={renderBox}
                 contentContainerStyle={Styles.listContainer}
                 showsVerticalScrollIndicator={false}
-            />
+            /> : <Text>Not Found Meals Data</Text>
+        }
         </View>
     )
 }

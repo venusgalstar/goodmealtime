@@ -157,6 +157,8 @@ const EventDetails = (props: any) => {
     return (
         <View style={Styles.container}>
             <StatusBar translucent backgroundColor={'transparent'} barStyle='dark-content' />
+            {
+            Object.keys(event).length > 0 ? <>
             <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: hp(15) }}>
                 <View style={Styles.imageSliderCon}>
                     <SliderBox
@@ -355,6 +357,8 @@ const EventDetails = (props: any) => {
                     <Text style={Styles.bookNow}>Book Now</Text>
                 </TouchableOpacity>
             </View>
+            </> : <Text>Not Found Event Detail Data</Text>
+            }
         </View >
     )
 }
