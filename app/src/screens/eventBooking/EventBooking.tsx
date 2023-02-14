@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
+import { View, Text, StyleSheet, Image, ScrollView, Linking } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import Container from '../../components/Container'
 import { ButtonWithRightIcon, Header } from '../../components'
@@ -17,7 +17,8 @@ const EventBooking = (props: any) => {
         attendees: 0,
         date: ' ',
         time: ' ',
-        fee: 0
+        fee: 0,
+        book_url: ""
     })
 
     const [refetch, setRefetch] = useState(true);
@@ -70,7 +71,10 @@ const EventBooking = (props: any) => {
         )
     }
 
-    const onProceedPress = () => props.navigation.navigate('EventBookingCard', { eventbookingId: props.route.params.eventbookingId })
+    const onProceedPress = () => {
+        Linking.openURL(Object.keys(eventBooking).length > 0 ? eventBooking.book_url : "");
+        // props.navigation.navigate('EventBookingCard', { eventbookingId: props.route.params.eventbookingId })
+    }
 
     return (
         <Container>
@@ -80,61 +84,61 @@ const EventBooking = (props: any) => {
             />
             {
                 Object.keys(eventBooking).length > 0 ? <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1 }}>
-                <Text style={Styles.description}>
-                    You are about to pay for
-                </Text>
-                <View style={[Styles.eventBoxContainer, Styles.shadow]}>
-                    <SliderBox
-                        images={eventBooking.images}
-                        disableOnPress
-                        sliderBoxHeight={hp(25)}
-                        parentWidth={wp(90)}
-                        imageLoadingColor={Colors.theme}
-                        dotColor={Colors.color3}
-                    />
-                    <Text style={Styles.eventName}>
-                        {eventBooking.name}
+                    <Text style={Styles.description}>
+                        You are about to pay for
                     </Text>
-                    <Text style={Styles.eventDescription}>
-                        {eventBooking.description}
-                    </Text>
-                    <View style={Styles.renderFieldCon}>
-                        <RenderField
-                            icon={Images.micTheme}
-                            name={eventBooking.stormzy}
+                    <View style={[Styles.eventBoxContainer, Styles.shadow]}>
+                        <SliderBox
+                            images={eventBooking.images}
+                            disableOnPress
+                            sliderBoxHeight={hp(25)}
+                            parentWidth={wp(90)}
+                            imageLoadingColor={Colors.theme}
+                            dotColor={Colors.color3}
                         />
-                        <RenderField
-                            icon={Images.users}
-                            name={`${eventBooking.attendees} attendees`}
-                        />
-                    </View>
-                    <View style={Styles.renderFieldCon}>
-                        <RenderField
-                            icon={Images.calender}
-                            name={eventBooking.date}
-                        />
-                        <RenderField
-                            icon={Images.time}
-                            name={eventBooking.time}
-                        />
-                    </View>
-                </View>
-                <View style={Styles.buttonOuterContainer}>
-                    <View style={Styles.eventFeeCon}>
-                        <Text style={Styles.eventFeeTxt}>
-                            Event Fee
+                        <Text style={Styles.eventName}>
+                            {eventBooking.name}
                         </Text>
-                        <Text style={Styles.eventFeeTxt}>
-                            <Text style={{ ...Styles.eventFeeTxt, color: Colors.color19 }}>
-                                ₦ </Text>
-                            {eventBooking.fee}
+                        <Text style={Styles.eventDescription}>
+                            {eventBooking.description}
                         </Text>
+                        <View style={Styles.renderFieldCon}>
+                            <RenderField
+                                icon={Images.micTheme}
+                                name={eventBooking.stormzy}
+                            />
+                            <RenderField
+                                icon={Images.users}
+                                name={`${eventBooking.attendees} attendees`}
+                            />
+                        </View>
+                        <View style={Styles.renderFieldCon}>
+                            <RenderField
+                                icon={Images.calender}
+                                name={eventBooking.date}
+                            />
+                            <RenderField
+                                icon={Images.time}
+                                name={eventBooking.time}
+                            />
+                        </View>
                     </View>
-                    <ButtonWithRightIcon
-                        text="Proceed"
-                        onPress={onProceedPress}
-                    />
-                </View>
+                    <View style={Styles.buttonOuterContainer}>
+                        <View style={Styles.eventFeeCon}>
+                            <Text style={Styles.eventFeeTxt}>
+                                Event Fee
+                            </Text>
+                            <Text style={Styles.eventFeeTxt}>
+                                <Text style={{ ...Styles.eventFeeTxt, color: Colors.color19 }}>
+                                    ₦ </Text>
+                                {eventBooking.fee}
+                            </Text>
+                        </View>
+                        <ButtonWithRightIcon
+                            text="Proceed"
+                            onPress={onProceedPress}
+                        />
+                    </View>
                 </ScrollView> : <Text>Not Found Event Booking Data</Text>
             }
         </Container>
