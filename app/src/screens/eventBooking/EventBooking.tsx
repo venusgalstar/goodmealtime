@@ -79,7 +79,7 @@ const EventBooking = (props: any) => {
     return (
         <Container>
             <Header
-                centetText="Book an Event"
+                centetText="Book Event"
                 navigation={props.navigation}
             />
             {

@@ -26,7 +26,7 @@ const EventBookingCard = (props: any) => {
     return (
         <Container>
             <Header
-                centetText="Book an Event"
+                centetText="Book Event"
                 navigation={props.navigation}
             />
             <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1 }}>
