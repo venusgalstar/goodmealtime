@@ -83,7 +83,7 @@ const EventBooking = (props: any) => {
                 navigation={props.navigation}
             />
             {
-                Object.keys(eventBooking).length > 0 ? <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1 }}>
+                Object.keys(eventBooking).length > 0 ? <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1, paddingBottom: hp(20)}}>
                     <Text style={Styles.description}>
                         You are about to pay for
                     </Text>
@@ -217,6 +217,7 @@ const Styles = StyleSheet.create({
     eventFeeCon: {
         borderWidth: 1,
         borderColor: Colors.color18,
+        backgroundColor: Colors.color2,
         alignSelf: 'center',
         width: wp(80),
         marginBottom: hp(2),
