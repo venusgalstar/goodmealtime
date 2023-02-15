@@ -212,7 +212,8 @@ const Styles = StyleSheet.create({
         position: 'absolute',
         width: wp(100),
         bottom: 0,
-        paddingVertical: hp(4)
+        backgroundColor: Colors.color2,
+        paddingVertical: hp(2)
     },
     eventFeeCon: {
         borderWidth: 1,
