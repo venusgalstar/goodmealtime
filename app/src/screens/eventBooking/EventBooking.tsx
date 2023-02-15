@@ -123,24 +123,24 @@ const EventBooking = (props: any) => {
                             />
                         </View>
                     </View>
-                    <View style={Styles.buttonOuterContainer}>
-                        <View style={Styles.eventFeeCon}>
-                            <Text style={Styles.eventFeeTxt}>
-                                Event Fee
-                            </Text>
-                            <Text style={Styles.eventFeeTxt}>
-                                <Text style={{ ...Styles.eventFeeTxt, color: Colors.color19 }}>
-                                    ₦ </Text>
-                                {eventBooking.fee}
-                            </Text>
-                        </View>
-                        <ButtonWithRightIcon
-                            text="Proceed"
-                            onPress={onProceedPress}
-                        />
-                    </View>
                 </ScrollView> : <Text>Not Found Event Booking Data</Text>
             }
+            <View style={Styles.buttonOuterContainer}>
+                <View style={Styles.eventFeeCon}>
+                    <Text style={Styles.eventFeeTxt}>
+                        Event Fee
+                    </Text>
+                    <Text style={Styles.eventFeeTxt}>
+                        <Text style={{ ...Styles.eventFeeTxt, color: Colors.color19 }}>
+                            ₦ </Text>
+                        {eventBooking.fee}
+                    </Text>
+                </View>
+                <ButtonWithRightIcon
+                    text="Proceed"
+                    onPress={onProceedPress}
+                />
+            </View>
         </Container>
     )
 }
