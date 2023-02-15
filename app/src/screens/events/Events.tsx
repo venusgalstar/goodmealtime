@@ -123,7 +123,7 @@ const Events = (props: any) => {
                 const tmrtimestamp = today + 24 * 3600 * 1000;
                 const _weekSortedEvents = _sortedEvents.filter((item: any) => {
                     // return (Date.parse(item.event_start_date) <= tmr) && (thisWeek <= Date.parse(item.event_end_date))
-                    return (Date.parse(item.event_start_date) > tmrtimestamp) && (Date.parse(item.event_start_date) <= thisWeektimestamp )
+                    return (tmrtimestamp < Date.parse(item.event_start_date)) && (Date.parse(item.event_start_date) <= thisWeektimestamp)
                 })
                 console.log("[===_weekSortedEvents===]", _weekSortedEvents.length)
 
@@ -131,7 +131,7 @@ const Events = (props: any) => {
                 const thisMonthTimestamp = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0).toString());
                 const _monthSortedEvents = _sortedEvents.filter((item: any) => {
                     // return (Date.parse(item.event_start_date) <= thisWeek) && (thisMonth <= Date.parse(item.event_end_date))
-                    return (Date.parse(item.event_start_date) > thisWeektimestamp) && (thisMonthTimestamp <= Date.parse(item.event_start_date))
+                    return (thisWeektimestamp < Date.parse(item.event_start_date)) && (Date.parse(item.event_start_date) <= thisMonthTimestamp)
                 })
                 console.log("[===_monthSortedEvents===]", _monthSortedEvents.length)
 
@@ -139,7 +139,7 @@ const Events = (props: any) => {
                 const threeMonthTimestamp = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 3, 0).toString());
                 const _threeMSortedEvents = _sortedEvents.filter((item: any) => {
                     // return (Date.parse(item.event_start_date) <= thisMonth) && (threeMonth <= Date.parse(item.event_end_date))
-                    return (Date.parse(item.event_start_date) > thisMonthTimestamp) && (threeMonthTimestamp <= Date.parse(item.event_start_date))
+                    return (thisMonthTimestamp < Date.parse(item.event_start_date)) && (Date.parse(item.event_start_date) <= threeMonthTimestamp)
                 })
                 console.log("[===_threeMSortedEvents===]", _threeMSortedEvents.length)
 
@@ -147,13 +147,13 @@ const Events = (props: any) => {
                 const sixMonthTimestamp = Date.parse(new Date(new Date().getFullYear(), new Date().getMonth() + 6, 0).toString());
                 const _sixMSortedEvents = _sortedEvents.filter((item: any) => {
                     // return (Date.parse(item.event_start_date) <= threeMonth) && (sixMonth <= Date.parse(item.event_end_date))
-                    return (Date.parse(item.event_start_date) > threeMonthTimestamp) && (sixMonthTimestamp <= Date.parse(item.event_start_date))
+                    return (threeMonthTimestamp < Date.parse(item.event_start_date)) && (Date.parse(item.event_start_date) <= sixMonthTimestamp)
                 })
                 console.log("[===_sixMSortedEvents===]", _sixMSortedEvents.length)
 
                 const _sixPlusMSortedEvents = _sortedEvents.filter((item: any) => {
                     // return Date.parse(item.event_start_date) > sixMonth
-                    return Date.parse(item.event_start_date) > sixMonthTimestamp
+                    return sixMonthTimestamp < Date.parse(item.event_start_date)
                 })
                 console.log("[===_sixPlusMSortedEvents===]", _sixPlusMSortedEvents.length)
 
@@ -288,18 +288,18 @@ const Events = (props: any) => {
 
     return (
         <View style={[Styles.container, Styles.shadow]}>
-        {
-            Object.keys(eventsJsonData).length > 0 ? 
-            <FlatList
-                data={listEvents}
-                renderItem={renderCategory}
-                contentContainerStyle={Styles.listContainer}
-                showsVerticalScrollIndicator={false}
-                maxToRenderPerBatch={5}
-                initialNumToRender={5}
-                windowSize={7}
-            /> : <Text>Not Found Events Data</Text>
-        }
+            {
+                Object.keys(eventsJsonData).length > 0 ?
+                    <FlatList
+                        data={listEvents}
+                        renderItem={renderCategory}
+                        contentContainerStyle={Styles.listContainer}
+                        showsVerticalScrollIndicator={false}
+                        maxToRenderPerBatch={5}
+                        initialNumToRender={5}
+                        windowSize={7}
+                    /> : <Text>Not Found Events Data</Text>
+            }
         </View>
     )
 }

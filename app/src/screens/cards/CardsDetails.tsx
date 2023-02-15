@@ -46,12 +46,12 @@ const CardsDetails = (props: any) => {
         {
             icon: Images.calendarSelected,
             title: 'Event Name',
-            description: '2The Speed of NowNow (Live Performance)'
+            description: 'The Speed of Now (Live Performance)'
         },
         {
             icon: Images.description,
             title: 'Description',
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.'
+            description: ''
         }
     ])
 

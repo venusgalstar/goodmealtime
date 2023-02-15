@@ -118,12 +118,12 @@ const EventCardNM = (props: any) => {
                         </View>
                     </View>
                     <View style={Styles.bookHeartCon}>
-                        <TouchableOpacity style={isSaved ? Styles.heartBtnBrown : Styles.heartBtn}
+                        {/* <TouchableOpacity style={isSaved ? Styles.heartBtnBrown : Styles.heartBtn}
                             activeOpacity={Constants.btnActiveOpacity}
                             onPress={onSavedEvents.bind(null, item)}
                         >
                             <AntDesign name='hearto' color={isSaved ? Colors.color2 : Colors.theme} size={wp(4)} />
-                        </TouchableOpacity>
+                        </TouchableOpacity> */}
                         <TouchableOpacity
                             style={Styles.bookBtn}
                             activeOpacity={Constants.btnActiveOpacity}
