@@ -314,11 +314,11 @@ const Styles = StyleSheet.create({
     },
     innerTodayConLine: {
         borderTopWidth: 0.4,
-        width: wp(22)
+        width: wp(20)
     },
     innerConLine: {
         borderTopWidth: 0.4,
-        width: wp(33)
+        width: wp(32)
     },
     itemDateDay: {
         fontFamily: Fonts.APPFONT_B,

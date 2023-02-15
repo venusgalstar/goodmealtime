@@ -514,7 +514,7 @@ const Styles = StyleSheet.create({
     },
     innerTodayConLine: {
         borderTopWidth: 0.4,
-        width: wp(22)
+        width: wp(20)
     },
     outerDateCon: {
         flexDirection: 'row',
