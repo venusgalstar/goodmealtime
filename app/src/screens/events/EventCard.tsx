@@ -291,9 +291,10 @@ const Styles = StyleSheet.create({
     },
     bookBtn: {
         borderWidth: 1,
-        width: wp(14),
+        width: wp(15),
         height: hp(3.2),
-        marginRight: wp(3),
+        marginRight: wp(2),
+        marginLeft: wp(2),
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
